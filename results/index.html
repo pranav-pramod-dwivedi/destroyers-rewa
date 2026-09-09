@@ -140,15 +140,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
-        <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
-          <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
-          <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
-          <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
-          <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
-        </svg>
+        <div class="brand-crest-monogram">DES</div>
         <div class="brand-title-group">
           <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
           <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
@@ -207,20 +199,37 @@
   <div class="container">
     <div class="section-masthead">
       <div>
-        <p class="section-pretitle">Historical Archive</p>
+        <p class="section-pretitle">HISTORICAL ARCHIVE</p>
         <h1 class="section-bigtitle">Match Results Archive (24 Matches)</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Every completed fixture from 2021 to 2024 between Destroyers (11 wins, including 2024 4–1 Series Victory) and Dread Eleven (13 wins).
+          Official Atal Bihari Vajpayee Memorial Tournament fixtures between Destroyers and Dread Eleven in Rewa.
         </p>
       </div>
       <div>
-        <span class="tabular font-bold" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold);">24 COMPLETED FIXTURES</span>
+        <span class="tabular font-bold" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold);">
+          SHOWING <span id="filter-matches-count">24</span> MATCHES
+        </span>
       </div>
+    </div>
+
+    <!-- Format & Season Filter Toolbar -->
+    <div class="filter-toolbar">
+      <span class="filter-group-label">Format:</span>
+      <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (24)</button>
+      <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 Matches (9)</button>
+      <button type="button" class="filter-pill format-filter-btn" data-format="ODI">One-Day / ODI (15)</button>
+
+      <span class="filter-group-label" style="margin-left:1rem;">Season:</span>
+      <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2021">2021</button>
     </div>
 
     <div class="matches-pro-grid">
       
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #1</span>
@@ -267,7 +276,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #2</span>
@@ -314,7 +323,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #3</span>
@@ -361,7 +370,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #4</span>
@@ -408,7 +417,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #5</span>
@@ -455,7 +464,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #6</span>
@@ -502,7 +511,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2021">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #7</span>
@@ -549,7 +558,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card is-final-match">
+          <div class="pro-match-card is-final-match" data-format="T20" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2022</span>
               <span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>
@@ -596,7 +605,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="T20" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag t20">T20 • SEASON 2022</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #9</span>
@@ -643,7 +652,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #10</span>
@@ -690,7 +699,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #11</span>
@@ -737,7 +746,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #12</span>
@@ -784,7 +793,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #13</span>
@@ -831,7 +840,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #14</span>
@@ -878,7 +887,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #15</span>
@@ -925,7 +934,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #16</span>
@@ -972,7 +981,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #17</span>
@@ -1019,7 +1028,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #18</span>
@@ -1066,7 +1075,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #19</span>
@@ -1113,7 +1122,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #20</span>
@@ -1160,7 +1169,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #21</span>
@@ -1207,7 +1216,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #22</span>
@@ -1254,7 +1263,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #23</span>
@@ -1301,7 +1310,7 @@
             </a>
           </div>
         
-          <div class="pro-match-card ">
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
             <div class="pro-match-header">
               <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
               <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #24</span>
@@ -1351,7 +1360,7 @@
     </div>
   </div>
 </section>
-
+    
 
     <footer class="site-footer">
       <div class="container">

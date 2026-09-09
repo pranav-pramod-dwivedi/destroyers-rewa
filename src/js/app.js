@@ -806,3 +806,60 @@
     initCountdown();
     initSquadFilter();
   });
+
+/* Format & Season Filters for One Day & T20 Fixtures */
+document.addEventListener('DOMContentLoaded', () => {
+  const formatButtons = document.querySelectorAll('.format-filter-btn');
+  const seasonButtons = document.querySelectorAll('.season-filter-btn');
+  const matchCards = document.querySelectorAll('.pro-match-card');
+  if (!matchCards.length) return;
+
+  let activeFormat = 'all';
+  let activeSeason = 'all';
+
+  function applyFilters() {
+    let visibleCount = 0;
+    matchCards.forEach((card) => {
+      const format = (card.getAttribute('data-format') || '').toUpperCase();
+      const season = card.getAttribute('data-season') || '';
+
+      const matchFormat = activeFormat === 'all' || 
+        (activeFormat === 'T20' && format.includes('T20')) || 
+        (activeFormat === 'ODI' && (format.includes('ODI') || format.includes('ONE-DAY')));
+
+      const matchSeason = activeSeason === 'all' || season === activeSeason;
+
+      if (matchFormat && matchSeason) {
+        card.style.display = 'flex';
+        card.style.opacity = '1';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+        card.style.opacity = '0';
+      }
+    });
+
+    const countDisplay = document.getElementById('filter-matches-count');
+    if (countDisplay) {
+      countDisplay.textContent = visibleCount;
+    }
+  }
+
+  formatButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      formatButtons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFormat = btn.getAttribute('data-format');
+      applyFilters();
+    });
+  });
+
+  seasonButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      seasonButtons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeSeason = btn.getAttribute('data-season');
+      applyFilters();
+    });
+  });
+});

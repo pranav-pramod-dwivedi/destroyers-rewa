@@ -5,23 +5,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixtures &amp; Schedule (2025–2026) | Destroyers Cricket Club (DES)</title>
-  <meta name="description" content="Upcoming match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Match dates, venues, and timings for 2025 and 2026 fixtures against Dread Eleven.">
+  <title>One Day &amp; T20 Fixtures (24 Matches) | Destroyers Cricket Club (DES)</title>
+  <meta name="description" content="Official One Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Interactive format and season filters.">
   <link rel="canonical" href="http://127.0.0.1:8085/fixtures">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://127.0.0.1:8085/fixtures">
-  <meta property="og:title" content="Fixtures &amp; Schedule (2025–2026) | Destroyers Cricket Club (DES)">
-  <meta property="og:description" content="Upcoming match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Match dates, venues, and timings for 2025 and 2026 fixtures against Dread Eleven.">
+  <meta property="og:title" content="One Day &amp; T20 Fixtures (24 Matches) | Destroyers Cricket Club (DES)">
+  <meta property="og:description" content="Official One Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Interactive format and season filters.">
   <meta property="og:image" content="http://127.0.0.1:8085/public/inspo1.jpg">
   <meta property="og:site_name" content="Destroyers Cricket Club (DES)">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="http://127.0.0.1:8085/fixtures">
-  <meta name="twitter:title" content="Fixtures &amp; Schedule (2025–2026) | Destroyers Cricket Club (DES)">
-  <meta name="twitter:description" content="Upcoming match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Match dates, venues, and timings for 2025 and 2026 fixtures against Dread Eleven.">
+  <meta name="twitter:title" content="One Day &amp; T20 Fixtures (24 Matches) | Destroyers Cricket Club (DES)">
+  <meta name="twitter:description" content="Official One Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Interactive format and season filters.">
   <meta name="twitter:image" content="http://127.0.0.1:8085/public/inspo1.jpg">
 
   <!-- Google Fonts Preconnect -->
@@ -140,15 +140,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
-        <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
-          <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
-          <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
-          <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
-          <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
-        </svg>
+        <div class="brand-crest-monogram">DES</div>
         <div class="brand-title-group">
           <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
           <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
@@ -207,308 +199,1168 @@
   <div class="container">
     <div class="section-masthead">
       <div>
-        <p class="section-pretitle">Upcoming Schedule</p>
-        <h1 class="section-bigtitle">Destroyers Fixtures (2025–2026)</h1>
+        <p class="section-pretitle">TOURNAMENT SCHEDULE</p>
+        <h1 class="section-bigtitle">Destroyers T20 &amp; One Day Fixtures</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Official match schedule sanctioned by the Rewa Division Cricket Association (RDCA).
+          Official Atal Bihari Vajpayee Memorial Tournament fixtures between Destroyers and Dread Eleven in Rewa.
         </p>
       </div>
+      <div>
+        <span class="tabular font-bold" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold);">
+          SHOWING <span id="filter-matches-count">24</span> MATCHES
+        </span>
+      </div>
+    </div>
+
+    <!-- Format & Season Filter Toolbar -->
+    <div class="filter-toolbar">
+      <span class="filter-group-label">Format:</span>
+      <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (24)</button>
+      <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 Matches (9)</button>
+      <button type="button" class="filter-pill format-filter-btn" data-format="ODI">One-Day / ODI (15)</button>
+
+      <span class="filter-group-label" style="margin-left:1rem;">Season:</span>
+      <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2021">2021</button>
     </div>
 
     <div class="matches-pro-grid">
       
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag t20">T20 • SEASON 2025</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">T20 Series Opener</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">10 Sep 2025</span> • <span>14:00 IST</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
-              </div>
-              <div class="pro-score-numbers">UPCOMING</div>
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #1</span>
             </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
-              </div>
-              <div class="pro-score-numbers">UPCOMING</div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">01 Aug 2021</span> • <span>Martand School Ground No. 3</span>
             </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Fixture Scheduled • T20 Series</span>
-          </div>
-
-          <a href="/matches/destroyers-vs-dread-eleven-2025-09-10" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag t20">T20 • SEASON 2025</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">T20 Series Match 2</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">14 Sep 2025</span> • <span>14:00 IST</span> • <span>Martand School Ground No. 3</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  151/5 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  174/7 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
             </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Fixture Scheduled • T20 Series</span>
-          </div>
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 3 wickets</span>
+            </div>
 
-          <a href="/matches/destroyers-vs-dread-eleven-2025-09-14" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag odi">ODI • SEASON 2025</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">50-Over ODI Series Match 1</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">18 Sep 2025</span> • <span>09:30 IST</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Venkatesh Iyer</strong> (54 runs off 35 balls)
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-01" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #2</span>
             </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">04 Aug 2021</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  155/9 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Fixture Scheduled • 50-Over ODI</span>
-          </div>
-
-          <a href="/matches/destroyers-vs-dread-eleven-2025-09-18" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag odi">ODI • SEASON 2025</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">50-Over ODI Series Match 2</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">22 Sep 2025</span> • <span>09:30 IST</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  170/8 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
             </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 2 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Amarjeet Kumar Singh</strong> (5/1 in 3 ov)
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-04" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #3</span>
             </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Fixture Scheduled • 50-Over ODI</span>
-          </div>
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">07 Aug 2021</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
 
-          <a href="/matches/destroyers-vs-dread-eleven-2025-09-22" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag t20">T20 • SEASON 2026</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">Silver Jubilee T20 Inaugural</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">12 Aug 2026</span> • <span>15:00 IST</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  170/6 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  150/9 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
             </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Scheduled • Silver Jubilee Cup</span>
-          </div>
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 20 runs</span>
+            </div>
 
-          <a href="/matches/destroyers-vs-dread-eleven-2026-08-12" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag t20">T20 • SEASON 2026</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">Silver Jubilee T20 Match 2</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">16 Aug 2026</span> • <span>15:00 IST</span> • <span>Martand School Ground No. 3</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Amarjeet Kumar Singh</strong> (4/68 in 3 ov)
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-07" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #4</span>
             </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">11 Aug 2021</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  163/8 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Scheduled • Silver Jubilee Cup</span>
-          </div>
-
-          <a href="/matches/destroyers-vs-dread-eleven-2026-08-16" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag odi">ODI • SEASON 2026</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">50-Over Championship Match</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">05 Sep 2026</span> • <span>09:00 IST</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  168/7 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
             </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 3 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Rohit Rajawat</strong> (3/37 in 2 ov)
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-11" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #5</span>
             </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Scheduled • 50-Over Championship</span>
-          </div>
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">15 Aug 2021</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
 
-          <a href="/matches/destroyers-vs-dread-eleven-2026-09-05" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag odi">ODI • SEASON 2026</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">Grand Championship Finale</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">10 Sep 2026</span> • <span>09:00 IST</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  151/8 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  181/5 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
               </div>
-              <div class="pro-score-numbers">UPCOMING</div>
             </div>
-          </div>
 
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>Scheduled • Grand Finale</span>
-          </div>
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 5 wickets</span>
+            </div>
 
-          <a href="/matches/destroyers-vs-dread-eleven-2026-09-10" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Rajat Patidar</strong> (3/72 in 4 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-15" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #6</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">20 Aug 2021</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  149/9 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  162/8 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 2 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Akhil Mishra</strong> (58 runs off 36 balls)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-20" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2021">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2021</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #7</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">28 Aug 2021</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  183/10 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  169/5 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 14 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Pranav Dwivedi</strong> (53 runs off 23 balls)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2021-08-28" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card is-final-match" data-format="T20" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2022</span>
+              <span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">10 Aug 2022</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  155/9 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  173/7 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 3 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Amarjeet Kumar Singh</strong> (3/71 in 4 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-08-10" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="T20" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag t20">T20 • SEASON 2022</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #9</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">12 Aug 2022</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  162/6 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  183/10 <span class="pro-overs-sub">(20 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 0 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Kuldeep Sen</strong> (46 runs off 30 balls)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-08-12" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #10</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">04 Sep 2022</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  232/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  234/8 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 2 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Mohd Arham Aquil</strong> (5/95 in 9 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-09-04" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #11</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">07 Sep 2022</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  278/6 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  278/8 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 0 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Pranav Dwivedi</strong> (3/55 in 10 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-09-07" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #12</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">10 Sep 2022</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  271/8 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  234/7 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 37 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Venkatesh Iyer</strong> (57 runs off 66 balls)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-09-10" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #13</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">14 Sep 2022</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  231/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  261/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 1 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Subhranshu Senapati</strong> (7/69 in 7 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-09-14" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2022">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2022</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #14</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">18 Sep 2022</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  279/7 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  225/7 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 54 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Pranav Dwivedi</strong> (3/62 in 10 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2022-09-18" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #15</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">05 Sep 2023</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  205/10 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  289/10 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 0 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Prabhanshu Shukla</strong> (8/22 in 9 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2023-09-05" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #16</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">08 Sep 2023</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  206/8 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  263/10 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 0 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Akhil Mishra</strong> (61 runs off 68 balls)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2023-09-08" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #17</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">12 Sep 2023</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  279/6 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  252/10 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 27 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Subhranshu Senapati</strong> (5/51 in 7 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2023-09-12" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #18</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">16 Sep 2023</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  274/7 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  232/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 42 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Pranav Dwivedi</strong> (3/60 in 10 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2023-09-16" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2023">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2023</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #19</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">20 Sep 2023</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  221/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  279/7 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 3 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Kumar Kartikeya</strong> (5/131 in 10 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2023-09-20" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #20</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">05 Sep 2024</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name ">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  264/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name winner">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  266/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip de-victory">
+              <span>Dread Eleven won by 1 wickets</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Rahul Batham</strong> (3/91 in 9 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2024-09-05" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #21</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">08 Sep 2024</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  257/6 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  252/7 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 5 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Pranav Dwivedi</strong> (3/66 in 10 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2024-09-08" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #22</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">12 Sep 2024</span> • <span>Martand School Ground No. 3</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  276/10 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  274/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 2 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Anubhav Agarwal</strong> (47 runs off 54 balls)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2024-09-12" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #23</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">16 Sep 2024</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  288/6 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  270/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 18 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Pranav Dwivedi</strong> (3/72 in 10 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2024-09-16" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
+          <div class="pro-match-card " data-format="ODI" data-season="2024">
+            <div class="pro-match-header">
+              <span class="pro-fmt-tag odi">ODI • SEASON 2024</span>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #24</span>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
+              <span style="font-weight:700; color:var(--c-white);">20 Sep 2024</span> • <span>Awadhesh Pratap Singh University (APSU) Stadium</span>
+            </div>
+
+            <div class="pro-scoreboard-box">
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle des">DES</div>
+                  <span class="pro-team-name winner">Destroyers</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  233/6 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+
+              <div class="pro-score-entry">
+                <div class="pro-team-ident">
+                  <div class="pro-team-circle de">DE</div>
+                  <span class="pro-team-name ">Dread Eleven</span>
+                </div>
+                <div class="pro-score-numbers tabular">
+                  225/9 <span class="pro-overs-sub">(50 ov)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-result-strip des-victory">
+              <span>Destroyers won by 8 runs</span>
+            </div>
+
+            
+              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                Player of Match: <strong style="color:var(--c-gold);">Sagar Pratap Singh</strong> (5/60 in 7 ov)
+              </div>
+            
+
+            <a href="/matches/destroyers-vs-dread-eleven-2024-09-20" class="btn-inspect-scorecard" style="text-decoration:none;">
+              <span>Inspect Full Match Hub &rarr;</span>
+            </a>
+          </div>
+        
     </div>
   </div>
 </section>
-
+    
 
     <footer class="site-footer">
       <div class="container">

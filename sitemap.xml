@@ -406,46 +406,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-10</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-14</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-18</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-22</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-08-12</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-08-16</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-09-05</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-09-10</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>http://127.0.0.1:8085/news/destroyers-announce-2025-26-squad-training-camp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

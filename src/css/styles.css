@@ -1377,3 +1377,49 @@ table.scorecard-data-table th.num, table.scorecard-data-table td.num {
 @media (max-width: 900px) {
   .cap-cards-duo { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================================
+   FORMAT & SEASON FILTER TOOLBAR (ONE DAY & T20)
+   ========================================================================== */
+.filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+  background: var(--c-card-bg);
+  border: 1px solid var(--b-subtle);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+}
+.filter-group-label {
+  font-family: var(--f-mono);
+  font-size: 0.6875rem;
+  color: var(--c-gray-400);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+.filter-pill {
+  background: var(--c-dark-surface);
+  border: 1px solid var(--b-medium);
+  color: var(--c-gray-300);
+  font-family: var(--f-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.filter-pill:hover {
+  color: #fff;
+  border-color: var(--c-ember);
+}
+.filter-pill.active {
+  background: var(--c-ember);
+  color: #fff;
+  border-color: var(--c-ember-bright);
+  font-weight: 800;
+}

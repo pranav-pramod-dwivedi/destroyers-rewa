@@ -144,15 +144,7 @@ function renderHeader(activeNav = '') {
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
-        <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
-          <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
-          <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
-          <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-          <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
-          <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
-        </svg>
+        <div class="brand-crest-monogram">DES</div>
         <div class="brand-title-group">
           <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
           <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
@@ -352,19 +344,19 @@ ${renderHeader('home')}
       </div>
 
 
-      <!-- Next Match Preview -->
+      <!-- Latest Championship Climax (2024 Finale) -->
       <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:1.25rem;">
         <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.1em; margin-bottom:0.4rem;">
-          Next Scheduled Battle
+          Latest Derby Climax (2024 Finale)
         </div>
         <div style="font-family:var(--f-athletic); font-size:1.35rem; color:var(--c-white); text-transform:uppercase;">
-          Destroyers vs Dread Eleven (${nextMatch.format})
+          Destroyers def. Dread Eleven by 8 runs
         </div>
         <div style="font-size:0.75rem; color:var(--c-gray-400); margin-top:0.2rem;">
-          ${formatDate(nextMatch.matchDate)} • ${nextMatch.time} • ${esc(nextMatch.venue.name)}
+          20 Sep 2024 • APSU Stadium, Rewa • 2024 Series Decider
         </div>
-        <a href="/matches/${nextMatch.slug}" style="display:inline-flex; align-items:center; gap:0.4rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:700; margin-top:0.6rem;">
-          <span>Inspect Match Hub &amp; Preview &rarr;</span>
+        <a href="/matches/destroyers-vs-dread-eleven-2024-09-20" style="display:inline-flex; align-items:center; gap:0.4rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:700; margin-top:0.6rem;">
+          <span>Inspect 2024 Finale Scorecard &rarr;</span>
         </a>
       </div>
     </div>
@@ -732,109 +724,52 @@ function generateMatchPages() {
   ensureDir(fixturesDir);
   ensureDir(resultsDir);
 
-  const completedMatches = matches.filter((m) => m.status === 'completed');
-  const upcomingMatches = matches.filter((m) => m.status === 'upcoming');
+  const t20Count = matches.filter((m) => m.format === 'T20').length;
+  const odiCount = matches.filter((m) => m.format === 'ODI' || m.format === 'One-Day').length;
 
-  // A. Generate /fixtures/index.html
-  const fixturesHtml = `
-${renderHead({
-  title: 'Fixtures & Schedule (2025–2026) | Destroyers Cricket Club (DES)',
-  description: 'Upcoming match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Match dates, venues, and timings for 2025 and 2026 fixtures against Dread Eleven.',
-  canonicalUrl: '/fixtures'
-})}
-${renderHeader('fixtures')}
-
+  function renderMatchListSection(isResultsPage) {
+    return `
 <section class="match-arena-section" style="padding-top:4rem;">
   <div class="container">
     <div class="section-masthead">
       <div>
-        <p class="section-pretitle">Upcoming Schedule</p>
-        <h1 class="section-bigtitle">Destroyers Fixtures (2025–2026)</h1>
+        <p class="section-pretitle">${isResultsPage ? 'HISTORICAL ARCHIVE' : 'TOURNAMENT SCHEDULE'}</p>
+        <h1 class="section-bigtitle">${isResultsPage ? 'Match Results Archive (24 Matches)' : 'Destroyers T20 &amp; One Day Fixtures'}</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Official match schedule sanctioned by the Rewa Division Cricket Association (RDCA).
-        </p>
-      </div>
-    </div>
-
-    <div class="matches-pro-grid">
-      ${upcomingMatches.map((m) => `
-        <div class="pro-match-card">
-          <div class="pro-match-header">
-            <span class="pro-fmt-tag ${m.format.toLowerCase()}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
-            <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:700;">${esc(m.stage)}</span>
-          </div>
-
-          <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-            <span style="font-weight:700; color:var(--c-white);">${formatDate(m.matchDate)}</span> • <span>${esc(m.time)}</span> • <span>${esc(m.venue.name)}</span>
-          </div>
-
-          <div class="pro-scoreboard-box">
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle des">DES</div>
-                <span class="pro-team-name winner">Destroyers</span>
-              </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-            <div class="pro-score-entry">
-              <div class="pro-team-ident">
-                <div class="pro-team-circle de">DE</div>
-                <span class="pro-team-name">Dread Eleven</span>
-              </div>
-              <div class="pro-score-numbers">UPCOMING</div>
-            </div>
-          </div>
-
-          <div class="pro-result-strip" style="background:rgba(255,195,0,0.12); color:var(--c-gold); border:1px solid rgba(255,195,0,0.3);">
-            <span>${esc(m.resultText)}</span>
-          </div>
-
-          <a href="/matches/${m.slug}" class="btn-inspect-scorecard" style="text-decoration:none;">
-            <span>Inspect Match Hub &rarr;</span>
-          </a>
-        </div>
-      `).join('')}
-    </div>
-  </div>
-</section>
-
-${renderFooter()}
-  `;
-  fs.writeFileSync(path.join(fixturesDir, 'index.html'), fixturesHtml);
-
-  // B. Generate /results/index.html
-  const resultsHtml = `
-${renderHead({
-  title: 'Match Results Archive (2021–2024) | Destroyers Cricket Club (DES)',
-  description: 'Certified match results and scorecards for all 24 completed encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
-  canonicalUrl: '/results'
-})}
-${renderHeader('results')}
-
-<section class="match-arena-section" style="padding-top:4rem;">
-  <div class="container">
-    <div class="section-masthead">
-      <div>
-        <p class="section-pretitle">Historical Archive</p>
-        <h1 class="section-bigtitle">Match Results Archive (24 Matches)</h1>
-        <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Every completed fixture from 2021 to 2024 between Destroyers (11 wins, including 2024 4–1 Series Victory) and Dread Eleven (13 wins).
+          Official Atal Bihari Vajpayee Memorial Tournament fixtures between Destroyers and Dread Eleven in Rewa.
         </p>
       </div>
       <div>
-        <span class="tabular font-bold" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold);">24 COMPLETED FIXTURES</span>
+        <span class="tabular font-bold" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold);">
+          SHOWING <span id="filter-matches-count">24</span> MATCHES
+        </span>
       </div>
     </div>
 
+    <!-- Format & Season Filter Toolbar -->
+    <div class="filter-toolbar">
+      <span class="filter-group-label">Format:</span>
+      <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (${matches.length})</button>
+      <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 Matches (${t20Count})</button>
+      <button type="button" class="filter-pill format-filter-btn" data-format="ODI">One-Day / ODI (${odiCount})</button>
+
+      <span class="filter-group-label" style="margin-left:1rem;">Season:</span>
+      <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
+      <button type="button" class="filter-pill season-filter-btn" data-season="2021">2021</button>
+    </div>
+
     <div class="matches-pro-grid">
-      ${completedMatches.map((m) => {
+      ${matches.map((m) => {
         const isDesWinner = m.winner === 'DES';
         const isFinal = m.stage && m.stage.toLowerCase().includes('final');
         const desInnings = m.innings[0] || { runs: 0, wickets: 0, overs: 0 };
         const deInnings = m.innings[1] || { runs: 0, wickets: 0, overs: 0 };
 
         return `
-          <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}">
+          <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}" data-format="${esc(m.format)}" data-season="${esc(m.seasonYear)}">
             <div class="pro-match-header">
               <span class="pro-fmt-tag ${m.format.toLowerCase()}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
               ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>' : `<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #${esc(m.matchNumber)}</span>`}
@@ -885,7 +820,31 @@ ${renderHeader('results')}
     </div>
   </div>
 </section>
+    `;
+  }
 
+  // A. Generate /fixtures/index.html
+  const fixturesHtml = `
+${renderHead({
+  title: 'One Day & T20 Fixtures (24 Matches) | Destroyers Cricket Club (DES)',
+  description: 'Official One Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Interactive format and season filters.',
+  canonicalUrl: '/fixtures'
+})}
+${renderHeader('fixtures')}
+${renderMatchListSection(false)}
+${renderFooter()}
+  `;
+  fs.writeFileSync(path.join(fixturesDir, 'index.html'), fixturesHtml);
+
+  // B. Generate /results/index.html
+  const resultsHtml = `
+${renderHead({
+  title: 'Match Results Archive (2021–2024) | Destroyers Cricket Club (DES)',
+  description: 'Certified match results and scorecards for all 24 completed encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
+  canonicalUrl: '/results'
+})}
+${renderHeader('results')}
+${renderMatchListSection(true)}
 ${renderFooter()}
   `;
   fs.writeFileSync(path.join(resultsDir, 'index.html'), resultsHtml);
