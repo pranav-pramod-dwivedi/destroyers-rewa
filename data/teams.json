@@ -9,9 +9,9 @@
     "secondaryColor": "#ffc300",
     "homeVenue": "Awadhesh Pratap Singh University (APSU) Stadium, Rewa",
     "established": 2021,
-    "captain": "Akhil Mishra",
+    "captain": "Pranav Dwivedi",
     "championships": [
-      "2022 Atal Bihari Vajpayee Memorial Trophy"
+      "2024 ODI Series Winners (4–1)"
     ]
   },
   "DE": {
@@ -24,6 +24,9 @@
     "secondaryColor": "#3b3b3b",
     "homeVenue": "Martand School Ground No. 3, Rewa",
     "established": 2021,
-    "captain": "Pranav Dwivedi"
+    "captain": "Akhil Mishra",
+    "championships": [
+      "2022 Atal Bihari Vajpayee Memorial Trophy"
+    ]
   }
 }

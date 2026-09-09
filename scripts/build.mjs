@@ -1,6 +1,8 @@
 /**
  * PRODUCTION STATIC SITE GENERATOR (SSG) FOR DESTROYERS CRICKET CLUB (DES)
  * Generates 100% pre-rendered, SEO-optimized, accessible HTML pages.
+ * Captain: Pranav Dwivedi (1,341 runs, 63 wickets)
+ * Arch-rivals: Dread Eleven (DE), led by Akhil Mishra
  */
 
 import fs from 'fs';
@@ -17,10 +19,10 @@ const BASE_URL = 'http://127.0.0.1:8085';
 const tournament = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/tournament.json'), 'utf8'));
 const teams = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/teams.json'), 'utf8'));
 const squad = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/squad.json'), 'utf8'));
+const rivals = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/rivals.json'), 'utf8'));
 const matches = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/matches.json'), 'utf8'));
 const news = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/news.json'), 'utf8'));
 const pointsTable = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/pointsTable.json'), 'utf8'));
-const rivals = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/rivals.json'), 'utf8'));
 
 // Helper: Ensure directory exists
 function ensureDir(dirPath) {
@@ -115,10 +117,10 @@ function renderHeader(activeNav = '') {
   <div class="top-ticker" aria-hidden="true" style="background:#000; border-bottom:1px solid #1a1a1a; padding:0.4rem 0; font-family:var(--f-mono); font-size:0.6875rem; letter-spacing:0.12em; color:var(--c-gray-400); overflow:hidden; white-space:nowrap;">
     <div class="ticker-track" style="display:inline-flex; gap:3rem; animation:tickerScroll 28s linear infinite;">
       <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> CAPTAIN: PRANAV DWIVEDI (1,341 RUNS • 63 WKTS)</span>
       <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
       <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 24 DERBY CLASHES VS DREAD ELEVEN</span>
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DES LEADS 13–11 (54.2% WR)</span>
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 2022 CHAMPIONSHIP TITLE HOLDERS</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 2024 SERIES CHAMPIONS (4–1 RECORD)</span>
     </div>
   </div>
 
@@ -151,7 +153,7 @@ function renderHeader(activeNav = '') {
 
       <div class="header-status-badge">
         <span class="live-dot"></span>
-        <span>DES LEADS 13–11</span>
+        <span>CAPT. PRANAV DWIVEDI</span>
       </div>
     </div>
   </header>
@@ -168,7 +170,7 @@ function renderFooter() {
               DESTROYERS <span style="color:var(--c-ember-bright);">CRICKET CLUB</span>
             </div>
             <p style="font-size:0.875rem; color:var(--c-gray-400); max-width:48ch; margin-top:0.75rem; line-height:1.7;">
-              Official pro franchise website for Destroyers Cricket Club (DES). 
+              Official pro franchise website for Destroyers Cricket Club (DES), captained by Pranav Dwivedi. 
               Competing in the prestigious Atal Bihari Vajpayee Memorial Tournament under the Rewa Division Cricket Association (RDCA).
             </p>
           </div>
@@ -186,8 +188,8 @@ function renderFooter() {
           <div>
             <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise & Venues</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
-              <li><a href="/players" style="color:inherit;">Squad Roster (43 Players)</a></li>
-              <li><a href="/about" style="color:inherit;">About Destroyers & 2022 Title</a></li>
+              <li><a href="/players" style="color:inherit;">Destroyers Squad (48 Players)</a></li>
+              <li><a href="/about" style="color:inherit;">About Destroyers & 2024 Title</a></li>
               <li><a href="/news" style="color:inherit;">News & Press Releases</a></li>
               <li><a href="/contact" style="color:inherit;">Contact RDCA & Venues</a></li>
             </ul>
@@ -213,7 +215,6 @@ function renderFooter() {
 // ------------------------------------------------------------
 function generateHomePage() {
   const completedMatches = matches.filter((m) => m.status === 'completed');
-  const latestMatch = completedMatches[0];
   const upcomingMatches = matches.filter((m) => m.status === 'upcoming');
   const nextMatch = upcomingMatches[0];
   const featuredNews = news.slice(0, 3);
@@ -241,15 +242,15 @@ function generateHomePage() {
     },
     coach: {
       '@type': 'Person',
-      name: 'Akhil Mishra',
-      jobTitle: 'Captain & Player-Coach'
+      name: 'Pranav Dwivedi',
+      jobTitle: 'Captain & Franchise Icon'
     }
   };
 
   const html = `
 ${renderHead({
-  title: 'Destroyers Cricket Club (DES) — Official Website | Atal Bihari Vajpayee Tournament, Rewa',
-  description: 'Official home of Destroyers Cricket Club (DES). Complete match archives against Dread Eleven (DE), live squad profiles, 2025–2026 fixtures, and tournament stats.',
+  title: 'Destroyers Cricket Club (DES) — Official Website | Capt. Pranav Dwivedi | Rewa',
+  description: 'Official pro franchise website for Destroyers Cricket Club (DES), captained by Pranav Dwivedi. Complete match archives against Dread Eleven (DE), squad directory, 2025–2026 fixtures, and tournament stats.',
   canonicalUrl: '/',
   jsonLd
 })}
@@ -262,7 +263,7 @@ ${renderHeader('home')}
     <div>
       <div class="hero-eyebrow">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        <span>Official Pro Sports Citadel • Rewa Division (RDCA)</span>
+        <span>Official Franchise Citadel • Rewa Division (RDCA)</span>
       </div>
 
       <h1 class="hero-headline-massive">
@@ -272,8 +273,8 @@ ${renderHeader('home')}
       </h1>
 
       <p class="hero-statement">
-        The official digital fortress of <strong>Destroyers Cricket Club (DES)</strong> in the <strong>Atal Bihari Vajpayee Memorial Tournament</strong>, Rewa. 
-        24 fierce clashes against arch-rivals <strong>Dread Eleven (DE)</strong>, 13 championship triumphs, and certified individual player telemetry.
+        The official digital fortress of <strong>Destroyers Cricket Club (DES)</strong>, led by all-round powerhouse and skipper <strong>Pranav Dwivedi</strong> (1,341 runs, 63 wickets). 
+        Dominating the <strong>Atal Bihari Vajpayee Memorial Tournament</strong> with a 4–1 series conquest over arch-rivals <strong>Dread Eleven (DE)</strong> in 2024.
       </p>
 
       <div class="hero-cta-row">
@@ -282,7 +283,7 @@ ${renderHeader('home')}
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="/players" class="btn-athletic btn-athletic-outline">
-          <span>Meet The Squad (43)</span>
+          <span>Meet The Squad (48)</span>
         </a>
         <a href="/results" class="btn-athletic btn-athletic-outline">
           <span>Match Results</span>
@@ -294,15 +295,15 @@ ${renderHeader('home')}
     <div class="battle-hud-card">
       <div class="hud-topline">
         <span class="hud-tag">Rivalry Series Telemetry (2021–2024)</span>
-        <span class="hud-status-tag" style="color:var(--c-emerald); background:rgba(0,230,118,0.12);">DES LEADS 13–11 (54.2%)</span>
+        <span class="hud-status-tag" style="color:var(--c-emerald); background:rgba(0,230,118,0.12);">2024 SERIES: DES WON 4–1</span>
       </div>
 
       <div class="hud-clash-display">
         <div class="hud-team-column">
           <div class="hud-team-emblem des">DES</div>
           <div class="hud-team-name" style="color:var(--c-ember-bright);">DESTROYERS</div>
-          <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">13 Derby Wins</div>
-          <div class="hud-win-count tabular" style="color:var(--c-emerald);">13</div>
+          <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Capt. Pranav Dwivedi</div>
+          <div class="hud-win-count tabular" style="color:var(--c-emerald);">11</div>
         </div>
 
         <div class="hud-vs-badge">VS</div>
@@ -310,14 +311,14 @@ ${renderHeader('home')}
         <div class="hud-team-column">
           <div class="hud-team-emblem de">DE</div>
           <div class="hud-team-name" style="color:var(--c-gray-300);">DREAD ELEVEN</div>
-          <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">11 Derby Wins</div>
-          <div class="hud-win-count tabular" style="color:var(--c-gray-400);">11</div>
+          <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Capt. Akhil Mishra</div>
+          <div class="hud-win-count tabular" style="color:var(--c-gray-400);">13</div>
         </div>
       </div>
 
-      <div class="hud-dominance-bar" title="54.2% Destroyers vs 45.8% Dread Eleven">
-        <div class="hud-bar-des" style="width:54.2%;"></div>
-        <div class="hud-bar-de" style="width:45.8%;"></div>
+      <div class="hud-dominance-bar" title="45.8% Destroyers vs 54.2% Dread Eleven">
+        <div class="hud-bar-des" style="width:45.8%;"></div>
+        <div class="hud-bar-de" style="width:54.2%;"></div>
       </div>
 
       <!-- Next Match Preview -->
@@ -339,20 +340,20 @@ ${renderHeader('home')}
   </div>
 </section>
 
-<!-- Latest Result & 2022 Title Banner -->
+<!-- Latest Result & 2024 Series Victory Banner -->
 <section class="spotlight-banner-section">
   <div class="container">
     <div class="spotlight-card-wrapper">
       <div>
-        <div class="spotlight-tagline">2022 Atal Bihari Vajpayee Tournament Final</div>
-        <h2 class="spotlight-headline">DESTROYERS CLINCHED THE 2022 CHAMPIONSHIP TITLE</h2>
+        <div class="spotlight-tagline">2024 Season Triumph • 50-Over Series</div>
+        <h2 class="spotlight-headline">DESTROYERS CLINCH 2024 SERIES 4–1 OVER DREAD ELEVEN</h2>
         <p class="spotlight-prose">
-          On 12 August 2022, Destroyers Cricket Club defeated arch-rivals Dread Eleven by 21 runs at APSU Stadium, Rewa. 
-          Paced by Kuldeep Sen’s blazing 46 off 30 deliveries and lockdown bowling from Ashwin Das and Kumar Kartikeya, Destroyers etched their name onto the prestigious trophy.
+          In a scintillating display of clutch cricket at APSU Stadium, Destroyers captured four straight victories to close the 2024 season, 
+          defending targets with nerve and aggression behind captain Pranav Dwivedi’s dual masterclass with bat and ball.
         </p>
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <a href="/matches/destroyers-vs-dread-eleven-2022-08-12" class="btn-athletic btn-athletic-primary">
-            <span>2022 Final Scorecard</span>
+          <a href="/matches/destroyers-vs-dread-eleven-2024-09-20" class="btn-athletic btn-athletic-primary">
+            <span>2024 Finale Scorecard</span>
           </a>
           <a href="/about" class="btn-athletic btn-athletic-outline">
             <span>Read Franchise History</span>
@@ -361,15 +362,15 @@ ${renderHeader('home')}
       </div>
 
       <div class="spotlight-stats-panel">
-        <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:800; text-transform:uppercase;">2022 FINAL RESULT</div>
+        <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:800; text-transform:uppercase;">2024 FINALE RESULT</div>
         <div class="spotlight-final-score tabular">
-          <span style="color:var(--c-ember-bright);">DES 183</span> <span style="font-size:1.4rem; color:var(--c-gray-600);">DEF</span> <span style="color:var(--c-gray-400);">DE 162/6</span>
+          <span style="color:var(--c-ember-bright);">DES 233/6</span> <span style="font-size:1.4rem; color:var(--c-gray-600);">DEF</span> <span style="color:var(--c-gray-400);">DE 225/9</span>
         </div>
         <div style="font-size:0.875rem; color:var(--c-emerald); font-weight:700; text-transform:uppercase; font-family:var(--f-athletic);">
-          Destroyers won by 21 runs
+          Destroyers won by 8 runs
         </div>
         <div style="font-size:0.75rem; color:var(--c-gray-400); margin-top:0.4rem; font-family:var(--f-mono);">
-          APSU Stadium, Rewa • T20 Final
+          APSU Stadium, Rewa • 50-Over Series Decider
         </div>
       </div>
     </div>
@@ -388,7 +389,7 @@ ${renderHeader('home')}
         </p>
       </div>
       <a href="/players" class="btn-athletic btn-athletic-outline">
-        <span>View All 43 Squad Members</span>
+        <span>View All 48 Squad Members</span>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -467,8 +468,8 @@ function generateSquadPages() {
 
   const directoryHtml = `
 ${renderHead({
-  title: 'Squad Roster (43 Players) | Destroyers Cricket Club (DES)',
-  description: 'Verified player directory for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Certified career averages, runs, wickets, and individual player pages.',
+  title: 'Squad Roster (48 Players) | Destroyers Cricket Club (DES)',
+  description: 'Official squad directory for Destroyers Cricket Club, captained by Pranav Dwivedi (1,341 runs, 63 wickets) in the Atal Bihari Vajpayee Tournament, Rewa. Verified career averages, runs, wickets, and individual player pages.',
   canonicalUrl: '/players',
   jsonLd: jsonLdDirectory
 })}
@@ -479,19 +480,19 @@ ${renderHeader('squad')}
     <div class="section-masthead">
       <div>
         <p class="section-pretitle">Franchise Roster</p>
-        <h1 class="section-bigtitle">Destroyers Squad Directory (43 Players)</h1>
+        <h1 class="section-bigtitle">Destroyers Squad Directory (48 Players)</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:68ch; margin-top:0.4rem;">
-          Verified tournament records for every Destroyers player in encounters against Dread Eleven. Click any player for their dedicated profile and match log.
+          Verified tournament records for every Destroyers player in encounters against Dread Eleven. Led by captain <strong>Pranav Dwivedi</strong>.
         </p>
       </div>
     </div>
 
     <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); border-left:4px solid var(--c-gold); padding:1.25rem 1.5rem; margin-bottom:2.5rem;">
       <div style="font-family:var(--f-athletic); font-size:1.15rem; color:var(--c-gold); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:0.25rem;">
-        Participation & Rate Telemetry Notice
+        Franchise Star &amp; Participation Notice
       </div>
       <p style="font-size:0.8125rem; color:var(--c-gray-300); line-height:1.6;">
-        Destroyers squad members participated in varying numbers of matches. Anchor batsman <strong>Akhil Mishra</strong> featured in 19 encounters (905 runs at 47.6 average), while key Ranji/IPL stars like <strong>Kuldeep Sen</strong>, <strong>Venkatesh Iyer</strong>, and <strong>Anubhav Agarwal</strong> featured in 4–12 matches. Evaluate players by both aggregate totals and rate stats.
+        Destroyers skipper <strong>Pranav Dwivedi</strong> has contested all 24 clashes (scoring 1,341 runs at 55.9 avg and taking 63 wickets). Rotational squad members featured in 4–14 matches. Click any player card below to view their dedicated profile and match-by-match performances.
       </p>
     </div>
 
@@ -533,22 +534,16 @@ ${renderFooter()}
     const playerDir = path.join(playersDir, p.slug);
     ensureDir(playerDir);
 
-    // Find all match appearances for this player
+    // Find all match appearances for this player (in Destroyers innings = innings[0])
     const playerLogs = [];
     matches.forEach((m) => {
-      let batLog = null;
-      let bowlLog = null;
+      if (!m.innings || !m.innings.length) return;
+      const desInn = m.innings[0]; // Destroyers innings
+      const b = (desInn.batting || []).find((x) => x.playerId === p.id);
+      const bo = (desInn.bowling || []).find((x) => x.playerId === p.id);
 
-      m.innings.forEach((inn) => {
-        const b = (inn.batting || []).find((x) => x.playerId === p.id);
-        if (b) batLog = { ...b, team: inn.teamShort };
-
-        const bo = (inn.bowling || []).find((x) => x.playerId === p.id);
-        if (bo) bowlLog = { ...bo, against: inn.teamShort };
-      });
-
-      if (batLog || bowlLog) {
-        playerLogs.push({ match: m, batting: batLog, bowling: bowlLog });
+      if (b || bo) {
+        playerLogs.push({ match: m, batting: b, bowling: bo });
       }
     });
 
@@ -567,8 +562,8 @@ ${renderFooter()}
 
     const playerHtml = `
 ${renderHead({
-  title: `${p.name} (#${p.jerseyNumber}) — Destroyers Cricket Club Player Profile`,
-  description: `${p.name} official profile for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. ${p.batting.runs} runs, ${p.bowling.wickets} wickets, stats, and match log.`,
+  title: `${p.name} (#${p.jerseyNumber}) — Destroyers Cricket Club Profile`,
+  description: `${p.name} official profile for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. ${p.batting.runs} runs, ${p.bowling.wickets} wickets, career stats, and match log.`,
   canonicalUrl: `/players/${p.slug}`,
   jsonLd: playerJsonLd
 })}
@@ -782,7 +777,7 @@ ${renderHeader('results')}
         <p class="section-pretitle">Historical Archive</p>
         <h1 class="section-bigtitle">Match Results Archive (24 Matches)</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Every completed fixture from 2021 to 2024 between Destroyers (13 wins) and Dread Eleven (11 wins).
+          Every completed fixture from 2021 to 2024 between Destroyers (11 wins, including 2024 4–1 Series Victory) and Dread Eleven (13 wins).
         </p>
       </div>
       <div>
@@ -794,8 +789,8 @@ ${renderHeader('results')}
       ${completedMatches.map((m) => {
         const isDesWinner = m.winner === 'DES';
         const isFinal = m.stage && m.stage.toLowerCase().includes('final');
-        const deInnings = m.innings[0] || { runs: 0, wickets: 0, overs: 0 };
-        const desInnings = m.innings[1] || { runs: 0, wickets: 0, overs: 0 };
+        const desInnings = m.innings[0] || { runs: 0, wickets: 0, overs: 0 };
+        const deInnings = m.innings[1] || { runs: 0, wickets: 0, overs: 0 };
 
         return `
           <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}">
@@ -861,8 +856,8 @@ ${renderFooter()}
 
     const isCompleted = m.status === 'completed';
     const isDesWinner = m.winner === 'DES';
-    const innDE = m.innings[0];
-    const innDES = m.innings[1];
+    const innDES = m.innings[0]; // Destroyers
+    const innDE = m.innings[1];  // Dread Eleven
 
     const matchJsonLd = {
       '@context': 'https://schema.org',
@@ -1023,10 +1018,10 @@ ${renderHeader('results')}
           Official Innings Scorecards
         </h2>
 
-        <!-- Innings 2: Destroyers -->
+        <!-- Innings 1: Destroyers -->
         ${renderInningsTable(innDES, 'Destroyers Cricket Club', 'Dread Eleven')}
 
-        <!-- Innings 1: Dread Eleven -->
+        <!-- Innings 2: Dread Eleven -->
         ${renderInningsTable(innDE, 'Dread Eleven', 'Destroyers Cricket Club')}
       </div>
     ` : `
@@ -1105,7 +1100,7 @@ ${renderHeader('table')}
               <tr>
                 <td style="font-weight:800; font-family:var(--f-mono); color:${row.rank === 1 ? 'var(--c-gold)' : 'var(--c-white)'};">${row.rank}</td>
                 <td style="font-weight:800; color:var(--c-white); font-family:var(--f-athletic); font-size:1.3rem;">
-                  ${esc(row.team)} ${row.rank === 1 ? '<span style="color:var(--c-gold); font-size:0.75rem; margin-left:0.5rem;">🏆 LEADER</span>' : ''}
+                  ${esc(row.team)}
                 </td>
                 <td class="num tabular font-bold">${row.played}</td>
                 <td class="num tabular font-bold" style="color:var(--c-emerald);">${row.won}</td>
@@ -1123,9 +1118,9 @@ ${renderHeader('table')}
 
     <!-- Season by Season Standings Grid -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
-      <!-- 2024 Season -->
+      <!-- 2024 Season (Destroyers Champions 4-1) -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2024 (50-Over ODI)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2024 (Destroyers 4–1 Series Win)</h3>
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -1167,9 +1162,9 @@ ${renderHeader('table')}
         </table>
       </div>
 
-      <!-- 2022 Title Year -->
+      <!-- 2022 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (Championship Year)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (T20 &amp; ODI)</h3>
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -1191,7 +1186,7 @@ ${renderHeader('table')}
 
       <!-- 2021 Inaugural Year -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2021 (T20 League)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2021 (Inaugural T20)</h3>
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -1231,7 +1226,7 @@ function generateStatsPage() {
   const topRunScorers = [...squad].sort((a, b) => b.batting.runs - a.batting.runs).slice(0, 10);
   const topWicketTakers = [...squad].sort((a, b) => b.bowling.wickets - a.bowling.wickets).slice(0, 10);
   const highestScores = [...squad].filter((p) => p.batting.runs > 50).sort((a, b) => parseInt(b.batting.highestScore) - parseInt(a.batting.highestScore)).slice(0, 8);
-  const topAverages = [...squad].filter((p) => p.matches >= 5 && p.batting.average > 25).sort((a, b) => b.batting.average - a.batting.average);
+  const topAverages = [...squad].filter((p) => p.matches >= 5 && p.batting.average > 20).sort((a, b) => b.batting.average - a.batting.average);
 
   const html = `
 ${renderHead({
@@ -1531,7 +1526,7 @@ function generateAboutPage() {
   const html = `
 ${renderHead({
   title: 'About Destroyers Cricket Club & Rewa Tournament Heritage',
-  description: 'Official history of Destroyers Cricket Club (DES), the Atal Bihari Vajpayee Memorial Tournament, and the Rewa Division Cricket Association (RDCA).',
+  description: 'Official history of Destroyers Cricket Club (DES), captained by Pranav Dwivedi, the Atal Bihari Vajpayee Memorial Tournament, and the Rewa Division Cricket Association (RDCA).',
   canonicalUrl: '/about'
 })}
 ${renderHeader('about')}
@@ -1559,10 +1554,10 @@ ${renderHeader('about')}
             <strong>Destroyers Cricket Club (DES)</strong> was founded in 2021 as a premier divisional franchise created to test elite talent from Rewa, Jabalpur, Bhopal, and the broader Madhya Pradesh state pool in high-pressure derby cricket.
           </p>
           <p>
-            Competing in the annual <strong>Atal Bihari Vajpayee Memorial Tournament</strong>, Destroyers forged an immediate, ferocious rivalry with <strong>Dread Eleven (DE)</strong>. Across 24 official matches between 2021 and 2024, Destroyers have established an overall lead of <strong>13 wins to 11</strong>, including an overwhelming <strong>7–2 record in T20 tournament matches</strong>.
+            Competing in the annual <strong>Atal Bihari Vajpayee Memorial Tournament</strong> under captain <strong>Pranav Dwivedi</strong>, Destroyers forged an immediate, ferocious rivalry with <strong>Dread Eleven (DE)</strong>, led by Akhil Mishra.
           </p>
           <p>
-            The pinnacle of the franchise’s campaign occurred on <strong>12 August 2022</strong> at Awadhesh Pratap Singh University (APSU) Stadium, where Destroyers defeated Dread Eleven by 21 runs to hoist the 2022 Atal Bihari Vajpayee Championship Trophy.
+            The franchise enjoyed a defining high in September 2024, clinching the 50-Over Series 4–1 at APSU Stadium, with captain Pranav Dwivedi sealing the finale by defending 233 in a tense 8-run triumph.
           </p>
         </div>
       </div>
@@ -1724,7 +1719,7 @@ function generateSitemapAndRobots() {
     { loc: '/contact', changefreq: 'monthly', priority: '0.6' }
   ];
 
-  // Add all player pages
+  // Add all player pages (48 players)
   squad.forEach((p) => {
     urls.push({
       loc: `/players/${p.slug}`,
@@ -1733,7 +1728,7 @@ function generateSitemapAndRobots() {
     });
   });
 
-  // Add all match pages
+  // Add all match pages (32 matches)
   matches.forEach((m) => {
     urls.push({
       loc: `/matches/${m.slug}`,
@@ -1742,7 +1737,7 @@ function generateSitemapAndRobots() {
     });
   });
 
-  // Add all news articles
+  // Add all news articles (4 articles)
   news.forEach((n) => {
     urls.push({
       loc: `/news/${n.slug}`,
@@ -1777,7 +1772,7 @@ Sitemap: ${BASE_URL}/sitemap.xml
 // MAIN BUILD EXECUTION
 // ------------------------------------------------------------
 function main() {
-  console.log('=== BUILDING DESTROYERS CRICKET CLUB PRODUCTION SUITE ===');
+  console.log('=== BUILDING DESTROYERS CRICKET CLUB PRODUCTION SUITE (CAPT. PRANAV DWIVEDI) ===');
   generateHomePage();
   generateSquadPages();
   generateMatchPages();
@@ -1788,7 +1783,7 @@ function main() {
   generateContactPage();
   generate404Page();
   generateSitemapAndRobots();
-  console.log('=== BUILD COMPLETE! ALL PAGES GENERATED SUCCESSFULLY ===');
+  console.log('=== BUILD COMPLETE! ALL PAGES GENERATED WITH CORRECT TEAM ASSIGNMENTS ===');
 }
 
 main();

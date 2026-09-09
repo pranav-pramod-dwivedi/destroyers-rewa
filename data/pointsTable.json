@@ -2,145 +2,144 @@
   "2021": [
     {
       "rank": 1,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
+      "team": "Dread Eleven",
+      "teamCode": "DE",
       "played": 7,
       "won": 5,
       "lost": 2,
       "tied": 0,
       "nr": 0,
-      "nrr": "+0.540",
+      "nrr": "+0.450",
       "points": 10
     },
     {
       "rank": 2,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
+      "team": "Destroyers Cricket Club",
+      "teamCode": "DES",
       "played": 7,
       "won": 2,
       "lost": 5,
       "tied": 0,
       "nr": 0,
-      "nrr": "-0.540",
+      "nrr": "-0.450",
       "points": 4
     }
   ],
   "2022": [
     {
       "rank": 1,
-      "team": "Destroyers Cricket Club (Champions)",
-      "teamCode": "DES",
-      "played": 7,
-      "won": 3,
-      "lost": 4,
-      "tied": 0,
-      "nr": 0,
-      "nrr": "+0.110",
-      "points": 6,
-      "note": "2022 T20 Championship Final Winner"
-    },
-    {
-      "rank": 2,
-      "team": "Dread Eleven (Runners-up)",
+      "team": "Dread Eleven",
       "teamCode": "DE",
       "played": 7,
       "won": 4,
       "lost": 3,
       "tied": 0,
       "nr": 0,
+      "nrr": "+0.110",
+      "points": 8
+    },
+    {
+      "rank": 2,
+      "team": "Destroyers Cricket Club",
+      "teamCode": "DES",
+      "played": 7,
+      "won": 3,
+      "lost": 4,
+      "tied": 0,
+      "nr": 0,
       "nrr": "-0.110",
-      "points": 8,
-      "note": "Defeated in Championship Final"
+      "points": 6
     }
   ],
   "2023": [
     {
       "rank": 1,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
+      "team": "Dread Eleven",
+      "teamCode": "DE",
       "played": 5,
       "won": 3,
       "lost": 2,
       "tied": 0,
       "nr": 0,
-      "nrr": "+0.245",
+      "nrr": "+0.210",
       "points": 6
     },
     {
       "rank": 2,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
+      "team": "Destroyers Cricket Club",
+      "teamCode": "DES",
       "played": 5,
       "won": 2,
       "lost": 3,
       "tied": 0,
       "nr": 0,
-      "nrr": "-0.245",
+      "nrr": "-0.210",
       "points": 4
     }
   ],
   "2024": [
     {
       "rank": 1,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
+      "team": "Destroyers Cricket Club (2024 Series Winners)",
+      "teamCode": "DES",
       "played": 5,
-      "won": 3,
-      "lost": 2,
+      "won": 4,
+      "lost": 1,
       "tied": 0,
       "nr": 0,
-      "nrr": "+0.192",
-      "points": 6
+      "nrr": "+0.380",
+      "points": 8,
+      "note": "2024 ODI Series Winners"
     },
     {
       "rank": 2,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
+      "team": "Dread Eleven",
+      "teamCode": "DE",
       "played": 5,
-      "won": 2,
-      "lost": 3,
+      "won": 1,
+      "lost": 4,
       "tied": 0,
       "nr": 0,
-      "nrr": "-0.192",
-      "points": 4
+      "nrr": "-0.380",
+      "points": 2
     }
   ],
   "allTime": [
     {
       "rank": 1,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
+      "team": "Dread Eleven",
+      "teamCode": "DE",
       "played": 24,
       "won": 13,
       "lost": 11,
       "tied": 0,
       "nr": 0,
-      "nrr": "+0.284",
+      "nrr": "+0.142",
       "points": 26,
       "form": [
         "L",
         "L",
         "L",
-        "W",
+        "L",
         "W"
       ]
     },
     {
       "rank": 2,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
+      "team": "Destroyers Cricket Club",
+      "teamCode": "DES",
       "played": 24,
       "won": 11,
       "lost": 13,
       "tied": 0,
       "nr": 0,
-      "nrr": "-0.284",
+      "nrr": "-0.142",
       "points": 22,
       "form": [
         "W",
         "W",
         "W",
-        "L",
+        "W",
         "L"
       ]
     }

@@ -46,182 +46,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/players/akhil-mishra</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/kuldeep-sen</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/kumar-kartikeya</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/ashwin-das</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/subhranshu-senapati</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/saransh-jain</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/ritesh-shakya</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/yash-dubey</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/rohit-rajawat</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/prabhanshu-shukla</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/anubhav-agarwal</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/avesh-khan</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/mohd-arham-aquil</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/jaydev-singh</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/amarjeet-kumar-singh</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/naveen-singh-chouhan</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/himanshu-mantri</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/ramveer-singh-gurjar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/prithviraj-singh-tomar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/arshad-khan</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/venkatesh-iyer</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/anant-verma</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/rajat-patidar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/akshat-raghuwanshi</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/chanchal-rathore</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/mohd-arshad-khan</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/rahul-batham</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/saransh-surana</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/ajay-rohera</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/shubham-sharma</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/radhakrishna-dwivedi</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/aditya-shrivastava</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/ankit-singh-kushwaha</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/kulwant-khejroliya</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/sagar-pratap-singh</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:8085/players/kanishk-dubey</loc>
+    <loc>http://127.0.0.1:8085/players/pranav-dwivedi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -236,22 +61,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/players/atharv-mahajan</loc>
+    <loc>http://127.0.0.1:8085/players/anubhav-agarwal</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/players/sagar-solanki</loc>
+    <loc>http://127.0.0.1:8085/players/venkatesh-iyer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/players/aryan-dwivedi</loc>
+    <loc>http://127.0.0.1:8085/players/rahul-batham</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/players/aryan-shrivastava</loc>
+    <loc>http://127.0.0.1:8085/players/ajay-rohera</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/rohit-rajawat</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/shubham-sharma</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -261,112 +96,197 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-20</loc>
+    <loc>http://127.0.0.1:8085/players/kanishk-dubey</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-16</loc>
+    <loc>http://127.0.0.1:8085/players/atharv-mahajan</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-12</loc>
+    <loc>http://127.0.0.1:8085/players/chanchal-rathore</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-08</loc>
+    <loc>http://127.0.0.1:8085/players/ramveer-singh-gurjar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-05</loc>
+    <loc>http://127.0.0.1:8085/players/ritesh-shakya</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-20</loc>
+    <loc>http://127.0.0.1:8085/players/rajat-patidar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-16</loc>
+    <loc>http://127.0.0.1:8085/players/sagar-pratap-singh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-12</loc>
+    <loc>http://127.0.0.1:8085/players/kumar-kartikeya</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-08</loc>
+    <loc>http://127.0.0.1:8085/players/anant-verma</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-05</loc>
+    <loc>http://127.0.0.1:8085/players/prabhanshu-shukla</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-18</loc>
+    <loc>http://127.0.0.1:8085/players/subhranshu-senapati</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-14</loc>
+    <loc>http://127.0.0.1:8085/players/mohd-arham-aquil</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-10</loc>
+    <loc>http://127.0.0.1:8085/players/avesh-khan</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-07</loc>
+    <loc>http://127.0.0.1:8085/players/radhakrishna-dwivedi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-04</loc>
+    <loc>http://127.0.0.1:8085/players/mohd-arshad-khan</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-08-12</loc>
+    <loc>http://127.0.0.1:8085/players/jaydev-singh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-08-10</loc>
+    <loc>http://127.0.0.1:8085/players/aditya-shrivastava</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-28</loc>
+    <loc>http://127.0.0.1:8085/players/kulwant-khejroliya</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-20</loc>
+    <loc>http://127.0.0.1:8085/players/akshat-raghuwanshi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-15</loc>
+    <loc>http://127.0.0.1:8085/players/saransh-jain</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-11</loc>
+    <loc>http://127.0.0.1:8085/players/yash-dubey</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-07</loc>
+    <loc>http://127.0.0.1:8085/players/ankit-singh-kushwaha</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/himanshu-mantri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/arshad-khan</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/naveen-singh-chouhan</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/ashwin-das</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/amarjeet-kumar-singh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/sagar-solanki</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/saransh-surana</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/prithviraj-singh-tomar</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/kuldeep-sen</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/somil-khan</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/sani-patel</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/avinash-sen</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/rohit-gupta</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/atul-tiwari</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/shivam-bansal</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/players/rishab-verma</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-01</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -376,7 +296,112 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-01</loc>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-07</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-11</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-15</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-20</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2021-08-28</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-08-10</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-08-12</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-04</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-07</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-10</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-14</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2022-09-18</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-05</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-08</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-12</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-16</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2023-09-20</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-05</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-08</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-12</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-16</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2024-09-20</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -426,7 +451,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/news/championship-retrospective-how-destroyers-won-the-2022-final</loc>
+    <loc>http://127.0.0.1:8085/news/dominant-2024-season-inside-destroyers-series-rout</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -436,7 +461,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:8085/news/akhil-mishra-900-run-milestone-in-derby-battles</loc>
+    <loc>http://127.0.0.1:8085/news/pranav-dwivedi-1300-run-60-wicket-milestone</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
