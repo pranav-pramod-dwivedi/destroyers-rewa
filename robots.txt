@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://destroyerscricket.in/sitemap.xml
+Sitemap: https://destroyers-rewacricket.pages.dev/sitemap.xml

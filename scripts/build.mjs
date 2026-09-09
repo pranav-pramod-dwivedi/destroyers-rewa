@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
-const BASE_URL = process.env.SITE_URL || 'https://destroyerscricket.in';
+const BASE_URL = process.env.SITE_URL || 'https://destroyers-rewacricket.pages.dev';
 
 // Load Datasets
 const tournament = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/tournament.json'), 'utf8'));
@@ -1865,7 +1865,7 @@ ${renderHeader('')}
           1. Commitment to Fan &amp; Athlete Data Privacy
         </h2>
         <p>
-          Destroyers Cricket Club (&ldquo;DES&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates in full compliance with Indian Information Technology (IT) laws and Digital Personal Data Protection standards. This Privacy Policy governs the collection, storage, and processing of telemetry, analytics, and inquiry correspondence across the official franchise domain (<code>destroyerscricket.in</code>).
+          Destroyers Cricket Club (&ldquo;DES&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates in full compliance with Indian Information Technology (IT) laws and Digital Personal Data Protection standards. This Privacy Policy governs the collection, storage, and processing of telemetry, analytics, and inquiry correspondence across the official franchise domain (<code>destroyers-rewacricket.pages.dev</code>).
         </p>
       </div>
 
@@ -1896,7 +1896,7 @@ ${renderHeader('')}
         <p>
           For privacy inquiries or deletion requests regarding newsletter subscriptions, contact our administration desk at:
           <br>
-          <strong style="color:var(--c-gold); font-family:var(--f-mono);">privacy@destroyerscricket.in</strong>
+          <strong style="color:var(--c-gold); font-family:var(--f-mono);">privacy@destroyers-rewacricket.pages.dev</strong>
           <br>
           RDCA Pavilion, Awadhesh Pratap Singh University Stadium, Rewa, Madhya Pradesh 486003.
         </p>
@@ -1951,7 +1951,7 @@ ${renderHeader('')}
           1. Acceptance of Terms
         </h2>
         <p>
-          By accessing or using the official digital portal of Destroyers Cricket Club (<code>destroyerscricket.in</code>), you agree to be bound by these Terms and Conditions and all applicable RDCA and MPCA tournament bylaws.
+          By accessing or using the official digital portal of Destroyers Cricket Club (<code>destroyers-rewacricket.pages.dev</code>), you agree to be bound by these Terms and Conditions and all applicable RDCA and MPCA tournament bylaws.
         </p>
       </div>
 
