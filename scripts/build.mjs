@@ -654,16 +654,16 @@ ${renderFooter()}
     // Find all match appearances for this player
     const playerLogs = [];
     matches.forEach((m) => {
-      if (!m.innings || !m.innings.length) return;
-      const desInn = m.innings.find(i => i.teamId === 'DES' || i.teamName?.includes('Destroyers'));
-      const oppInn = m.innings.find(i => i.teamId === 'DE' || i.teamName?.includes('Dread Eleven'));
+      const desInn = m.innings.find(i => i.teamShort === 'DES' || i.teamId === 'DES' || i.teamName?.includes('Destroyers'));
+      const oppInn = m.innings.find(i => i.teamShort === 'DE' || i.teamId === 'DE' || i.teamName?.includes('Dread Eleven'));
 
       const b = (desInn?.batting || []).find((x) => x.playerId === p.id || (x.playerName && x.playerName.toLowerCase() === p.name.toLowerCase()));
       // Bowling is conducted during the opponent's batting innings
       const bo = (oppInn?.bowling || []).find((x) => x.playerId === p.id || (x.playerName && x.playerName.toLowerCase() === p.name.toLowerCase()));
+      const dnb = (desInn?.dnb || []).find((x) => typeof x === 'string' ? x.toLowerCase() === p.name.toLowerCase() : (x.playerId === p.id || (x.playerName && x.playerName.toLowerCase() === p.name.toLowerCase())));
 
-      if (b || bo) {
-        playerLogs.push({ match: m, batting: b, bowling: bo });
+      if (b || bo || dnb) {
+        playerLogs.push({ match: m, batting: b, bowling: bo, dnb: !!dnb });
       }
     });
 
@@ -1062,7 +1062,7 @@ ${renderFooter()}
             </div>
           </div>
 
-          <div style="overflow-x:auto; margin-bottom:2rem;">
+          <div style="overflow-x:auto; margin-bottom:1rem;">
             <table class="scorecard-data-table">
               <thead>
                 <tr>
@@ -1078,6 +1078,28 @@ ${renderFooter()}
               <tbody>${batRows}</tbody>
             </table>
           </div>
+
+          ${inn.extras ? `
+            <div style="font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gray-400); margin-bottom:0.75rem;">
+              Extras: <strong style="color:var(--c-white);">${inn.extras.total || 0}</strong> (b ${inn.extras.byes || 0}, lb ${inn.extras.legByes || 0}, w ${inn.extras.wides || 0}, nb ${inn.extras.noBalls || 0})
+            </div>
+          ` : ''}
+
+          ${inn.dnb && inn.dnb.length ? `
+            <div style="padding:0.75rem 1.25rem; margin-top:0.5rem; margin-bottom:1.5rem; background:rgba(255,255,255,0.03); border:1px solid var(--b-subtle); border-radius:var(--radius-sm); font-size:0.875rem;">
+              <strong style="font-family:var(--f-mono); color:var(--c-gold); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em;">Did Not Bat:</strong>
+              <span style="margin-left:0.6rem; color:var(--c-gray-300);">
+                ${inn.dnb.map(d => `<span style="display:inline-block; margin-right:0.85rem; font-weight:600;">${esc(typeof d === 'string' ? d : d.playerName)}</span>`).join('')}
+              </span>
+            </div>
+          ` : ''}
+
+          ${inn.fallOfWickets && inn.fallOfWickets.length ? `
+            <div style="font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gray-400); margin-bottom:1.75rem; line-height:1.6;">
+              <strong style="color:var(--c-gold); font-size:0.75rem; text-transform:uppercase;">Fall of Wickets:</strong>
+              <span style="margin-left:0.5rem;">${inn.fallOfWickets.map(f => `${f.wicket}-${f.score} (${esc(f.playerName)}, ${f.over} ov)`).join(', ')}</span>
+            </div>
+          ` : ''}
 
           <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
             Bowling Attack (${esc(bowlingTeam)})
@@ -1163,9 +1185,9 @@ ${renderHeader('results')}
           Official Innings Scorecards
         </h2>
 
-        ${inn1 ? renderInningsTable(inn1, inn1.teamName || (inn1.teamId === 'DES' ? 'Destroyers Cricket Club' : 'Dread Eleven'), inn1.teamId === 'DES' ? 'Dread Eleven' : 'Destroyers Cricket Club') : ''}
+        ${inn1 ? renderInningsTable(inn1, inn1.teamName || (inn1.teamShort === 'DES' ? 'Destroyers Cricket Club' : 'Dread Eleven'), (inn1.teamShort === 'DES' || inn1.teamName?.includes('Destroyers')) ? 'Dread Eleven' : 'Destroyers Cricket Club') : ''}
 
-        ${inn2 ? renderInningsTable(inn2, inn2.teamName || (inn2.teamId === 'DES' ? 'Destroyers Cricket Club' : 'Dread Eleven'), inn2.teamId === 'DES' ? 'Dread Eleven' : 'Destroyers Cricket Club') : ''}
+        ${inn2 ? renderInningsTable(inn2, inn2.teamName || (inn2.teamShort === 'DES' ? 'Destroyers Cricket Club' : 'Dread Eleven'), (inn2.teamShort === 'DES' || inn2.teamName?.includes('Destroyers')) ? 'Dread Eleven' : 'Destroyers Cricket Club') : ''}
       </div>
     ` : `
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:3rem; text-align:center;">
