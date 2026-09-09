@@ -113,14 +113,30 @@ function renderHeader(activeNav = '') {
   ];
 
   return `
-  <!-- Top Marquee Ticker -->
-  <div class="top-ticker" aria-hidden="true" style="background:#000; border-bottom:1px solid #1a1a1a; padding:0.4rem 0; font-family:var(--f-mono); font-size:0.6875rem; letter-spacing:0.12em; color:var(--c-gray-400); overflow:hidden; white-space:nowrap;">
-    <div class="ticker-track" style="display:inline-flex; gap:3rem; animation:tickerScroll 28s linear infinite;">
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> CAPTAIN: PRANAV DWIVEDI (1,341 RUNS • 63 WKTS)</span>
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 24 DERBY CLASHES VS DREAD ELEVEN</span>
-      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 2024 SERIES CHAMPIONS (4–1 RECORD)</span>
+  <!-- IPLT20 Top Broadcast Score Carousel Strip -->
+  <div class="broadcast-ticker-bar" aria-label="Recent Match Carousel">
+    <div class="broadcast-match-track">
+      ${matches.filter((m) => m.status === 'completed').slice(-6).map((m) => {
+        const isDesWin = m.winner === 'DES';
+        const innDES = m.innings[0] || { runs: 0, wickets: 0 };
+        const innDE = m.innings[1] || { runs: 0, wickets: 0 };
+        return `
+          <a href="/matches/${m.slug}" class="broadcast-match-chip">
+            <div class="chip-status-tag ${isDesWin ? 'win' : 'loss'}">
+              <span>${esc(m.format)} • ${m.seasonYear}</span>
+              <span>${isDesWin ? 'DES WON' : 'DE WON'}</span>
+            </div>
+            <div class="chip-team-row">
+              <span>DES</span>
+              <span class="chip-score tabular ${isDesWin ? 'lead' : ''}">${innDES.runs}/${innDES.wickets}</span>
+            </div>
+            <div class="chip-team-row">
+              <span>DE</span>
+              <span class="chip-score tabular ${!isDesWin ? 'lead' : ''}">${innDE.runs}/${innDE.wickets}</span>
+            </div>
+          </a>
+        `;
+      }).join('')}
     </div>
   </div>
 
