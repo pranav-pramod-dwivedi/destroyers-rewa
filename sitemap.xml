@@ -406,6 +406,61 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-04</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-08</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-12</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-16</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2025-09-20</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-02-10</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-02-14</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-02-18</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-09-06</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-09-12</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:8085/matches/destroyers-vs-dread-eleven-2026-09-20</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://127.0.0.1:8085/news/destroyers-announce-2025-26-squad-training-camp</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

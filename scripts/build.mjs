@@ -118,8 +118,8 @@ function renderHeader(activeNav = '') {
     <div class="broadcast-match-track">
       ${matches.filter((m) => m.status === 'completed').slice(-6).map((m) => {
         const isDesWin = m.winner === 'DES';
-        const innDES = m.innings[0] || { runs: 0, wickets: 0 };
-        const innDE = m.innings[1] || { runs: 0, wickets: 0 };
+        const innDES = (m.innings || []).find(i => i.teamId === 'DES' || i.teamName?.includes('Destroyers')) || m.innings?.[0] || { runs: 0, wickets: 0 };
+        const innDE = (m.innings || []).find(i => i.teamId === 'DE' || i.teamName?.includes('Dread Eleven')) || m.innings?.[1] || { runs: 0, wickets: 0 };
         return `
           <a href="/matches/${m.slug}" class="broadcast-match-chip">
             <div class="chip-status-tag ${isDesWin ? 'win' : 'loss'}">
@@ -567,13 +567,16 @@ ${renderFooter()}
     const playerDir = path.join(playersDir, p.slug);
     ensureDir(playerDir);
 
-    // Find all match appearances for this player (in Destroyers innings = innings[0])
+    // Find all match appearances for this player
     const playerLogs = [];
     matches.forEach((m) => {
       if (!m.innings || !m.innings.length) return;
-      const desInn = m.innings[0]; // Destroyers innings
-      const b = (desInn.batting || []).find((x) => x.playerId === p.id);
-      const bo = (desInn.bowling || []).find((x) => x.playerId === p.id);
+      const desInn = m.innings.find(i => i.teamId === 'DES' || i.teamName?.includes('Destroyers'));
+      const oppInn = m.innings.find(i => i.teamId === 'DE' || i.teamName?.includes('Dread Eleven'));
+
+      const b = (desInn?.batting || []).find((x) => x.playerId === p.id || (x.playerName && x.playerName.toLowerCase() === p.name.toLowerCase()));
+      // Bowling is conducted during the opponent's batting innings
+      const bo = (oppInn?.bowling || []).find((x) => x.playerId === p.id || (x.playerName && x.playerName.toLowerCase() === p.name.toLowerCase()));
 
       if (b || bo) {
         playerLogs.push({ match: m, batting: b, bowling: bo });
@@ -726,90 +729,130 @@ function generateMatchPages() {
 
   const t20Count = matches.filter((m) => m.format === 'T20').length;
   const odiCount = matches.filter((m) => m.format === 'ODI' || m.format === 'One-Day').length;
+  const desWinsCount = matches.filter((m) => m.winner === 'DES').length;
+  const deWinsCount = matches.filter((m) => m.winner === 'DE').length;
+  const upcomingCount = matches.filter((m) => m.status === 'upcoming').length;
 
   function renderMatchListSection(isResultsPage) {
+    const listMatches = isResultsPage ? matches.filter(m => m.status === 'completed') : matches;
     return `
 <section class="match-arena-section" style="padding-top:4rem;">
   <div class="container">
     <div class="section-masthead">
       <div>
         <p class="section-pretitle">${isResultsPage ? 'HISTORICAL ARCHIVE' : 'TOURNAMENT SCHEDULE'}</p>
-        <h1 class="section-bigtitle">${isResultsPage ? 'Match Results Archive (24 Matches)' : 'Destroyers T20 &amp; One Day Fixtures'}</h1>
+        <h1 class="section-bigtitle">${isResultsPage ? `Match Results Archive (${listMatches.length} Matches)` : `Destroyers T20 &amp; One Day Fixtures (${listMatches.length} Matches)`}</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
           Official Atal Bihari Vajpayee Memorial Tournament fixtures between Destroyers and Dread Eleven in Rewa.
         </p>
       </div>
       <div>
         <span class="tabular font-bold" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold);">
-          SHOWING <span id="filter-matches-count">24</span> MATCHES
+          SHOWING <span id="filter-matches-count">${listMatches.length}</span> MATCHES
         </span>
       </div>
     </div>
 
-    <!-- Format & Season Filter Toolbar -->
-    <div class="filter-toolbar">
-      <span class="filter-group-label">Format:</span>
-      <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (${matches.length})</button>
-      <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 Matches (${t20Count})</button>
-      <button type="button" class="filter-pill format-filter-btn" data-format="ODI">One-Day / ODI (${odiCount})</button>
+    <!-- Advanced Multi-Tier Filter Toolbar -->
+    <div class="filter-toolbar" style="display:flex; flex-direction:column; gap:0.75rem; background:var(--c-card-bg); border:1px solid var(--b-medium); padding:1.25rem; margin-bottom:2.5rem;">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem;">
+        <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Format:</span>
+        <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (${listMatches.length})</button>
+        <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 (${t20Count})</button>
+        <button type="button" class="filter-pill format-filter-btn" data-format="ODI">ODI (${odiCount})</button>
 
-      <span class="filter-group-label" style="margin-left:1rem;">Season:</span>
-      <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
-      <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
-      <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
-      <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
-      <button type="button" class="filter-pill season-filter-btn" data-season="2021">2021</button>
+        <span class="filter-group-label" style="margin-left:1rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Result:</span>
+        <button type="button" class="filter-pill active result-filter-btn" data-result="all">All</button>
+        <button type="button" class="filter-pill result-filter-btn" data-result="win">DES Wins (${desWinsCount})</button>
+        <button type="button" class="filter-pill result-filter-btn" data-result="loss">DE Wins (${deWinsCount})</button>
+        ${upcomingCount > 0 ? `<button type="button" class="filter-pill result-filter-btn" data-result="upcoming">Upcoming (${upcomingCount})</button>` : ''}
+      </div>
+
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem;">
+        <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Season:</span>
+        <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2026">2026</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2025">2025</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2021">2021</button>
+      </div>
+
+      <div style="display:flex; gap:1rem; align-items:center; margin-top:0.25rem;">
+        <div style="flex:1; position:relative;">
+          <input type="text" id="pro-match-search" placeholder="Search by venue, stage, or player of match..." style="width:100%; background:var(--c-dark-surface); border:1px solid var(--b-subtle); color:var(--c-white); padding:0.6rem 1rem; font-family:var(--f-body); font-size:0.875rem; outline:none;" />
+        </div>
+        <button type="button" id="filter-reset-btn" class="filter-pill" style="white-space:nowrap; padding:0.6rem 1rem;">Reset Filters</button>
+      </div>
     </div>
 
     <div class="matches-pro-grid">
-      ${matches.map((m) => {
+      ${listMatches.map((m) => {
+        const isCompleted = m.status === 'completed';
         const isDesWinner = m.winner === 'DES';
         const isFinal = m.stage && m.stage.toLowerCase().includes('final');
-        const desInnings = m.innings[0] || { runs: 0, wickets: 0, overs: 0 };
-        const deInnings = m.innings[1] || { runs: 0, wickets: 0, overs: 0 };
+        const desInnings = (m.innings || []).find(i => i.teamId === 'DES' || i.teamName?.includes('Destroyers')) || m.innings?.[0] || { runs: 0, wickets: 0, overs: 0 };
+        const deInnings = (m.innings || []).find(i => i.teamId === 'DE' || i.teamName?.includes('Dread Eleven')) || m.innings?.[1] || { runs: 0, wickets: 0, overs: 0 };
+        const resultAttr = isCompleted ? (isDesWinner ? 'win' : 'loss') : 'upcoming';
 
         return `
-          <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}" data-format="${esc(m.format)}" data-season="${esc(m.seasonYear)}">
+          <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}" data-format="${esc(m.format)}" data-season="${esc(m.seasonYear)}" data-result="${resultAttr}">
             <div class="pro-match-header">
               <span class="pro-fmt-tag ${m.format.toLowerCase()}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
-              ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>' : `<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">MATCH #${esc(m.matchNumber)}</span>`}
+              ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>' : `<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">${isCompleted ? `MATCH #${esc(m.matchNumber)}` : 'SCHEDULED'}</span>`}
             </div>
 
             <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
-              <span style="font-weight:700; color:var(--c-white);">${formatDate(m.matchDate)}</span> • <span>${esc(m.venue.name)}</span>
+              <span style="font-weight:700; color:var(--c-white);">${formatDate(m.matchDate)}</span> • <span>${esc(m.venue?.name || 'APSU Stadium, Rewa')}</span>
             </div>
 
-            <div class="pro-scoreboard-box">
-              <div class="pro-score-entry">
-                <div class="pro-team-ident">
-                  <div class="pro-team-circle des">DES</div>
-                  <span class="pro-team-name ${isDesWinner ? 'winner' : ''}">Destroyers</span>
+            ${isCompleted ? `
+              <div class="pro-scoreboard-box">
+                <div class="pro-score-entry">
+                  <div class="pro-team-ident">
+                    <div class="pro-team-circle des">DES</div>
+                    <span class="pro-team-name ${isDesWinner ? 'winner' : ''}">Destroyers</span>
+                  </div>
+                  <div class="pro-score-numbers tabular">
+                    ${desInnings.runs}/${desInnings.wickets} <span class="pro-overs-sub">(${desInnings.overs} ov)</span>
+                  </div>
                 </div>
-                <div class="pro-score-numbers tabular">
-                  ${desInnings.runs}/${desInnings.wickets} <span class="pro-overs-sub">(${desInnings.overs} ov)</span>
+
+                <div class="pro-score-entry">
+                  <div class="pro-team-ident">
+                    <div class="pro-team-circle de">DE</div>
+                    <span class="pro-team-name ${!isDesWinner ? 'winner' : ''}">Dread Eleven</span>
+                  </div>
+                  <div class="pro-score-numbers tabular">
+                    ${deInnings.runs}/${deInnings.wickets} <span class="pro-overs-sub">(${deInnings.overs} ov)</span>
+                  </div>
                 </div>
               </div>
 
-              <div class="pro-score-entry">
-                <div class="pro-team-ident">
-                  <div class="pro-team-circle de">DE</div>
-                  <span class="pro-team-name ${!isDesWinner ? 'winner' : ''}">Dread Eleven</span>
+              <div class="pro-result-strip ${isDesWinner ? 'des-victory' : 'de-victory'}">
+                <span>${esc(m.resultText)}</span>
+              </div>
+
+              ${m.playerOfTheMatch ? `
+                <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
+                  Player of Match: <strong style="color:var(--c-gold);">${esc(m.playerOfTheMatch.name)}</strong> (${esc(m.playerOfTheMatch.reason)})
                 </div>
-                <div class="pro-score-numbers tabular">
-                  ${deInnings.runs}/${deInnings.wickets} <span class="pro-overs-sub">(${deInnings.overs} ov)</span>
+              ` : ''}
+            ` : `
+              <div class="pro-scoreboard-box" style="padding:1.5rem 1rem; text-align:center;">
+                <div style="font-family:var(--f-mono); font-size:0.875rem; color:var(--c-gold); font-weight:800; letter-spacing:0.1em; margin-bottom:0.4rem;">
+                  UPCOMING DERBY FIXTURE
+                </div>
+                <div style="color:var(--c-gray-300); font-size:0.8125rem;">
+                  ${esc(m.stage)} • ${esc(m.time || '09:30 IST')}
                 </div>
               </div>
-            </div>
 
-            <div class="pro-result-strip ${isDesWinner ? 'des-victory' : 'de-victory'}">
-              <span>${esc(m.resultText)}</span>
-            </div>
-
-            ${m.playerOfTheMatch ? `
-              <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; border-top:1px solid var(--b-subtle); padding-top:0.6rem;">
-                Player of Match: <strong style="color:var(--c-gold);">${esc(m.playerOfTheMatch.name)}</strong> (${esc(m.playerOfTheMatch.reason)})
+              <div class="pro-result-strip" style="background:var(--c-dark-surface); border:1px dashed var(--b-medium); color:var(--c-gray-400);">
+                <span>Scheduled • Awaiting Toss</span>
               </div>
-            ` : ''}
+            `}
 
             <a href="/matches/${m.slug}" class="btn-inspect-scorecard" style="text-decoration:none;">
               <span>Inspect Full Match Hub &rarr;</span>
@@ -856,8 +899,8 @@ ${renderFooter()}
 
     const isCompleted = m.status === 'completed';
     const isDesWinner = m.winner === 'DES';
-    const innDES = m.innings[0]; // Destroyers
-    const innDE = m.innings[1];  // Dread Eleven
+    const inn1 = m.innings?.[0];
+    const inn2 = m.innings?.[1];
 
     const matchJsonLd = {
       '@context': 'https://schema.org',
@@ -1018,11 +1061,9 @@ ${renderHeader('results')}
           Official Innings Scorecards
         </h2>
 
-        <!-- Innings 1: Destroyers -->
-        ${renderInningsTable(innDES, 'Destroyers Cricket Club', 'Dread Eleven')}
+        ${inn1 ? renderInningsTable(inn1, inn1.teamName || (inn1.teamId === 'DES' ? 'Destroyers Cricket Club' : 'Dread Eleven'), inn1.teamId === 'DES' ? 'Dread Eleven' : 'Destroyers Cricket Club') : ''}
 
-        <!-- Innings 2: Dread Eleven -->
-        ${renderInningsTable(innDE, 'Dread Eleven', 'Destroyers Cricket Club')}
+        ${inn2 ? renderInningsTable(inn2, inn2.teamName || (inn2.teamId === 'DES' ? 'Destroyers Cricket Club' : 'Dread Eleven'), inn2.teamId === 'DES' ? 'Dread Eleven' : 'Destroyers Cricket Club') : ''}
       </div>
     ` : `
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:3rem; text-align:center;">

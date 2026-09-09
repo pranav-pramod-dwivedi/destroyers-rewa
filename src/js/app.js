@@ -10,22 +10,8 @@
 
   // Known / Iconic Jersey Numbers for top players (or hash-derived)
   const JERSEY_NUMBERS = {
-    'p-akhil-mishra': 1,
-    'p-kuldeep-sen': 7,
-    'p-kumar-kartikeya': 19,
-    'p-ashwin-das': 23,
-    'p-avesh-khan': 99,
-    'p-anubhav-agarwal': 11,
-    'p-venkatesh-iyer': 77,
-    'p-ritesh-shakya': 12,
-    'p-yash-dubey': 18,
-    'p-saransh-jain': 24,
-    'p-prithviraj-singh-tomar': 10,
-    'p-anant-verma': 5,
-    'p-subhranshu-senapati': 8,
-    'p-prabhanshu-shukla': 4,
-    'p-rohit-rajawat': 14,
-    'p-pranav-dwivedi': 33, // DE Marquee
+    'p-akhil-mishra': 45, // DE Rival Captain
+    'p-pranav-dwivedi': 7, // DES Captain & Franchise Icon
     'p-aryan-deshmukh': 9,
     'p-harsh-gawli': 17,
     'p-shivam-shukla': 21,
@@ -811,25 +797,36 @@
 document.addEventListener('DOMContentLoaded', () => {
   const formatButtons = document.querySelectorAll('.format-filter-btn');
   const seasonButtons = document.querySelectorAll('.season-filter-btn');
+  const resultButtons = document.querySelectorAll('.result-filter-btn');
+  const searchInput = document.getElementById('pro-match-search');
+  const resetBtn = document.getElementById('filter-reset-btn');
   const matchCards = document.querySelectorAll('.pro-match-card');
   if (!matchCards.length) return;
 
   let activeFormat = 'all';
   let activeSeason = 'all';
+  let activeResult = 'all';
+  let activeQuery = '';
 
   function applyFilters() {
     let visibleCount = 0;
+    const q = activeQuery.toLowerCase().trim();
+
     matchCards.forEach((card) => {
       const format = (card.getAttribute('data-format') || '').toUpperCase();
       const season = card.getAttribute('data-season') || '';
+      const result = card.getAttribute('data-result') || '';
+      const text = card.textContent.toLowerCase();
 
       const matchFormat = activeFormat === 'all' || 
         (activeFormat === 'T20' && format.includes('T20')) || 
         (activeFormat === 'ODI' && (format.includes('ODI') || format.includes('ONE-DAY')));
 
       const matchSeason = activeSeason === 'all' || season === activeSeason;
+      const matchResult = activeResult === 'all' || result === activeResult;
+      const matchSearch = !q || text.includes(q);
 
-      if (matchFormat && matchSeason) {
+      if (matchFormat && matchSeason && matchResult && matchSearch) {
         card.style.display = 'flex';
         card.style.opacity = '1';
         visibleCount++;
@@ -849,7 +846,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       formatButtons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
-      activeFormat = btn.getAttribute('data-format');
+      activeFormat = btn.getAttribute('data-format') || 'all';
       applyFilters();
     });
   });
@@ -858,8 +855,38 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       seasonButtons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
-      activeSeason = btn.getAttribute('data-season');
+      activeSeason = btn.getAttribute('data-season') || 'all';
       applyFilters();
     });
   });
+
+  resultButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      resultButtons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeResult = btn.getAttribute('data-result') || 'all';
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      activeQuery = e.target.value;
+      applyFilters();
+    });
+  }
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      activeFormat = 'all';
+      activeSeason = 'all';
+      activeResult = 'all';
+      activeQuery = '';
+      if (searchInput) searchInput.value = '';
+      formatButtons.forEach((b) => b.classList.toggle('active', b.getAttribute('data-format') === 'all'));
+      seasonButtons.forEach((b) => b.classList.toggle('active', b.getAttribute('data-season') === 'all'));
+      resultButtons.forEach((b) => b.classList.toggle('active', b.getAttribute('data-result') === 'all'));
+      applyFilters();
+    });
+  }
 });

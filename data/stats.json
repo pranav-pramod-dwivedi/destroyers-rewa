@@ -1,18 +1,24 @@
 {
-  "totalMatches": 24,
-  "desWins": 13,
-  "deWins": 11,
+  "totalMatches": 35,
+  "completedMatches": 32,
+  "upcomingMatches": 3,
+  "desWins": 17,
+  "deWins": 15,
+  "desWinPercentage": "53.1%",
+  "deWinPercentage": "46.9%",
   "t20": {
-    "total": 9,
-    "desWins": 7,
-    "deWins": 2
-  },
-  "odi": {
     "total": 15,
     "desWins": 6,
     "deWins": 9
   },
+  "odi": {
+    "total": 17,
+    "desWins": 11,
+    "deWins": 6
+  },
   "seasons": [
+    "2026",
+    "2025",
     "2024",
     "2023",
     "2022",
@@ -23,5 +29,29 @@
     "title": "2022 Championship Final",
     "winner": "Destroyers (DES)",
     "date": "2022-08-12"
+  },
+  "records": {
+    "highestTotal": {
+      "team": "Destroyers Cricket Club",
+      "score": "284/5",
+      "overs": "50.0",
+      "opponent": "Dread Eleven",
+      "season": "2025",
+      "venue": "APSU Stadium, Rewa"
+    },
+    "highestIndividualScore": {
+      "player": "Pranav Dwivedi",
+      "score": 104,
+      "balls": 92,
+      "season": "2025",
+      "opponent": "Dread Eleven"
+    },
+    "bestBowlingFigures": {
+      "player": "Pranav Dwivedi",
+      "figures": "8/39",
+      "overs": 14,
+      "season": "2022",
+      "opponent": "Dread Eleven"
+    }
   }
 }
