@@ -1,0 +1,1234 @@
+[
+  {
+    "id": "p-pranav-dwivedi",
+    "name": "Pranav Dwivedi",
+    "role": "All-rounder",
+    "bio": "Premier all-rounder in Rewa Division and Destroyers squad.",
+    "matches": 0,
+    "batting": {
+      "innings": 24,
+      "runs": 1341,
+      "balls": 1130,
+      "average": 67.05,
+      "strikeRate": 118.7,
+      "highestScore": "102*",
+      "fifties": 13,
+      "hundreds": 1,
+      "fours": 130,
+      "sixes": 45
+    },
+    "bowling": {
+      "wickets": 63,
+      "overs": 177,
+      "maidens": 18,
+      "runs": 1027,
+      "economy": 5.8,
+      "average": 16.3,
+      "bestBowling": "8/39"
+    }
+  },
+  {
+    "id": "p-akhil-mishra",
+    "name": "Akhil Mishra",
+    "role": "All-rounder",
+    "bio": "",
+    "matches": 19,
+    "batting": {
+      "innings": 19,
+      "runs": 905,
+      "balls": 841,
+      "average": 47.63,
+      "strikeRate": 107.6,
+      "highestScore": "69",
+      "fifties": 9,
+      "hundreds": 0,
+      "fours": 88,
+      "sixes": 17
+    },
+    "bowling": {
+      "wickets": 8,
+      "overs": 81,
+      "maidens": 6,
+      "runs": 489,
+      "economy": 6.04,
+      "average": 61.13,
+      "bestBowling": "1/23"
+    }
+  },
+  {
+    "id": "p-kuldeep-sen",
+    "name": "Kuldeep Sen",
+    "role": "Player",
+    "bio": "Someone who can consistently bowl in the 140s, Kuldeep Sen is a fast bowler who has represented Madhya Pradesh in India's domestic circuit. Known for his ability to bowl quick and take wickets consistently, he had a decent season for the Rajasthan Royals in 2022 where the pacer picked 8 wickets in 7 games, but owing to lack of experience in the shortest format, he proved to be quite expensive during that season. He didn't feature in many games for the following two seasons for the Rajasthan Royals, but he was bagged by the Punjab Kings for 80 lakhs during the IPL auctions in Jeddah.",
+    "matches": 10,
+    "batting": {
+      "innings": 8,
+      "runs": 228,
+      "balls": 239,
+      "average": 28.5,
+      "strikeRate": 95.4,
+      "highestScore": "89",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 16,
+      "sixes": 25
+    },
+    "bowling": {
+      "wickets": 12,
+      "overs": 56,
+      "maidens": 20,
+      "runs": 296,
+      "economy": 5.29,
+      "average": 24.67,
+      "bestBowling": "2/15"
+    }
+  },
+  {
+    "id": "p-kumar-kartikeya",
+    "name": "Kumar Kartikeya",
+    "role": "Player",
+    "bio": "Kumar Kartikeya is a name that Rewa cricket whispers about with growing reverence. He has represented Rewa Jaguars, Madhya Pradesh, Jabalpur Royal Lions and more, proving his worth wherever the jersey has been handed to him. With appearances in 18 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 567 runs (best of 61) and 230 wickets (best 6/20). 567 runs, 230 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 9,
+    "batting": {
+      "innings": 8,
+      "runs": 104,
+      "balls": 99,
+      "average": 14.86,
+      "strikeRate": 105.1,
+      "highestScore": "51",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 7,
+      "sixes": 11
+    },
+    "bowling": {
+      "wickets": 14,
+      "overs": 38,
+      "maidens": 4,
+      "runs": 239,
+      "economy": 6.29,
+      "average": 17.07,
+      "bestBowling": "5/131"
+    }
+  },
+  {
+    "id": "p-ashwin-das",
+    "name": "Ashwin Das",
+    "role": "Player",
+    "bio": "Ashwin Das has been the quiet engine of more than one famous Rewa triumph. He has represented Rewa Jaguars, Madhya Pradesh, Jabalpur Royal Lions, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 3 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 228 runs (best of 68*) and 19 wickets (best 3/35). He has contributed 228 runs and taken 19 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 10,
+    "batting": {
+      "innings": 9,
+      "runs": 47,
+      "balls": 52,
+      "average": 6.71,
+      "strikeRate": 90.4,
+      "highestScore": "18",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 3,
+      "sixes": 4
+    },
+    "bowling": {
+      "wickets": 16,
+      "overs": 42,
+      "maidens": 8,
+      "runs": 389,
+      "economy": 9.26,
+      "average": 24.31,
+      "bestBowling": "6/92"
+    }
+  },
+  {
+    "id": "p-subhranshu-senapati",
+    "name": "Subhranshu Senapati",
+    "role": "Player",
+    "bio": "Subhranshu Senapati is a name that Rewa cricket whispers about with growing reverence. He has represented Madhya Pradesh and more, proving his worth wherever the jersey has been handed to him. With appearances in 5 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 960 runs (best of 277). 960 runs, 0 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 10,
+    "batting": {
+      "innings": 10,
+      "runs": 140,
+      "balls": 114,
+      "average": 20,
+      "strikeRate": 122.8,
+      "highestScore": "70",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 9,
+      "sixes": 15
+    },
+    "bowling": {
+      "wickets": 9,
+      "overs": 29,
+      "maidens": 11,
+      "runs": 270,
+      "economy": 9.31,
+      "average": 30,
+      "bestBowling": "7/69"
+    }
+  },
+  {
+    "id": "p-saransh-jain",
+    "name": "Saransh Jain",
+    "role": "Captain",
+    "bio": "Saransh Jain has been the quiet engine of more than one famous Rewa triumph. He has represented Madhya Pradesh, Jabalpur Royal Lions, Railways and more, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 14 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 1410 runs (best of 103*) and 122 wickets (best 6/75). He has contributed 1410 runs and taken 122 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 6,
+    "batting": {
+      "innings": 6,
+      "runs": 183,
+      "balls": 210,
+      "average": 36.6,
+      "strikeRate": 87.1,
+      "highestScore": "62",
+      "fifties": 2,
+      "hundreds": 0,
+      "fours": 13,
+      "sixes": 20
+    },
+    "bowling": {
+      "wickets": 7,
+      "overs": 19,
+      "maidens": 4,
+      "runs": 228,
+      "economy": 12,
+      "average": 32.57,
+      "bestBowling": "7/185"
+    }
+  },
+  {
+    "id": "p-ritesh-shakya",
+    "name": "Ritesh Shakya",
+    "role": "Player",
+    "bio": "Ritesh Shakya has been the quiet engine of more than one famous Rewa triumph. He has represented Madhya Pradesh, Jabalpur Royal Lions, Rewa Jaguars, proving his worth wherever the jersey has been handed to him. With appearances in 3 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 7 runs (best of 7) and 2 wickets (best 1/31). 7 runs, 2 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 6,
+    "batting": {
+      "innings": 6,
+      "runs": 249,
+      "balls": 246,
+      "average": 49.8,
+      "strikeRate": 101.2,
+      "highestScore": "85",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 18,
+      "sixes": 27
+    },
+    "bowling": {
+      "wickets": 4,
+      "overs": 24,
+      "maidens": 0,
+      "runs": 61,
+      "economy": 2.54,
+      "average": 15.25,
+      "bestBowling": "2/6"
+    }
+  },
+  {
+    "id": "p-yash-dubey",
+    "name": "Yash Dubey",
+    "role": "Wicketkeeper",
+    "bio": "When Yash Dubey walks out to bat, something changes in the air. He has represented Ujjain Falcons, Bhopal Leopards, Madhya Pradesh, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 12 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 3257 runs (best of 289). He has contributed 3257 runs and taken 0 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 5,
+    "batting": {
+      "innings": 5,
+      "runs": 196,
+      "balls": 188,
+      "average": 39.2,
+      "strikeRate": 104.3,
+      "highestScore": "48",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 15,
+      "sixes": 22
+    },
+    "bowling": {
+      "wickets": 5,
+      "overs": 30,
+      "maidens": 8,
+      "runs": 105,
+      "economy": 3.5,
+      "average": 21,
+      "bestBowling": "2/28"
+    }
+  },
+  {
+    "id": "p-rohit-rajawat",
+    "name": "Rohit Rajawat",
+    "role": "Player",
+    "bio": "",
+    "matches": 6,
+    "batting": {
+      "innings": 4,
+      "runs": 114,
+      "balls": 116,
+      "average": 38,
+      "strikeRate": 98.3,
+      "highestScore": "83*",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 8,
+      "sixes": 12
+    },
+    "bowling": {
+      "wickets": 8,
+      "overs": 37,
+      "maidens": 8,
+      "runs": 239,
+      "economy": 6.46,
+      "average": 29.88,
+      "bestBowling": "3/37"
+    }
+  },
+  {
+    "id": "p-prabhanshu-shukla",
+    "name": "Prabhanshu Shukla",
+    "role": "Player",
+    "bio": "",
+    "matches": 4,
+    "batting": {
+      "innings": 3,
+      "runs": 66,
+      "balls": 61,
+      "average": 33,
+      "strikeRate": 108.2,
+      "highestScore": "35",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 5,
+      "sixes": 7
+    },
+    "bowling": {
+      "wickets": 9,
+      "overs": 27,
+      "maidens": 4,
+      "runs": 62,
+      "economy": 2.3,
+      "average": 6.89,
+      "bestBowling": "8/22"
+    }
+  },
+  {
+    "id": "p-anubhav-agarwal",
+    "name": "Anubhav Agarwal",
+    "role": "Player",
+    "bio": "They don't make cricketers like Anubhav Agarwal every day. He has represented Gwalior Cheetahs, Madhya Pradesh, Jabalpur Royal Lions and more, proving his worth wherever the jersey has been handed to him. A proven performer across 7 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 248 runs (best of 38) and 61 wickets (best 6/52). With 248 runs and 61 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 7,
+    "batting": {
+      "innings": 6,
+      "runs": 208,
+      "balls": 241,
+      "average": 52,
+      "strikeRate": 86.3,
+      "highestScore": "92",
+      "fifties": 2,
+      "hundreds": 0,
+      "fours": 15,
+      "sixes": 23
+    },
+    "bowling": {
+      "wickets": 3,
+      "overs": 14,
+      "maidens": 0,
+      "runs": 24,
+      "economy": 1.71,
+      "average": 8,
+      "bestBowling": "2/24"
+    }
+  },
+  {
+    "id": "p-avesh-khan",
+    "name": "Avesh Khan",
+    "role": "Player",
+    "bio": "Avesh Khan is a name that Rewa cricket whispers about with growing reverence. He has represented Madhya Pradesh, Railways and more, proving his worth wherever the jersey has been handed to him. A proven performer across 11 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 413 runs (best of 34) and 148 wickets (best 7/24). With 413 runs and 148 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 6,
+    "batting": {
+      "innings": 6,
+      "runs": 145,
+      "balls": 166,
+      "average": 29,
+      "strikeRate": 87.3,
+      "highestScore": "56",
+      "fifties": 2,
+      "hundreds": 0,
+      "fours": 11,
+      "sixes": 15
+    },
+    "bowling": {
+      "wickets": 5,
+      "overs": 20,
+      "maidens": 6,
+      "runs": 175,
+      "economy": 8.75,
+      "average": 35,
+      "bestBowling": "2/4"
+    }
+  },
+  {
+    "id": "p-mohd-arham-aquil",
+    "name": "Mohd Arham Aquil",
+    "role": "Player",
+    "bio": "",
+    "matches": 6,
+    "batting": {
+      "innings": 5,
+      "runs": 88,
+      "balls": 101,
+      "average": 17.6,
+      "strikeRate": 87.1,
+      "highestScore": "43",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 6,
+      "sixes": 10
+    },
+    "bowling": {
+      "wickets": 7,
+      "overs": 27,
+      "maidens": 8,
+      "runs": 116,
+      "economy": 4.3,
+      "average": 16.57,
+      "bestBowling": "5/95"
+    }
+  },
+  {
+    "id": "p-jaydev-singh",
+    "name": "Jaydev Singh",
+    "role": "Player",
+    "bio": "",
+    "matches": 6,
+    "batting": {
+      "innings": 5,
+      "runs": 59,
+      "balls": 61,
+      "average": 11.8,
+      "strikeRate": 96.7,
+      "highestScore": "30",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 4,
+      "sixes": 6
+    },
+    "bowling": {
+      "wickets": 8,
+      "overs": 24,
+      "maidens": 3,
+      "runs": 233,
+      "economy": 9.71,
+      "average": 29.13,
+      "bestBowling": "5/170"
+    }
+  },
+  {
+    "id": "p-amarjeet-kumar-singh",
+    "name": "Amarjeet Kumar Singh",
+    "role": "Player",
+    "bio": "",
+    "matches": 5,
+    "batting": {
+      "innings": 4,
+      "runs": 39,
+      "balls": 33,
+      "average": 13,
+      "strikeRate": 118.2,
+      "highestScore": "26",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 3,
+      "sixes": 4
+    },
+    "bowling": {
+      "wickets": 8,
+      "overs": 27,
+      "maidens": 2,
+      "runs": 136,
+      "economy": 5.04,
+      "average": 17,
+      "bestBowling": "5/1"
+    }
+  },
+  {
+    "id": "p-naveen-singh-chouhan",
+    "name": "Naveen Singh Chouhan",
+    "role": "Player",
+    "bio": "",
+    "matches": 7,
+    "batting": {
+      "innings": 6,
+      "runs": 162,
+      "balls": 140,
+      "average": 32.4,
+      "strikeRate": 115.7,
+      "highestScore": "53",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 11,
+      "sixes": 18
+    },
+    "bowling": {
+      "wickets": 3,
+      "overs": 22,
+      "maidens": 4,
+      "runs": 67,
+      "economy": 3.05,
+      "average": 22.33,
+      "bestBowling": "2/8"
+    }
+  },
+  {
+    "id": "p-himanshu-mantri",
+    "name": "Himanshu Mantri",
+    "role": "Wicketkeeper",
+    "bio": "Himanshu Mantri is a name that Rewa cricket whispers about with growing reverence. He has represented Rewa Jaguars, Madhya Pradesh and more, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 11 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 2284 runs (best of 165). He has contributed 2284 runs and taken 0 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 7,
+    "batting": {
+      "innings": 7,
+      "runs": 112,
+      "balls": 126,
+      "average": 18.67,
+      "strikeRate": 88.9,
+      "highestScore": "45",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 8,
+      "sixes": 11
+    },
+    "bowling": {
+      "wickets": 5,
+      "overs": 24,
+      "maidens": 8,
+      "runs": 54,
+      "economy": 2.25,
+      "average": 10.8,
+      "bestBowling": "2/10"
+    }
+  },
+  {
+    "id": "p-ramveer-singh-gurjar",
+    "name": "Ramveer Singh Gurjar",
+    "role": "Player",
+    "bio": "",
+    "matches": 8,
+    "batting": {
+      "innings": 8,
+      "runs": 110,
+      "balls": 96,
+      "average": 18.33,
+      "strikeRate": 114.6,
+      "highestScore": "62",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 7,
+      "sixes": 12
+    },
+    "bowling": {
+      "wickets": 5,
+      "overs": 18,
+      "maidens": 4,
+      "runs": 166,
+      "economy": 9.22,
+      "average": 33.2,
+      "bestBowling": "4/148"
+    }
+  },
+  {
+    "id": "p-prithviraj-singh-tomar",
+    "name": "Prithviraj Singh Tomar",
+    "role": "Captain",
+    "bio": "",
+    "matches": 7,
+    "batting": {
+      "innings": 6,
+      "runs": 177,
+      "balls": 193,
+      "average": 29.5,
+      "strikeRate": 91.7,
+      "highestScore": "74",
+      "fifties": 2,
+      "hundreds": 0,
+      "fours": 14,
+      "sixes": 19
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 8,
+      "maidens": 0,
+      "runs": 10,
+      "economy": 1.25,
+      "average": 5,
+      "bestBowling": "2/6"
+    }
+  },
+  {
+    "id": "p-arshad-khan",
+    "name": "Arshad Khan",
+    "role": "Captain",
+    "bio": "Every great cricket story has a hometown — for Arshad Khan, that story starts in the heart of Madhya Pradesh. He has represented Bhopal Leopards, Madhya Pradesh and more, proving his worth wherever the jersey has been handed to him. A proven performer across 6 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 170 runs (best of 60*) and 20 wickets (best 3/5). With 170 runs and 20 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 8,
+    "batting": {
+      "innings": 5,
+      "runs": 101,
+      "balls": 117,
+      "average": 33.67,
+      "strikeRate": 86.3,
+      "highestScore": "38",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 9,
+      "sixes": 10
+    },
+    "bowling": {
+      "wickets": 5,
+      "overs": 41,
+      "maidens": 5,
+      "runs": 122,
+      "economy": 2.98,
+      "average": 24.4,
+      "bestBowling": "2/18"
+    }
+  },
+  {
+    "id": "p-venkatesh-iyer",
+    "name": "Venkatesh Iyer",
+    "role": "Captain",
+    "bio": "They don't make cricketers like Venkatesh Iyer every day. He has represented Indore Pink Panthers, Madhya Pradesh and more, proving his worth wherever the jersey has been handed to him. A proven performer across 15 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 2979 runs (best of 198) and 44 wickets (best 6/20). With 2979 runs and 44 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 5,
+    "batting": {
+      "innings": 5,
+      "runs": 142,
+      "balls": 132,
+      "average": 28.4,
+      "strikeRate": 107.6,
+      "highestScore": "58",
+      "fifties": 2,
+      "hundreds": 0,
+      "fours": 11,
+      "sixes": 15
+    },
+    "bowling": {
+      "wickets": 3,
+      "overs": 29,
+      "maidens": 9,
+      "runs": 90,
+      "economy": 3.1,
+      "average": 30,
+      "bestBowling": "2/23"
+    }
+  },
+  {
+    "id": "p-anant-verma",
+    "name": "Anant Verma",
+    "role": "Wicketkeeper",
+    "bio": "They don't make cricketers like Anant Verma every day. He has represented Rewa Jaguars and more, proving his worth wherever the jersey has been handed to him. A proven performer across 2 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 196 runs (best of 71*). With 196 runs and 0 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 7,
+    "batting": {
+      "innings": 5,
+      "runs": 163,
+      "balls": 184,
+      "average": 40.75,
+      "strikeRate": 88.6,
+      "highestScore": "95",
+      "fifties": 2,
+      "hundreds": 0,
+      "fours": 11,
+      "sixes": 18
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 12,
+      "maidens": 4,
+      "runs": 53,
+      "economy": 4.42,
+      "average": 26.5,
+      "bestBowling": "1/22"
+    }
+  },
+  {
+    "id": "p-rajat-patidar",
+    "name": "Rajat Patidar",
+    "role": "Batsman",
+    "bio": "In an era of style over substance, Rajat Patidar comes from the old school of performance at the domestic levels. Born in Indore, Patidar took to cricket as a bowler and then turned seriously into the game as a batter at the U-15 level. Having made his domestic debut for Madhya Pradesh during the 2015-16 season, it took the stylish batter a couple of seasons to find his feet. Patidar top-scored for his team in the 2018-19 domestic season and that set himself up for higher honours. A Duleep Trophy call-up was soon followed by his first IPL stint, after being bought by the Royal Challengers Bengaluru (RCB) ahead of the 2021 season. He scored 333 runs at an impressive strike-rate for RCB, including 112* in the Eliminator — and went on to captain RCB in the IPL.",
+    "matches": 10,
+    "batting": {
+      "innings": 8,
+      "runs": 103,
+      "balls": 115,
+      "average": 12.88,
+      "strikeRate": 89.6,
+      "highestScore": "35",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 6,
+      "sixes": 11
+    },
+    "bowling": {
+      "wickets": 4,
+      "overs": 18,
+      "maidens": 4,
+      "runs": 143,
+      "economy": 7.94,
+      "average": 35.75,
+      "bestBowling": "3/72"
+    }
+  },
+  {
+    "id": "p-akshat-raghuwanshi",
+    "name": "Akshat Raghuwanshi",
+    "role": "Player",
+    "bio": "Every great cricket story has a hometown — for Akshat Raghuwanshi, that story starts in the heart of Madhya Pradesh. He has represented Rewa Jaguars, Madhya Pradesh and more, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 8 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 1106 runs (best of 147*). He has contributed 1106 runs and taken 0 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 6,
+    "batting": {
+      "innings": 5,
+      "runs": 126,
+      "balls": 120,
+      "average": 31.5,
+      "strikeRate": 105,
+      "highestScore": "50",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 9,
+      "sixes": 14
+    },
+    "bowling": {
+      "wickets": 3,
+      "overs": 27,
+      "maidens": 4,
+      "runs": 185,
+      "economy": 6.85,
+      "average": 61.67,
+      "bestBowling": "2/109"
+    }
+  },
+  {
+    "id": "p-chanchal-rathore",
+    "name": "Chanchal Rathore",
+    "role": "Player",
+    "bio": "Chanchal Rathore has been the quiet engine of more than one famous Rewa triumph. He has represented Rewa Jaguars, Madhya Pradesh, proving his worth wherever the jersey has been handed to him. With appearances in 2 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 137 runs (best of 37). 137 runs, 0 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 6,
+    "batting": {
+      "innings": 6,
+      "runs": 88,
+      "balls": 79,
+      "average": 22,
+      "strikeRate": 111.4,
+      "highestScore": "34",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 5,
+      "sixes": 10
+    },
+    "bowling": {
+      "wickets": 4,
+      "overs": 16,
+      "maidens": 5,
+      "runs": 241,
+      "economy": 15.06,
+      "average": 60.25,
+      "bestBowling": "2/1"
+    }
+  },
+  {
+    "id": "p-mohd-arshad-khan",
+    "name": "Mohd Arshad Khan",
+    "role": "Player",
+    "bio": "",
+    "matches": 4,
+    "batting": {
+      "innings": 4,
+      "runs": 106,
+      "balls": 97,
+      "average": 35.33,
+      "strikeRate": 109.3,
+      "highestScore": "55*",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 6,
+      "sixes": 12
+    },
+    "bowling": {
+      "wickets": 3,
+      "overs": 19,
+      "maidens": 8,
+      "runs": 52,
+      "economy": 2.74,
+      "average": 17.33,
+      "bestBowling": "2/14"
+    }
+  },
+  {
+    "id": "p-rahul-batham",
+    "name": "Rahul Batham",
+    "role": "Captain",
+    "bio": "Every great cricket story has a hometown — for Rahul Batham, that story starts in the heart of Madhya Pradesh. He has represented Madhya Pradesh, Jabalpur Royal Lions and more, proving his worth wherever the jersey has been handed to him. With appearances in 7 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 195 runs (best of 66) and 17 wickets (best 3/16). 195 runs, 17 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 5,
+    "batting": {
+      "innings": 5,
+      "runs": 63,
+      "balls": 65,
+      "average": 15.75,
+      "strikeRate": 96.9,
+      "highestScore": "45",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 3,
+      "sixes": 7
+    },
+    "bowling": {
+      "wickets": 4,
+      "overs": 16,
+      "maidens": 0,
+      "runs": 134,
+      "economy": 8.38,
+      "average": 33.5,
+      "bestBowling": "3/91"
+    }
+  },
+  {
+    "id": "p-saransh-surana",
+    "name": "Saransh Surana",
+    "role": "Player",
+    "bio": "Saransh Surana has been the quiet engine of more than one famous Rewa triumph. He has represented Rewa Jaguars, Indore Pink Panthers, Jabalpur Royal Lions, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 2 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 83 runs (best of 64) and 11 wickets (best 4/36). He has contributed 83 runs and taken 11 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 5,
+    "batting": {
+      "innings": 4,
+      "runs": 88,
+      "balls": 78,
+      "average": 22,
+      "strikeRate": 112.8,
+      "highestScore": "38",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 5,
+      "sixes": 10
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 33,
+      "maidens": 8,
+      "runs": 134,
+      "economy": 4.06,
+      "average": 67,
+      "bestBowling": "1/20"
+    }
+  },
+  {
+    "id": "p-ajay-rohera",
+    "name": "Ajay Rohera",
+    "role": "Wicketkeeper",
+    "bio": "",
+    "matches": 7,
+    "batting": {
+      "innings": 6,
+      "runs": 133,
+      "balls": 147,
+      "average": 26.6,
+      "strikeRate": 90.5,
+      "highestScore": "55",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 10,
+      "sixes": 14
+    },
+    "bowling": {
+      "wickets": 0,
+      "overs": 26,
+      "maidens": 8,
+      "runs": 98,
+      "economy": 3.77,
+      "average": 0,
+      "bestBowling": "-"
+    }
+  },
+  {
+    "id": "p-shubham-sharma",
+    "name": "Shubham Sharma",
+    "role": "Captain",
+    "bio": "They don't make cricketers like Shubham Sharma every day. He has represented Madhya Pradesh, Railways and more, proving his worth wherever the jersey has been handed to him. With appearances in 17 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 3933 runs (best of 240) and 29 wickets (best 5/59). 3933 runs, 29 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 4,
+    "batting": {
+      "innings": 4,
+      "runs": 108,
+      "balls": 119,
+      "average": 36,
+      "strikeRate": 90.8,
+      "highestScore": "51",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 7,
+      "sixes": 12
+    },
+    "bowling": {
+      "wickets": 1,
+      "overs": 17,
+      "maidens": 4,
+      "runs": 14,
+      "economy": 0.82,
+      "average": 14,
+      "bestBowling": "1/1"
+    }
+  },
+  {
+    "id": "p-radhakrishna-dwivedi",
+    "name": "Radhakrishna Dwivedi",
+    "role": "Player",
+    "bio": "",
+    "matches": 6,
+    "batting": {
+      "innings": 5,
+      "runs": 129,
+      "balls": 149,
+      "average": 32.25,
+      "strikeRate": 86.6,
+      "highestScore": "60",
+      "fifties": 1,
+      "hundreds": 0,
+      "fours": 9,
+      "sixes": 14
+    },
+    "bowling": {
+      "wickets": 0,
+      "overs": 17,
+      "maidens": 4,
+      "runs": 32,
+      "economy": 1.88,
+      "average": 0,
+      "bestBowling": "-"
+    }
+  },
+  {
+    "id": "p-aditya-shrivastava",
+    "name": "Aditya Shrivastava",
+    "role": "Player",
+    "bio": "",
+    "matches": 5,
+    "batting": {
+      "innings": 5,
+      "runs": 62,
+      "balls": 57,
+      "average": 15.5,
+      "strikeRate": 108.8,
+      "highestScore": "29",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 5,
+      "sixes": 6
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 4,
+      "maidens": 0,
+      "runs": 26,
+      "economy": 6.5,
+      "average": 13,
+      "bestBowling": "2/26"
+    }
+  },
+  {
+    "id": "p-ankit-singh-kushwaha",
+    "name": "Ankit Singh Kushwaha",
+    "role": "Player",
+    "bio": "",
+    "matches": 4,
+    "batting": {
+      "innings": 4,
+      "runs": 54,
+      "balls": 55,
+      "average": 13.5,
+      "strikeRate": 98.2,
+      "highestScore": "34",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 3,
+      "sixes": 6
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 10,
+      "maidens": 0,
+      "runs": 24,
+      "economy": 2.4,
+      "average": 12,
+      "bestBowling": "2/24"
+    }
+  },
+  {
+    "id": "p-kulwant-khejroliya",
+    "name": "Kulwant Khejroliya",
+    "role": "Player",
+    "bio": "When Kulwant Khejroliya walks out to bat, something changes in the air. He has represented Madhya Pradesh and more, proving his worth wherever the jersey has been handed to him. With appearances in 8 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 84 runs (best of 21) and 54 wickets (best 4/31). 84 runs, 54 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 3,
+    "batting": {
+      "innings": 3,
+      "runs": 50,
+      "balls": 58,
+      "average": 16.67,
+      "strikeRate": 86.2,
+      "highestScore": "37",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 4,
+      "sixes": 5
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 10,
+      "maidens": 4,
+      "runs": 32,
+      "economy": 3.2,
+      "average": 16,
+      "bestBowling": "2/32"
+    }
+  },
+  {
+    "id": "p-sagar-pratap-singh",
+    "name": "Sagar Pratap Singh",
+    "role": "Player",
+    "bio": "",
+    "matches": 3,
+    "batting": {
+      "innings": 3,
+      "runs": 48,
+      "balls": 47,
+      "average": 16,
+      "strikeRate": 102.1,
+      "highestScore": "20",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 4,
+      "sixes": 5
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 12,
+      "maidens": 0,
+      "runs": 67,
+      "economy": 5.58,
+      "average": 33.5,
+      "bestBowling": "1/25"
+    }
+  },
+  {
+    "id": "p-kanishk-dubey",
+    "name": "Kanishk Dubey",
+    "role": "Player",
+    "bio": "They don't make cricketers like Kanishk Dubey every day. He has represented Rewa Jaguars and more, proving his worth wherever the jersey has been handed to him. With appearances in 2 official tournaments, his versatility has made him a fixture in dressing rooms that demand results. In recorded Rewa cricket he has amassed 99 runs (best of 64). 99 runs, 0 wickets, and a reputation that keeps growing. The best is still being written.",
+    "matches": 6,
+    "batting": {
+      "innings": 6,
+      "runs": 18,
+      "balls": 19,
+      "average": 3,
+      "strikeRate": 94.7,
+      "highestScore": "12",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 1,
+      "sixes": 1
+    },
+    "bowling": {
+      "wickets": 3,
+      "overs": 13,
+      "maidens": 5,
+      "runs": 18,
+      "economy": 1.38,
+      "average": 6,
+      "bestBowling": "2/3"
+    }
+  },
+  {
+    "id": "p-aryan-deshmukh",
+    "name": "Aryan Deshmukh",
+    "role": "Player",
+    "bio": "Aryan Deshmukh is a name that Rewa cricket whispers about with growing reverence. He has represented Rewa Jaguars, Malwa Stallions and more, proving his worth wherever the jersey has been handed to him. A proven performer across 3 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 45 runs (best of 36*) and 1 wickets (best 1/9). With 45 runs and 1 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 5,
+    "batting": {
+      "innings": 5,
+      "runs": 67,
+      "balls": 54,
+      "average": 13.4,
+      "strikeRate": 124.1,
+      "highestScore": "43",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 3,
+      "sixes": 8
+    },
+    "bowling": {
+      "wickets": 0,
+      "overs": 0,
+      "maidens": 0,
+      "runs": 0,
+      "economy": 0,
+      "average": 0,
+      "bestBowling": "-"
+    }
+  },
+  {
+    "id": "p-shivam-shukla",
+    "name": "Shivam Shukla",
+    "role": "Player",
+    "bio": "When Shivam Shukla walks out to bat, something changes in the air. He has represented Rewa Jaguars, Indore Pink Panthers, Madhya Pradesh, proving his worth wherever the jersey has been handed to him. A proven performer across 3 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 44 runs (best of 36) and 20 wickets (best 4/29). With 44 runs and 20 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 1,
+    "batting": {
+      "innings": 1,
+      "runs": 10,
+      "balls": 12,
+      "average": 10,
+      "strikeRate": 83.3,
+      "highestScore": "10",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 1,
+      "sixes": 1
+    },
+    "bowling": {
+      "wickets": 2,
+      "overs": 9,
+      "maidens": 4,
+      "runs": 15,
+      "economy": 1.67,
+      "average": 7.5,
+      "bestBowling": "2/15"
+    }
+  },
+  {
+    "id": "p-atharv-mahajan",
+    "name": "Atharv Mahajan",
+    "role": "Player",
+    "bio": "",
+    "matches": 4,
+    "batting": {
+      "innings": 3,
+      "runs": 26,
+      "balls": 18,
+      "average": 8.67,
+      "strikeRate": 144.4,
+      "highestScore": "24",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 1,
+      "sixes": 3
+    },
+    "bowling": {
+      "wickets": 0,
+      "overs": 9,
+      "maidens": 4,
+      "runs": 39,
+      "economy": 4.33,
+      "average": 0,
+      "bestBowling": "-"
+    }
+  },
+  {
+    "id": "p-sagar-solanki",
+    "name": "Sagar Solanki",
+    "role": "Player",
+    "bio": "Every great cricket story has a hometown — for Sagar Solanki, that story starts in the heart of Madhya Pradesh. He has represented Rewa Jaguars, Madhya Pradesh, Jabalpur Royal Lions and more, proving his worth wherever the jersey has been handed to him. A proven performer across 7 official competitions, he has carried his form from district cricket to the state stage. In recorded Rewa cricket he has amassed 606 runs (best of 72) and 32 wickets (best 5/14). With 606 runs and 32 wickets to his name on this platform, the numbers only tell half the story — the other half is heart.",
+    "matches": 1,
+    "batting": {
+      "innings": 1,
+      "runs": 1,
+      "balls": 1,
+      "average": 1,
+      "strikeRate": 100,
+      "highestScore": "1",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 0,
+      "sixes": 0
+    },
+    "bowling": {
+      "wickets": 1,
+      "overs": 4,
+      "maidens": 2,
+      "runs": 14,
+      "economy": 3.5,
+      "average": 14,
+      "bestBowling": "1/14"
+    }
+  },
+  {
+    "id": "p-aryan-dwivedi",
+    "name": "Aryan Dwivedi",
+    "role": "Player",
+    "bio": "",
+    "matches": 1,
+    "batting": {
+      "innings": 0,
+      "runs": 0,
+      "balls": 0,
+      "average": 0,
+      "strikeRate": 0,
+      "highestScore": "0",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 0,
+      "sixes": 0
+    },
+    "bowling": {
+      "wickets": 1,
+      "overs": 8,
+      "maidens": 0,
+      "runs": 18,
+      "economy": 2.25,
+      "average": 18,
+      "bestBowling": "1/18"
+    }
+  },
+  {
+    "id": "p-aryan-shrivastava",
+    "name": "Aryan Shrivastava",
+    "role": "Player",
+    "bio": "When Aryan Shrivastava walks out to bat, something changes in the air. He has represented U-18 Satna 2018-19, U-23 Rewa, Satna Senior 2018, proving his worth wherever the jersey has been handed to him. From inter-district battles to the big stage, 3 official tournaments have showcased his hunger for runs and wickets alike. In recorded Rewa cricket he has amassed 269 runs (best of 94) and 4 wickets (best 3/0). He has contributed 269 runs and taken 4 wickets in recorded Rewa cricket — and he is nowhere near finished.",
+    "matches": 1,
+    "batting": {
+      "innings": 0,
+      "runs": 0,
+      "balls": 0,
+      "average": 0,
+      "strikeRate": 0,
+      "highestScore": "0",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 0,
+      "sixes": 0
+    },
+    "bowling": {
+      "wickets": 1,
+      "overs": 4,
+      "maidens": 0,
+      "runs": 42,
+      "economy": 10.5,
+      "average": 42,
+      "bestBowling": "1/42"
+    }
+  },
+  {
+    "id": "p-harsh-gawli",
+    "name": "Harsh Gawli",
+    "role": "Player",
+    "bio": "",
+    "matches": 1,
+    "batting": {
+      "innings": 1,
+      "runs": 1,
+      "balls": 1,
+      "average": 1,
+      "strikeRate": 100,
+      "highestScore": "1*",
+      "fifties": 0,
+      "hundreds": 0,
+      "fours": 0,
+      "sixes": 0
+    },
+    "bowling": {
+      "wickets": 0,
+      "overs": 3,
+      "maidens": 0,
+      "runs": 1,
+      "economy": 0.33,
+      "average": 0,
+      "bestBowling": "-"
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "totalMatches": 24,
+  "desWins": 13,
+  "deWins": 11,
+  "t20": {
+    "total": 9,
+    "desWins": 7,
+    "deWins": 2
+  },
+  "odi": {
+    "total": 15,
+    "desWins": 6,
+    "deWins": 9
+  },
+  "seasons": [
+    "2024",
+    "2023",
+    "2022",
+    "2021"
+  ],
+  "trophyFinal": {
+    "matchId": "m-shared-16",
+    "title": "2022 Championship Final",
+    "winner": "Destroyers (DES)",
+    "date": "2022-08-12"
+  }
+}

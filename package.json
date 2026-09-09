@@ -1,0 +1,21 @@
+{
+  "name": "destroyers-cricket-club",
+  "version": "1.0.0",
+  "description": "Official Team Website for Destroyers Cricket Club (DES) — Atal Bihari Vajpayee Tournament, Rewa | RDCA",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [
+    "destroyers",
+    "rewa-cricket",
+    "rdca",
+    "atal-bihari-vajpayee-tournament",
+    "de-vs-des",
+    "cricket-scorecard"
+  ],
+  "author": "Destroyers Cricket Club / Pranav Pramod Dwivedi",
+  "license": "ISC"
+}

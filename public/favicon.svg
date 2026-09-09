@@ -1,0 +1,6 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#131722" stroke="#ff2a55" stroke-width="6"/>
+  <polygon points="50,16 80,32 80,68 50,84 20,68 20,32" fill="#080a0f" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M50 20L50 80" stroke="#ff2a55" stroke-width="4" stroke-linecap="round"/>
+  <text x="50" y="58" font-family="-apple-system, sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
+</svg>
