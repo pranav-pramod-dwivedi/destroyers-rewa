@@ -764,7 +764,7 @@
     if (!container || !grid) return;
 
     const buttons = container.querySelectorAll(".role-btn");
-    const cards = grid.querySelectorAll(".jersey-player-card");
+    const cards = grid.querySelectorAll(".fifa-player-card, .jersey-player-card");
 
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => {

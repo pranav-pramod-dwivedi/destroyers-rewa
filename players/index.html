@@ -50,111 +50,14 @@
   <div class="content-wrapper">
   
 
-  <!-- IPLT20 Top Broadcast Score Carousel Strip -->
-  <div class="broadcast-ticker-bar" aria-label="Recent Match Carousel">
-    <div class="broadcast-match-track">
-      
-          <a href="/matches/destroyers-vs-dread-eleven-2023-09-20" class="broadcast-match-chip">
-            <div class="chip-status-tag loss">
-              <span>ODI • 2023</span>
-              <span>DE WON</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular ">221/9</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular lead">279/7</span>
-            </div>
-          </a>
-        
-          <a href="/matches/destroyers-vs-dread-eleven-2024-09-05" class="broadcast-match-chip">
-            <div class="chip-status-tag loss">
-              <span>ODI • 2024</span>
-              <span>DE WON</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular ">264/9</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular lead">266/9</span>
-            </div>
-          </a>
-        
-          <a href="/matches/destroyers-vs-dread-eleven-2024-09-08" class="broadcast-match-chip">
-            <div class="chip-status-tag win">
-              <span>ODI • 2024</span>
-              <span>DES WON</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular lead">257/6</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular ">252/7</span>
-            </div>
-          </a>
-        
-          <a href="/matches/destroyers-vs-dread-eleven-2024-09-12" class="broadcast-match-chip">
-            <div class="chip-status-tag win">
-              <span>ODI • 2024</span>
-              <span>DES WON</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular lead">276/10</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular ">274/9</span>
-            </div>
-          </a>
-        
-          <a href="/matches/destroyers-vs-dread-eleven-2024-09-16" class="broadcast-match-chip">
-            <div class="chip-status-tag win">
-              <span>ODI • 2024</span>
-              <span>DES WON</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular lead">288/6</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular ">270/9</span>
-            </div>
-          </a>
-        
-          <a href="/matches/destroyers-vs-dread-eleven-2024-09-20" class="broadcast-match-chip">
-            <div class="chip-status-tag win">
-              <span>ODI • 2024</span>
-              <span>DES WON</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular lead">233/6</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular ">225/9</span>
-            </div>
-          </a>
-        
-    </div>
-  </div>
-
   <!-- Header Navigation -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
-        <div class="brand-crest-monogram">DES</div>
+        <div class="brand-crest-symbol">DES</div>
         <div class="brand-title-group">
           <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
-          <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
+          <span class="brand-subline">Rewa Division Cricket Association</span>
         </div>
       </a>
 
@@ -192,16 +95,7 @@
             About
           </a>
         
-          <a href="/contact" class="header-nav-link " >
-            Contact
-          </a>
-        
       </nav>
-
-      <div class="header-status-badge">
-        <span class="live-dot"></span>
-        <span>CAPT. PRANAV DWIVEDI</span>
-      </div>
     </div>
   </header>
   
@@ -227,1064 +121,2129 @@
       </p>
     </div>
 
-    <div class="players-cards-grid">
-      
-        <a href="/players/pranav-dwivedi" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">7</div>
-          <div class="jersey-player-role">Captain &amp; All-rounder</div>
-          <h2 class="jersey-player-name">#7 Pranav Dwivedi</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 24 Clashes</div>
+    <!-- Interactive Role Filter -->
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
+      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    </div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">1341</div>
-              <div class="jersey-stat-lbl">Runs</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular">63.86</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">63</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
+    <div class="players-cards-grid" id="players-grid">
       
-        <a href="/players/aryan-deshmukh" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">11</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#11 Aryan Deshmukh</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 9 Clashes</div>
+          <a href="/players/pranav-dwivedi" class="fifa-player-card" data-role="Captain &amp; All-rounder">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                97 <small>OVR</small>
+              </div>
+              <div class="player-form-badge hot">
+                HOT
+              </div>
+            </div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">307</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#7 Pranav Dwivedi</h2>
+              <div class="fifa-card-role">Captain &amp; All-rounder</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">38.38</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">4</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/shivam-shukla" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">18</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#18 Shivam Shukla</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">222</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">96</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">94</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">99</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">55.5</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/anubhav-agarwal" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">23</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#23 Anubhav Agarwal</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">214</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●●
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">35.67</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/aryan-deshmukh" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                92 <small>OVR</small>
+              </div>
+              <div class="player-form-badge hot">
+                HOT
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">6</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/venkatesh-iyer" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">77</div>
-          <div class="jersey-player-role">Captain</div>
-          <h2 class="jersey-player-name">#77 Venkatesh Iyer</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">172</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#11 Aryan Deshmukh</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">34.4</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/rahul-batham" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">14</div>
-          <div class="jersey-player-role">Captain</div>
-          <h2 class="jersey-player-name">#14 Rahul Batham</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 10 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">156</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">19.5</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">7</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/ajay-rohera" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">99</div>
-          <div class="jersey-player-role">Wicketkeeper</div>
-          <h2 class="jersey-player-name">#99 Ajay Rohera</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">141</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●●
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">141</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/shivam-shukla" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                94 <small>OVR</small>
+              </div>
+              <div class="player-form-badge hot">
+                HOT
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">4</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/rohit-rajawat" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">9</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#9 Rohit Rajawat</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">137</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#18 Shivam Shukla</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">45.67</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/shubham-sharma" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">17</div>
-          <div class="jersey-player-role">Captain</div>
-          <h2 class="jersey-player-name">#17 Shubham Sharma</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">137</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">22.83</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">3</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/harsh-gawli" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">10</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#10 Harsh Gawli</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">129</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●●
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">32.25</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/anubhav-agarwal" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                89 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">12</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/kanishk-dubey" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">55</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#55 Kanishk Dubey</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">121</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#23 Anubhav Agarwal</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">24.2</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">4</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/atharv-mahajan" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">60</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#60 Atharv Mahajan</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">120</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">93</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">30</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">3</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/chanchal-rathore" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">65</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#65 Chanchal Rathore</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 2 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">118</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">118</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/venkatesh-iyer" class="fifa-player-card" data-role="Captain">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                86 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/ramveer-singh-gurjar" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">70</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#70 Ramveer Singh Gurjar</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">116</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#77 Venkatesh Iyer</h2>
+              <div class="fifa-card-role">Captain</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">38.67</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/ritesh-shakya" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">75</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#75 Ritesh Shakya</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">107</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">92</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">17.83</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/rajat-patidar" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">80</div>
-          <div class="jersey-player-role">Batsman</div>
-          <h2 class="jersey-player-name">#80 Rajat Patidar</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">98</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">14</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/rahul-batham" class="fifa-player-card" data-role="Captain">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                84 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/sagar-pratap-singh" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">22</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#22 Sagar Pratap Singh</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 8 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">93</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#14 Rahul Batham</h2>
+              <div class="fifa-card-role">Captain</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">15.5</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">10</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/kumar-kartikeya" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">90</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#90 Kumar Kartikeya</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">93</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">85</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">18.6</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/anant-verma" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">6</div>
-          <div class="jersey-player-role">Wicketkeeper</div>
-          <h2 class="jersey-player-name">#6 Anant Verma</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">83</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">20.75</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/ajay-rohera" class="fifa-player-card" data-role="Wicketkeeper">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                94 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">3</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/prabhanshu-shukla" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">11</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#11 Prabhanshu Shukla</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 7 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">81</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#99 Ajay Rohera</h2>
+              <div class="fifa-card-role">Wicketkeeper</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">11.57</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/subhranshu-senapati" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">16</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#16 Subhranshu Senapati</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">80</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">26.67</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">12</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/mohd-arham-aquil" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">21</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#21 Mohd Arham Aquil</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 8 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">79</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">13.17</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/rohit-rajawat" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                91 <small>OVR</small>
+              </div>
+              <div class="player-form-badge hot">
+                HOT
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/avesh-khan" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">26</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#26 Avesh Khan</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">64</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#9 Rohit Rajawat</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">21.33</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/radhakrishna-dwivedi" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">31</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#31 Radhakrishna Dwivedi</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">61</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">10.17</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/mohd-arshad-khan" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">36</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#36 Mohd Arshad Khan</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">60</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●●
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">20</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/shubham-sharma" class="fifa-player-card" data-role="Captain">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                87 <small>OVR</small>
+              </div>
+              <div class="player-form-badge hot">
+                HOT
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/jaydev-singh" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">41</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#41 Jaydev Singh</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">57</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#17 Shubham Sharma</h2>
+              <div class="fifa-card-role">Captain</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">11.4</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">4</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/aditya-shrivastava" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">46</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#46 Aditya Shrivastava</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">57</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">91</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">11.4</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/kulwant-khejroliya" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">31</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#31 Kulwant Khejroliya</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 10 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">55</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●●
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">18.33</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/harsh-gawli" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                91 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">9</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/akshat-raghuwanshi" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">56</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#56 Akshat Raghuwanshi</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">55</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#10 Harsh Gawli</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">18.33</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/saransh-jain" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">61</div>
-          <div class="jersey-player-role">Captain</div>
-          <h2 class="jersey-player-name">#61 Saransh Jain</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">54</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">91</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">27</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/yash-dubey" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">66</div>
-          <div class="jersey-player-role">Wicketkeeper</div>
-          <h2 class="jersey-player-name">#66 Yash Dubey</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 6 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">50</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">12.5</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/kanishk-dubey" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                85 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">5</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/ankit-singh-kushwaha" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">71</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#71 Ankit Singh Kushwaha</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">46</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#55 Kanishk Dubey</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">11.5</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/himanshu-mantri" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">76</div>
-          <div class="jersey-player-role">Wicketkeeper</div>
-          <h2 class="jersey-player-name">#76 Himanshu Mantri</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">43</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">87</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">8.6</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">4</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/arshad-khan" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">81</div>
-          <div class="jersey-player-role">Captain</div>
-          <h2 class="jersey-player-name">#81 Arshad Khan</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 3 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">41</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">41</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/atharv-mahajan" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                86 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/naveen-singh-chouhan" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">86</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#86 Naveen Singh Chouhan</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 3 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">37</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#60 Atharv Mahajan</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">12.33</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">0</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/ashwin-das" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">2</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#2 Ashwin Das</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">32</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">90</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">8</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/amarjeet-kumar-singh" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">7</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#7 Amarjeet Kumar Singh</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">28</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">9.33</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/chanchal-rathore" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                94 <small>OVR</small>
+              </div>
+              <div class="player-form-badge hot">
+                HOT
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">6</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/sagar-solanki" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">12</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#12 Sagar Solanki</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 5 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">23</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#65 Chanchal Rathore</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">7.67</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/saransh-surana" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">17</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#17 Saransh Surana</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 4 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">20</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">5</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/prithviraj-singh-tomar" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">22</div>
-          <div class="jersey-player-role">Captain</div>
-          <h2 class="jersey-player-name">#22 Prithviraj Singh Tomar</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 2 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">8</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●●
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">4</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/ramveer-singh-gurjar" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                88 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/kuldeep-sen" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">27</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#27 Kuldeep Sen</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 2 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">6</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#70 Ramveer Singh Gurjar</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">6</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/somil-khan" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">32</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#32 Somil Khan</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 2 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">94</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/sani-patel" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">37</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#37 Sani Patel</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 1 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/ritesh-shakya" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                82 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/avinash-sen" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">42</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#42 Avinash Sen</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 1 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#75 Ritesh Shakya</h2>
+              <div class="fifa-card-role">Player</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">2</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/rohit-gupta" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">47</div>
-          <div class="jersey-player-role">All-rounder</div>
-          <h2 class="jersey-player-name">#47 Rohit Gupta</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 1 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">84</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/atul-tiwari" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">52</div>
-          <div class="jersey-player-role">Batter</div>
-          <h2 class="jersey-player-name">#52 Atul Tiwari</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 1 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
+          </a>
+        
+          <a href="/players/rajat-patidar" class="fifa-player-card" data-role="Batsman">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                80 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/shivam-bansal" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">57</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#57 Shivam Bansal</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 1 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#80 Rajat Patidar</h2>
+              <div class="fifa-card-role">Batsman</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
-            </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
-            </div>
-          </div>
-        </a>
-      
-        <a href="/players/rishab-verma" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">62</div>
-          <div class="jersey-player-role">Player</div>
-          <h2 class="jersey-player-name">#62 Rishab Verma</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • 1 Clashes</div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">0</div>
-              <div class="jersey-stat-lbl">Runs</div>
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">82</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">0</div>
-              <div class="jersey-stat-lbl">Avg</div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">1</div>
-              <div class="jersey-stat-lbl">Wkts</div>
+          </a>
+        
+          <a href="/players/sagar-pratap-singh" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                84 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
             </div>
-          </div>
-        </a>
-      
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#22 Sagar Pratap Singh</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">83</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/kumar-kartikeya" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                82 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#90 Kumar Kartikeya</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">84</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/anant-verma" class="fifa-player-card" data-role="Wicketkeeper">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                83 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#6 Anant Verma</h2>
+              <div class="fifa-card-role">Wicketkeeper</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">85</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/prabhanshu-shukla" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                80 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#11 Prabhanshu Shukla</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">81</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/subhranshu-senapati" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                89 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#16 Subhranshu Senapati</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/mohd-arham-aquil" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                80 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#21 Mohd Arham Aquil</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">82</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/avesh-khan" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                83 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#26 Avesh Khan</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">86</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/radhakrishna-dwivedi" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                79 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#31 Radhakrishna Dwivedi</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">80</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/mohd-arshad-khan" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                82 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#36 Mohd Arshad Khan</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">85</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/jaydev-singh" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                80 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#41 Jaydev Singh</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">81</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/aditya-shrivastava" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                79 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#46 Aditya Shrivastava</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">81</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/kulwant-khejroliya" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                88 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#31 Kulwant Khejroliya</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">84</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/akshat-raghuwanshi" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                81 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#56 Akshat Raghuwanshi</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">84</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/saransh-jain" class="fifa-player-card" data-role="Captain">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                89 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#61 Saransh Jain</h2>
+              <div class="fifa-card-role">Captain</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">89</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/yash-dubey" class="fifa-player-card" data-role="Wicketkeeper">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                81 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#66 Yash Dubey</h2>
+              <div class="fifa-card-role">Wicketkeeper</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">81</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/ankit-singh-kushwaha" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                79 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#71 Ankit Singh Kushwaha</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">81</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/himanshu-mantri" class="fifa-player-card" data-role="Wicketkeeper">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                79 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#76 Himanshu Mantri</h2>
+              <div class="fifa-card-role">Wicketkeeper</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">79</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/arshad-khan" class="fifa-player-card" data-role="Captain">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                89 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#81 Arshad Khan</h2>
+              <div class="fifa-card-role">Captain</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/naveen-singh-chouhan" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                79 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#86 Naveen Singh Chouhan</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">81</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/ashwin-das" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#2 Ashwin Das</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">79</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/amarjeet-kumar-singh" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                81 <small>OVR</small>
+              </div>
+              <div class="player-form-badge in form">
+                IN FORM
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#7 Amarjeet Kumar Singh</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">80</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●●○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/sagar-solanki" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#12 Sagar Solanki</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">79</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/saransh-surana" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#17 Saransh Surana</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">78</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/prithviraj-singh-tomar" class="fifa-player-card" data-role="Captain">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#22 Prithviraj Singh Tomar</h2>
+              <div class="fifa-card-role">Captain</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">77</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/kuldeep-sen" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#27 Kuldeep Sen</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">95</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">78</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/somil-khan" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#32 Somil Khan</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/sani-patel" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#37 Sani Patel</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/avinash-sen" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#42 Avinash Sen</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/rohit-gupta" class="fifa-player-card" data-role="All-rounder">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#47 Rohit Gupta</h2>
+              <div class="fifa-card-role">All-rounder</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/atul-tiwari" class="fifa-player-card" data-role="Batter">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#52 Atul Tiwari</h2>
+              <div class="fifa-card-role">Batter</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/shivam-bansal" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#57 Shivam Bansal</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
+          <a href="/players/rishab-verma" class="fifa-player-card" data-role="Player">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                78 <small>OVR</small>
+              </div>
+              <div class="player-form-badge solid">
+                SOLID
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#62 Rishab Verma</h2>
+              <div class="fifa-card-role">Player</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">72</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">75</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">88</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">86</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ●●●○○
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        
     </div>
   </div>
 </section>
@@ -1309,40 +2268,33 @@
               <li><a href="/fixtures" style="color:inherit;">Tournament Fixtures &amp; Schedule</a></li>
               <li><a href="/results" style="color:inherit;">Completed Match Archive (2021–24)</a></li>
               <li><a href="/points-table" style="color:inherit;">Tournament Points Table</a></li>
-              <li><a href="/stats" style="color:inherit;">All-Time Records & Stats</a></li>
+              <li><a href="/stats" style="color:inherit;">All-Time Records &amp; Stats</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise & Venues</h4>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise &amp; Venues</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
               <li><a href="/players" style="color:inherit;">Destroyers Squad (48 Players)</a></li>
-              <li><a href="/about" style="color:inherit;">About Destroyers & 2024 Title</a></li>
-              <li><a href="/news" style="color:inherit;">News & Press Releases</a></li>
-              <li><a href="/contact" style="color:inherit;">Contact RDCA & Venues</a></li>
+              <li><a href="/about" style="color:inherit;">About Destroyers &amp; 2024 Title</a></li>
+              <li><a href="/news" style="color:inherit;">News &amp; Press Releases</a></li>
+              <li><a href="/contact" style="color:inherit;">Contact RDCA &amp; Venues</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Legal & Policies</h4>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Legal &amp; Policies</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
               <li><a href="/privacy" style="color:inherit;">Privacy Policy</a></li>
-              <li><a href="/terms" style="color:inherit;">Terms & Conditions</a></li>
-              <li><a href="/about" style="color:inherit;">Editorial Policy & E-E-A-T</a></li>
-              <li><a href="/contact" style="color:inherit;">Grievances & Inquiries</a></li>
+              <li><a href="/terms" style="color:inherit;">Terms &amp; Conditions</a></li>
+              <li><a href="/about" style="color:inherit;">Editorial Policy &amp; E-E-A-T</a></li>
+              <li><a href="/contact" style="color:inherit;">Grievances &amp; Inquiries</a></li>
             </ul>
           </div>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
           <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
-          <div style="display:flex; gap:1.25rem; align-items:center;">
-            <a href="https://instagram.com/destroyersrewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">Instagram</a>
-            <span style="color:var(--c-gray-600);">•</span>
-            <a href="https://x.com/DestroyersRewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">X / Twitter</a>
-            <span style="color:var(--c-gray-600);">•</span>
-            <a href="https://youtube.com/@destroyersrewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">YouTube</a>
-          </div>
           <div>Rewa Division Cricket Association (RDCA) • Madhya Pradesh</div>
         </div>
       </div>

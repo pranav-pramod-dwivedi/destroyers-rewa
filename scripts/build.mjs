@@ -140,46 +140,18 @@ function renderHeader(activeNav = '') {
     { label: 'Points Table', href: '/points-table', key: 'table' },
     { label: 'Stats', href: '/stats', key: 'stats' },
     { label: 'News', href: '/news', key: 'news' },
-    { label: 'About', href: '/about', key: 'about' },
-    { label: 'Contact', href: '/contact', key: 'contact' }
+    { label: 'About', href: '/about', key: 'about' }
   ];
 
   return `
-  <!-- IPLT20 Top Broadcast Score Carousel Strip -->
-  <div class="broadcast-ticker-bar" aria-label="Recent Match Carousel">
-    <div class="broadcast-match-track">
-      ${matches.filter((m) => m.status === 'completed').slice(-6).map((m) => {
-        const isDesWin = m.winner === 'DES';
-        const innDES = (m.innings || []).find(i => i.teamId === 'DES' || i.teamName?.includes('Destroyers')) || m.innings?.[0] || { runs: 0, wickets: 0 };
-        const innDE = (m.innings || []).find(i => i.teamId === 'DE' || i.teamName?.includes('Dread Eleven')) || m.innings?.[1] || { runs: 0, wickets: 0 };
-        return `
-          <a href="/matches/${m.slug}" class="broadcast-match-chip">
-            <div class="chip-status-tag ${isDesWin ? 'win' : 'loss'}">
-              <span>${esc(m.format)} • ${m.seasonYear}</span>
-              <span>${isDesWin ? 'DES WON' : 'DE WON'}</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DES</span>
-              <span class="chip-score tabular ${isDesWin ? 'lead' : ''}">${innDES.runs}/${innDES.wickets}</span>
-            </div>
-            <div class="chip-team-row">
-              <span>DE</span>
-              <span class="chip-score tabular ${!isDesWin ? 'lead' : ''}">${innDE.runs}/${innDE.wickets}</span>
-            </div>
-          </a>
-        `;
-      }).join('')}
-    </div>
-  </div>
-
   <!-- Header Navigation -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
-        <div class="brand-crest-monogram">DES</div>
+        <div class="brand-crest-symbol">DES</div>
         <div class="brand-title-group">
           <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
-          <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
+          <span class="brand-subline">Rewa Division Cricket Association</span>
         </div>
       </a>
 
@@ -190,11 +162,6 @@ function renderHeader(activeNav = '') {
           </a>
         `).join('')}
       </nav>
-
-      <div class="header-status-badge">
-        <span class="live-dot"></span>
-        <span>CAPT. PRANAV DWIVEDI</span>
-      </div>
     </div>
   </header>
   `;
@@ -221,40 +188,33 @@ function renderFooter() {
               <li><a href="/fixtures" style="color:inherit;">Tournament Fixtures &amp; Schedule</a></li>
               <li><a href="/results" style="color:inherit;">Completed Match Archive (2021–24)</a></li>
               <li><a href="/points-table" style="color:inherit;">Tournament Points Table</a></li>
-              <li><a href="/stats" style="color:inherit;">All-Time Records & Stats</a></li>
+              <li><a href="/stats" style="color:inherit;">All-Time Records &amp; Stats</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise & Venues</h4>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise &amp; Venues</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
               <li><a href="/players" style="color:inherit;">Destroyers Squad (48 Players)</a></li>
-              <li><a href="/about" style="color:inherit;">About Destroyers & 2024 Title</a></li>
-              <li><a href="/news" style="color:inherit;">News & Press Releases</a></li>
-              <li><a href="/contact" style="color:inherit;">Contact RDCA & Venues</a></li>
+              <li><a href="/about" style="color:inherit;">About Destroyers &amp; 2024 Title</a></li>
+              <li><a href="/news" style="color:inherit;">News &amp; Press Releases</a></li>
+              <li><a href="/contact" style="color:inherit;">Contact RDCA &amp; Venues</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Legal & Policies</h4>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Legal &amp; Policies</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
               <li><a href="/privacy" style="color:inherit;">Privacy Policy</a></li>
-              <li><a href="/terms" style="color:inherit;">Terms & Conditions</a></li>
-              <li><a href="/about" style="color:inherit;">Editorial Policy & E-E-A-T</a></li>
-              <li><a href="/contact" style="color:inherit;">Grievances & Inquiries</a></li>
+              <li><a href="/terms" style="color:inherit;">Terms &amp; Conditions</a></li>
+              <li><a href="/about" style="color:inherit;">Editorial Policy &amp; E-E-A-T</a></li>
+              <li><a href="/contact" style="color:inherit;">Grievances &amp; Inquiries</a></li>
             </ul>
           </div>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
           <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
-          <div style="display:flex; gap:1.25rem; align-items:center;">
-            <a href="https://instagram.com/destroyersrewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">Instagram</a>
-            <span style="color:var(--c-gray-600);">•</span>
-            <a href="https://x.com/DestroyersRewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">X / Twitter</a>
-            <span style="color:var(--c-gray-600);">•</span>
-            <a href="https://youtube.com/@destroyersrewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">YouTube</a>
-          </div>
           <div>Rewa Division Cricket Association (RDCA) • Madhya Pradesh</div>
         </div>
       </div>
@@ -275,7 +235,7 @@ function generateHomePage() {
   const upcomingMatches = matches.filter((m) => m.status === 'upcoming');
   const nextMatch = upcomingMatches[0];
   const featuredNews = news.slice(0, 3);
-  const featuredSquad = squad.slice(0, 4);
+  const featuredSquad = squad.slice(0, 8);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -385,10 +345,10 @@ ${renderHeader('home')}
           <span class="live-dot"></span>
         </div>
         <div id="match-countdown" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0.5rem; text-align:center;">
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white);" id="cd-days">182</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Days</div></div>
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white);" id="cd-hours">14</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Hours</div></div>
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white);" id="cd-mins">35</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Mins</div></div>
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-ember-bright);" id="cd-secs">48</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Secs</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-white);" id="cd-days">182</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Days</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-white);" id="cd-hours">14</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Hours</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-white);" id="cd-mins">35</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Mins</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-ember-bright);" id="cd-secs">48</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Secs</div></div>
         </div>
       </div>
 
@@ -477,19 +437,56 @@ ${renderHeader('home')}
     </div>
 
     <div class="players-cards-grid" id="players-grid">
-      ${featuredSquad.map((p) => `
-        <a href="/players/${p.slug}" class="jersey-player-card" data-role="${esc(p.role)}" style="text-decoration:none;">
-          <div class="jersey-big-number">${p.jerseyNumber}</div>
-          <div class="jersey-player-role">${esc(p.role)}</div>
-          <h3 class="jersey-player-name">#${p.jerseyNumber} ${esc(p.name)}</h3>
-          <div class="jersey-player-subtitle">Destroyers Squad • ${p.matches} Clashes</div>
-          <div class="jersey-stats-strip">
-            <div><div class="jersey-stat-val tabular" style="color:var(--c-gold);">${esc(p.batting.runs)}</div><div class="jersey-stat-lbl">Runs</div></div>
-            <div><div class="jersey-stat-val tabular">${esc(p.batting.average)}</div><div class="jersey-stat-lbl">Avg</div></div>
-            <div><div class="jersey-stat-val tabular" style="color:var(--c-emerald);">${esc(p.bowling.wickets)}</div><div class="jersey-stat-lbl">Wkts</div></div>
-          </div>
-        </a>
-      `).join('')}
+      ${featuredSquad.map((p) => {
+        const ovr = p.fifaRatings ? p.fifaRatings.overall : 88;
+        const formDots = p.formDots || 4;
+        const formRating = p.formRating || 'HOT';
+        return `
+          <a href="/players/${p.slug}" class="fifa-player-card" data-role="${esc(p.role)}">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                ${ovr} <small>OVR</small>
+              </div>
+              <div class="player-form-badge ${formRating.toLowerCase()}">
+                ${formRating}
+              </div>
+            </div>
+
+            <div class="fifa-card-body">
+              <h3 class="fifa-card-name">#${p.jerseyNumber} ${esc(p.name)}</h3>
+              <div class="fifa-card-role">${esc(p.role)}</div>
+            </div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">${p.fifaRatings ? p.fifaRatings.battingPower : 88}</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">${p.fifaRatings ? p.fifaRatings.timing : 85}</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">${p.fifaRatings ? p.fifaRatings.stamina : 90}</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">${p.fifaRatings ? p.fifaRatings.clutch : 92}</span>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ${'●'.repeat(formDots)}${'○'.repeat(5 - formDots)}
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        `;
+      }).join('')}
     </div>
   </div>
 </section>
@@ -582,30 +579,66 @@ ${renderHeader('squad')}
       </p>
     </div>
 
-    <div class="players-cards-grid">
-      ${squad.map((p) => `
-        <a href="/players/${p.slug}" class="jersey-player-card" style="text-decoration:none;">
-          <div class="jersey-big-number">${p.jerseyNumber}</div>
-          <div class="jersey-player-role">${esc(p.role)}</div>
-          <h2 class="jersey-player-name">#${p.jerseyNumber} ${esc(p.name)}</h2>
-          <div class="jersey-player-subtitle">Destroyers Squad • ${p.matches} Clashes</div>
+    <!-- Interactive Role Filter -->
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
+      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    </div>
 
-          <div class="jersey-stats-strip">
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-gold);">${esc(p.batting.runs)}</div>
-              <div class="jersey-stat-lbl">Runs</div>
+    <div class="players-cards-grid" id="players-grid">
+      ${squad.map((p) => {
+        const ovr = p.fifaRatings ? p.fifaRatings.overall : 88;
+        const formDots = p.formDots || 4;
+        const formRating = p.formRating || 'HOT';
+        return `
+          <a href="/players/${p.slug}" class="fifa-player-card" data-role="${esc(p.role)}">
+            <div class="fifa-card-header">
+              <div class="fifa-ovr-badge">
+                ${ovr} <small>OVR</small>
+              </div>
+              <div class="player-form-badge ${formRating.toLowerCase()}">
+                ${formRating}
+              </div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular">${esc(p.batting.average)}</div>
-              <div class="jersey-stat-lbl">Avg</div>
+
+            <div class="fifa-card-body">
+              <h2 class="fifa-card-name">#${p.jerseyNumber} ${esc(p.name)}</h2>
+              <div class="fifa-card-role">${esc(p.role)}</div>
             </div>
-            <div>
-              <div class="jersey-stat-val tabular" style="color:var(--c-emerald);">${esc(p.bowling.wickets)}</div>
-              <div class="jersey-stat-lbl">Wkts</div>
+
+            <div class="fifa-attributes-grid">
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">BAT PWR</span>
+                <span class="fifa-attr-val tabular">${p.fifaRatings ? p.fifaRatings.battingPower : 88}</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">TIMING</span>
+                <span class="fifa-attr-val tabular">${p.fifaRatings ? p.fifaRatings.timing : 85}</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">STAMINA</span>
+                <span class="fifa-attr-val tabular">${p.fifaRatings ? p.fifaRatings.stamina : 90}</span>
+              </div>
+              <div class="fifa-attr-item">
+                <span class="fifa-attr-label">CLUTCH</span>
+                <span class="fifa-attr-val tabular" style="color:var(--c-ember-bright);">${p.fifaRatings ? p.fifaRatings.clutch : 92}</span>
+              </div>
             </div>
-          </div>
-        </a>
-      `).join('')}
+
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div class="fifa-form-dots">
+                ${'●'.repeat(formDots)}${'○'.repeat(5 - formDots)}
+              </div>
+              <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">
+                View Profile &rarr;
+              </span>
+            </div>
+          </a>
+        `;
+      }).join('')}
     </div>
   </div>
 </section>

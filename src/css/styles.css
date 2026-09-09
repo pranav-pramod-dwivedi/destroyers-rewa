@@ -39,9 +39,9 @@
   --b-highlight: #f56f00;
 
   /* Typography Families */
-  --f-athletic: 'Bebas Neue', 'Syne', sans-serif;
-  --f-display: 'Outfit', sans-serif;
-  --f-body: 'Plus Jakarta Sans', sans-serif;
+  --f-athletic: 'Syne', sans-serif;
+  --f-display: 'Bebas Neue', sans-serif;
+  --f-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --f-mono: 'JetBrains Mono', monospace;
 
   /* Dimensions */
@@ -99,7 +99,30 @@ body {
   padding: 0 2rem;
 }
 
-.tabular {
+/* Universal Tabular Number Standardization (Strict Font Uniformity) */
+.tabular,
+.num,
+.jersey-stat-val,
+.hud-win-count,
+.score-number,
+.chip-score,
+.spotlight-final-score,
+.hud-stat-num,
+.pro-score,
+.pro-score-numbers,
+.match-card-score,
+.card-stat-val,
+.pro-detail-num,
+.legacy-stat-num,
+.legacy-stat-giant,
+.table-num,
+.scorecard-data-table td.num,
+.countdown-digit,
+#match-countdown div div:first-child,
+.fifa-attr-val,
+.fifa-ovr-badge,
+.cap-stat-num {
+  font-family: var(--f-mono) !important;
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum";
 }
@@ -132,29 +155,42 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(8, 8, 8, 0.92);
+  background: rgba(8, 8, 8, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--b-subtle);
+  border-bottom: 1px solid var(--b-medium);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 4.5rem;
 }
 
 .brand-block {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
+  text-decoration: none !important;
 }
 
-.brand-crest-svg {
-  width: 46px;
-  height: 46px;
-  filter: drop-shadow(0 0 12px var(--c-ember-glow));
+.brand-crest-symbol {
+  width: 44px;
+  height: 44px;
+  background: #141414;
+  border: 1.5px solid var(--c-ember-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--f-athletic);
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--c-ember-bright);
+  box-shadow: 0 0 16px rgba(255, 122, 0, 0.22);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  flex-shrink: 0;
 }
 
 .brand-title-group {
@@ -164,16 +200,17 @@ body {
 
 .brand-franchise-name {
   font-family: var(--f-athletic);
-  font-size: 1.85rem;
-  letter-spacing: 0.05em;
-  line-height: 0.9;
+  font-size: 1.45rem;
+  letter-spacing: 0.02em;
+  line-height: 1;
   color: var(--c-white);
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 .brand-subline {
   font-family: var(--f-mono);
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--c-gold);
@@ -184,61 +221,41 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 0.35rem;
   list-style: none;
 }
 
 .header-nav-link {
   font-family: var(--f-athletic);
-  font-size: 1.25rem;
-  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   color: var(--c-gray-400);
   text-transform: uppercase;
-  transition: color var(--transition);
+  text-decoration: none !important;
+  padding: 0.5rem 0.85rem;
+  border-radius: 4px;
+  transition: all 0.2s var(--ease-snappy);
   position: relative;
 }
 
-.header-nav-link:hover, .header-nav-link.active {
+.header-nav-link:hover {
   color: var(--c-white);
+  background: rgba(255, 255, 255, 0.06);
+  text-decoration: none !important;
 }
 
+.header-nav-link.active {
+  color: var(--c-ember-bright);
+  background: rgba(255, 122, 0, 0.12);
+  border: 1px solid rgba(255, 122, 0, 0.25);
+  text-decoration: none !important;
+}
+
+.header-nav-link::after,
 .header-nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--c-ember);
-  box-shadow: 0 0 8px var(--c-ember);
-}
-
-.header-status-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: #141414;
-  border: 1px solid var(--b-medium);
-  padding: 0.45rem 1rem;
-  font-family: var(--f-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--c-gold);
-  text-transform: uppercase;
-}
-
-.live-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--c-ember);
-  box-shadow: 0 0 10px var(--c-ember);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(0.8); opacity: 0.5; }
+  display: none !important;
+  content: none !important;
 }
 
 /* ------------------------------------------------------------
@@ -307,37 +324,43 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
-  padding: 1rem 2.2rem;
+  gap: 0.5rem;
   font-family: var(--f-athletic);
-  font-size: 1.35rem;
-  letter-spacing: 0.08em;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  transition: all var(--transition);
+  text-decoration: none !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s var(--ease-snappy);
+  border: 1px solid transparent;
 }
 
 .btn-athletic-primary {
-  background: var(--c-ember);
-  color: var(--c-white);
-  border: 1px solid var(--c-ember-bright);
-  box-shadow: 0 4px 24px var(--c-ember-glow);
+  background: var(--c-ember-bright);
+  color: #080808;
+  font-weight: 900;
+  border-color: var(--c-ember-bright);
+  box-shadow: 0 0 20px rgba(255, 122, 0, 0.3);
 }
 
 .btn-athletic-primary:hover {
-  background: var(--c-ember-bright);
+  background: #ff8c1a;
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(245, 111, 0, 0.5);
+  box-shadow: 0 0 30px rgba(255, 122, 0, 0.5);
+  color: #000;
 }
 
 .btn-athletic-outline {
   background: transparent;
   color: var(--c-white);
-  border: 1px solid var(--b-medium);
+  border-color: var(--b-medium);
 }
 
 .btn-athletic-outline:hover {
-  background: var(--c-dark-surface);
+  background: rgba(255, 255, 255, 0.06);
   border-color: var(--c-gray-300);
 }
 
@@ -658,6 +681,143 @@ body {
   color: var(--c-white);
   border-color: var(--c-ember-bright);
   box-shadow: 0 4px 18px var(--c-ember-glow);
+}
+
+/* FIFA / Cricket 24 Player Profile Cards */
+.fifa-player-card {
+  background: var(--c-card-bg);
+  border: 1px solid var(--b-medium);
+  border-radius: 4px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.25s var(--ease-snappy);
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.fifa-player-card:hover {
+  border-color: var(--c-ember-bright);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(245, 111, 0, 0.25);
+}
+
+.fifa-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.fifa-ovr-badge {
+  background: #0d0d0d;
+  border: 2px solid var(--c-gold-bright);
+  border-radius: 2px;
+  padding: 0.35rem 0.65rem;
+  font-family: var(--f-mono) !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--c-gold-bright);
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.fifa-ovr-badge small {
+  font-family: var(--f-mono) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--c-white);
+}
+
+.player-form-badge {
+  font-family: var(--f-mono) !important;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.25rem 0.65rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.player-form-badge.hot {
+  background: rgba(255, 122, 0, 0.15);
+  color: var(--c-ember-bright);
+  border: 1px solid rgba(255, 122, 0, 0.4);
+}
+
+.player-form-badge.in\ form,
+.player-form-badge.warm {
+  background: rgba(255, 195, 0, 0.15);
+  color: var(--c-gold-bright);
+  border: 1px solid rgba(255, 195, 0, 0.4);
+}
+
+.player-form-badge.steady {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--c-gray-300);
+  border: 1px solid var(--b-subtle);
+}
+
+.fifa-card-body {
+  margin-bottom: 1.25rem;
+}
+
+.fifa-card-name {
+  font-family: var(--f-athletic);
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: var(--c-white);
+  margin-bottom: 0.25rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.fifa-card-role {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--c-gray-400);
+}
+
+.fifa-attributes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1rem;
+  background: #0d0d0d;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 1px solid var(--b-subtle);
+  margin-bottom: 1.25rem;
+}
+
+.fifa-attr-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--f-mono) !important;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.75rem;
+}
+
+.fifa-attr-label {
+  color: var(--c-gray-400);
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+}
+
+.fifa-attr-val {
+  font-weight: 800;
+  color: var(--c-white);
+}
+
+.fifa-form-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--c-ember-bright);
 }
 
 /* Jersey Number Cards */
@@ -1211,10 +1371,35 @@ table.scorecard-data-table th.num, table.scorecard-data-table td.num {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .header-inner {
+    height: auto;
+    padding: 0.75rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
   .header-nav {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 0.35rem;
+    padding-bottom: 0.25rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .header-nav::-webkit-scrollbar {
     display: none;
   }
+  .header-nav-link {
+    font-size: 0.825rem;
+    padding: 0.4rem 0.65rem;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
   .footer-columns {
     grid-template-columns: 1fr;
   }
