@@ -743,3 +743,66 @@
   });
 
 })();
+
+
+  // --- Franchise Countdown Timer ---
+  function initCountdown() {
+    const targetDate = new Date("2025-09-10T14:00:00+05:30").getTime();
+    const dEl = document.getElementById("cd-days");
+    const hEl = document.getElementById("cd-hours");
+    const mEl = document.getElementById("cd-mins");
+    const sEl = document.getElementById("cd-secs");
+    if (!dEl || !hEl || !mEl || !sEl) return;
+
+    function update() {
+      const now = new Date().getTime();
+      const diff = Math.max(0, targetDate - now);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      dEl.textContent = days;
+      hEl.textContent = String(hours).padStart(2, "0");
+      mEl.textContent = String(mins).padStart(2, "0");
+      sEl.textContent = String(secs).padStart(2, "0");
+    }
+    update();
+    setInterval(update, 1000);
+  }
+
+  // --- Franchise Squad Role Filter ---
+  function initSquadFilter() {
+    const container = document.getElementById("squad-filter-controls");
+    const grid = document.getElementById("players-grid");
+    if (!container || !grid) return;
+
+    const buttons = container.querySelectorAll(".role-btn");
+    const cards = grid.querySelectorAll(".jersey-player-card");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => {
+          b.classList.remove("btn-athletic-primary");
+          b.classList.add("btn-athletic-outline");
+        });
+        btn.classList.remove("btn-athletic-outline");
+        btn.classList.add("btn-athletic-primary");
+
+        const filter = btn.getAttribute("data-filter");
+        cards.forEach((card) => {
+          const role = card.getAttribute("data-role") || "";
+          if (filter === "all" || role.toLowerCase().includes(filter.toLowerCase())) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    initCountdown();
+    initSquadFilter();
+  });

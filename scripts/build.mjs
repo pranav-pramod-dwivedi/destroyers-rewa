@@ -321,6 +321,21 @@ ${renderHeader('home')}
         <div class="hud-bar-de" style="width:54.2%;"></div>
       </div>
 
+      <!-- Live Match Countdown Widget -->
+      <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:1.25rem; margin-top:1rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
+          <span style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.1em;">Next Clash Countdown</span>
+          <span class="live-dot"></span>
+        </div>
+        <div id="match-countdown" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0.5rem; text-align:center;">
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white);" id="cd-days">182</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Days</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white);" id="cd-hours">14</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Hours</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white);" id="cd-mins">35</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Mins</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-ember-bright);" id="cd-secs">48</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Secs</div></div>
+        </div>
+      </div>
+
+
       <!-- Next Match Preview -->
       <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:1.25rem;">
         <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.1em; margin-bottom:0.4rem;">
@@ -394,9 +409,19 @@ ${renderHeader('home')}
       </a>
     </div>
 
-    <div class="players-cards-grid">
+    
+    <!-- Interactive Role Filter -->
+    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
+      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
+      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    </div>
+
+    <div class="players-cards-grid" id="players-grid">
       ${featuredSquad.map((p) => `
-        <a href="/players/${p.slug}" class="jersey-player-card" style="text-decoration:none;">
+        <a href="/players/${p.slug}" class="jersey-player-card" data-role="${esc(p.role)}" style="text-decoration:none;">
           <div class="jersey-big-number">${p.jerseyNumber}</div>
           <div class="jersey-player-role">${esc(p.role)}</div>
           <h3 class="jersey-player-name">#${p.jerseyNumber} ${esc(p.name)}</h3>
