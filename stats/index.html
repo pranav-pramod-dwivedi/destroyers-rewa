@@ -1,0 +1,611 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats &amp; Records Leaderboard | Destroyers Cricket Club (DES)</title>
+  <meta name="description" content="Certified statistics and tournament records for Destroyers Cricket Club in Rewa. Top run scorers, leading wicket-takers, best averages, and highest individual scores.">
+  <link rel="canonical" href="http://127.0.0.1:8085/stats">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://127.0.0.1:8085/stats">
+  <meta property="og:title" content="Stats &amp; Records Leaderboard | Destroyers Cricket Club (DES)">
+  <meta property="og:description" content="Certified statistics and tournament records for Destroyers Cricket Club in Rewa. Top run scorers, leading wicket-takers, best averages, and highest individual scores.">
+  <meta property="og:image" content="http://127.0.0.1:8085/public/inspo1.jpg">
+  <meta property="og:site_name" content="Destroyers Cricket Club (DES)">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="http://127.0.0.1:8085/stats">
+  <meta name="twitter:title" content="Stats &amp; Records Leaderboard | Destroyers Cricket Club (DES)">
+  <meta name="twitter:description" content="Certified statistics and tournament records for Destroyers Cricket Club in Rewa. Top run scorers, leading wicket-takers, best averages, and highest individual scores.">
+  <meta name="twitter:image" content="http://127.0.0.1:8085/public/inspo1.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+
+  
+</head>
+<body>
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="content-wrapper">
+  
+
+  <!-- Top Marquee Ticker -->
+  <div class="top-ticker" aria-hidden="true" style="background:#000; border-bottom:1px solid #1a1a1a; padding:0.4rem 0; font-family:var(--f-mono); font-size:0.6875rem; letter-spacing:0.12em; color:var(--c-gray-400); overflow:hidden; white-space:nowrap;">
+    <div class="ticker-track" style="display:inline-flex; gap:3rem; animation:tickerScroll 28s linear infinite;">
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 24 DERBY CLASHES VS DREAD ELEVEN</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DES LEADS 13–11 (54.2% WR)</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 2022 CHAMPIONSHIP TITLE HOLDERS</span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
+        <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
+          <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
+          <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
+        </svg>
+        <div class="brand-title-group">
+          <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
+          <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Main Navigation">
+        
+          <a href="/" class="header-nav-link " >
+            Home
+          </a>
+        
+          <a href="/players" class="header-nav-link " >
+            Squad
+          </a>
+        
+          <a href="/fixtures" class="header-nav-link " >
+            Fixtures
+          </a>
+        
+          <a href="/results" class="header-nav-link " >
+            Results
+          </a>
+        
+          <a href="/points-table" class="header-nav-link " >
+            Points Table
+          </a>
+        
+          <a href="/stats" class="header-nav-link active" aria-current="page">
+            Stats
+          </a>
+        
+          <a href="/news" class="header-nav-link " >
+            News
+          </a>
+        
+          <a href="/about" class="header-nav-link " >
+            About
+          </a>
+        
+          <a href="/contact" class="header-nav-link " >
+            Contact
+          </a>
+        
+      </nav>
+
+      <div class="header-status-badge">
+        <span class="live-dot"></span>
+        <span>DES LEADS 13–11</span>
+      </div>
+    </div>
+  </header>
+  
+
+<section class="spotlight-banner-section" style="padding-top:4rem; background:#080808;">
+  <div class="container">
+    <div class="section-masthead">
+      <div>
+        <p class="section-pretitle">The Record Books</p>
+        <h1 class="section-bigtitle">Destroyers All-Time Statistics</h1>
+        <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
+          Verified tournament records across all 24 clashes against Dread Eleven in Rewa.
+        </p>
+      </div>
+    </div>
+
+    <!-- Top Run Scorers & Leading Wicket Takers Grid -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-bottom:3rem;">
+      <!-- Top Run Scorers -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
+        <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
+          Top Destroyers Run Scorers
+        </h2>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Player</th><th class="num">Mat</th><th class="num">Runs</th><th class="num">Avg</th><th class="num">SR</th><th class="num">50s</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/akhil-mishra" style="color:inherit;">Akhil Mishra</a></td>
+                <td class="num tabular">19</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">905</td>
+                <td class="num tabular">47.63</td>
+                <td class="num tabular">107.6</td>
+                <td class="num tabular">9</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/ritesh-shakya" style="color:inherit;">Ritesh Shakya</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">249</td>
+                <td class="num tabular">49.8</td>
+                <td class="num tabular">101.2</td>
+                <td class="num tabular">1</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/kuldeep-sen" style="color:inherit;">Kuldeep Sen</a></td>
+                <td class="num tabular">10</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">228</td>
+                <td class="num tabular">28.5</td>
+                <td class="num tabular">95.4</td>
+                <td class="num tabular">1</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/anubhav-agarwal" style="color:inherit;">Anubhav Agarwal</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">208</td>
+                <td class="num tabular">52</td>
+                <td class="num tabular">86.3</td>
+                <td class="num tabular">2</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/yash-dubey" style="color:inherit;">Yash Dubey</a></td>
+                <td class="num tabular">5</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">196</td>
+                <td class="num tabular">39.2</td>
+                <td class="num tabular">104.3</td>
+                <td class="num tabular">0</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/saransh-jain" style="color:inherit;">Saransh Jain</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">183</td>
+                <td class="num tabular">36.6</td>
+                <td class="num tabular">87.1</td>
+                <td class="num tabular">2</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/prithviraj-singh-tomar" style="color:inherit;">Prithviraj Singh Tomar</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">177</td>
+                <td class="num tabular">29.5</td>
+                <td class="num tabular">91.7</td>
+                <td class="num tabular">2</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/anant-verma" style="color:inherit;">Anant Verma</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">163</td>
+                <td class="num tabular">40.75</td>
+                <td class="num tabular">88.6</td>
+                <td class="num tabular">2</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/naveen-singh-chouhan" style="color:inherit;">Naveen Singh Chouhan</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">162</td>
+                <td class="num tabular">32.4</td>
+                <td class="num tabular">115.7</td>
+                <td class="num tabular">1</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/avesh-khan" style="color:inherit;">Avesh Khan</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">145</td>
+                <td class="num tabular">29</td>
+                <td class="num tabular">87.3</td>
+                <td class="num tabular">2</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Leading Wicket Takers -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
+        <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
+          Top Destroyers Wicket Takers
+        </h2>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Bowler</th><th class="num">Mat</th><th class="num">Wkts</th><th class="num">Overs</th><th class="num">BBI</th><th class="num">Eco</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/ashwin-das" style="color:inherit;">Ashwin Das</a></td>
+                <td class="num tabular">10</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">16</td>
+                <td class="num tabular">42</td>
+                <td class="num tabular font-mono">6/92</td>
+                <td class="num tabular">9.26</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/kumar-kartikeya" style="color:inherit;">Kumar Kartikeya</a></td>
+                <td class="num tabular">9</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">14</td>
+                <td class="num tabular">38</td>
+                <td class="num tabular font-mono">5/131</td>
+                <td class="num tabular">6.29</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/kuldeep-sen" style="color:inherit;">Kuldeep Sen</a></td>
+                <td class="num tabular">10</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">12</td>
+                <td class="num tabular">56</td>
+                <td class="num tabular font-mono">2/15</td>
+                <td class="num tabular">5.29</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/subhranshu-senapati" style="color:inherit;">Subhranshu Senapati</a></td>
+                <td class="num tabular">10</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">9</td>
+                <td class="num tabular">29</td>
+                <td class="num tabular font-mono">7/69</td>
+                <td class="num tabular">9.31</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/prabhanshu-shukla" style="color:inherit;">Prabhanshu Shukla</a></td>
+                <td class="num tabular">4</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">9</td>
+                <td class="num tabular">27</td>
+                <td class="num tabular font-mono">8/22</td>
+                <td class="num tabular">2.3</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/akhil-mishra" style="color:inherit;">Akhil Mishra</a></td>
+                <td class="num tabular">19</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">8</td>
+                <td class="num tabular">81</td>
+                <td class="num tabular font-mono">1/23</td>
+                <td class="num tabular">6.04</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/rohit-rajawat" style="color:inherit;">Rohit Rajawat</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">8</td>
+                <td class="num tabular">37</td>
+                <td class="num tabular font-mono">3/37</td>
+                <td class="num tabular">6.46</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/jaydev-singh" style="color:inherit;">Jaydev Singh</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">8</td>
+                <td class="num tabular">24</td>
+                <td class="num tabular font-mono">5/170</td>
+                <td class="num tabular">9.71</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/amarjeet-kumar-singh" style="color:inherit;">Amarjeet Kumar Singh</a></td>
+                <td class="num tabular">5</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">8</td>
+                <td class="num tabular">27</td>
+                <td class="num tabular font-mono">5/1</td>
+                <td class="num tabular">5.04</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/saransh-jain" style="color:inherit;">Saransh Jain</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald); font-size:1rem;">7</td>
+                <td class="num tabular">19</td>
+                <td class="num tabular font-mono">7/185</td>
+                <td class="num tabular">12</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Rate Statistics: Highest Averages & Highest Scores -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <!-- Highest Batting Averages -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
+          Best Batting Averages (Min. 5 Matches)
+        </h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Player</th><th class="num">Mat</th><th class="num">Runs</th><th class="num">Average</th><th class="num">SR</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/anubhav-agarwal" style="color:inherit;">Anubhav Agarwal</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular">208</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">52</td>
+                <td class="num tabular">86.3</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/ritesh-shakya" style="color:inherit;">Ritesh Shakya</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular">249</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">49.8</td>
+                <td class="num tabular">101.2</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/akhil-mishra" style="color:inherit;">Akhil Mishra</a></td>
+                <td class="num tabular">19</td>
+                <td class="num tabular">905</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">47.63</td>
+                <td class="num tabular">107.6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/anant-verma" style="color:inherit;">Anant Verma</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular">163</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">40.75</td>
+                <td class="num tabular">88.6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/yash-dubey" style="color:inherit;">Yash Dubey</a></td>
+                <td class="num tabular">5</td>
+                <td class="num tabular">196</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">39.2</td>
+                <td class="num tabular">104.3</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/rohit-rajawat" style="color:inherit;">Rohit Rajawat</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular">114</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">38</td>
+                <td class="num tabular">98.3</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/saransh-jain" style="color:inherit;">Saransh Jain</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular">183</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">36.6</td>
+                <td class="num tabular">87.1</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/arshad-khan" style="color:inherit;">Arshad Khan</a></td>
+                <td class="num tabular">8</td>
+                <td class="num tabular">101</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">33.67</td>
+                <td class="num tabular">86.3</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/naveen-singh-chouhan" style="color:inherit;">Naveen Singh Chouhan</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular">162</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">32.4</td>
+                <td class="num tabular">115.7</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/radhakrishna-dwivedi" style="color:inherit;">Radhakrishna Dwivedi</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular">129</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">32.25</td>
+                <td class="num tabular">86.6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/akshat-raghuwanshi" style="color:inherit;">Akshat Raghuwanshi</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular">126</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">31.5</td>
+                <td class="num tabular">105</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/prithviraj-singh-tomar" style="color:inherit;">Prithviraj Singh Tomar</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular">177</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">29.5</td>
+                <td class="num tabular">91.7</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/avesh-khan" style="color:inherit;">Avesh Khan</a></td>
+                <td class="num tabular">6</td>
+                <td class="num tabular">145</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">29</td>
+                <td class="num tabular">87.3</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/kuldeep-sen" style="color:inherit;">Kuldeep Sen</a></td>
+                <td class="num tabular">10</td>
+                <td class="num tabular">228</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">28.5</td>
+                <td class="num tabular">95.4</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/venkatesh-iyer" style="color:inherit;">Venkatesh Iyer</a></td>
+                <td class="num tabular">5</td>
+                <td class="num tabular">142</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">28.4</td>
+                <td class="num tabular">107.6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/ajay-rohera" style="color:inherit;">Ajay Rohera</a></td>
+                <td class="num tabular">7</td>
+                <td class="num tabular">133</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1rem;">26.6</td>
+                <td class="num tabular">90.5</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Highest Individual Scores -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
+          Highest Individual Scores
+        </h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Player</th><th class="num">High Score</th><th class="num">Strike Rate</th><th class="num">Total Runs</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/anant-verma" style="color:inherit;">Anant Verma</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">95</td>
+                <td class="num tabular">88.6</td>
+                <td class="num tabular">163</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/anubhav-agarwal" style="color:inherit;">Anubhav Agarwal</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">92</td>
+                <td class="num tabular">86.3</td>
+                <td class="num tabular">208</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/kuldeep-sen" style="color:inherit;">Kuldeep Sen</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">89</td>
+                <td class="num tabular">95.4</td>
+                <td class="num tabular">228</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/ritesh-shakya" style="color:inherit;">Ritesh Shakya</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">85</td>
+                <td class="num tabular">101.2</td>
+                <td class="num tabular">249</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/rohit-rajawat" style="color:inherit;">Rohit Rajawat</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">83*</td>
+                <td class="num tabular">98.3</td>
+                <td class="num tabular">114</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/prithviraj-singh-tomar" style="color:inherit;">Prithviraj Singh Tomar</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">74</td>
+                <td class="num tabular">91.7</td>
+                <td class="num tabular">177</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/subhranshu-senapati" style="color:inherit;">Subhranshu Senapati</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">70</td>
+                <td class="num tabular">122.8</td>
+                <td class="num tabular">140</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; color:var(--c-white);"><a href="/players/akhil-mishra" style="color:inherit;">Akhil Mishra</a></td>
+                <td class="num tabular font-bold" style="color:var(--c-ember-bright); font-size:1.1rem;">69</td>
+                <td class="num tabular">107.6</td>
+                <td class="num tabular">905</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div>
+            <div class="brand-franchise-name" style="font-size: 2rem;">
+              DESTROYERS <span style="color:var(--c-ember-bright);">CRICKET CLUB</span>
+            </div>
+            <p style="font-size:0.875rem; color:var(--c-gray-400); max-width:48ch; margin-top:0.75rem; line-height:1.7;">
+              Official pro franchise website for Destroyers Cricket Club (DES). 
+              Competing in the prestigious Atal Bihari Vajpayee Memorial Tournament under the Rewa Division Cricket Association (RDCA).
+            </p>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Match Center</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="/fixtures" style="color:inherit;">Upcoming Fixtures (2025–26)</a></li>
+              <li><a href="/results" style="color:inherit;">Completed Match Archive (2021–24)</a></li>
+              <li><a href="/points-table" style="color:inherit;">Tournament Points Table</a></li>
+              <li><a href="/stats" style="color:inherit;">All-Time Records & Stats</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise & Venues</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="/players" style="color:inherit;">Squad Roster (43 Players)</a></li>
+              <li><a href="/about" style="color:inherit;">About Destroyers & 2022 Title</a></li>
+              <li><a href="/news" style="color:inherit;">News & Press Releases</a></li>
+              <li><a href="/contact" style="color:inherit;">Contact RDCA & Venues</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
+          <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
+          <div>Rewa Division Cricket Association (RDCA) • Madhya Pradesh</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/src/js/app.js"></script>
+</body>
+</html>
+  
+  

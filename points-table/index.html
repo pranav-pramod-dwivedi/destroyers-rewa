@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournament Points Table &amp; Standings | Destroyers Cricket Club (DES)</title>
+  <meta name="description" content="Official standings and points table for the Atal Bihari Vajpayee Memorial Tournament, Rewa. Destroyers Cricket Club and Dread Eleven season rankings, wins, losses, and net run rates.">
+  <link rel="canonical" href="http://127.0.0.1:8085/points-table">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://127.0.0.1:8085/points-table">
+  <meta property="og:title" content="Tournament Points Table &amp; Standings | Destroyers Cricket Club (DES)">
+  <meta property="og:description" content="Official standings and points table for the Atal Bihari Vajpayee Memorial Tournament, Rewa. Destroyers Cricket Club and Dread Eleven season rankings, wins, losses, and net run rates.">
+  <meta property="og:image" content="http://127.0.0.1:8085/public/inspo1.jpg">
+  <meta property="og:site_name" content="Destroyers Cricket Club (DES)">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="http://127.0.0.1:8085/points-table">
+  <meta name="twitter:title" content="Tournament Points Table &amp; Standings | Destroyers Cricket Club (DES)">
+  <meta name="twitter:description" content="Official standings and points table for the Atal Bihari Vajpayee Memorial Tournament, Rewa. Destroyers Cricket Club and Dread Eleven season rankings, wins, losses, and net run rates.">
+  <meta name="twitter:image" content="http://127.0.0.1:8085/public/inspo1.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+
+  
+</head>
+<body>
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="content-wrapper">
+  
+
+  <!-- Top Marquee Ticker -->
+  <div class="top-ticker" aria-hidden="true" style="background:#000; border-bottom:1px solid #1a1a1a; padding:0.4rem 0; font-family:var(--f-mono); font-size:0.6875rem; letter-spacing:0.12em; color:var(--c-gray-400); overflow:hidden; white-space:nowrap;">
+    <div class="ticker-track" style="display:inline-flex; gap:3rem; animation:tickerScroll 28s linear infinite;">
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 24 DERBY CLASHES VS DREAD ELEVEN</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DES LEADS 13–11 (54.2% WR)</span>
+      <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 2022 CHAMPIONSHIP TITLE HOLDERS</span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-block" aria-label="Destroyers Cricket Club Home">
+        <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
+          <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
+          <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
+        </svg>
+        <div class="brand-title-group">
+          <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
+          <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Main Navigation">
+        
+          <a href="/" class="header-nav-link " >
+            Home
+          </a>
+        
+          <a href="/players" class="header-nav-link " >
+            Squad
+          </a>
+        
+          <a href="/fixtures" class="header-nav-link " >
+            Fixtures
+          </a>
+        
+          <a href="/results" class="header-nav-link " >
+            Results
+          </a>
+        
+          <a href="/points-table" class="header-nav-link active" aria-current="page">
+            Points Table
+          </a>
+        
+          <a href="/stats" class="header-nav-link " >
+            Stats
+          </a>
+        
+          <a href="/news" class="header-nav-link " >
+            News
+          </a>
+        
+          <a href="/about" class="header-nav-link " >
+            About
+          </a>
+        
+          <a href="/contact" class="header-nav-link " >
+            Contact
+          </a>
+        
+      </nav>
+
+      <div class="header-status-badge">
+        <span class="live-dot"></span>
+        <span>DES LEADS 13–11</span>
+      </div>
+    </div>
+  </header>
+  
+
+<section class="spotlight-banner-section" style="padding-top:4rem; background:#080808;">
+  <div class="container">
+    <div class="section-masthead">
+      <div>
+        <p class="section-pretitle">Tournament Standings</p>
+        <h1 class="section-bigtitle">Tournament Points Table</h1>
+        <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
+          Sanctioned standings across all editions of the Atal Bihari Vajpayee Memorial Tournament in Rewa.
+        </p>
+      </div>
+    </div>
+
+    <!-- All-Time Master Standings -->
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; margin-bottom:3rem;">
+      <h2 style="font-family:var(--f-athletic); font-size:1.85rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
+        All-Time Derby Table (2021–2024 • 24 Encounters)
+      </h2>
+
+      <div style="overflow-x:auto;">
+        <table class="scorecard-data-table">
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Franchise Team</th>
+              <th class="num">P</th>
+              <th class="num">W</th>
+              <th class="num">L</th>
+              <th class="num">T</th>
+              <th class="num">NR</th>
+              <th class="num">NRR</th>
+              <th class="num">Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">1</td>
+                <td style="font-weight:800; color:var(--c-white); font-family:var(--f-athletic); font-size:1.3rem;">
+                  Destroyers Cricket Club <span style="color:var(--c-gold); font-size:0.75rem; margin-left:0.5rem;">🏆 LEADER</span>
+                </td>
+                <td class="num tabular font-bold">24</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald);">13</td>
+                <td class="num tabular" style="color:var(--c-ruby);">11</td>
+                <td class="num tabular">0</td>
+                <td class="num tabular">0</td>
+                <td class="num tabular" style="font-family:var(--f-mono); font-weight:700;">+0.284</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1.25rem;">26</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-white);">2</td>
+                <td style="font-weight:800; color:var(--c-white); font-family:var(--f-athletic); font-size:1.3rem;">
+                  Dread Eleven 
+                </td>
+                <td class="num tabular font-bold">24</td>
+                <td class="num tabular font-bold" style="color:var(--c-emerald);">11</td>
+                <td class="num tabular" style="color:var(--c-ruby);">13</td>
+                <td class="num tabular">0</td>
+                <td class="num tabular">0</td>
+                <td class="num tabular" style="font-family:var(--f-mono); font-weight:700;">-0.284</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold); font-size:1.25rem;">22</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Season by Season Standings Grid -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <!-- 2024 Season -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2024 (50-Over ODI)</h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Dread Eleven</td>
+                <td class="num tabular">5</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">3</td>
+                <td class="num tabular" style="color:var(--c-ruby);">2</td>
+                <td class="num tabular font-mono">+0.192</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Destroyers Cricket Club</td>
+                <td class="num tabular">5</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">2</td>
+                <td class="num tabular" style="color:var(--c-ruby);">3</td>
+                <td class="num tabular font-mono">-0.192</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">4</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2023 Season -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2023 (50-Over ODI)</h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Destroyers Cricket Club</td>
+                <td class="num tabular">5</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">3</td>
+                <td class="num tabular" style="color:var(--c-ruby);">2</td>
+                <td class="num tabular font-mono">+0.245</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Dread Eleven</td>
+                <td class="num tabular">5</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">2</td>
+                <td class="num tabular" style="color:var(--c-ruby);">3</td>
+                <td class="num tabular font-mono">-0.245</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">4</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2022 Title Year -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (Championship Year)</h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Destroyers Cricket Club (Champions)</td>
+                <td class="num tabular">7</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">3</td>
+                <td class="num tabular" style="color:var(--c-ruby);">4</td>
+                <td class="num tabular font-mono">+0.110</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">6</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Dread Eleven (Runners-up)</td>
+                <td class="num tabular">7</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">4</td>
+                <td class="num tabular" style="color:var(--c-ruby);">3</td>
+                <td class="num tabular font-mono">-0.110</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">8</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2021 Inaugural Year -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2021 (T20 League)</h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Destroyers Cricket Club</td>
+                <td class="num tabular">7</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">5</td>
+                <td class="num tabular" style="color:var(--c-ruby);">2</td>
+                <td class="num tabular font-mono">+0.540</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">10</td>
+              </tr>
+            
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">Dread Eleven</td>
+                <td class="num tabular">7</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">2</td>
+                <td class="num tabular" style="color:var(--c-ruby);">5</td>
+                <td class="num tabular font-mono">-0.540</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">4</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div>
+            <div class="brand-franchise-name" style="font-size: 2rem;">
+              DESTROYERS <span style="color:var(--c-ember-bright);">CRICKET CLUB</span>
+            </div>
+            <p style="font-size:0.875rem; color:var(--c-gray-400); max-width:48ch; margin-top:0.75rem; line-height:1.7;">
+              Official pro franchise website for Destroyers Cricket Club (DES). 
+              Competing in the prestigious Atal Bihari Vajpayee Memorial Tournament under the Rewa Division Cricket Association (RDCA).
+            </p>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Match Center</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="/fixtures" style="color:inherit;">Upcoming Fixtures (2025–26)</a></li>
+              <li><a href="/results" style="color:inherit;">Completed Match Archive (2021–24)</a></li>
+              <li><a href="/points-table" style="color:inherit;">Tournament Points Table</a></li>
+              <li><a href="/stats" style="color:inherit;">All-Time Records & Stats</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Franchise & Venues</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="/players" style="color:inherit;">Squad Roster (43 Players)</a></li>
+              <li><a href="/about" style="color:inherit;">About Destroyers & 2022 Title</a></li>
+              <li><a href="/news" style="color:inherit;">News & Press Releases</a></li>
+              <li><a href="/contact" style="color:inherit;">Contact RDCA & Venues</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
+          <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
+          <div>Rewa Division Cricket Association (RDCA) • Madhya Pradesh</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/src/js/app.js"></script>
+</body>
+</html>
+  
+  

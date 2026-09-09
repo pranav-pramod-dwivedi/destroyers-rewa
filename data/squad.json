@@ -25,7 +25,13 @@
       "economy": 6.04,
       "average": 61.13,
       "bestBowling": "1/23"
-    }
+    },
+    "slug": "akhil-mishra",
+    "jerseyNumber": 1,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Akhil Mishra is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Akhil Mishra has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/akhil-mishra.svg"
   },
   {
     "id": "p-kuldeep-sen",
@@ -53,7 +59,13 @@
       "economy": 5.29,
       "average": 24.67,
       "bestBowling": "2/15"
-    }
+    },
+    "slug": "kuldeep-sen",
+    "jerseyNumber": 7,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "bio": "Kuldeep Sen is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Kuldeep Sen has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/kuldeep-sen.svg"
   },
   {
     "id": "p-kumar-kartikeya",
@@ -81,7 +93,13 @@
       "economy": 6.29,
       "average": 17.07,
       "bestBowling": "5/131"
-    }
+    },
+    "slug": "kumar-kartikeya",
+    "jerseyNumber": 19,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "bio": "Kumar Kartikeya is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Kumar Kartikeya has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/kumar-kartikeya.svg"
   },
   {
     "id": "p-ashwin-das",
@@ -109,7 +127,13 @@
       "economy": 9.26,
       "average": 24.31,
       "bestBowling": "6/92"
-    }
+    },
+    "slug": "ashwin-das",
+    "jerseyNumber": 23,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "bio": "Ashwin Das is a key bowler for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Ashwin Das has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/ashwin-das.svg"
   },
   {
     "id": "p-subhranshu-senapati",
@@ -137,7 +161,13 @@
       "economy": 9.31,
       "average": 30,
       "bestBowling": "7/69"
-    }
+    },
+    "slug": "subhranshu-senapati",
+    "jerseyNumber": 8,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Subhranshu Senapati is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Subhranshu Senapati has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/subhranshu-senapati.svg"
   },
   {
     "id": "p-saransh-jain",
@@ -165,7 +195,13 @@
       "economy": 12,
       "average": 32.57,
       "bestBowling": "7/185"
-    }
+    },
+    "slug": "saransh-jain",
+    "jerseyNumber": 24,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm off break",
+    "bio": "Saransh Jain is a key captain / all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Saransh Jain has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/saransh-jain.svg"
   },
   {
     "id": "p-ritesh-shakya",
@@ -193,7 +229,13 @@
       "economy": 2.54,
       "average": 15.25,
       "bestBowling": "2/6"
-    }
+    },
+    "slug": "ritesh-shakya",
+    "jerseyNumber": 12,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Ritesh Shakya is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Ritesh Shakya has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/ritesh-shakya.svg"
   },
   {
     "id": "p-yash-dubey",
@@ -221,7 +263,13 @@
       "economy": 3.5,
       "average": 21,
       "bestBowling": "2/28"
-    }
+    },
+    "slug": "yash-dubey",
+    "jerseyNumber": 18,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break (part-time)",
+    "bio": "Yash Dubey is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Yash Dubey has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/yash-dubey.svg"
   },
   {
     "id": "p-rohit-rajawat",
@@ -249,7 +297,13 @@
       "economy": 6.46,
       "average": 29.88,
       "bestBowling": "3/37"
-    }
+    },
+    "slug": "rohit-rajawat",
+    "jerseyNumber": 14,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Rohit Rajawat is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Rohit Rajawat has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/rohit-rajawat.svg"
   },
   {
     "id": "p-prabhanshu-shukla",
@@ -277,7 +331,13 @@
       "economy": 2.3,
       "average": 6.89,
       "bestBowling": "8/22"
-    }
+    },
+    "slug": "prabhanshu-shukla",
+    "jerseyNumber": 4,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Prabhanshu Shukla is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Prabhanshu Shukla has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/prabhanshu-shukla.svg"
   },
   {
     "id": "p-anubhav-agarwal",
@@ -305,7 +365,13 @@
       "economy": 1.71,
       "average": 8,
       "bestBowling": "2/24"
-    }
+    },
+    "slug": "anubhav-agarwal",
+    "jerseyNumber": 11,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "bio": "Anubhav Agarwal is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Anubhav Agarwal has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/anubhav-agarwal.svg"
   },
   {
     "id": "p-avesh-khan",
@@ -333,7 +399,13 @@
       "economy": 8.75,
       "average": 35,
       "bestBowling": "2/4"
-    }
+    },
+    "slug": "avesh-khan",
+    "jerseyNumber": 99,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "bio": "Avesh Khan is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Avesh Khan has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/avesh-khan.svg"
   },
   {
     "id": "p-mohd-arham-aquil",
@@ -361,7 +433,13 @@
       "economy": 4.3,
       "average": 16.57,
       "bestBowling": "5/95"
-    }
+    },
+    "slug": "mohd-arham-aquil",
+    "jerseyNumber": 89,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Mohd Arham Aquil is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Mohd Arham Aquil has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/mohd-arham-aquil.svg"
   },
   {
     "id": "p-jaydev-singh",
@@ -389,7 +467,13 @@
       "economy": 9.71,
       "average": 29.13,
       "bestBowling": "5/170"
-    }
+    },
+    "slug": "jaydev-singh",
+    "jerseyNumber": 8,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Jaydev Singh is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Jaydev Singh has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/jaydev-singh.svg"
   },
   {
     "id": "p-amarjeet-kumar-singh",
@@ -417,7 +501,13 @@
       "economy": 5.04,
       "average": 17,
       "bestBowling": "5/1"
-    }
+    },
+    "slug": "amarjeet-kumar-singh",
+    "jerseyNumber": 15,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Amarjeet Kumar Singh is a key bowler for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Amarjeet Kumar Singh has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/amarjeet-kumar-singh.svg"
   },
   {
     "id": "p-naveen-singh-chouhan",
@@ -445,7 +535,13 @@
       "economy": 3.05,
       "average": 22.33,
       "bestBowling": "2/8"
-    }
+    },
+    "slug": "naveen-singh-chouhan",
+    "jerseyNumber": 22,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Naveen Singh Chouhan is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Naveen Singh Chouhan has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/naveen-singh-chouhan.svg"
   },
   {
     "id": "p-himanshu-mantri",
@@ -473,7 +569,13 @@
       "economy": 2.25,
       "average": 10.8,
       "bestBowling": "2/10"
-    }
+    },
+    "slug": "himanshu-mantri",
+    "jerseyNumber": 22,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break (part-time)",
+    "bio": "Himanshu Mantri is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Himanshu Mantri has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/himanshu-mantri.svg"
   },
   {
     "id": "p-ramveer-singh-gurjar",
@@ -501,7 +603,13 @@
       "economy": 9.22,
       "average": 33.2,
       "bestBowling": "4/148"
-    }
+    },
+    "slug": "ramveer-singh-gurjar",
+    "jerseyNumber": 36,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Ramveer Singh Gurjar is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Ramveer Singh Gurjar has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/ramveer-singh-gurjar.svg"
   },
   {
     "id": "p-prithviraj-singh-tomar",
@@ -529,7 +637,13 @@
       "economy": 1.25,
       "average": 5,
       "bestBowling": "2/6"
-    }
+    },
+    "slug": "prithviraj-singh-tomar",
+    "jerseyNumber": 10,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Prithviraj Singh Tomar is a key captain / all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Prithviraj Singh Tomar has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/prithviraj-singh-tomar.svg"
   },
   {
     "id": "p-arshad-khan",
@@ -557,7 +671,13 @@
       "economy": 2.98,
       "average": 24.4,
       "bestBowling": "2/18"
-    }
+    },
+    "slug": "arshad-khan",
+    "jerseyNumber": 50,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Arshad Khan is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Arshad Khan has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/arshad-khan.svg"
   },
   {
     "id": "p-venkatesh-iyer",
@@ -585,7 +705,13 @@
       "economy": 3.1,
       "average": 30,
       "bestBowling": "2/23"
-    }
+    },
+    "slug": "venkatesh-iyer",
+    "jerseyNumber": 77,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Venkatesh Iyer is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Venkatesh Iyer has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/venkatesh-iyer.svg"
   },
   {
     "id": "p-anant-verma",
@@ -613,7 +739,13 @@
       "economy": 4.42,
       "average": 26.5,
       "bestBowling": "1/22"
-    }
+    },
+    "slug": "anant-verma",
+    "jerseyNumber": 5,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break (part-time)",
+    "bio": "Anant Verma is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Anant Verma has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/anant-verma.svg"
   },
   {
     "id": "p-rajat-patidar",
@@ -641,7 +773,13 @@
       "economy": 7.94,
       "average": 35.75,
       "bestBowling": "3/72"
-    }
+    },
+    "slug": "rajat-patidar",
+    "jerseyNumber": 97,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Rajat Patidar is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Rajat Patidar has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/rajat-patidar.svg"
   },
   {
     "id": "p-akshat-raghuwanshi",
@@ -669,7 +807,13 @@
       "economy": 6.85,
       "average": 61.67,
       "bestBowling": "2/109"
-    }
+    },
+    "slug": "akshat-raghuwanshi",
+    "jerseyNumber": 78,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Akshat Raghuwanshi is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Akshat Raghuwanshi has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/akshat-raghuwanshi.svg"
   },
   {
     "id": "p-chanchal-rathore",
@@ -697,7 +841,13 @@
       "economy": 15.06,
       "average": 60.25,
       "bestBowling": "2/1"
-    }
+    },
+    "slug": "chanchal-rathore",
+    "jerseyNumber": 85,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Chanchal Rathore is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Chanchal Rathore has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/chanchal-rathore.svg"
   },
   {
     "id": "p-mohd-arshad-khan",
@@ -725,7 +875,13 @@
       "economy": 2.74,
       "average": 17.33,
       "bestBowling": "2/14"
-    }
+    },
+    "slug": "mohd-arshad-khan",
+    "jerseyNumber": 31,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm medium-fast",
+    "bio": "Mohd Arshad Khan is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Mohd Arshad Khan has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/mohd-arshad-khan.svg"
   },
   {
     "id": "p-rahul-batham",
@@ -753,7 +909,13 @@
       "economy": 8.38,
       "average": 33.5,
       "bestBowling": "3/91"
-    }
+    },
+    "slug": "rahul-batham",
+    "jerseyNumber": 11,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Rahul Batham is a key captain / all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Rahul Batham has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/rahul-batham.svg"
   },
   {
     "id": "p-saransh-surana",
@@ -781,7 +943,13 @@
       "economy": 4.06,
       "average": 67,
       "bestBowling": "1/20"
-    }
+    },
+    "slug": "saransh-surana",
+    "jerseyNumber": 18,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Saransh Surana is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Saransh Surana has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/saransh-surana.svg"
   },
   {
     "id": "p-ajay-rohera",
@@ -809,7 +977,13 @@
       "economy": 3.77,
       "average": 0,
       "bestBowling": "-"
-    }
+    },
+    "slug": "ajay-rohera",
+    "jerseyNumber": 25,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break (part-time)",
+    "bio": "Ajay Rohera is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Ajay Rohera has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/ajay-rohera.svg"
   },
   {
     "id": "p-shubham-sharma",
@@ -837,7 +1011,13 @@
       "economy": 0.82,
       "average": 14,
       "bestBowling": "1/1"
-    }
+    },
+    "slug": "shubham-sharma",
+    "jerseyNumber": 17,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Shubham Sharma is a key captain / all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Shubham Sharma has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/shubham-sharma.svg"
   },
   {
     "id": "p-radhakrishna-dwivedi",
@@ -865,7 +1045,13 @@
       "economy": 1.88,
       "average": 0,
       "bestBowling": "-"
-    }
+    },
+    "slug": "radhakrishna-dwivedi",
+    "jerseyNumber": 39,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Radhakrishna Dwivedi is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Radhakrishna Dwivedi has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/radhakrishna-dwivedi.svg"
   },
   {
     "id": "p-aditya-shrivastava",
@@ -893,7 +1079,13 @@
       "economy": 6.5,
       "average": 13,
       "bestBowling": "2/26"
-    }
+    },
+    "slug": "aditya-shrivastava",
+    "jerseyNumber": 46,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Aditya Shrivastava is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Aditya Shrivastava has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/aditya-shrivastava.svg"
   },
   {
     "id": "p-ankit-singh-kushwaha",
@@ -921,7 +1113,13 @@
       "economy": 2.4,
       "average": 12,
       "bestBowling": "2/24"
-    }
+    },
+    "slug": "ankit-singh-kushwaha",
+    "jerseyNumber": 53,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Ankit Singh Kushwaha is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Ankit Singh Kushwaha has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/ankit-singh-kushwaha.svg"
   },
   {
     "id": "p-kulwant-khejroliya",
@@ -949,7 +1147,13 @@
       "economy": 3.2,
       "average": 16,
       "bestBowling": "2/32"
-    }
+    },
+    "slug": "kulwant-khejroliya",
+    "jerseyNumber": 60,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Kulwant Khejroliya is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Kulwant Khejroliya has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/kulwant-khejroliya.svg"
   },
   {
     "id": "p-sagar-pratap-singh",
@@ -977,7 +1181,13 @@
       "economy": 5.58,
       "average": 33.5,
       "bestBowling": "1/25"
-    }
+    },
+    "slug": "sagar-pratap-singh",
+    "jerseyNumber": 67,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Sagar Pratap Singh is a key bowler for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Sagar Pratap Singh has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/sagar-pratap-singh.svg"
   },
   {
     "id": "p-kanishk-dubey",
@@ -1005,7 +1215,13 @@
       "economy": 1.38,
       "average": 6,
       "bestBowling": "2/3"
-    }
+    },
+    "slug": "kanishk-dubey",
+    "jerseyNumber": 74,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Kanishk Dubey is a key bowler for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Kanishk Dubey has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/kanishk-dubey.svg"
   },
   {
     "id": "p-aryan-deshmukh",
@@ -1033,7 +1249,13 @@
       "economy": 0,
       "average": 0,
       "bestBowling": "-"
-    }
+    },
+    "slug": "aryan-deshmukh",
+    "jerseyNumber": 81,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off break (part-time)",
+    "bio": "Aryan Deshmukh is a key batsman for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Aryan Deshmukh has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/aryan-deshmukh.svg"
   },
   {
     "id": "p-shivam-shukla",
@@ -1061,7 +1283,13 @@
       "economy": 1.67,
       "average": 7.5,
       "bestBowling": "2/15"
-    }
+    },
+    "slug": "shivam-shukla",
+    "jerseyNumber": 88,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Shivam Shukla is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Shivam Shukla has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/shivam-shukla.svg"
   },
   {
     "id": "p-atharv-mahajan",
@@ -1089,7 +1317,13 @@
       "economy": 4.33,
       "average": 0,
       "bestBowling": "-"
-    }
+    },
+    "slug": "atharv-mahajan",
+    "jerseyNumber": 7,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Atharv Mahajan is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Atharv Mahajan has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/atharv-mahajan.svg"
   },
   {
     "id": "p-sagar-solanki",
@@ -1117,7 +1351,13 @@
       "economy": 3.5,
       "average": 14,
       "bestBowling": "1/14"
-    }
+    },
+    "slug": "sagar-solanki",
+    "jerseyNumber": 14,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Sagar Solanki is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Sagar Solanki has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/sagar-solanki.svg"
   },
   {
     "id": "p-aryan-dwivedi",
@@ -1145,7 +1385,13 @@
       "economy": 2.25,
       "average": 18,
       "bestBowling": "1/18"
-    }
+    },
+    "slug": "aryan-dwivedi",
+    "jerseyNumber": 21,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Aryan Dwivedi is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Aryan Dwivedi has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/aryan-dwivedi.svg"
   },
   {
     "id": "p-aryan-shrivastava",
@@ -1173,7 +1419,13 @@
       "economy": 10.5,
       "average": 42,
       "bestBowling": "1/42"
-    }
+    },
+    "slug": "aryan-shrivastava",
+    "jerseyNumber": 28,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Aryan Shrivastava is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Aryan Shrivastava has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/aryan-shrivastava.svg"
   },
   {
     "id": "p-harsh-gawli",
@@ -1201,6 +1453,12 @@
       "economy": 0.33,
       "average": 0,
       "bestBowling": "-"
-    }
+    },
+    "slug": "harsh-gawli",
+    "jerseyNumber": 35,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "bio": "Harsh Gawli is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Representing Destroyers across crucial encounters against arch-rivals Dread Eleven, Harsh Gawli has delivered pivotal performances under pressure at APSU Stadium and Martand Ground under the Rewa Division Cricket Association (RDCA).",
+    "photo": "/public/players/harsh-gawli.svg"
   }
 ]
