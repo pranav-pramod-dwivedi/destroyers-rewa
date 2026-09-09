@@ -1,0 +1,4 @@
+/squad /players 301
+/match/* /matches/:splat 301
+/standing /points-table 301
+/standings /points-table 301

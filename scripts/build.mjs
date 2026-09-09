@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
-const BASE_URL = 'http://127.0.0.1:8085';
+const BASE_URL = process.env.SITE_URL || 'https://destroyerscricket.in';
 
 // Load Datasets
 const tournament = JSON.parse(fs.readFileSync(path.join(rootDir, 'data/tournament.json'), 'utf8'));
@@ -54,9 +54,31 @@ function esc(text) {
 // ------------------------------------------------------------
 // GLOBAL HTML TEMPLATE BLOCKS
 // ------------------------------------------------------------
-function renderHead({ title, description, canonicalUrl, ogType = 'website', ogImage = '/public/inspo1.jpg', jsonLd = null }) {
+function renderHead({ title, description, canonicalUrl, ogType = 'website', ogImage = '/public/inspo1.jpg', jsonLd = null, breadcrumbs = null }) {
   const fullCanonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : BASE_URL;
-  const fullOgImage = `${BASE_URL}${ogImage}`;
+  const fullOgImage = ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`;
+
+  const jsonLdList = [];
+  if (jsonLd) {
+    if (Array.isArray(jsonLd)) {
+      jsonLdList.push(...jsonLd);
+    } else {
+      jsonLdList.push(jsonLd);
+    }
+  }
+
+  if (breadcrumbs && breadcrumbs.length > 0) {
+    jsonLdList.push({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((b, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: b.name,
+        item: b.item.startsWith('http') ? b.item : `${BASE_URL}${b.item}`
+      }))
+    });
+  }
 
   return `
 <!DOCTYPE html>
@@ -66,7 +88,9 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${fullCanonical}">
+  <meta name="theme-color" content="#0b0b0b">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="${esc(ogType)}">
@@ -74,14 +98,23 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:image" content="${fullOgImage}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Destroyers Cricket Club (DES)">
+  <meta property="og:locale" content="en_IN">
 
-  <!-- Twitter -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="${fullCanonical}">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${fullOgImage}">
+  <meta name="twitter:site" content="@DestroyersRewa">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+  <link rel="apple-touch-icon" href="/public/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,9 +122,8 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/src/css/styles.css">
-  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
 
-  ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}
+  ${jsonLdList.map((item) => `<script type="application/ld+json">${JSON.stringify(item)}</script>`).join('\n  ')}
 </head>
 <body>
   <canvas id="ambient-canvas" aria-hidden="true"></canvas>
@@ -202,10 +234,27 @@ function renderFooter() {
               <li><a href="/contact" style="color:inherit;">Contact RDCA & Venues</a></li>
             </ul>
           </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Legal & Policies</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="/privacy" style="color:inherit;">Privacy Policy</a></li>
+              <li><a href="/terms" style="color:inherit;">Terms & Conditions</a></li>
+              <li><a href="/about" style="color:inherit;">Editorial Policy & E-E-A-T</a></li>
+              <li><a href="/contact" style="color:inherit;">Grievances & Inquiries</a></li>
+            </ul>
+          </div>
         </div>
 
         <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
           <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
+          <div style="display:flex; gap:1.25rem; align-items:center;">
+            <a href="https://instagram.com/destroyersrewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">Instagram</a>
+            <span style="color:var(--c-gray-600);">•</span>
+            <a href="https://x.com/DestroyersRewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">X / Twitter</a>
+            <span style="color:var(--c-gray-600);">•</span>
+            <a href="https://youtube.com/@destroyersrewa" target="_blank" rel="noopener noreferrer" style="color:var(--c-gray-400); text-decoration:none;">YouTube</a>
+          </div>
           <div>Rewa Division Cricket Association (RDCA) • Madhya Pradesh</div>
         </div>
       </div>
@@ -504,7 +553,11 @@ ${renderHead({
   title: 'Squad Roster (48 Players) | Destroyers Cricket Club (DES)',
   description: 'Official squad directory for Destroyers Cricket Club, captained by Pranav Dwivedi (1,341 runs, 63 wickets) in the Atal Bihari Vajpayee Tournament, Rewa. Verified career averages, runs, wickets, and individual player pages.',
   canonicalUrl: '/players',
-  jsonLd: jsonLdDirectory
+  jsonLd: jsonLdDirectory,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Squad', item: '/players' }
+  ]
 })}
 ${renderHeader('squad')}
 
@@ -601,7 +654,12 @@ ${renderHead({
   title: `${p.name} (#${p.jerseyNumber}) — Destroyers Cricket Club Profile`,
   description: `${p.name} official profile for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. ${p.batting.runs} runs, ${p.bowling.wickets} wickets, career stats, and match log.`,
   canonicalUrl: `/players/${p.slug}`,
-  jsonLd: playerJsonLd
+  jsonLd: playerJsonLd,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Squad', item: '/players' },
+    { name: `#${p.jerseyNumber} ${p.name}`, item: `/players/${p.slug}` }
+  ]
 })}
 ${renderHeader('squad')}
 
@@ -869,9 +927,13 @@ function generateMatchPages() {
   // A. Generate /fixtures/index.html
   const fixturesHtml = `
 ${renderHead({
-  title: 'One Day & T20 Fixtures (24 Matches) | Destroyers Cricket Club (DES)',
+  title: 'One Day & T20 Fixtures | Destroyers Cricket Club (DES)',
   description: 'Official One Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Interactive format and season filters.',
-  canonicalUrl: '/fixtures'
+  canonicalUrl: '/fixtures',
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Fixtures', item: '/fixtures' }
+  ]
 })}
 ${renderHeader('fixtures')}
 ${renderMatchListSection(false)}
@@ -882,9 +944,13 @@ ${renderFooter()}
   // B. Generate /results/index.html
   const resultsHtml = `
 ${renderHead({
-  title: 'Match Results Archive (2021–2024) | Destroyers Cricket Club (DES)',
-  description: 'Certified match results and scorecards for all 24 completed encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
-  canonicalUrl: '/results'
+  title: 'Match Results Archive (2021–2026) | Destroyers Cricket Club (DES)',
+  description: 'Certified match results and scorecards for encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
+  canonicalUrl: '/results',
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Results', item: '/results' }
+  ]
 })}
 ${renderHeader('results')}
 ${renderMatchListSection(true)}
@@ -1009,7 +1075,12 @@ ${renderHead({
   title: `Destroyers vs Dread Eleven (${formatDate(m.matchDate)}) — Official Match Hub`,
   description: `Official match report & scorecard for Destroyers Cricket Club vs Dread Eleven on ${formatDate(m.matchDate)} at ${m.venue.name}, Rewa. Complete ball-by-ball performance records.`,
   canonicalUrl: `/matches/${m.slug}`,
-  jsonLd: matchJsonLd
+  jsonLd: matchJsonLd,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: isCompleted ? 'Results' : 'Fixtures', item: isCompleted ? '/results' : '/fixtures' },
+    { name: `${m.teamA} vs ${m.teamB} (${formatDate(m.matchDate)})`, item: `/matches/${m.slug}` }
+  ]
 })}
 ${renderHeader('results')}
 
@@ -1421,7 +1492,11 @@ ${renderHead({
   title: 'News & Press Releases | Destroyers Cricket Club (DES)',
   description: 'Official announcements, match reports, and player updates for Destroyers Cricket Club in the Atal Bihari Vajpayee Memorial Tournament, Rewa.',
   canonicalUrl: '/news',
-  jsonLd: directoryJsonLd
+  jsonLd: directoryJsonLd,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'News', item: '/news' }
+  ]
 })}
 ${renderHeader('news')}
 
@@ -1499,7 +1574,12 @@ ${renderHead({
   canonicalUrl: `/news/${n.slug}`,
   ogType: 'article',
   ogImage: n.heroImage,
-  jsonLd: articleJsonLd
+  jsonLd: articleJsonLd,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'News', item: '/news' },
+    { name: n.title, item: `/news/${n.slug}` }
+  ]
 })}
 ${renderHeader('news')}
 
@@ -1715,25 +1795,200 @@ ${renderFooter()}
   console.log('Generated /contact/index.html');
 }
 
+function generatePrivacyPage() {
+  const privacyDir = path.join(rootDir, 'privacy');
+  ensureDir(privacyDir);
+
+  const html = `
+${renderHead({
+  title: 'Privacy Policy | Destroyers Cricket Club (DES)',
+  description: 'Official privacy policy for Destroyers Cricket Club, detailing data protection standards, tournament newsletter processing, and visitor rights under Rewa Division Cricket Association regulations.',
+  canonicalUrl: '/privacy',
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Privacy Policy', item: '/privacy' }
+  ]
+})}
+${renderHeader('')}
+
+<section class="spotlight-banner-section" style="padding-top:4rem; padding-bottom:5rem; background:#080808;">
+  <div class="container" style="max-width:880px;">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">
+      <a href="/" style="color:inherit;">Home</a> / <span style="color:var(--c-gold);">Privacy Policy</span>
+    </nav>
+
+    <div class="section-masthead" style="margin-bottom:2.5rem;">
+      <div>
+        <p class="section-pretitle">Governance &amp; Data Trust</p>
+        <h1 class="section-bigtitle">Privacy Policy</h1>
+        <p style="color:var(--c-gray-400); font-size:0.95rem; margin-top:0.5rem; font-family:var(--f-mono);">
+          Effective Date: 1 January 2026 • Last Updated: 9 September 2026
+        </p>
+      </div>
+    </div>
+
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; display:flex; flex-direction:column; gap:2rem; line-height:1.75; color:var(--c-gray-300); font-size:0.95rem;">
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          1. Commitment to Fan &amp; Athlete Data Privacy
+        </h2>
+        <p>
+          Destroyers Cricket Club (&ldquo;DES&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;) operates in full compliance with Indian Information Technology (IT) laws and Digital Personal Data Protection standards. This Privacy Policy governs the collection, storage, and processing of telemetry, analytics, and inquiry correspondence across the official franchise domain (<code>destroyerscricket.in</code>).
+        </p>
+      </div>
+
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          2. Information We Collect
+        </h2>
+        <ul style="padding-left:1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
+          <li><strong>Tournament Inquiries:</strong> When submitting forms through our Contact desk, your name, email address, and inquiry text are logged solely to fulfill match-day inquiries and trial scheduling.</li>
+          <li><strong>Aggregated Site Telemetry:</strong> Anonymized Core Web Vitals, page visit counts, device classifications, and regional bandwidth telemetry to maintain 60 FPS client rendering.</li>
+          <li><strong>Cookies &amp; Local Storage:</strong> Essential session preferences such as filter toolbar states (T20 vs. ODI) and theme caching. No tracking pixels are sold or shared with third-party data brokers.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          3. Player Data &amp; Official Scorecards
+        </h2>
+        <p>
+          All player statistics, averages, and historical scorecards presented on this website are certified public tournament records sanctioned by the Rewa Division Cricket Association (RDCA) for the Atal Bihari Vajpayee Memorial Tournament.
+        </p>
+      </div>
+
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          4. Contact Our Data Protection Officer
+        </h2>
+        <p>
+          For privacy inquiries or deletion requests regarding newsletter subscriptions, contact our administration desk at:
+          <br>
+          <strong style="color:var(--c-gold); font-family:var(--f-mono);">privacy@destroyerscricket.in</strong>
+          <br>
+          RDCA Pavilion, Awadhesh Pratap Singh University Stadium, Rewa, Madhya Pradesh 486003.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+${renderFooter()}
+  `;
+
+  fs.writeFileSync(path.join(privacyDir, 'index.html'), html);
+  console.log('Generated /privacy/index.html');
+}
+
+function generateTermsPage() {
+  const termsDir = path.join(rootDir, 'terms');
+  ensureDir(termsDir);
+
+  const html = `
+${renderHead({
+  title: 'Terms & Conditions | Destroyers Cricket Club (DES)',
+  description: 'Official terms and conditions, match ticketing rules, stadium conduct policies, and intellectual property rights for Destroyers Cricket Club in Rewa.',
+  canonicalUrl: '/terms',
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Terms & Conditions', item: '/terms' }
+  ]
+})}
+${renderHeader('')}
+
+<section class="spotlight-banner-section" style="padding-top:4rem; padding-bottom:5rem; background:#080808;">
+  <div class="container" style="max-width:880px;">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">
+      <a href="/" style="color:inherit;">Home</a> / <span style="color:var(--c-gold);">Terms &amp; Conditions</span>
+    </nav>
+
+    <div class="section-masthead" style="margin-bottom:2.5rem;">
+      <div>
+        <p class="section-pretitle">Legal Framework</p>
+        <h1 class="section-bigtitle">Terms &amp; Conditions</h1>
+        <p style="color:var(--c-gray-400); font-size:0.95rem; margin-top:0.5rem; font-family:var(--f-mono);">
+          Effective Date: 1 January 2026 • Sanctioned by Rewa Division Cricket Association
+        </p>
+      </div>
+    </div>
+
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; display:flex; flex-direction:column; gap:2rem; line-height:1.75; color:var(--c-gray-300); font-size:0.95rem;">
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          1. Acceptance of Terms
+        </h2>
+        <p>
+          By accessing or using the official digital portal of Destroyers Cricket Club (<code>destroyerscricket.in</code>), you agree to be bound by these Terms and Conditions and all applicable RDCA and MPCA tournament bylaws.
+        </p>
+      </div>
+
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          2. Intellectual Property &amp; Scorecard Data
+        </h2>
+        <p>
+          All trademarks, logos, team crests, player portraits, match analytics, and editorial reports published on this website are the proprietary property of Destroyers Cricket Club and its content licensors. Scorecard feeds may be referenced for journalistic purposes with appropriate attribution and canonical links.
+        </p>
+      </div>
+
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          3. Venue Code of Conduct
+        </h2>
+        <p>
+          Spectators attending Destroyers home matches at APSU Stadium or Rewa divisional grounds must comply with zero-tolerance spectator decency rules, anti-corruption regulations, and venue security standards.
+        </p>
+      </div>
+
+      <div>
+        <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem;">
+          4. Governing Law
+        </h2>
+        <p>
+          These Terms are governed by and construed under the laws of the State of Madhya Pradesh, India. Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the competent courts in Rewa, MP.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+${renderFooter()}
+  `;
+
+  fs.writeFileSync(path.join(termsDir, 'index.html'), html);
+  console.log('Generated /terms/index.html');
+}
+
 function generate404Page() {
   const html = `
 ${renderHead({
   title: '404 — Page Not Found | Destroyers Cricket Club',
-  description: 'The requested page could not be found on the official Destroyers Cricket Club archive.',
-  canonicalUrl: '/404'
+  description: 'Looks like this ball went straight into the stands. Explore fixtures, squad profiles, or match results on the official Destroyers portal.',
+  canonicalUrl: '/404',
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: '404 Page Not Found', item: '/404' }
+  ]
 })}
 ${renderHeader('')}
 
 <section class="spotlight-banner-section" style="padding:8rem 0; text-align:center; background:#080808;">
-  <div class="container" style="max-width:600px;">
-    <div style="font-family:var(--f-athletic); font-size:8rem; color:var(--c-ember); line-height:0.8; margin-bottom:1rem;">404</div>
+  <div class="container" style="max-width:680px;">
+    <div style="font-family:var(--f-athletic); font-size:8rem; color:var(--c-ember-bright); line-height:0.8; margin-bottom:1rem;">404</div>
     <h1 style="font-family:var(--f-athletic); font-size:2.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
-      Wicket Down — Page Not Found
+      404 — Page Not Found
     </h1>
-    <p style="color:var(--c-gray-400); font-size:1rem; margin-bottom:2rem; line-height:1.6;">
-      The match report or squad ledger you requested does not exist or has been relocated within the RDCA archives.
+    <p style="color:var(--c-gray-400); font-size:1.25rem; margin-bottom:2.5rem; line-height:1.6;">
+      Looks like this ball went straight into the stands.
     </p>
-    <a href="/" class="btn-athletic btn-athletic-primary">Return to Home Citadel</a>
+    <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+      <a href="/" class="btn-athletic btn-athletic-primary">Go Home</a>
+      <a href="/fixtures" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">View Fixtures</a>
+      <a href="/players" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">View Squad</a>
+      <a href="/news" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">Latest News</a>
+    </div>
   </div>
 </section>
 
@@ -1748,6 +2003,8 @@ ${renderFooter()}
 // 8. SITEMAP.XML & ROBOTS.TXT
 // ------------------------------------------------------------
 function generateSitemapAndRobots() {
+  const lastmod = '2026-09-09T21:45:00+05:30';
+
   const urls = [
     { loc: '/', changefreq: 'daily', priority: '1.0' },
     { loc: '/players', changefreq: 'daily', priority: '0.9' },
@@ -1757,7 +2014,9 @@ function generateSitemapAndRobots() {
     { loc: '/stats', changefreq: 'weekly', priority: '0.8' },
     { loc: '/news', changefreq: 'weekly', priority: '0.8' },
     { loc: '/about', changefreq: 'monthly', priority: '0.7' },
-    { loc: '/contact', changefreq: 'monthly', priority: '0.6' }
+    { loc: '/contact', changefreq: 'monthly', priority: '0.6' },
+    { loc: '/privacy', changefreq: 'yearly', priority: '0.5' },
+    { loc: '/terms', changefreq: 'yearly', priority: '0.5' }
   ];
 
   // Add all player pages (48 players)
@@ -1769,7 +2028,7 @@ function generateSitemapAndRobots() {
     });
   });
 
-  // Add all match pages (32 matches)
+  // Add all match pages (35 matches)
   matches.forEach((m) => {
     urls.push({
       loc: `/matches/${m.slug}`,
@@ -1778,7 +2037,7 @@ function generateSitemapAndRobots() {
     });
   });
 
-  // Add all news articles (4 articles)
+  // Add all news articles
   news.forEach((n) => {
     urls.push({
       loc: `/news/${n.slug}`,
@@ -1791,6 +2050,7 @@ function generateSitemapAndRobots() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url>
     <loc>${BASE_URL}${u.loc}</loc>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
   </url>`).join('\n')}
@@ -1806,7 +2066,15 @@ Sitemap: ${BASE_URL}/sitemap.xml
 
   fs.writeFileSync(path.join(rootDir, 'robots.txt'), robotsTxt);
 
-  console.log(`Generated sitemap.xml with ${urls.length} indexable canonical URLs and robots.txt.`);
+  // Generate Netlify/Cloudflare redirects file for clean canonical paths
+  const redirectsContent = `/squad /players 301
+/match/* /matches/:splat 301
+/standing /points-table 301
+/standings /points-table 301
+`;
+  fs.writeFileSync(path.join(rootDir, '_redirects'), redirectsContent);
+
+  console.log(`Generated sitemap.xml with ${urls.length} indexable canonical URLs (with lastmod), robots.txt, and _redirects.`);
 }
 
 // ------------------------------------------------------------
@@ -1822,6 +2090,8 @@ function main() {
   generateNewsPages();
   generateAboutPage();
   generateContactPage();
+  generatePrivacyPage();
+  generateTermsPage();
   generate404Page();
   generateSitemapAndRobots();
   console.log('=== BUILD COMPLETE! ALL PAGES GENERATED WITH CORRECT TEAM ASSIGNMENTS ===');

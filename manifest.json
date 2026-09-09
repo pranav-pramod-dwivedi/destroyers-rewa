@@ -1,0 +1,16 @@
+{
+  "name": "Destroyers Cricket Club (DES)",
+  "short_name": "Destroyers CC",
+  "description": "Official Cricket Franchise Website for Destroyers Cricket Club — Atal Bihari Vajpayee Memorial Tournament, Rewa | RDCA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#f56f00",
+  "icons": [
+    {
+      "src": "/public/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
