@@ -4,670 +4,494 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Destroyers Cricket Club (DES) — Official Battle Archive | Atal Bihari Vajpayee Tournament, Rewa</title>
-  <meta name="description" content="Official Team Battle Archive for Destroyers Cricket Club (DES). Complete match scorecards, head-to-head dominance telemetry, and verified player analytics for the DE vs DES rivalry in the Atal Bihari Vajpayee Tournament, Rewa (RDCA).">
+  <meta name="description" content="Official Pro Franchise Battle Archive for Destroyers Cricket Club (DES). Complete match scorecards, head-to-head dominance telemetry, and verified player analytics for the DE vs DES rivalry in the Atal Bihari Vajpayee Tournament, Rewa (RDCA).">
+  
+  <!-- Elite Typography Stack -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="src/css/styles.css">
   <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
 </head>
 <body>
 
-  <!-- ============================================================
-       TOP STATUS TICKER
-       ============================================================ -->
-  <div class="top-ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="ticker-item"><span class="ticker-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> REWA DIVISION CRICKET ASSOCIATION (RDCA)</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> 24 RIVALRY CLASHES</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> 13 CHAMPIONSHIP VICTORIES</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> 77.8% T20 DOMINATION</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> 2022 FINAL CHAMPIONS</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> REWA DIVISION CRICKET ASSOCIATION (RDCA)</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> 24 RIVALRY CLASHES</span>
-      <span class="ticker-item"><span class="ticker-dot"></span> 13 CHAMPIONSHIP VICTORIES</span>
-    </div>
-  </div>
+  <!-- 60FPS Ambient Particle Canvas -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
 
-  <!-- ============================================================
-       NAVBAR
-       ============================================================ -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <div class="brand-wrapper">
-        <a href="#home" class="brand-wrapper" aria-label="Destroyers CC">
-          <svg class="brand-crest" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#0d111a" stroke="#ff3b00" stroke-width="4"/>
-            <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#05070a" stroke="#e5a93c" stroke-width="1.5" stroke-dasharray="4 2"/>
-            <path d="M50 18L50 82" stroke="#ff3b00" stroke-width="3" stroke-linecap="round"/>
-            <path d="M30 35L70 65" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <path d="M70 35L30 65" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <polygon points="50,22 43,38 57,38" fill="#e5a93c"/>
-            <text x="50" y="58" font-family="'Syne', sans-serif" font-weight="900" font-size="18" fill="#ffffff" text-anchor="middle">DES</text>
+  <div class="content-wrapper">
+
+    <!-- ============================================================
+         MARQUEE STATUS TICKER
+         ============================================================ -->
+    <div class="top-ticker" aria-hidden="true" style="background:#000; border-bottom:1px solid #1a1a1a; padding:0.4rem 0; font-family:var(--f-mono); font-size:0.6875rem; letter-spacing:0.12em; color:var(--c-gray-400); overflow:hidden; white-space:nowrap;">
+      <div class="ticker-track" style="display:inline-flex; gap:3rem; animation:tickerScroll 28s linear infinite;">
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> REWA DIVISION CRICKET ASSOCIATION (RDCA)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 24 RIVALRY CLASHES (DES 13 - 11 DE)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 77.8% T20 SUPREMACY</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 2022 CHAMPIONSHIP FINAL TRIUMPH</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS CRICKET CLUB (DES)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> ATAL BIHARI VAJPAYEE MEMORIAL TOURNAMENT</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> REWA DIVISION CRICKET ASSOCIATION (RDCA)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> 24 RIVALRY CLASHES (DES 13 - 11 DE)</span>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         PRO SPORTS HEADER
+         ============================================================ -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand-block" aria-label="Destroyers Cricket Club Home">
+          <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
+            <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
+            <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
+            <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
           </svg>
-          <div class="brand-meta">
-            <span class="brand-name">DESTROYERS <span style="color:var(--ember-bright);">CC</span></span>
-            <span class="brand-sub">Atal Bihari Vajpayee Tournament • Rewa</span>
+          <div class="brand-title-group">
+            <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
+            <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
           </div>
         </a>
-      </div>
 
-      <ul class="nav-links">
-        <li><a href="#matches" class="nav-link">DE vs DES Clashes</a></li>
-        <li><a href="#duel" class="nav-link">H2H Telemetry</a></li>
-        <li><a href="#roster" class="nav-link">Rosters & Duel</a></li>
-        <li><a href="#records" class="nav-link">Hall of Fame</a></li>
-        <li><a href="#heritage" class="nav-link">Rewa Heritage</a></li>
-      </ul>
+        <nav class="header-nav" aria-label="Main Navigation">
+          <a href="#matches" class="header-nav-link">DE vs DES Clashes</a>
+          <a href="#roster" class="header-nav-link">Squad & Rivals</a>
+          <a href="#spotlight" class="header-nav-link">2022 Final</a>
+          <a href="#duel" class="header-nav-link">H2H Telemetry</a>
+          <a href="#legacy" class="header-nav-link">Legacy</a>
+        </nav>
 
-      <div class="nav-cta-pill">
-        <span style="width:7px; height:7px; border-radius:50%; background:var(--ember); box-shadow:0 0 8px var(--ember);"></span>
-        <span>DES LEADS 13–11 (54%)</span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ============================================================
-       HERO: BRUTALIST ASYMMETRIC BATTLE ARENA
-       ============================================================ -->
-  <header class="hero" id="home">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-tag">
-          <span>⚡</span>
-          <span>Official Team Archive • Rewa Division (RDCA)</span>
-        </div>
-        <h1 class="hero-title">
-          DESTROYERS <br>
-          <span class="hero-title-highlight">BATTLE ARENA</span> <br>
-          REWA 2021–2024
-        </h1>
-        <p class="hero-description">
-          The verified intra-squad record of <strong>Destroyers Cricket Club (DES)</strong> against 
-          arch-rivals <strong>DE</strong> in the prestigious <strong>Atal Bihari Vajpayee Memorial Tournament</strong>, Rewa. 
-          24 verified scorecards, 13 championships triumphs, and true player telemetry.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#matches" class="btn-solid">
-            <span>Explore 24 Rivalry Clashes</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#roster" class="btn-ghost">
-            <span>Destroyers Squad</span>
-          </a>
-          <a href="#duel" class="btn-ghost">
-            <span>H2H Breakdown</span>
-          </a>
+        <div class="header-status-badge">
+          <span class="live-dot"></span>
+          <span>DES LEADS 13–11</span>
         </div>
       </div>
+    </header>
 
-      <!-- Hero Duel HUD Board -->
-      <div class="hero-duel-board">
-        <div class="duel-header">
-          <span class="duel-header-title">Atal Bihari Vajpayee Series Duel</span>
-          <span class="duel-badge">DES LEADS 13–11</span>
-        </div>
+    <!-- ============================================================
+         HERO: KINETIC ATHLETIC CITADEL
+         ============================================================ -->
+    <section class="hero-section" id="home">
+      <!-- Kinetic Watermark Background -->
+      <div class="hero-watermark" aria-hidden="true">DESTROYERS</div>
 
-        <div class="duel-matchup">
-          <div class="duel-team">
-            <div class="duel-team-crest des">DES</div>
-            <div class="duel-team-name" style="color:var(--ember-bright);">DESTROYERS</div>
-            <div class="duel-team-sub">Champions</div>
-            <div class="duel-team-wins tabular" style="color:var(--emerald);">13</div>
-          </div>
-
-          <div class="duel-divider">VS</div>
-
-          <div class="duel-team">
-            <div class="duel-team-crest de">DE</div>
-            <div class="duel-team-name" style="color:var(--text-med);">DE SQUAD</div>
-            <div class="duel-team-sub">Arch-Rivals</div>
-            <div class="duel-team-wins tabular" style="color:var(--text-muted);">11</div>
-          </div>
-        </div>
-
-        <div class="duel-bar">
-          <div class="duel-bar-des"></div>
-          <div class="duel-bar-de"></div>
-        </div>
-
-        <!-- Key Talisman Duel Spotlight -->
-        <div class="talisman-callout">
-          <div class="talisman-title">⚡ Talisman Duel (Series Leaders)</div>
-          <div class="talisman-grid">
-            <div class="talisman-box">
-              <div style="font-size:0.6875rem; color:var(--ember-bright); font-weight:800; text-transform:uppercase;">Destroyers Talisman</div>
-              <div class="talisman-name">Akhil Mishra</div>
-              <div class="talisman-stat tabular">905 Runs • 9 Fifties • 8 Wkts</div>
-            </div>
-            <div class="talisman-box">
-              <div style="font-size:0.6875rem; color:var(--text-muted); font-weight:800; text-transform:uppercase;">DE Arch-Adversary</div>
-              <div class="talisman-name">Pranav Dwivedi</div>
-              <div class="talisman-stat tabular">1,341 Runs • 13 Fifties • 63 Wkts</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ============================================================
-       KEYNUM TELEMETRY STRIP
-       ============================================================ -->
-  <section class="keynum-strip">
-    <div class="container keynum-grid">
-      <div class="keynum-item">
-        <div class="keynum-val tabular">24 <span>Matches</span></div>
-        <div class="keynum-label">Rivalry Fixtures</div>
-        <div class="keynum-desc">Across 4 seasons in Rewa</div>
-      </div>
-      <div class="keynum-item">
-        <div class="keynum-val tabular">13 <span>Wins</span></div>
-        <div class="keynum-label">Destroyers Victories</div>
-        <div class="keynum-desc">54.2% overall win supremacy</div>
-      </div>
-      <div class="keynum-item">
-        <div class="keynum-val tabular">7/9 <span>T20s</span></div>
-        <div class="keynum-label">Short-Format Reign</div>
-        <div class="keynum-desc">77.8% win rate in 20-over clashes</div>
-      </div>
-      <div class="keynum-item">
-        <div class="keynum-val tabular">2022 <span>Final</span></div>
-        <div class="keynum-label">Championship Title</div>
-        <div class="keynum-desc">Defeated DE on 12 Aug 2022</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       MATCH CENTER (ONLY DE VS DES FIXTURES)
-       ============================================================ -->
-  <section class="match-center-section" id="matches">
-    <div class="container">
-      <div class="section-head">
+      <div class="container hero-grid-layout">
         <div>
-          <p class="section-eyebrow">Tactical Fixtures</p>
-          <h2 class="section-headline">DE vs DES Match Center</h2>
-          <p class="section-intro">
-            Filtered strictly to DE vs DES clashes from the Atal Bihari Vajpayee Tournament, Rewa. 
-            Ball-by-ball scorecards with true batting and bowling performance cards.
+          <div class="hero-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Official Team Battle Arena • Rewa Division (RDCA)</span>
+          </div>
+
+          <h1 class="hero-headline-massive">
+            FORGED IN REWA. <br>
+            <span class="hero-gradient-text">DRIVEN TO CONQUER.</span> <br>
+            THE UNRIVALED TITANS.
+          </h1>
+
+          <p class="hero-statement">
+            The official intra-squad record of <strong>Destroyers Cricket Club (DES)</strong> against arch-rivals <strong>DE</strong> in the prestigious <strong>Atal Bihari Vajpayee Memorial Tournament</strong>, Rewa. 
+            24 fierce clashes, 13 championships triumphs, and verified individual telemetry.
           </p>
+
+          <div class="hero-cta-row">
+            <a href="#matches" class="btn-athletic btn-athletic-primary">
+              <span>Explore 24 Clashes</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#roster" class="btn-athletic btn-athletic-outline">
+              <span>View Squad Rosters</span>
+            </a>
+            <a href="#duel" class="btn-athletic btn-athletic-outline">
+              <span>H2H Breakdown</span>
+            </a>
+          </div>
         </div>
-        <div>
-          <span id="filtered-match-count" class="tabular" style="font-family:var(--font-mono); font-size:1rem; color:var(--gold); font-weight:800;">24 CLASHES</span>
+
+        <!-- Right Side: Pro Sports Match Battle HUD -->
+        <div class="battle-hud-card">
+          <div class="hud-topline">
+            <span class="hud-tag">Atal Bihari Vajpayee Series Record</span>
+            <span class="hud-status-tag">DES LEADS 13–11 (54.2%)</span>
+          </div>
+
+          <div class="hud-clash-display">
+            <div class="hud-team-column">
+              <div class="hud-team-emblem des">DES</div>
+              <div class="hud-team-name" style="color:var(--c-ember-bright);">DESTROYERS</div>
+              <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Champions</div>
+              <div class="hud-win-count tabular" style="color:var(--c-emerald);">13</div>
+            </div>
+
+            <div class="hud-vs-badge">VS</div>
+
+            <div class="hud-team-column">
+              <div class="hud-team-emblem de">DE</div>
+              <div class="hud-team-name" style="color:var(--c-gray-300);">DE SQUAD</div>
+              <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Arch-Rivals</div>
+              <div class="hud-win-count tabular" style="color:var(--c-gray-400);">11</div>
+            </div>
+          </div>
+
+          <div class="hud-dominance-bar" title="54.2% Destroyers vs 45.8% DE">
+            <div class="hud-bar-des"></div>
+            <div class="hud-bar-de"></div>
+          </div>
+
+          <!-- Talisman Head-to-Head Duel Spotlight -->
+          <div class="hud-duel-breakdown">
+            <div class="hud-duel-title">Series Talisman Duel</div>
+            <div class="hud-duel-grid">
+              <div class="hud-duel-cell">
+                <div class="hud-duel-label">Destroyers Leader</div>
+                <div class="hud-duel-player">#1 Akhil Mishra</div>
+                <div class="hud-duel-stats tabular">905 Runs • 9 Fifties • 8 Wkts</div>
+              </div>
+              <div class="hud-duel-cell">
+                <div class="hud-duel-label">DE Adversary</div>
+                <div class="hud-duel-player">#33 Pranav Dwivedi</div>
+                <div class="hud-duel-stats tabular">1,341 Runs • 13 Fifties • 63 Wkts</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Control Bar -->
-      <div class="control-bar">
-        <div class="control-bar-row">
-          <div class="filter-btn-group">
-            <button class="filter-btn active" data-filter="all">
-              All Formats <span class="filter-count">24</span>
+    <!-- ============================================================
+         IN THE SPOTLIGHT: 2022 CHAMPIONSHIP FINAL
+         ============================================================ -->
+    <section class="spotlight-banner-section" id="spotlight">
+      <div class="container">
+        <div class="spotlight-card-wrapper">
+          <div>
+            <div class="spotlight-tagline">Historic Championship Title • 12 August 2022</div>
+            <h2 class="spotlight-headline">
+              DESTROYERS CLINCH THE 2022 TOURNAMENT TROPHY
+            </h2>
+            <p class="spotlight-prose">
+              In a masterclass of tournament cricket at APSU Stadium, Rewa, <strong>Destroyers Cricket Club (DES)</strong> defeated arch-rivals DE by 21 runs. 
+              Power hitting from Kuldeep Sen (46 off 30) and Saransh Surana (38 off 25) propelled Destroyers to 183/10, before Ashwin Das and Kumar Kartikeya locked down DE's chase to seal the championship.
+            </p>
+            <button class="btn-athletic btn-athletic-primary" data-match-id="m-shared-31">
+              <span>Inspect Championship Scorecard</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
-            <button class="filter-btn" data-filter="t20">
-              T20 Series <span class="filter-count">9</span>
-            </button>
-            <button class="filter-btn" data-filter="odi">
-              50-Over ODI <span class="filter-count">15</span>
-            </button>
           </div>
 
-          <div class="search-field">
-            <svg class="search-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input type="text" id="match-search-input" placeholder="Search by player (e.g. Akhil, Pranav, Kuldeep), margin, venue...">
-          </div>
-        </div>
-
-        <div class="control-bar-row" style="padding-top:0.85rem; border-top:1px solid var(--border-subtle);">
-          <div class="filter-btn-group">
-            <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Result:</span>
-            <button class="filter-btn active" data-result-filter="all" style="padding:0.35rem 0.8rem; font-size:0.75rem;">All</button>
-            <button class="filter-btn" data-result-filter="des-win" style="padding:0.35rem 0.8rem; font-size:0.75rem; color:var(--emerald);">Destroyers Wins (13)</button>
-            <button class="filter-btn" data-result-filter="de-win" style="padding:0.35rem 0.8rem; font-size:0.75rem; color:var(--ruby);">DE Wins (11)</button>
-          </div>
-
-          <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap;">
-            <div>
-              <label for="season-select" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-right:0.4rem; font-weight:700;">Season:</label>
-              <select id="season-select" class="select-dropdown">
-                <option value="all">All Seasons (2021–2024)</option>
-                <option value="2024">Season 2024</option>
-                <option value="2023">Season 2023</option>
-                <option value="2022">Season 2022</option>
-                <option value="2021">Season 2021</option>
-              </select>
+          <div class="spotlight-stats-panel">
+            <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:800; text-transform:uppercase; letter-spacing:0.1em;">2022 FINAL SCOREBOARD</div>
+            <div class="spotlight-final-score tabular">
+              <span style="color:var(--c-ember-bright);">DES 183</span> <span style="font-size:1.4rem; color:var(--c-gray-600);">DEF</span> <span style="color:var(--c-gray-400);">DE 162/6</span>
             </div>
-
-            <div>
-              <label for="sort-select" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; margin-right:0.4rem; font-weight:700;">Sort:</label>
-              <select id="sort-select" class="select-dropdown">
-                <option value="latest">Latest Match First</option>
-                <option value="oldest">Earliest Match First</option>
-                <option value="closest">Closest Thrillers</option>
-                <option value="highest-total">Highest Team Totals</option>
-              </select>
+            <div style="font-size:0.8125rem; color:var(--c-emerald); font-weight:700; text-transform:uppercase; font-family:var(--f-athletic); letter-spacing:0.04em;">
+              Destroyers won by 21 runs
+            </div>
+            <div style="font-size:0.75rem; color:var(--c-gray-400); margin-top:0.5rem; font-family:var(--f-mono);">
+              APSU Stadium, Rewa • T20 Final
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Matches Container -->
-      <div id="matches-container" class="matches-grid">
-        <!-- Rendered dynamically via app.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       HEAD-TO-HEAD TELEMETRY DUEL BOARD
-       ============================================================ -->
-  <section class="section" id="duel" style="background: rgba(9, 12, 18, 0.7); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="section-eyebrow">Rivalry Analytics</p>
-          <h2 class="section-headline">Head-to-Head Telemetry</h2>
-          <p class="section-intro">
-            Tactical analysis of how Destroyers overcame DE across 24 fiercely contested encounters.
-          </p>
-        </div>
-      </div>
-
-      <div class="analytics-grid">
-        <!-- Format Domination Panel -->
-        <div class="analytics-panel">
-          <div class="analytics-panel-title">
-            <span>Format Supremacy</span>
-            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--gold);">24 Total Encounters</span>
-          </div>
-
-          <div class="format-battle-card">
-            <div class="format-battle-header">
-              <span class="format-battle-title">⚡ T20 Tournament Series (9 Matches)</span>
-              <span class="format-battle-ratio tabular">DES 7 – 2 DE (77.8% WR)</span>
-            </div>
-            <div class="duel-bar" style="height:6px; margin-bottom:0.5rem;">
-              <div style="width:77.8%; background:var(--ember);"></div>
-              <div style="width:22.2%; background:#334155;"></div>
-            </div>
-            <p style="font-size:0.75rem; color:var(--text-muted); line-height:1.6;">
-              Destroyers claimed 7 out of 9 T20 fixtures, culminating in the <strong>2022 Atal Bihari Vajpayee Championship Final</strong> win on 12 August 2022.
+    <!-- ============================================================
+         FEATURED SQUAD & DUEL PLAYERS (Jersey Cards)
+         ============================================================ -->
+    <section class="players-marquee-section" id="roster">
+      <div class="container">
+        <div class="section-masthead">
+          <div>
+            <p class="section-pretitle">The Combatants</p>
+            <h2 class="section-bigtitle">Squad Rosters & Duel Lineups</h2>
+            <p style="color:var(--c-gray-400); font-size:0.9375rem; max-width:60ch; margin-top:0.4rem;">
+              Compare the official <strong>Destroyers Squad</strong> with the <strong>DE Arch-Rivals</strong>. 
+              Click any player card to inspect complete match logs in this 24-clash rivalry.
             </p>
           </div>
 
-          <div class="format-battle-card">
-            <div class="format-battle-header">
-              <span class="format-battle-title">🛡️ 50-Over ODI Series (15 Matches)</span>
-              <span class="format-battle-ratio tabular">DES 6 – 9 DE (40.0% WR)</span>
+          <!-- Roster Tab Switcher -->
+          <div class="roster-switch-btns">
+            <button class="roster-btn active" data-roster-tab="destroyers">
+              Destroyers Squad (43)
+            </button>
+            <button class="roster-btn" data-roster-tab="rivals">
+              DE Opponents (48)
+            </button>
+          </div>
+        </div>
+
+        <!-- Role Filter Strip -->
+        <div style="display:flex; gap:0.5rem; margin-bottom:2rem; flex-wrap:wrap;">
+          <button class="filter-chip active" data-roster-role="all">All Roles</button>
+          <button class="filter-chip" data-roster-role="batsman">Batters</button>
+          <button class="filter-chip" data-roster-role="all-rounder">All-Rounders</button>
+          <button class="filter-chip" data-roster-role="bowler">Bowlers</button>
+          <button class="filter-chip" data-roster-role="wicketkeeper">Keepers</button>
+        </div>
+
+        <!-- Dynamic Jersey Cards Grid -->
+        <div id="roster-container" class="players-cards-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MATCH ARENA: ONLY DE VS DES CLASHES
+         ============================================================ -->
+    <section class="match-arena-section" id="matches">
+      <div class="container">
+        <div class="section-masthead">
+          <div>
+            <p class="section-pretitle">The Rivalry Crucible</p>
+            <h2 class="section-bigtitle">DE vs DES Match Center</h2>
+            <p style="color:var(--c-gray-400); font-size:0.9375rem; max-width:60ch; margin-top:0.4rem;">
+              Filtered strictly to DE vs DES clashes from the Atal Bihari Vajpayee Tournament, Rewa. 
+              Comprehensive scorecards with verified 1st and 2nd innings performance cards.
+            </p>
+          </div>
+          <div>
+            <span id="filtered-match-count" class="tabular" style="font-family:var(--f-mono); font-size:1.1rem; color:var(--c-gold); font-weight:800;">24 CLASHES</span>
+          </div>
+        </div>
+
+        <!-- Filter Console -->
+        <div class="filter-console">
+          <div class="console-primary-row">
+            <div class="athletic-filter-pills">
+              <button class="filter-chip active" data-filter="all">
+                All Formats <span class="filter-chip-num">24</span>
+              </button>
+              <button class="filter-chip" data-filter="t20">
+                T20 Battles <span class="filter-chip-num">9</span>
+              </button>
+              <button class="filter-chip" data-filter="odi">
+                50-Over ODIs <span class="filter-chip-num">15</span>
+              </button>
             </div>
-            <div class="duel-bar" style="height:6px; margin-bottom:0.5rem;">
-              <div style="width:40%; background:var(--ember);"></div>
-              <div style="width:60%; background:#334155;"></div>
+
+            <div class="console-search-box">
+              <svg class="console-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" id="match-search-input" placeholder="Search by player (e.g. Akhil, Pranav, Kuldeep), venue, margin...">
             </div>
-            <p style="font-size:0.75rem; color:var(--text-muted); line-height:1.6;">
-              Gritty endurance contests held at APSU Stadium and Martand Ground across 2022, 2023, and 2024, featuring 3 nail-biters decided by under 10 runs.
+          </div>
+
+          <div class="console-primary-row" style="padding-top:1rem; border-top:1px solid var(--b-subtle);">
+            <div class="athletic-filter-pills">
+              <span style="font-family:var(--f-mono); font-size:0.75rem; font-weight:800; color:var(--c-gray-400); text-transform:uppercase; align-self:center; margin-right:0.25rem;">Result:</span>
+              <button class="filter-chip active" data-result-filter="all">All</button>
+              <button class="filter-chip" data-result-filter="des-win" style="color:var(--c-emerald);">Destroyers Wins (13)</button>
+              <button class="filter-chip" data-result-filter="de-win" style="color:var(--c-ruby);">DE Wins (11)</button>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:1.25rem; flex-wrap:wrap;">
+              <div>
+                <label for="season-select" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; margin-right:0.4rem; font-weight:700;">Season:</label>
+                <select id="season-select" class="select-dropdown" style="background:#1a1a1a; color:#fff; border:1px solid var(--b-medium); padding:0.5rem 0.9rem; font-family:var(--f-mono); font-size:0.8125rem;">
+                  <option value="all">All Seasons (2021–2024)</option>
+                  <option value="2024">Season 2024</option>
+                  <option value="2023">Season 2023</option>
+                  <option value="2022">Season 2022</option>
+                  <option value="2021">Season 2021</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="sort-select" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; margin-right:0.4rem; font-weight:700;">Sort:</label>
+                <select id="sort-select" class="select-dropdown" style="background:#1a1a1a; color:#fff; border:1px solid var(--b-medium); padding:0.5rem 0.9rem; font-family:var(--f-mono); font-size:0.8125rem;">
+                  <option value="latest">Latest Match First</option>
+                  <option value="oldest">Earliest Match First</option>
+                  <option value="closest">Closest Thrillers</option>
+                  <option value="highest-total">Highest Team Totals</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Matches Grid -->
+        <div id="matches-container" class="matches-pro-grid">
+          <!-- Rendered dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LEGACY & CHAMPIONSHIP COUNTERS
+         ============================================================ -->
+    <section class="legacy-section" id="legacy">
+      <div class="container">
+        <div class="section-masthead" style="margin-bottom:2.5rem;">
+          <div>
+            <p class="section-pretitle">The Franchise Heritage</p>
+            <h2 class="section-bigtitle">Legacy & Championship Rings</h2>
+          </div>
+        </div>
+
+        <div class="legacy-grid-display">
+          <div class="legacy-stat-card">
+            <div class="legacy-stat-giant tabular">1X</div>
+            <div class="legacy-stat-title">2022 Champions</div>
+            <div class="legacy-stat-desc">Atal Bihari Vajpayee Memorial Trophy</div>
+          </div>
+
+          <div class="legacy-stat-card">
+            <div class="legacy-stat-giant tabular" style="color:var(--c-ember-bright);">13X</div>
+            <div class="legacy-stat-title">Rivalry Victories</div>
+            <div class="legacy-stat-desc">54.2% win rate against DE</div>
+          </div>
+
+          <div class="legacy-stat-card">
+            <div class="legacy-stat-giant tabular" style="color:var(--c-gold);">77.8%</div>
+            <div class="legacy-stat-title">T20 Dominance</div>
+            <div class="legacy-stat-desc">7 wins in 9 short-format clashes</div>
+          </div>
+
+          <div class="legacy-stat-card">
+            <div class="legacy-stat-giant tabular">2021</div>
+            <div class="legacy-stat-title">Inaugural Year</div>
+            <div class="legacy-stat-desc">4 consecutive tournament seasons</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         HEAD-TO-HEAD ANALYTICS
+         ============================================================ -->
+    <section class="spotlight-banner-section" id="duel" style="background:#0a0a0a;">
+      <div class="container">
+        <div class="section-masthead">
+          <div>
+            <p class="section-pretitle">Battle Telemetry</p>
+            <h2 class="section-bigtitle">Head-to-Head Analytics</h2>
+            <p style="color:var(--c-gray-400); font-size:0.9375rem; max-width:60ch; margin-top:0.4rem;">
+              Tactical breakdown of the 24 encounters between Destroyers (DES) and DE in Rewa.
             </p>
           </div>
         </div>
 
-        <!-- Extremes & High-Water Marks -->
-        <div class="analytics-panel">
-          <div class="analytics-panel-title">
-            <span>Rivalry Extremes & Milestones</span>
-            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--ember-bright);">All-Time Highs</span>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:0.85rem;">
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.9rem 1.1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-xs);">
-              <div>
-                <div style="font-family:var(--font-display); font-weight:800; font-size:0.875rem; color:var(--text-pure);">Widest Victory Margin</div>
-                <div style="font-size:0.75rem; color:var(--text-muted);">DE won by 54 runs (18 Sep 2022)</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+          <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+            <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">Format Win Supremacy</h3>
+            
+            <div style="margin-bottom:1.75rem;">
+              <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+                <span style="font-family:var(--f-athletic); font-size:1.2rem; color:var(--c-white); text-transform:uppercase;">T20 Tournament Series (9 Matches)</span>
+                <span class="tabular font-bold" style="font-family:var(--f-mono); color:var(--c-emerald);">DES 7 – 2 DE (77.8%)</span>
               </div>
-              <div class="tabular" style="font-family:var(--font-mono); font-weight:900; font-size:1.2rem; color:var(--ember-bright);">54 RUNS</div>
+              <div class="hud-dominance-bar" style="height:8px; margin-bottom:0.5rem;">
+                <div style="width:77.8%; background:var(--c-ember);"></div>
+                <div style="width:22.2%; background:#444;"></div>
+              </div>
             </div>
 
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.9rem 1.1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-xs);">
-              <div>
-                <div style="font-family:var(--font-display); font-weight:800; font-size:0.875rem; color:var(--text-pure);">Closest Thriller</div>
-                <div style="font-size:0.75rem; color:var(--text-muted);">DE won by 2 runs (12 Sep 2024)</div>
+            <div>
+              <div style="display:flex; justify-content:space-between; margin-bottom:0.5rem;">
+                <span style="font-family:var(--f-athletic); font-size:1.2rem; color:var(--c-white); text-transform:uppercase;">50-Over ODI Series (15 Matches)</span>
+                <span class="tabular font-bold" style="font-family:var(--f-mono); color:var(--c-gold);">DES 6 – 9 DE (40.0%)</span>
               </div>
-              <div class="tabular" style="font-family:var(--font-mono); font-weight:900; font-size:1.2rem; color:var(--emerald);">2 RUNS</div>
-            </div>
-
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.9rem 1.1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-xs);">
-              <div>
-                <div style="font-family:var(--font-display); font-weight:800; font-size:0.875rem; color:var(--text-pure);">Destroyers Top Run Scorer</div>
-                <div style="font-size:0.75rem; color:var(--text-muted);">Akhil Mishra — 905 runs in 19 clashes (9 fifties)</div>
+              <div class="hud-dominance-bar" style="height:8px; margin-bottom:0.5rem;">
+                <div style="width:40%; background:var(--c-ember);"></div>
+                <div style="width:60%; background:#444;"></div>
               </div>
-              <div class="tabular" style="font-family:var(--font-mono); font-weight:900; font-size:1.2rem; color:var(--gold);">905 RUNS</div>
-            </div>
-
-            <div style="display:flex; justify-content:space-between; align-items:center; padding:0.9rem 1.1rem; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-xs);">
-              <div>
-                <div style="font-family:var(--font-display); font-weight:800; font-size:0.875rem; color:var(--text-pure);">DE Arch-Adversary Record</div>
-                <div style="font-size:0.75rem; color:var(--text-muted);">Pranav Dwivedi — 1,341 runs & 63 wickets for DE</div>
-              </div>
-              <div class="tabular" style="font-family:var(--font-mono); font-weight:900; font-size:1.2rem; color:var(--text-pure);">1341 / 63</div>
             </div>
           </div>
+
+          <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+            <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">Rivalry Milestones</h3>
+            
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--b-subtle); padding-bottom:0.75rem;">
+                <div>
+                  <div style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-white); text-transform:uppercase;">Destroyers Top Run Scorer</div>
+                  <div style="font-size:0.75rem; color:var(--c-gray-400);">Akhil Mishra (19 Matches)</div>
+                </div>
+                <div class="tabular" style="font-family:var(--f-mono); font-weight:900; font-size:1.25rem; color:var(--c-gold);">905 RUNS</div>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--b-subtle); padding-bottom:0.75rem;">
+                <div>
+                  <div style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-white); text-transform:uppercase;">Destroyers Top Wicket-Taker</div>
+                  <div style="font-size:0.75rem; color:var(--c-gray-400);">Ashwin Das (10 Matches, BBI 6/92)</div>
+                </div>
+                <div class="tabular" style="font-family:var(--f-mono); font-weight:900; font-size:1.25rem; color:var(--c-emerald);">16 WKTS</div>
+              </div>
+
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <div style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-white); text-transform:uppercase;">DE Arch-Adversary Record</div>
+                  <div style="font-size:0.75rem; color:var(--c-gray-400);">Pranav Dwivedi (for DE in all 24 Matches)</div>
+                </div>
+                <div class="tabular" style="font-family:var(--f-mono); font-weight:900; font-size:1.25rem; color:var(--c-white);">1,341 R / 63 W</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================================
-       ROSTER & DUEL PLAYERS
-       ============================================================ -->
-  <section class="roster-section" id="roster">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="section-eyebrow">The Combatants</p>
-          <h2 class="section-headline">Squad Rosters & Duel Lineups</h2>
-          <p class="section-intro">
-            Switch between the official <strong>Destroyers Squad</strong> and the <strong>DE Arch-Rivals</strong>. 
-            Click any player to inspect their match-by-match performances in this series.
-          </p>
-        </div>
-
-        <div class="filter-btn-group">
-          <button class="filter-btn active" data-roster-role="all">All Roles</button>
-          <button class="filter-btn" data-roster-role="batsman">Batters</button>
-          <button class="filter-btn" data-roster-role="all-rounder">All-Rounders</button>
-          <button class="filter-btn" data-roster-role="bowler">Bowlers</button>
-          <button class="filter-btn" data-roster-role="wicketkeeper">Keepers</button>
-        </div>
-      </div>
-
-      <!-- Tab Switcher -->
-      <div class="roster-tabs">
-        <button class="roster-tab active" data-roster-tab="destroyers">
-          🛡️ Destroyers Squad (43 Players)
-        </button>
-        <button class="roster-tab" data-roster-tab="rivals">
-          ⚡ DE Arch-Rival Squad (48 Players)
-        </button>
-      </div>
-
-      <!-- Roster Grid -->
-      <div id="roster-container" class="roster-grid">
+    <!-- ============================================================
+         MODAL SCORECARD / PLAYER DRAWER
+         ============================================================ -->
+    <div id="modal-overlay" class="modal-overlay">
+      <div id="modal-container" class="modal-box">
         <!-- Populated dynamically via app.js -->
       </div>
     </div>
-  </section>
 
-  <!-- ============================================================
-       RIVALRY RECORD BOOKS
-       ============================================================ -->
-  <section class="section" id="records">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <p class="section-eyebrow">Hall of Fame</p>
-          <h2 class="section-headline">Rivalry Record Books</h2>
-          <p class="section-intro">
-            Certified statistics recorded across all 24 encounters in the Atal Bihari Vajpayee Tournament, Rewa.
-          </p>
-        </div>
-      </div>
-
-      <div class="records-tables-grid">
-        <!-- Destroyers Leaders Table -->
-        <div class="record-table-box">
-          <h3 class="record-table-title">
-            <span>🛡️ Top Destroyers Run Scorers</span>
-            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--ember-bright);">Batting for DES</span>
-          </h3>
-          <div class="table-wrap">
-            <table class="cricket-table">
-              <thead>
-                <tr>
-                  <th>Player</th>
-                  <th class="num">Mat</th>
-                  <th class="num">Runs</th>
-                  <th class="num">HS</th>
-                  <th class="num">SR</th>
-                  <th class="num">50s</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Akhil Mishra</td>
-                  <td class="num tabular">19</td>
-                  <td class="num tabular font-bold" style="color:var(--gold); font-size:1rem;">905</td>
-                  <td class="num tabular">69</td>
-                  <td class="num tabular">107.6</td>
-                  <td class="num tabular">9</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Ritesh Shakya</td>
-                  <td class="num tabular">6</td>
-                  <td class="num tabular font-bold">249</td>
-                  <td class="num tabular">85</td>
-                  <td class="num tabular">101.2</td>
-                  <td class="num tabular">1</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Kuldeep Sen</td>
-                  <td class="num tabular">10</td>
-                  <td class="num tabular font-bold">228</td>
-                  <td class="num tabular">89</td>
-                  <td class="num tabular">95.4</td>
-                  <td class="num tabular">1</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Anubhav Agarwal</td>
-                  <td class="num tabular">7</td>
-                  <td class="num tabular font-bold">208</td>
-                  <td class="num tabular">92</td>
-                  <td class="num tabular">86.3</td>
-                  <td class="num tabular">2</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Yash Dubey</td>
-                  <td class="num tabular">5</td>
-                  <td class="num tabular font-bold">196</td>
-                  <td class="num tabular">48</td>
-                  <td class="num tabular">104.3</td>
-                  <td class="num tabular">0</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Saransh Jain</td>
-                  <td class="num tabular">6</td>
-                  <td class="num tabular font-bold">183</td>
-                  <td class="num tabular">62</td>
-                  <td class="num tabular">87.1</td>
-                  <td class="num tabular">2</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Destroyers Bowling Attack Table -->
-        <div class="record-table-box">
-          <h3 class="record-table-title">
-            <span>🎯 Top Destroyers Wicket-Takers</span>
-            <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--emerald);">Bowling for DES</span>
-          </h3>
-          <div class="table-wrap">
-            <table class="cricket-table">
-              <thead>
-                <tr>
-                  <th>Bowler</th>
-                  <th class="num">Mat</th>
-                  <th class="num">Wkts</th>
-                  <th class="num">Overs</th>
-                  <th class="num">BBI</th>
-                  <th class="num">Eco</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Ashwin Das</td>
-                  <td class="num tabular">10</td>
-                  <td class="num tabular font-bold" style="color:var(--emerald); font-size:1rem;">16</td>
-                  <td class="num tabular">42.0</td>
-                  <td class="num tabular">6/92</td>
-                  <td class="num tabular">7.13</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Kumar Kartikeya</td>
-                  <td class="num tabular">9</td>
-                  <td class="num tabular font-bold" style="color:var(--emerald); font-size:1rem;">14</td>
-                  <td class="num tabular">38.0</td>
-                  <td class="num tabular">5/131</td>
-                  <td class="num tabular">5.75</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Kuldeep Sen</td>
-                  <td class="num tabular">10</td>
-                  <td class="num tabular font-bold" style="color:var(--emerald); font-size:1rem;">12</td>
-                  <td class="num tabular">56.0</td>
-                  <td class="num tabular">2/15</td>
-                  <td class="num tabular">5.14</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Subhranshu Senapati</td>
-                  <td class="num tabular">10</td>
-                  <td class="num tabular font-bold">9</td>
-                  <td class="num tabular">29.0</td>
-                  <td class="num tabular">7/69</td>
-                  <td class="num tabular">7.08</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Prabhanshu Shukla</td>
-                  <td class="num tabular">4</td>
-                  <td class="num tabular font-bold">9</td>
-                  <td class="num tabular">27.0</td>
-                  <td class="num tabular">8/22</td>
-                  <td class="num tabular">4.85</td>
-                </tr>
-                <tr>
-                  <td style="font-weight:800; color:var(--text-pure); font-family:var(--font-display);">Akhil Mishra</td>
-                  <td class="num tabular">19</td>
-                  <td class="num tabular font-bold">8</td>
-                  <td class="num tabular">81.0</td>
-                  <td class="num tabular">1/23</td>
-                  <td class="num tabular">4.88</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       HERITAGE & TOURNAMENT LORE
-       ============================================================ -->
-  <section class="section" id="heritage" style="background: rgba(9, 12, 18, 0.7); border-top: 1px solid var(--border-subtle);">
-    <div class="container">
-      <div class="lore-card">
-        <div class="lore-grid">
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns">
           <div>
-            <p class="section-eyebrow">Rewa Cricket Tradition</p>
-            <h2 class="section-headline" style="margin-bottom:1.25rem;">
-              Atal Bihari Vajpayee Memorial Tournament
-            </h2>
-            <div class="lore-prose">
-              <p>
-                Named after former Prime Minister Shri Atal Bihari Vajpayee, this tournament represents the pinnacle of division-level trial cricket in the Vindhya region under the <strong>Rewa Division Cricket Association (RDCA)</strong>.
-              </p>
-              <p>
-                The <strong>DE vs DES</strong> rivalry was forged in 2021 to test elite cricketers across Madhya Pradesh state and regional pools under intense match conditions. With <strong>Destroyers (DES)</strong> anchored by Akhil Mishra and a lethal pace attack, and <strong>DE</strong> driven by all-rounder Pranav Dwivedi, these 24 clashes became the premier fixture of Rewa cricket.
-              </p>
-              <p>
-                Hosted at the legendary <strong>Awadhesh Pratap Singh University (APSU) Stadium</strong> and <strong>Martand School Ground No. 3</strong>, these matches continue to define division excellence.
-              </p>
+            <div class="brand-franchise-name" style="font-size: 2rem;">
+              DESTROYERS <span style="color:var(--c-ember-bright);">CRICKET CLUB</span>
             </div>
+            <p style="font-size:0.875rem; color:var(--c-gray-400); max-width:48ch; margin-top:0.75rem; line-height:1.7;">
+              Official pro franchise battle archive for Destroyers Cricket Club (DES). 
+              Honoring Rewa cricket tradition and the Atal Bihari Vajpayee Memorial Tournament under RDCA.
+            </p>
           </div>
 
-          <div class="lore-facts-list">
-            <div class="lore-fact-item">
-              <div class="lore-fact-title">🏛️ Sanctioning Association</div>
-              <div class="lore-fact-desc">Rewa Division Cricket Association (RDCA) • Affiliated to MPCA & BCCI</div>
-            </div>
-            <div class="lore-fact-item">
-              <div class="lore-fact-title">📍 Historic Venues</div>
-              <div class="lore-fact-desc">Awadhesh Pratap Singh University Stadium & Martand School Ground, Rewa</div>
-            </div>
-            <div class="lore-fact-item">
-              <div class="lore-fact-title">⚔️ Rivalry Record</div>
-              <div class="lore-fact-desc">24 matches (2021–2024): Destroyers 13 Wins • DE 11 Wins</div>
-            </div>
-            <div class="lore-fact-item">
-              <div class="lore-fact-title">🏆 2022 Champions</div>
-              <div class="lore-fact-desc">Destroyers won the 2022 T20 Championship Final against DE</div>
-            </div>
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Battle Archive</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="#matches" style="color:inherit;">24 Rivalry Clashes</a></li>
+              <li><a href="#roster" style="color:inherit;">Squad Rosters & Duel</a></li>
+              <li><a href="#spotlight" style="color:inherit;">2022 Championship Final</a></li>
+              <li><a href="#duel" style="color:inherit;">Head-to-Head Telemetry</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Sanctioning & Venues</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li>Rewa Division Cricket Association (RDCA)</li>
+              <li>APSU Stadium, Rewa</li>
+              <li>Martand Ground No. 3</li>
+              <li>Atal Bihari Vajpayee Tournament</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================================================
-       MODAL SCORECARD / PLAYER OVERLAY
-       ============================================================ -->
-  <div id="modal-overlay" class="modal-overlay">
-    <div id="modal-container" class="modal-container">
-      <!-- Populated dynamically via app.js -->
-    </div>
+        <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
+          <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
+          <div>Official Battle Archive Partner • Rewa, Madhya Pradesh</div>
+        </div>
+      </div>
+    </footer>
+
   </div>
-
-  <!-- ============================================================
-       FOOTER
-       ============================================================ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="brand-name" style="font-size: 1.25rem;">
-            DESTROYERS CRICKET CLUB (DES)
-          </div>
-          <p class="footer-lead">
-            Official team battle archive for Destroyers Cricket Club. Honoring Rewa cricket tradition and the Atal Bihari Vajpayee Memorial Tournament.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Archive Sections</h4>
-          <ul class="footer-links">
-            <li><a href="#matches" class="footer-link">DE vs DES Clashes</a></li>
-            <li><a href="#duel" class="footer-link">Head-to-Head Telemetry</a></li>
-            <li><a href="#roster" class="nav-link">Squad Rosters & Duel</a></li>
-            <li><a href="#records" class="footer-link">Hall of Fame Records</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Association & Venues</h4>
-          <ul class="footer-links">
-            <li><span class="footer-link">Rewa Division Cricket Association</span></li>
-            <li><span class="footer-link">APSU Stadium, Rewa</span></li>
-            <li><span class="footer-link">Martand Ground No. 3</span></li>
-            <li><span class="footer-link">Atal Bihari Vajpayee Tournament</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
-        <div style="display:flex; gap:1rem;">
-          <span>RDCA Official Archive Partner</span>
-          <span>•</span>
-          <span>Rewa, Madhya Pradesh</span>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="src/js/data.js"></script>
