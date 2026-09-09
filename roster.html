@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squad Rosters & Duel Hub | Destroyers Cricket Club (DES)</title>
+  <meta name="description" content="Verified player rosters and tournament statistics for Destroyers Cricket Club and DE in the Atal Bihari Vajpayee Tournament, Rewa. Certified career averages, runs, wickets, and individual match appearances.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="public/favicon.svg">
+</head>
+<body>
+
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <div class="content-wrapper">
+
+    <!-- Top Status Ticker -->
+    <div class="top-ticker" aria-hidden="true" style="background:#000; border-bottom:1px solid #1a1a1a; padding:0.4rem 0; font-family:var(--f-mono); font-size:0.6875rem; letter-spacing:0.12em; color:var(--c-gray-400); overflow:hidden; white-space:nowrap;">
+      <div class="ticker-track" style="display:inline-flex; gap:3rem; animation:tickerScroll 28s linear infinite;">
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> SQUAD ROSTERS & DUEL HUB</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DESTROYERS SQUAD (43 PLAYERS)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> DE SQUAD (48 PLAYERS)</span>
+        <span style="display:inline-flex; align-items:center; gap:0.5rem;"><span class="live-dot"></span> VERIFIED BATTING & BOWLING STATS</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-block" aria-label="Destroyers Cricket Club Home">
+          <svg class="brand-crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#121212" stroke="#f56f00" stroke-width="4"/>
+            <polygon points="50,14 82,31 82,69 50,86 18,69 18,31" fill="#080808" stroke="#ffc300" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <path d="M50 18L50 82" stroke="#f56f00" stroke-width="3" stroke-linecap="round"/>
+            <path d="M30 35L70 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M70 35L30 65" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            <polygon points="50,22 43,38 57,38" fill="#ffc300"/>
+            <text x="50" y="58" font-family="'Bebas Neue', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle">DES</text>
+          </svg>
+          <div class="brand-title-group">
+            <span class="brand-franchise-name">DESTROYERS <span style="color:var(--c-ember-bright);">CC</span></span>
+            <span class="brand-subline">Atal Bihari Vajpayee Tournament • Rewa</span>
+          </div>
+        </a>
+
+        <nav class="header-nav" aria-label="Main Navigation">
+          <a href="index.html" class="header-nav-link">Home</a>
+          <a href="matches.html" class="header-nav-link">DE vs DES Clashes</a>
+          <a href="roster.html" class="header-nav-link active">Squad & Rivals</a>
+          <a href="head-to-head.html" class="header-nav-link">H2H Telemetry</a>
+          <a href="history.html" class="header-nav-link">2022 Champions</a>
+        </nav>
+
+        <div class="header-status-badge">
+          <span class="live-dot"></span>
+          <span>DES LEADS 13–11</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Roster Section -->
+    <section class="players-marquee-section" style="padding-top:4rem;">
+      <div class="container">
+        <div class="section-masthead">
+          <div>
+            <p class="section-pretitle">The Combatants</p>
+            <h1 class="section-bigtitle">Squad Rosters & Duel Lineups</h1>
+            <p style="color:var(--c-gray-400); font-size:1rem; max-width:68ch; margin-top:0.4rem;">
+              Complete player profiles for <strong>Destroyers Cricket Club</strong> and opponents <strong>DE</strong>. 
+              Click any player card to inspect their game-by-game match telemetry across all 24 clashes.
+            </p>
+          </div>
+
+          <!-- Roster Tab Switcher -->
+          <div class="roster-switch-btns">
+            <button class="roster-btn active" data-roster-tab="destroyers">
+              Destroyers Squad (43)
+            </button>
+            <button class="roster-btn" data-roster-tab="rivals">
+              DE Opponents (48)
+            </button>
+          </div>
+        </div>
+
+        <!-- Telemetry Notice: Explaining Rate vs Cumulative Stats -->
+        <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); border-left:4px solid var(--c-gold); padding:1.25rem 1.5rem; margin-bottom:2.5rem;">
+          <div style="font-family:var(--f-athletic); font-size:1.15rem; color:var(--c-gold); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:0.25rem;">
+            Telemetry Transparency Note: Participation & Rate Metrics
+          </div>
+          <p style="font-size:0.8125rem; color:var(--c-gray-300); line-height:1.6;">
+            In division cricket, squad members appear in differing numbers of matches. 
+            Team anchors (like <strong>Pranav Dwivedi</strong> with 24 matches or <strong>Akhil Mishra</strong> with 19 matches) accumulated high aggregate run totals, 
+            whereas regional stars (such as <strong>Venkatesh Iyer</strong>, <strong>Kuldeep Sen</strong>, <strong>Avesh Khan</strong>, and <strong>Anubhav Agarwal</strong>) played in 4 to 12 matches. 
+            Examine both <strong>Total Runs</strong> and <strong>Batting Average (Avg)</strong> for rate-based evaluation.
+          </p>
+        </div>
+
+        <!-- Role Filter Strip -->
+        <div style="display:flex; gap:0.5rem; margin-bottom:2.5rem; flex-wrap:wrap;">
+          <button class="filter-chip active" data-roster-role="all">All Roles</button>
+          <button class="filter-chip" data-roster-role="batsman">Batters</button>
+          <button class="filter-chip" data-roster-role="all-rounder">All-Rounders</button>
+          <button class="filter-chip" data-roster-role="bowler">Bowlers</button>
+          <button class="filter-chip" data-roster-role="wicketkeeper">Keepers</button>
+        </div>
+
+        <!-- Dynamic Jersey Cards Grid -->
+        <div id="roster-container" class="players-cards-grid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Drawer -->
+    <div id="modal-overlay" class="modal-overlay">
+      <div id="modal-container" class="modal-box">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <div>
+            <div class="brand-franchise-name" style="font-size: 2rem;">
+              DESTROYERS <span style="color:var(--c-ember-bright);">CRICKET CLUB</span>
+            </div>
+            <p style="font-size:0.875rem; color:var(--c-gray-400); max-width:48ch; margin-top:0.75rem; line-height:1.7;">
+              Official pro franchise battle archive for Destroyers Cricket Club (DES). 
+              Honoring Rewa cricket tradition and the Atal Bihari Vajpayee Memorial Tournament under RDCA.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Battle Hubs</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="matches.html" style="color:inherit;">24 Rivalry Clashes</a></li>
+              <li><a href="roster.html" style="color:inherit;">Squad Rosters & Duel</a></li>
+              <li><a href="head-to-head.html" style="color:inherit;">Head-to-Head Telemetry</a></li>
+              <li><a href="history.html" style="color:inherit;">2022 Championship Final</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">RDCA Association</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li>Rewa Division Cricket Association (RDCA)</li>
+              <li>APSU Stadium, Rewa</li>
+              <li>Martand Ground No. 3</li>
+              <li>Atal Bihari Vajpayee Tournament</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--b-subtle); padding-top:2rem; font-size:0.75rem; color:var(--c-gray-600); flex-wrap:wrap; gap:1rem;">
+          <div>&copy; 2021–2026 Destroyers Cricket Club (DES). All rights reserved.</div>
+          <div>Official Battle Archive Partner • Rewa, Madhya Pradesh</div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="src/js/data.js"></script>
+  <script src="src/js/app.js"></script>
+</body>
+</html>
