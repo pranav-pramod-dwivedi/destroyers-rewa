@@ -105,95 +105,43 @@
       "points": 2
     }
   ],
-  "2025": [
-    {
-      "rank": 1,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
-      "played": 5,
-      "won": 4,
-      "lost": 1,
-      "tied": 0,
-      "nr": 0,
-      "nrr": "+0.540",
-      "points": 8
-    },
-    {
-      "rank": 2,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
-      "played": 5,
-      "won": 1,
-      "lost": 4,
-      "tied": 0,
-      "nr": 0,
-      "nrr": "-0.540",
-      "points": 2
-    }
-  ],
-  "2026": [
-    {
-      "rank": 1,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
-      "played": 3,
-      "won": 2,
-      "lost": 1,
-      "tied": 0,
-      "nr": 0,
-      "nrr": "+0.420",
-      "points": 4
-    },
-    {
-      "rank": 2,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
-      "played": 3,
-      "won": 1,
-      "lost": 2,
-      "tied": 0,
-      "nr": 0,
-      "nrr": "-0.420",
-      "points": 2
-    }
-  ],
   "allTime": [
     {
       "rank": 1,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
-      "played": 32,
-      "won": 17,
-      "lost": 15,
-      "tied": 0,
-      "nr": 0,
-      "nrr": "+0.185",
-      "points": 34,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ]
-    },
-    {
-      "rank": 2,
       "team": "Dread Eleven",
       "teamCode": "DE",
-      "played": 32,
-      "won": 15,
-      "lost": 17,
+      "played": 24,
+      "won": 13,
+      "lost": 11,
       "tied": 0,
       "nr": 0,
-      "nrr": "-0.185",
-      "points": 30,
+      "nrr": "+0.080",
+      "points": 26,
       "form": [
         "L",
         "L",
         "L",
         "L",
         "W"
+      ]
+    },
+    {
+      "rank": 2,
+      "team": "Destroyers Cricket Club",
+      "teamCode": "DES",
+      "played": 24,
+      "won": 11,
+      "lost": 13,
+      "tied": 0,
+      "nr": 0,
+      "nrr": "-0.080",
+      "points": 22,
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
       ]
     }
   ]

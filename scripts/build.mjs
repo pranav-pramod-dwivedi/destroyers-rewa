@@ -218,7 +218,7 @@ function renderFooter() {
           <div>
             <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Match Center</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
-              <li><a href="/fixtures" style="color:inherit;">Upcoming Fixtures (2025–26)</a></li>
+              <li><a href="/fixtures" style="color:inherit;">Tournament Fixtures &amp; Schedule</a></li>
               <li><a href="/results" style="color:inherit;">Completed Match Archive (2021–24)</a></li>
               <li><a href="/points-table" style="color:inherit;">Tournament Points Table</a></li>
               <li><a href="/stats" style="color:inherit;">All-Time Records & Stats</a></li>
@@ -307,7 +307,7 @@ function generateHomePage() {
   const html = `
 ${renderHead({
   title: 'Destroyers Cricket Club (DES) — Official Website | Capt. Pranav Dwivedi | Rewa',
-  description: 'Official pro franchise website for Destroyers Cricket Club (DES), captained by Pranav Dwivedi. Complete match archives against Dread Eleven (DE), squad directory, 2025–2026 fixtures, and tournament stats.',
+  description: 'Official pro franchise website for Destroyers Cricket Club (DES), captained by Pranav Dwivedi. Complete match archives against Dread Eleven (DE), squad directory, Atal Bihari Vajpayee Memorial Tournament fixtures, and tournament stats.',
   canonicalUrl: '/',
   jsonLd
 })}
@@ -336,7 +336,7 @@ ${renderHeader('home')}
 
       <div class="hero-cta-row">
         <a href="/fixtures" class="btn-athletic btn-athletic-primary">
-          <span>View 2025–26 Fixtures</span>
+          <span>View Fixtures &amp; Schedule</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="/players" class="btn-athletic btn-athletic-outline">
@@ -829,8 +829,6 @@ function generateMatchPages() {
       <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem;">
         <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Season:</span>
         <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
-        <button type="button" class="filter-pill season-filter-btn" data-season="2026">2026</button>
-        <button type="button" class="filter-pill season-filter-btn" data-season="2025">2025</button>
         <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
         <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
         <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
@@ -944,7 +942,7 @@ ${renderFooter()}
   // B. Generate /results/index.html
   const resultsHtml = `
 ${renderHead({
-  title: 'Match Results Archive (2021–2026) | Destroyers Cricket Club (DES)',
+  title: 'Match Results Archive (2021–2024) | Destroyers Cricket Club (DES)',
   description: 'Certified match results and scorecards for encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
   canonicalUrl: '/results',
   breadcrumbs: [
@@ -2028,7 +2026,7 @@ function generateSitemapAndRobots() {
     });
   });
 
-  // Add all match pages (35 matches)
+  // Add all match pages (24 matches)
   matches.forEach((m) => {
     urls.push({
       loc: `/matches/${m.slug}`,
