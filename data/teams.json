@@ -10,8 +10,11 @@
     "homeVenue": "Awadhesh Pratap Singh University (APSU) Stadium, Rewa",
     "established": 2021,
     "captain": "Pranav Dwivedi",
+    "motto": "Relentless Force",
     "championships": [
-      "2024 ODI Series Winners (4–1)"
+      "2024 Atal Bihari Vajpayee Memorial Trophy Champions (4\u20131)",
+      "2025 Atal Bihari Vajpayee Memorial Trophy Champions (5\u20130)",
+      "2026 Atal Bihari Vajpayee Memorial Trophy Champions (3\u20132)"
     ]
   },
   "DE": {
@@ -20,13 +23,16 @@
     "shortName": "Dread Eleven",
     "code": "DE",
     "crestText": "DE",
-    "primaryColor": "#262626",
-    "secondaryColor": "#3b3b3b",
+    "primaryColor": "#d4ff00",
+    "secondaryColor": "#050507",
     "homeVenue": "Martand School Ground No. 3, Rewa",
     "established": 2021,
     "captain": "Akhil Mishra",
+    "motto": "Strike with Menace",
     "championships": [
-      "2022 Atal Bihari Vajpayee Memorial Trophy"
+      "2021 Inaugural T20 Trophy Winners (5\u20132)",
+      "2022 Atal Bihari Vajpayee Memorial Trophy Champions (4\u20133)",
+      "2023 Atal Bihari Vajpayee Memorial Trophy Champions (3\u20132)"
     ]
   }
 }

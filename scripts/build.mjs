@@ -290,8 +290,8 @@ ${renderHeader('home')}
       </h1>
 
       <p class="hero-statement">
-        The official digital fortress of <strong>Destroyers Cricket Club (DES)</strong>, led by all-round powerhouse and skipper <strong>Pranav Dwivedi</strong> (1,341 runs, 63 wickets). 
-        Dominating the <strong>Atal Bihari Vajpayee Memorial Tournament</strong> with a 4–1 series conquest over arch-rivals <strong>Dread Eleven (DE)</strong> in 2024.
+        The official digital fortress of <strong>Destroyers Cricket Club (DES)</strong>, led by all-round powerhouse and skipper <strong>Pranav Dwivedi</strong> (1,998 runs, 85 wickets). 
+        Dominating the <strong>Atal Bihari Vajpayee Memorial Tournament</strong> with three consecutive championship titles (2024, 2025, 2026) over arch-rivals <strong>Dread Eleven (DE)</strong>.
       </p>
 
       <div class="hero-cta-row">
@@ -311,8 +311,8 @@ ${renderHeader('home')}
     <!-- Match Day HUD -->
     <div class="battle-hud-card">
       <div class="hud-topline">
-        <span class="hud-tag">Rivalry Series Telemetry (2021–2024)</span>
-        <span class="hud-status-tag" style="color:var(--c-emerald); background:rgba(0,230,118,0.12);">2024 SERIES: DES WON 4–1</span>
+        <span class="hud-tag">Rivalry Series Telemetry (2021–2026)</span>
+        <span class="hud-status-tag" style="color:var(--c-emerald); background:rgba(0,230,118,0.12);">2026 CHAMPIONS: DES WON 3–2</span>
       </div>
 
       <div class="hud-clash-display">
@@ -320,7 +320,7 @@ ${renderHeader('home')}
           <div class="hud-team-emblem des">DES</div>
           <div class="hud-team-name" style="color:var(--c-ember-bright);">DESTROYERS</div>
           <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Capt. Pranav Dwivedi</div>
-          <div class="hud-win-count tabular" style="color:var(--c-emerald);">11</div>
+          <div class="hud-win-count tabular" style="color:var(--c-emerald);">19</div>
         </div>
 
         <div class="hud-vs-badge">VS</div>
@@ -329,13 +329,13 @@ ${renderHeader('home')}
           <div class="hud-team-emblem de">DE</div>
           <div class="hud-team-name" style="color:var(--c-gray-300);">DREAD ELEVEN</div>
           <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Capt. Akhil Mishra</div>
-          <div class="hud-win-count tabular" style="color:var(--c-gray-400);">13</div>
+          <div class="hud-win-count tabular" style="color:var(--c-gray-400);">15</div>
         </div>
       </div>
 
-      <div class="hud-dominance-bar" title="45.8% Destroyers vs 54.2% Dread Eleven">
-        <div class="hud-bar-des" style="width:45.8%;"></div>
-        <div class="hud-bar-de" style="width:54.2%;"></div>
+      <div class="hud-dominance-bar" title="55.9% Destroyers vs 44.1% Dread Eleven">
+        <div class="hud-bar-des" style="width:55.9%;"></div>
+        <div class="hud-bar-de" style="width:44.1%;"></div>
       </div>
 
       <!-- Live Match Countdown Widget -->
@@ -353,39 +353,38 @@ ${renderHeader('home')}
       </div>
 
 
-      <!-- Latest Championship Climax (2024 Finale) -->
+      <!-- Latest Championship Climax (2026 Finale) -->
       <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:1.25rem;">
         <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.1em; margin-bottom:0.4rem;">
-          Latest Derby Climax (2024 Finale)
+          Latest Derby Climax (2026 Finale)
         </div>
         <div style="font-family:var(--f-athletic); font-size:1.35rem; color:var(--c-white); text-transform:uppercase;">
-          Destroyers def. Dread Eleven by 8 runs
+          Destroyers def. Dread Eleven by 12 runs
         </div>
         <div style="font-size:0.75rem; color:var(--c-gray-400); margin-top:0.2rem;">
-          20 Sep 2024 • APSU Stadium, Rewa • 2024 Series Decider
+          20 Sep 2026 • APSU Stadium, Rewa • 2026 Championship Final
         </div>
-        <a href="/matches/destroyers-vs-dread-eleven-2024-09-20" style="display:inline-flex; align-items:center; gap:0.4rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:700; margin-top:0.6rem;">
-          <span>Inspect 2024 Finale Scorecard &rarr;</span>
+        <a href="/matches/destroyers-vs-dread-eleven-2026-09-20" style="display:inline-flex; align-items:center; gap:0.4rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:700; margin-top:0.6rem;">
+          <span>Inspect 2026 Finale Scorecard &rarr;</span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Latest Result & 2024 Series Victory Banner -->
+<!-- Latest Result & 2026 Championship Banner -->
 <section class="spotlight-banner-section">
   <div class="container">
     <div class="spotlight-card-wrapper">
       <div>
-        <div class="spotlight-tagline">2024 Season Triumph • 50-Over Series</div>
-        <h2 class="spotlight-headline">DESTROYERS CLINCH 2024 SERIES 4–1 OVER DREAD ELEVEN</h2>
+        <div class="spotlight-tagline">2026 Championship Triumph • Series Winners</div>
+        <h2 class="spotlight-headline">DESTROYERS DEFEND TITLE IN 2026 GRAND FINALE (3–2)</h2>
         <p class="spotlight-prose">
-          In a scintillating display of clutch cricket at APSU Stadium, Destroyers captured four straight victories to close the 2024 season, 
-          defending targets with nerve and aggression behind captain Pranav Dwivedi’s dual masterclass with bat and ball.
+          In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve behind captain Pranav Dwivedi's match-winning 85 runs &amp; 3/41.
         </p>
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <a href="/matches/destroyers-vs-dread-eleven-2024-09-20" class="btn-athletic btn-athletic-primary">
-            <span>2024 Finale Scorecard</span>
+          <a href="/matches/destroyers-vs-dread-eleven-2026-09-20" class="btn-athletic btn-athletic-primary">
+            <span>2026 Finale Scorecard</span>
           </a>
           <a href="/about" class="btn-athletic btn-athletic-outline">
             <span>Read Franchise History</span>
@@ -394,15 +393,15 @@ ${renderHeader('home')}
       </div>
 
       <div class="spotlight-stats-panel">
-        <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:800; text-transform:uppercase;">2024 FINALE RESULT</div>
+        <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); font-weight:800; text-transform:uppercase;">2026 FINALE RESULT</div>
         <div class="spotlight-final-score tabular">
-          <span style="color:var(--c-ember-bright);">DES 233/6</span> <span style="font-size:1.4rem; color:var(--c-gray-600);">DEF</span> <span style="color:var(--c-gray-400);">DE 225/9</span>
+          <span style="color:var(--c-ember-bright);">DES 284/7</span> <span style="font-size:1.4rem; color:var(--c-gray-600);">DEF</span> <span style="color:var(--c-gray-400);">DE 272</span>
         </div>
         <div style="font-size:0.875rem; color:var(--c-emerald); font-weight:700; text-transform:uppercase; font-family:var(--f-athletic);">
-          Destroyers won by 8 runs
+          Destroyers won by 12 runs
         </div>
         <div style="font-size:0.75rem; color:var(--c-gray-400); margin-top:0.4rem; font-family:var(--f-mono);">
-          APSU Stadium, Rewa • 50-Over Series Decider
+          APSU Stadium, Rewa • 2026 Championship Final
         </div>
       </div>
     </div>
@@ -575,7 +574,7 @@ ${renderHeader('squad')}
         Franchise Star &amp; Participation Notice
       </div>
       <p style="font-size:0.8125rem; color:var(--c-gray-300); line-height:1.6;">
-        Destroyers skipper <strong>Pranav Dwivedi</strong> has contested all 24 clashes (scoring 1,341 runs at 55.9 avg and taking 63 wickets). Rotational squad members featured in 4–14 matches. Click any player card below to view their dedicated profile and match-by-match performances.
+        Destroyers skipper <strong>Pranav Dwivedi</strong> has contested all 34 clashes (scoring 1,998 runs at 58.8 avg and taking 85 wickets). Rotational squad members featured in 4–22 matches. Click any player card below to view their dedicated profile and match-by-match performances.
       </p>
     </div>
 
@@ -862,6 +861,8 @@ function generateMatchPages() {
       <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem;">
         <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Season:</span>
         <button type="button" class="filter-pill active season-filter-btn" data-season="all">All Seasons</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2026">2026</button>
+        <button type="button" class="filter-pill season-filter-btn" data-season="2025">2025</button>
         <button type="button" class="filter-pill season-filter-btn" data-season="2024">2024</button>
         <button type="button" class="filter-pill season-filter-btn" data-season="2023">2023</button>
         <button type="button" class="filter-pill season-filter-btn" data-season="2022">2022</button>
@@ -975,7 +976,7 @@ ${renderFooter()}
   // B. Generate /results/index.html
   const resultsHtml = `
 ${renderHead({
-  title: 'Match Results Archive (2021–2024) | Destroyers Cricket Club (DES)',
+  title: 'Match Results Archive (2021–2026) | Destroyers Cricket Club (DES)',
   description: 'Certified match results and scorecards for encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
   canonicalUrl: '/results',
   breadcrumbs: [
@@ -1220,7 +1221,7 @@ ${renderHeader('table')}
     <!-- All-Time Master Standings -->
     <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; margin-bottom:3rem;">
       <h2 style="font-family:var(--f-athletic); font-size:1.85rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
-        All-Time Derby Table (2021–2024 • 24 Encounters)
+        All-Time Derby Table (2021–2026 • 34 Encounters)
       </h2>
 
       <div style="overflow-x:auto;">
@@ -1261,6 +1262,50 @@ ${renderHeader('table')}
 
     <!-- Season by Season Standings Grid -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <!-- 2026 Season (Destroyers Champions 3-2) -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2026 (Destroyers 3–2 Champions)</h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
+          </thead>
+          <tbody>
+            ${pointsTable['2026'].map((r) => `
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">${esc(r.team)}</td>
+                <td class="num tabular">${r.played}</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">${r.won}</td>
+                <td class="num tabular" style="color:var(--c-ruby);">${r.lost}</td>
+                <td class="num tabular font-mono">${r.nrr}</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">${r.points}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2025 Season (Destroyers 5-0 Clean Sweep) -->
+      <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2025 (Destroyers 5–0 Clean Sweep)</h3>
+        <table class="scorecard-data-table">
+          <thead>
+            <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
+          </thead>
+          <tbody>
+            ${pointsTable['2025'].map((r) => `
+              <tr>
+                <td style="font-weight:700; color:var(--c-white);">${esc(r.team)}</td>
+                <td class="num tabular">${r.played}</td>
+                <td class="num tabular" style="color:var(--c-emerald); font-weight:700;">${r.won}</td>
+                <td class="num tabular" style="color:var(--c-ruby);">${r.lost}</td>
+                <td class="num tabular font-mono">${r.nrr}</td>
+                <td class="num tabular font-bold" style="color:var(--c-gold);">${r.points}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+
       <!-- 2024 Season (Destroyers Champions 4-1) -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2024 (Destroyers 4–1 Series Win)</h3>
@@ -1386,7 +1431,7 @@ ${renderHeader('stats')}
         <p class="section-pretitle">The Record Books</p>
         <h1 class="section-bigtitle">Destroyers All-Time Statistics</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Verified tournament records across all 24 clashes against Dread Eleven in Rewa.
+          Verified tournament records across all 34 clashes against Dread Eleven in Rewa.
         </p>
       </div>
     </div>
@@ -1709,7 +1754,7 @@ ${renderHeader('about')}
             Competing in the annual <strong>Atal Bihari Vajpayee Memorial Tournament</strong> under captain <strong>Pranav Dwivedi</strong>, Destroyers forged an immediate, ferocious rivalry with <strong>Dread Eleven (DE)</strong>, led by Akhil Mishra.
           </p>
           <p>
-            The franchise enjoyed a defining high in September 2024, clinching the 50-Over Series 4–1 at APSU Stadium, with captain Pranav Dwivedi sealing the finale by defending 233 in a tense 8-run triumph.
+            The franchise reached unprecedented heights across the 2024, 2025, and 2026 seasons—capturing the 2024 series 4–1, executing a historic 5–0 clean sweep in 2025, and defending the championship in a thriller 3–2 in 2026 under captain Pranav Dwivedi to cement an iconic three-peat.
           </p>
         </div>
       </div>
@@ -2059,7 +2104,7 @@ function generateSitemapAndRobots() {
     });
   });
 
-  // Add all match pages (24 matches)
+  // Add all match pages (34 matches)
   matches.forEach((m) => {
     urls.push({
       loc: `/matches/${m.slug}`,

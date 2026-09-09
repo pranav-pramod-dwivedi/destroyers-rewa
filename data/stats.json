@@ -1,40 +1,42 @@
 {
-  "totalMatches": 24,
-  "completedMatches": 24,
+  "totalMatches": 34,
+  "completedMatches": 34,
   "upcomingMatches": 0,
-  "desWins": 11,
-  "deWins": 13,
-  "desWinPercentage": "45.8%",
-  "deWinPercentage": "54.2%",
+  "desWins": 19,
+  "deWins": 15,
+  "desWinPercentage": "55.9%",
+  "deWinPercentage": "44.1%",
   "t20": {
-    "total": 9,
-    "desWins": 2,
-    "deWins": 7
+    "total": 17,
+    "desWins": 6,
+    "deWins": 11
   },
   "odi": {
-    "total": 15,
-    "desWins": 9,
-    "deWins": 6
+    "total": 17,
+    "desWins": 13,
+    "deWins": 4
   },
   "seasons": [
+    "2026",
+    "2025",
     "2024",
     "2023",
     "2022",
     "2021"
   ],
   "trophyFinal": {
-    "matchId": "m-shared-15",
-    "title": "2022 Championship Final",
-    "winner": "Dread Eleven (DE)",
-    "date": "2022-08-10"
+    "matchId": "m-shared-64",
+    "title": "2026 Championship Final",
+    "winner": "Destroyers Cricket Club (DES)",
+    "date": "2026-09-20"
   },
   "records": {
     "highestTotal": {
-      "team": "Dread Eleven",
-      "score": "289",
+      "team": "Destroyers Cricket Club",
+      "score": "295/6",
       "overs": "50.0",
-      "opponent": "Destroyers Cricket Club",
-      "season": "2023",
+      "opponent": "Dread Eleven",
+      "season": "2025",
       "venue": "APSU Stadium, Rewa"
     },
     "highestIndividualScore": {

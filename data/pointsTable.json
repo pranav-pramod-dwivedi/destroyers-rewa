@@ -10,7 +10,8 @@
       "tied": 0,
       "nr": 0,
       "nrr": "+0.610",
-      "points": 10
+      "points": 10,
+      "note": "2021 T20 Trophy Champions"
     },
     {
       "rank": 2,
@@ -36,11 +37,12 @@
       "tied": 0,
       "nr": 0,
       "nrr": "+0.315",
-      "points": 8
+      "points": 8,
+      "note": "2022 Tournament Champions (4\u20133)"
     },
     {
       "rank": 2,
-      "team": "Destroyers Cricket Club (2022 Final Champions)",
+      "team": "Destroyers Cricket Club",
       "teamCode": "DES",
       "played": 7,
       "won": 3,
@@ -48,14 +50,13 @@
       "tied": 0,
       "nr": 0,
       "nrr": "-0.315",
-      "points": 6,
-      "note": "Won 2022 Final Cup"
+      "points": 6
     }
   ],
   "2023": [
     {
       "rank": 1,
-      "team": "Dread Eleven",
+      "team": "Dread Eleven (Champions)",
       "teamCode": "DE",
       "played": 5,
       "won": 3,
@@ -63,7 +64,8 @@
       "tied": 0,
       "nr": 0,
       "nrr": "+0.240",
-      "points": 6
+      "points": 6,
+      "note": "2023 Tournament Champions (3\u20132)"
     },
     {
       "rank": 2,
@@ -81,7 +83,7 @@
   "2024": [
     {
       "rank": 1,
-      "team": "Destroyers Cricket Club (2024 Series Winners)",
+      "team": "Destroyers Cricket Club (Champions)",
       "teamCode": "DES",
       "played": 5,
       "won": 4,
@@ -90,7 +92,7 @@
       "nr": 0,
       "nrr": "+0.485",
       "points": 8,
-      "note": "2024 ODI Series Winners"
+      "note": "2024 Tournament Champions (4\u20131)"
     },
     {
       "rank": 2,
@@ -105,42 +107,96 @@
       "points": 2
     }
   ],
+  "2025": [
+    {
+      "rank": 1,
+      "team": "Destroyers Cricket Club (Champions)",
+      "teamCode": "DES",
+      "played": 5,
+      "won": 5,
+      "lost": 0,
+      "tied": 0,
+      "nr": 0,
+      "nrr": "+1.120",
+      "points": 10,
+      "note": "2025 Champions (Clean Sweep 5\u20130)"
+    },
+    {
+      "rank": 2,
+      "team": "Dread Eleven",
+      "teamCode": "DE",
+      "played": 5,
+      "won": 0,
+      "lost": 5,
+      "tied": 0,
+      "nr": 0,
+      "nrr": "-1.120",
+      "points": 0
+    }
+  ],
+  "2026": [
+    {
+      "rank": 1,
+      "team": "Destroyers Cricket Club (Champions)",
+      "teamCode": "DES",
+      "played": 5,
+      "won": 3,
+      "lost": 2,
+      "tied": 0,
+      "nr": 0,
+      "nrr": "+0.210",
+      "points": 6,
+      "note": "2026 Champions (Series Winners 3\u20132)"
+    },
+    {
+      "rank": 2,
+      "team": "Dread Eleven",
+      "teamCode": "DE",
+      "played": 5,
+      "won": 2,
+      "lost": 3,
+      "tied": 0,
+      "nr": 0,
+      "nrr": "-0.210",
+      "points": 4
+    }
+  ],
   "allTime": [
     {
       "rank": 1,
-      "team": "Dread Eleven",
-      "teamCode": "DE",
-      "played": 24,
-      "won": 13,
-      "lost": 11,
+      "team": "Destroyers Cricket Club (Leader)",
+      "teamCode": "DES",
+      "played": 34,
+      "won": 19,
+      "lost": 15,
       "tied": 0,
       "nr": 0,
-      "nrr": "+0.080",
-      "points": 26,
+      "nrr": "+0.145",
+      "points": 38,
       "form": [
+        "W",
+        "W",
         "L",
-        "L",
-        "L",
-        "L",
+        "W",
         "W"
       ]
     },
     {
       "rank": 2,
-      "team": "Destroyers Cricket Club",
-      "teamCode": "DES",
-      "played": 24,
-      "won": 11,
-      "lost": 13,
+      "team": "Dread Eleven",
+      "teamCode": "DE",
+      "played": 34,
+      "won": 15,
+      "lost": 19,
       "tied": 0,
       "nr": 0,
-      "nrr": "-0.080",
-      "points": 22,
+      "nrr": "-0.145",
+      "points": 30,
       "form": [
+        "L",
+        "L",
         "W",
-        "W",
-        "W",
-        "W",
+        "L",
         "L"
       ]
     }
