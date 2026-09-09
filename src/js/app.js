@@ -733,7 +733,7 @@
 
   // --- Franchise Countdown Timer ---
   function initCountdown() {
-    const targetDate = new Date("2025-09-10T14:00:00+05:30").getTime();
+    const targetDate = new Date("2027-09-05T14:00:00+05:30").getTime();
     const dEl = document.getElementById("cd-days");
     const hEl = document.getElementById("cd-hours");
     const mEl = document.getElementById("cd-mins");

@@ -319,7 +319,7 @@ ${renderHeader('home')}
         <div class="hud-team-column">
           <div class="hud-team-emblem des">DES</div>
           <div class="hud-team-name" style="color:var(--c-ember-bright);">DESTROYERS</div>
-          <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Capt. Pranav Dwivedi</div>
+          <div style="font-size:0.7rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono); margin-top:2px;">Capt. Pranav Dwivedi</div>
           <div class="hud-win-count tabular" style="color:var(--c-emerald);">19</div>
         </div>
 
@@ -328,7 +328,7 @@ ${renderHeader('home')}
         <div class="hud-team-column">
           <div class="hud-team-emblem de">DE</div>
           <div class="hud-team-name" style="color:var(--c-gray-300);">DREAD ELEVEN</div>
-          <div style="font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Capt. Akhil Mishra</div>
+          <div style="font-size:0.7rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono); margin-top:2px;">Capt. Akhil Mishra</div>
           <div class="hud-win-count tabular" style="color:var(--c-gray-400);">15</div>
         </div>
       </div>
@@ -339,32 +339,31 @@ ${renderHeader('home')}
       </div>
 
       <!-- Live Match Countdown Widget -->
-      <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:1.25rem; margin-top:1rem;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
-          <span style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.1em;">Next Clash Countdown</span>
+      <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:0.65rem 0.85rem; margin-top:0.75rem; border-radius:3px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.35rem;">
+          <span style="font-family:var(--f-mono); font-size:0.65rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.08em;">Next Clash Countdown</span>
           <span class="live-dot"></span>
         </div>
-        <div id="match-countdown" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0.5rem; text-align:center;">
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-white);" id="cd-days">182</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Days</div></div>
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-white);" id="cd-hours">14</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Hours</div></div>
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-white);" id="cd-mins">35</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Mins</div></div>
-          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.5rem;"><div style="font-family:var(--f-mono); font-size:1.6rem; font-weight:800; color:var(--c-ember-bright);" id="cd-secs">48</div><div style="font-size:0.625rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase;">Secs</div></div>
+        <div id="match-countdown" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:0.4rem; text-align:center;">
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.35rem 0.2rem; border-radius:2px;"><div style="font-family:var(--f-mono); font-size:1.2rem; font-weight:800; color:var(--c-white); line-height:1.1;" id="cd-days">182</div><div style="font-size:0.55rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase; margin-top:2px;">Days</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.35rem 0.2rem; border-radius:2px;"><div style="font-family:var(--f-mono); font-size:1.2rem; font-weight:800; color:var(--c-white); line-height:1.1;" id="cd-hours">14</div><div style="font-size:0.55rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase; margin-top:2px;">Hours</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.35rem 0.2rem; border-radius:2px;"><div style="font-family:var(--f-mono); font-size:1.2rem; font-weight:800; color:var(--c-white); line-height:1.1;" id="cd-mins">35</div><div style="font-size:0.55rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase; margin-top:2px;">Mins</div></div>
+          <div style="background:#0a0a0a; border:1px solid var(--b-subtle); padding:0.35rem 0.2rem; border-radius:2px;"><div style="font-family:var(--f-mono); font-size:1.2rem; font-weight:800; color:var(--c-ember-bright); line-height:1.1;" id="cd-secs">48</div><div style="font-size:0.55rem; color:var(--c-gray-400); font-family:var(--f-mono); text-transform:uppercase; margin-top:2px;">Secs</div></div>
         </div>
       </div>
 
-
       <!-- Latest Championship Climax (2026 Finale) -->
-      <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:1.25rem;">
-        <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.1em; margin-bottom:0.4rem;">
+      <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:0.65rem 0.85rem; margin-top:0.55rem; border-radius:3px;">
+        <div style="font-family:var(--f-mono); font-size:0.65rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; letter-spacing:0.08em; margin-bottom:0.25rem;">
           Latest Derby Climax (2026 Finale)
         </div>
-        <div style="font-family:var(--f-athletic); font-size:1.35rem; color:var(--c-white); text-transform:uppercase;">
+        <div style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-white); text-transform:uppercase; line-height:1.2;">
           Destroyers def. Dread Eleven by 12 runs
         </div>
-        <div style="font-size:0.75rem; color:var(--c-gray-400); margin-top:0.2rem;">
+        <div style="font-size:0.7rem; color:var(--c-gray-400); margin-top:0.2rem;">
           20 Sep 2026 • APSU Stadium, Rewa • 2026 Championship Final
         </div>
-        <a href="/matches/destroyers-vs-dread-eleven-2026-09-20" style="display:inline-flex; align-items:center; gap:0.4rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:700; margin-top:0.6rem;">
+        <a href="/matches/destroyers-vs-dread-eleven-2026-09-20" style="display:inline-flex; align-items:center; gap:0.35rem; font-family:var(--f-mono); font-size:0.72rem; color:var(--c-ember-bright); font-weight:700; margin-top:0.4rem; text-decoration:none;">
           <span>Inspect 2026 Finale Scorecard &rarr;</span>
         </a>
       </div>

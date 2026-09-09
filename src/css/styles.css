@@ -262,17 +262,18 @@ body {
    HERO: FORGED IN REWA (Inspo Style Editorial)
    ------------------------------------------------------------ */
 .hero-section {
-  padding: 5rem 0 4rem;
+  padding: 4.25rem 0 3.5rem;
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
   border-bottom: 1px solid var(--b-subtle);
 }
 
 .hero-grid-layout {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 4rem;
-  align-items: center;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: start;
 }
 
 .hero-eyebrow {
@@ -370,9 +371,11 @@ body {
 .battle-hud-card {
   background: var(--c-card-bg);
   border: 1px solid var(--b-medium);
-  padding: 2.25rem;
+  padding: 1.35rem 1.5rem;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  width: 100%;
 }
 
 .battle-hud-card::before {
@@ -381,44 +384,51 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, var(--c-ember), var(--c-gold));
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .hud-topline {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.65rem;
   border-bottom: 1px solid var(--b-subtle);
 }
 
 .hud-tag {
   font-family: var(--f-mono);
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--c-gray-400);
   font-weight: 700;
 }
 
 .hud-status-tag {
   font-family: var(--f-mono);
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   font-weight: 800;
-  padding: 0.25rem 0.65rem;
+  padding: 0.2rem 0.5rem;
   background: rgba(0, 230, 118, 0.15);
   color: var(--c-emerald);
   border: 1px solid rgba(0, 230, 118, 0.3);
   text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
 }
 
 .hud-clash-display {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 2rem 0;
+  justify-content: space-between;
+  margin: 0.85rem 0;
+  gap: 0.5rem;
 }
 
 .hud-team-column {
@@ -427,15 +437,15 @@ body {
 }
 
 .hud-team-emblem {
-  width: 72px;
-  height: 72px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  margin: 0 auto 0.75rem;
+  margin: 0 auto 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--f-athletic);
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 900;
 }
 
@@ -443,7 +453,7 @@ body {
   background: linear-gradient(135deg, var(--c-ember), #9e3f00);
   color: #fff;
   border: 2px solid var(--c-ember-bright);
-  box-shadow: 0 0 24px var(--c-ember-glow);
+  box-shadow: 0 0 16px var(--c-ember-glow);
 }
 
 .hud-team-emblem.de {
@@ -454,44 +464,47 @@ body {
 
 .hud-team-name {
   font-family: var(--f-athletic);
-  font-size: 1.4rem;
-  letter-spacing: 0.05em;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .hud-win-count {
   font-family: var(--f-mono);
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: 900;
   line-height: 1;
-  margin-top: 0.35rem;
+  margin-top: 0.2rem;
 }
 
 .hud-vs-badge {
   font-family: var(--f-athletic);
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: var(--c-gray-600);
-  padding: 0 1rem;
+  padding: 0 0.4rem;
+  align-self: center;
 }
 
 .hud-dominance-bar {
-  height: 10px;
+  height: 6px;
   background: #242424;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   overflow: hidden;
+  border-radius: 3px;
 }
 
 .hud-bar-des {
   height: 100%;
   background: linear-gradient(90deg, var(--c-ember), var(--c-gold));
-  width: 54.2%;
+  width: 55.9%;
 }
 
 .hud-bar-de {
   height: 100%;
   background: #404040;
-  width: 45.8%;
+  width: 44.1%;
 }
 
 /* Talisman Head to Head Spotlight */
@@ -1364,7 +1377,10 @@ table.scorecard-data-table th.num, table.scorecard-data-table td.num {
 @media (max-width: 1024px) {
   .hero-grid-layout, .spotlight-card-wrapper {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
+  }
+  .battle-hud-card {
+    max-width: 100%;
   }
   .legacy-grid-display {
     grid-template-columns: repeat(2, 1fr);
@@ -1405,6 +1421,22 @@ table.scorecard-data-table th.num, table.scorecard-data-table td.num {
   }
   .matches-pro-grid, .players-cards-grid {
     grid-template-columns: 1fr;
+  }
+  .battle-hud-card {
+    padding: 1.15rem 1rem;
+  }
+  .hud-topline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+  .hud-team-emblem {
+    width: 42px;
+    height: 42px;
+    font-size: 1.15rem;
+  }
+  .hud-win-count {
+    font-size: 1.75rem;
   }
 }
 
