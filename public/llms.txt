@@ -35,5 +35,7 @@
 - Governing Body: Rewa Division Cricket Association (RDCA)
 - Website: https://destroyers-rewacricket.pages.dev
 - Portal: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- Tournament Official Portal: https://abv-rewacricket.pages.dev/
+- Arch-Rival Digital Stadium: https://dread-eleven-rewacricket.pages.dev/
 - Email: admin@destroyers-rewa.cricket
 - Home Stadium: Awadhesh Pratap Singh University (APSU) Stadium, Sirmour Road, Rewa, MP 486003

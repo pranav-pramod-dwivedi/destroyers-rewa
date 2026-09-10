@@ -338,7 +338,7 @@ function renderFooter() {
             <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Official Network</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
               <li><a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener" style="color:var(--c-gold); text-decoration:none; font-weight:600;">Rewa Cricket Division (RDCA) ↗</a></li>
-              <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" style="color:var(--c-gold); text-decoration:none;">ABV Memorial Tournament ↗</a></li>
+              <li><a href="https://abv-rewacricket.pages.dev/" target="_blank" rel="noopener" style="color:var(--c-gold); text-decoration:none;">ABV Memorial Tournament Official Portal ↗</a></li>
               <li><a href="https://abv-rewacricket.pages.dev" target="_blank" rel="noopener" style="color:var(--c-gold); text-decoration:none; font-weight:700;">ABV Tournament Official Portal ↗</a></li>
               <li><a href="https://rewa-cricket-division.vercel.app/teams/destroyers/" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">DES on RDCA Registry ↗</a></li>
               <li><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" style="color:var(--c-ember-bright); text-decoration:none; font-weight:600;">Dread Eleven CC (Arch-Rival) ↗</a></li>
@@ -451,6 +451,7 @@ function generateHomePage() {
     },
     sameAs: [
       'https://rewa-cricket-division.vercel.app/teams/destroyers/',
+      'https://abv-rewacricket.pages.dev/',
       'https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/',
       'https://dread-eleven-rewacricket.pages.dev/',
       'https://abv-rewacricket.pages.dev/'
@@ -3749,6 +3750,8 @@ LLM: ${BASE_URL}/llms.txt
 - Governing Body: Rewa Division Cricket Association (RDCA)
 - Website: ${BASE_URL}
 - Portal: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- Tournament Official Portal: https://abv-rewacricket.pages.dev/
+- Arch-Rival Digital Stadium: https://dread-eleven-rewacricket.pages.dev/
 - Email: admin@destroyers-rewa.cricket
 - Home Stadium: Awadhesh Pratap Singh University (APSU) Stadium, Sirmour Road, Rewa, MP 486003
 `;
