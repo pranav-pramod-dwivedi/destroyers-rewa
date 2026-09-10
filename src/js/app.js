@@ -757,40 +757,411 @@
     setInterval(update, 1000);
   }
 
-  // --- Franchise Squad Role Filter ---
+  // --- Franchise Squad Role Filter & Real-Time Search with Suggestions ---
   function initSquadFilter() {
     const container = document.getElementById("squad-filter-controls");
     const grid = document.getElementById("players-grid");
-    if (!container || !grid) return;
+    const searchInput = document.getElementById("squad-search-input");
+    const clearBtn = document.getElementById("squad-search-clear");
+    const countDisplay = document.getElementById("squad-count-display");
+    const suggestChips = document.querySelectorAll(".squad-suggest-chip");
 
-    const buttons = container.querySelectorAll(".role-btn");
+    if (!grid) return;
     const cards = grid.querySelectorAll(".fifa-player-card, .jersey-player-card");
+    if (!cards.length) return;
 
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        buttons.forEach((b) => {
-          b.classList.remove("btn-athletic-primary");
-          b.classList.add("btn-athletic-outline");
-        });
-        btn.classList.remove("btn-athletic-outline");
-        btn.classList.add("btn-athletic-primary");
+    function filterCards(query) {
+      const q = (query || '').toLowerCase().trim();
+      let visibleCount = 0;
 
-        const filter = btn.getAttribute("data-filter");
-        cards.forEach((card) => {
-          const role = card.getAttribute("data-role") || "";
-          if (filter === "all" || role.toLowerCase().includes(filter.toLowerCase())) {
-            card.style.display = "";
-          } else {
-            card.style.display = "none";
-          }
+      cards.forEach((card) => {
+        const searchData = (card.getAttribute("data-search") || '').toLowerCase();
+        const role = (card.getAttribute("data-role") || '').toLowerCase();
+        const name = (card.getAttribute("data-name") || '').toLowerCase();
+        const num = (card.getAttribute("data-number") || '').toLowerCase();
+        const allText = `${searchData} ${role} ${name} ${num}`;
+
+        let matches = false;
+        if (!q || q === 'all') {
+          matches = true;
+        } else if (q === 'captain') {
+          matches = role.includes('captain') || role.includes('all-rounder');
+        } else if (q === 'batter' || q === 'batters' || q === 'bat') {
+          matches = role.includes('batter') || role.includes('bat');
+        } else if (q === 'bowler' || q === 'bowlers' || q === 'bowl') {
+          matches = role.includes('bowler') || role.includes('bowl');
+        } else if (q === 'all-rounder' || q === 'all-rounders') {
+          matches = role.includes('all-rounder');
+        } else if (q === 'wicketkeeper' || q === 'wicketkeepers') {
+          matches = role.includes('wicket');
+        } else {
+          const terms = q.split(/\s+/).filter(Boolean);
+          matches = terms.every((t) => allText.includes(t));
+        }
+
+        if (matches) {
+          card.style.display = "";
+          visibleCount++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (countDisplay) {
+        if (!q || q === 'all') {
+          countDisplay.innerHTML = `Showing all <strong>${cards.length}</strong> players`;
+        } else {
+          countDisplay.innerHTML = `Found <strong>${visibleCount}</strong> of ${cards.length} players for "<em>${query}</em>"`;
+        }
+      }
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener("input", (e) => {
+        filterCards(e.target.value);
+      });
+    }
+
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        filterCards("");
+        searchInput.focus();
+      });
+    }
+
+    suggestChips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const val = chip.getAttribute("data-search") || chip.getAttribute("data-filter") || '';
+        suggestChips.forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+        if (searchInput) {
+          searchInput.value = val === 'all' ? '' : val;
+          filterCards(val);
+        } else {
+          filterCards(val);
+        }
+      });
+    });
+
+    if (container) {
+      const buttons = container.querySelectorAll(".role-btn");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => {
+            b.classList.remove("btn-athletic-primary", "active");
+            b.classList.add("btn-athletic-outline");
+          });
+          btn.classList.remove("btn-athletic-outline");
+          btn.classList.add("btn-athletic-primary", "active");
+          const filter = btn.getAttribute("data-filter") || btn.getAttribute("data-search");
+          filterCards(filter);
         });
       });
+    }
+  }
+
+  // --- Command Palette (⌘K) Global Full-Text Search ---
+  function initCommandPalette() {
+    const palette = document.getElementById("cmd-palette");
+    const input = document.getElementById("cmd-palette-input");
+    const resultsContainer = document.getElementById("cmd-palette-results");
+    const openButtons = document.querySelectorAll(".cmd-palette-trigger");
+
+    if (!palette || !input || !resultsContainer) return;
+
+    let searchIndex = [];
+    let isIndexLoaded = false;
+
+    // Fallback baseline dataset
+    const fallbackIndex = [
+      { type: 'Player', badge: 'player', icon: '⚡', title: 'Pranav Dwivedi (#7) — Captain & Premier All-Rounder', subtitle: 'Captain • 1,998 runs (Avg 58.8) • 85 wickets (BB 8/39)', url: '/players/pranav-dwivedi', text: 'Pranav Dwivedi Captain skipper all rounder 1998 runs 85 wickets 102* Destroyers Rewa' },
+      { type: 'Player', badge: 'player', icon: '🔥', title: 'Anant Verma (#18) — Explosive Top-Order Batter', subtitle: 'Batter • 1,120 runs • 8 fifties', url: '/players/anant-verma', text: 'Anant Verma top order batter 1120 runs Destroyers Rewa' },
+      { type: 'Player', badge: 'player', icon: '🎯', title: 'Sagar Pratap Singh (#24) — Clutch Strike Bowler', subtitle: 'Pace Bowler • 62 wickets • BB 5/26', url: '/players/sagar-pratap-singh', text: 'Sagar Pratap Singh pace bowler 62 wickets Destroyers' },
+      { type: 'Match', badge: 'match', icon: '🏆', title: '2026 Finale: Destroyers def. Dread Eleven by 12 runs', subtitle: '20 Sep 2026 • APSU Stadium, Rewa • POTM: Pranav Dwivedi', url: '/matches/destroyers-vs-dread-eleven-2026-09-20', text: '2026 Championship Final APSU Stadium Destroyers Dread Eleven 12 runs Pranav Dwivedi' },
+      { type: 'Match', badge: 'match', icon: '🏏', title: '2025 Final: Destroyers def. Dread Eleven by 48 runs', subtitle: '18 Sep 2025 • APSU Stadium, Rewa • 5-0 Clean Sweep', url: '/matches/destroyers-vs-dread-eleven-2025-09-18', text: '2025 Final clean sweep 5-0 Destroyers Dread Eleven' },
+      { type: 'Venue', badge: 'venue', icon: '📍', title: 'APSU Stadium, Rewa (Awadhesh Pratap Singh University)', subtitle: 'Premier 15,000 capacity turf stadium in Rewa', url: '/fixtures', text: 'APSU Stadium Rewa Awadhesh Pratap Singh University finals turf wicket' },
+      { type: 'Venue', badge: 'venue', icon: '🏟️', title: 'Martand School Ground No. 3, Rewa', subtitle: 'Historic turf, spiritual home of the Rewa Derby', url: '/fixtures', text: 'Martand Ground No 3 Rewa spin derby' },
+      { type: 'Page', badge: 'page', icon: '♟', title: 'Destroyers Squad Directory (48 Players)', subtitle: 'Full 48-man tournament squad for Destroyers CC', url: '/players', text: 'Squad roster 48 players Pranav Dwivedi Destroyers' },
+      { type: 'Page', badge: 'page', icon: '📊', title: 'Tournament Points Table & Standings', subtitle: 'Net Run Rate & Season telemetry (2021-2026)', url: '/points-table', text: 'Points table standings NRR net run rate' },
+      { type: 'Page', badge: 'page', icon: '📈', title: 'All-Time Records & Statistics', subtitle: 'Tournament runs, wickets, centuries, record 242/4 total', url: '/stats', text: 'Stats records leaderboards most runs most wickets' }
+    ];
+
+    searchIndex = fallbackIndex;
+
+    function loadSearchIndex() {
+      if (isIndexLoaded) return;
+      fetch('/search-index.json')
+        .then((res) => {
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          return res.json();
+        })
+        .then((data) => {
+          if (Array.isArray(data) && data.length > 0) {
+            searchIndex = data;
+            isIndexLoaded = true;
+            if (palette.classList.contains('open')) {
+              renderResults(input.value);
+            }
+          }
+        })
+        .catch(() => {});
+    }
+
+    loadSearchIndex();
+
+    function openPalette() {
+      palette.classList.add("open");
+      palette.setAttribute("aria-hidden", "false");
+      input.value = "";
+      input.focus();
+      renderResults("");
+      document.body.style.overflow = "hidden";
+      loadSearchIndex();
+    }
+
+    function closePalette() {
+      palette.classList.remove("open");
+      palette.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    window.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        palette.classList.contains("open") ? closePalette() : openPalette();
+      } else if (e.key === "Escape" && palette.classList.contains("open")) {
+        closePalette();
+      } else if (palette.classList.contains("open")) {
+        const items = Array.from(resultsContainer.querySelectorAll(".cmd-result-item"));
+        if (!items.length) return;
+        const focusedIdx = items.findIndex((el) => el.classList.contains("focused"));
+
+        if (e.key === "ArrowDown") {
+          e.preventDefault();
+          const nextIdx = focusedIdx < items.length - 1 ? focusedIdx + 1 : 0;
+          items.forEach((el) => el.classList.remove("focused"));
+          items[nextIdx].classList.add("focused");
+          items[nextIdx].scrollIntoView({ block: "nearest" });
+        } else if (e.key === "ArrowUp") {
+          e.preventDefault();
+          const prevIdx = focusedIdx > 0 ? focusedIdx - 1 : items.length - 1;
+          items.forEach((el) => el.classList.remove("focused"));
+          items[prevIdx].classList.add("focused");
+          items[prevIdx].scrollIntoView({ block: "nearest" });
+        } else if (e.key === "Enter") {
+          if (focusedIdx >= 0 && items[focusedIdx]) {
+            e.preventDefault();
+            items[focusedIdx].click();
+          }
+        }
+      }
+    });
+
+    openButtons.forEach((btn) => btn.addEventListener("click", openPalette));
+
+    palette.addEventListener("click", (e) => {
+      if (e.target === palette) closePalette();
+    });
+
+    function escapeHtml(str) {
+      if (!str && str !== 0) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function highlightMatches(text, terms) {
+      if (!text) return "";
+      let escaped = escapeHtml(text);
+      terms.forEach((t) => {
+        if (!t || t.length < 2) return;
+        const cleanTerm = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const regex = new RegExp(`(${cleanTerm})`, "gi");
+        escaped = escaped.replace(regex, '<mark class="search-highlight">$1</mark>');
+      });
+      return escaped;
+    }
+
+    function renderResults(q) {
+      const rawQuery = (q || "").trim();
+      const query = rawQuery.toLowerCase();
+
+      // 1. EMPTY QUERY: RENDER RICH SEARCH SUGGESTIONS
+      if (!query) {
+        resultsContainer.innerHTML = `
+          <div class="cmd-suggestions-panel">
+            <div class="cmd-suggestions-header">
+              <span class="cmd-suggestions-badge">⚡ Search Suggestions</span>
+              <span class="cmd-suggestions-hint">Click any suggestion or type to search everything</span>
+            </div>
+            <div class="cmd-suggestion-chips">
+              <button type="button" class="cmd-chip" data-search="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
+              <button type="button" class="cmd-chip" data-search="Anant Verma">🔥 Anant Verma</button>
+              <button type="button" class="cmd-chip" data-search="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
+              <button type="button" class="cmd-chip" data-search="2026 Finale">🏆 2026 Championship Final</button>
+              <button type="button" class="cmd-chip" data-search="APSU Stadium">📍 APSU Stadium, Rewa</button>
+              <button type="button" class="cmd-chip" data-search="Martand Ground">🏟️ Martand Ground No. 3</button>
+              <button type="button" class="cmd-chip" data-search="T20">⚡ T20 Clashes</button>
+              <button type="button" class="cmd-chip" data-search="50-Over">🏏 50-Over Derbies</button>
+              <button type="button" class="cmd-chip" data-search="Points Table">📊 Standings &amp; NRR</button>
+              <button type="button" class="cmd-chip" data-search="Records">📈 Record Books</button>
+              <button type="button" class="cmd-chip" data-search="242">💥 242/4 Record Score</button>
+              <button type="button" class="cmd-chip" data-search="Atal Bihari">🛡️ ABV Tournament</button>
+            </div>
+            <div class="cmd-suggestions-categories">
+              <div>
+                <div class="cmd-cat-title">Franchise Portals</div>
+                <a href="/players" class="cmd-cat-link"><span>♟ 48-Man Squad Directory</span><span class="cmd-item-enter">→</span></a>
+                <a href="/fixtures" class="cmd-cat-link"><span>📅 Match Schedule &amp; Tickets</span><span class="cmd-item-enter">→</span></a>
+                <a href="/results" class="cmd-cat-link"><span>🏆 34 Historic Derbies</span><span class="cmd-item-enter">→</span></a>
+                <a href="/points-table" class="cmd-cat-link"><span>📊 Standings &amp; Net Run Rate</span><span class="cmd-item-enter">→</span></a>
+                <a href="/stats" class="cmd-cat-link"><span>📈 Statistical Record Books</span><span class="cmd-item-enter">→</span></a>
+              </div>
+              <div>
+                <div class="cmd-cat-title">Trending Search Topics</div>
+                <div class="cmd-tag-link" data-search="Century">💥 Centuries &amp; 100s</div>
+                <div class="cmd-tag-link" data-search="8/39">🎯 8/39 Bowling Records</div>
+                <div class="cmd-tag-link" data-search="Final">🏅 Championship Finals</div>
+                <div class="cmd-tag-link" data-search="Clean Sweep">⚡ 5-0 Clean Sweep 2025</div>
+                <div class="cmd-tag-link" data-search="Rewa Division">🏛️ Rewa Cricket Division</div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        resultsContainer.querySelectorAll("[data-search]").forEach((el) => {
+          el.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetQuery = el.getAttribute("data-search");
+            input.value = targetQuery;
+            renderResults(targetQuery);
+            input.focus();
+          });
+        });
+        return;
+      }
+
+      // 2. QUERY PRESENT: FULL-TEXT SEARCH ACROSS ALL FIELDS
+      const terms = query.split(/\s+/).filter(Boolean);
+
+      const scored = searchIndex
+        .map((item) => {
+          let score = 0;
+          const titleLower = (item.title || "").toLowerCase();
+          const subLower = (item.subtitle || "").toLowerCase();
+          const catLower = (item.type || "").toLowerCase();
+          const textLower = (item.text || "").toLowerCase();
+
+          if (titleLower.includes(query)) score += 20;
+          if (subLower.includes(query)) score += 10;
+          if (textLower.includes(query)) score += 5;
+
+          let allTermsPresent = true;
+          for (const t of terms) {
+            let termFound = false;
+            if (titleLower.includes(t)) {
+              score += 12;
+              termFound = true;
+            }
+            if (subLower.includes(t)) {
+              score += 6;
+              termFound = true;
+            }
+            if (catLower.includes(t)) {
+              score += 4;
+              termFound = true;
+            }
+            if (textLower.includes(t)) {
+              score += 2;
+              termFound = true;
+            }
+            if (!termFound) allTermsPresent = false;
+          }
+
+          if (allTermsPresent) score += 10;
+
+          return { item, score };
+        })
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 30);
+
+      if (!scored.length) {
+        resultsContainer.innerHTML = `
+          <div class="cmd-no-results">
+            <p style="font-size:1.05rem; margin-bottom:0.5rem; color:var(--c-white);">No matches found for "<strong>${escapeHtml(rawQuery)}</strong>"</p>
+            <p style="font-size:0.825rem; color:var(--c-gray-400); max-width:46ch; margin:0 auto 1.25rem;">
+              Every player, match scorecard, venue, news piece, and stat record is indexed. Try one of these suggestions:
+            </p>
+            <div class="cmd-suggestion-chips" style="justify-content:center;">
+              <button type="button" class="cmd-chip" data-search="Pranav">⚡ Pranav Dwivedi</button>
+              <button type="button" class="cmd-chip" data-search="Anant">🔥 Anant Verma</button>
+              <button type="button" class="cmd-chip" data-search="APSU">📍 APSU Stadium</button>
+              <button type="button" class="cmd-chip" data-search="Final">🏆 Finals</button>
+              <button type="button" class="cmd-chip" data-search="242">💥 242/4 Total</button>
+            </div>
+          </div>
+        `;
+
+        resultsContainer.querySelectorAll("[data-search]").forEach((el) => {
+          el.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetQuery = el.getAttribute("data-search");
+            input.value = targetQuery;
+            renderResults(targetQuery);
+            input.focus();
+          });
+        });
+        return;
+      }
+
+      const itemsHtml = scored
+        .map(({ item }, idx) => {
+          const badgeClass = item.badge || (item.type || "page").toLowerCase();
+          const highlightedTitle = highlightMatches(item.title, terms);
+          const highlightedSub = highlightMatches(item.subtitle, terms);
+
+          return `
+          <a href="${item.url}" class="cmd-result-item ${idx === 0 ? "focused" : ""}">
+            <span class="cmd-item-icon">${item.icon || "🏏"}</span>
+            <div class="cmd-item-text">
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.2rem;">
+                <span class="cmd-badge ${badgeClass}">${escapeHtml(item.type || "Result")}</span>
+                <span class="cmd-item-title">${highlightedTitle}</span>
+              </div>
+              <span class="cmd-item-type" style="color:var(--c-gray-400); font-size:0.75rem; line-height:1.4;">${highlightedSub}</span>
+            </div>
+            <span class="cmd-item-enter">↵</span>
+          </a>
+        `;
+        })
+        .join("");
+
+      resultsContainer.innerHTML = `
+        <div class="cmd-count-bar">
+          <span>Found <strong>${scored.length}</strong> matches for "<strong>${escapeHtml(rawQuery)}</strong>"</span>
+          <span>Use ↑↓ to navigate, ↵ to open</span>
+        </div>
+        ${itemsHtml}
+      `;
+
+      resultsContainer.querySelectorAll(".cmd-result-item").forEach((itemEl) => {
+        itemEl.addEventListener("click", closePalette);
+      });
+    }
+
+    input.addEventListener("input", (e) => {
+      renderResults(e.target.value);
     });
   }
 
   window.addEventListener("DOMContentLoaded", () => {
     initCountdown();
     initSquadFilter();
+    initCommandPalette();
   });
 
 /* Format & Season Filters for One Day & T20 Fixtures */

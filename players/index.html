@@ -96,6 +96,14 @@
           </a>
         
       </nav>
+
+      <div class="header-actions" style="display:flex; align-items:center; gap:0.75rem;">
+        <button type="button" class="cmd-palette-trigger header-search-btn" aria-label="Open Command Palette Search (Cmd+K)">
+          <span class="search-btn-icon">⌕</span>
+          <span class="search-btn-text">SEARCH</span>
+          <kbd class="search-btn-kbd">⌘K</kbd>
+        </button>
+      </div>
     </div>
   </header>
   
@@ -121,18 +129,37 @@
       </p>
     </div>
 
-    <!-- Interactive Role Filter -->
-    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
-      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    <!-- Interactive Squad Search & Suggestions Toolbar -->
+    <div class="squad-search-toolbar" style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:1.25rem; margin-bottom:2.5rem;">
+      <div style="display:flex; gap:0.75rem; align-items:center; margin-bottom:1rem;">
+        <div style="flex:1; position:relative;">
+          <input type="text" id="squad-search-input" placeholder="Search 48 players by name, jersey number, role, batting, or bowling style..." style="width:100%; background:var(--c-dark-surface); border:1px solid var(--b-subtle); color:var(--c-white); padding:0.65rem 1rem; font-family:var(--f-body); font-size:0.875rem; outline:none; border-radius:2px;" autocomplete="off" />
+        </div>
+        <button type="button" id="squad-search-clear" class="btn-athletic btn-athletic-outline" style="padding:0.6rem 1rem; font-size:0.75rem;">Clear</button>
+      </div>
+      <!-- Search Suggestions Chips -->
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+        <span style="font-family:var(--f-mono); font-size:0.7rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">Search Suggestions:</span>
+        <button type="button" class="squad-suggest-chip" data-search="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
+        <button type="button" class="squad-suggest-chip" data-search="Anant Verma">🔥 Anant Verma</button>
+        <button type="button" class="squad-suggest-chip" data-search="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
+        <button type="button" class="squad-suggest-chip" data-search="Harshit Patel">🏏 Harshit Patel</button>
+        <button type="button" class="squad-suggest-chip" data-search="Somil Khan">💨 Somil Khan</button>
+        <button type="button" class="squad-suggest-chip" data-search="Captain">Captains</button>
+        <button type="button" class="squad-suggest-chip" data-search="All-rounder">All-Rounders</button>
+        <button type="button" class="squad-suggest-chip" data-search="Bowler">Bowlers</button>
+        <button type="button" class="squad-suggest-chip" data-search="Batter">Batters</button>
+        <button type="button" class="squad-suggest-chip" data-search="Wicketkeeper">Wicketkeepers</button>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">
+        <span id="squad-count-display">Showing all <strong>48</strong> players</span>
+        <span>Click player card to inspect telemetry</span>
+      </div>
     </div>
 
     <div class="players-cards-grid" id="players-grid">
       
-          <a href="/players/pranav-dwivedi" class="fifa-player-card" data-role="Captain &amp; All-rounder">
+          <a href="/players/pranav-dwivedi" class="fifa-player-card" data-role="Captain &amp; All-rounder" data-name="Pranav Dwivedi" data-number="7" data-search="pranav dwivedi 7 captain &amp; all-rounder right-hand bat right-arm fast-medium / off-spin">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 97 <small>OVR</small>
@@ -176,7 +203,7 @@
             </div>
           </a>
         
-          <a href="/players/aryan-deshmukh" class="fifa-player-card" data-role="Player">
+          <a href="/players/aryan-deshmukh" class="fifa-player-card" data-role="Player" data-name="Aryan Deshmukh" data-number="11" data-search="aryan deshmukh 11 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 92 <small>OVR</small>
@@ -220,7 +247,7 @@
             </div>
           </a>
         
-          <a href="/players/shivam-shukla" class="fifa-player-card" data-role="Player">
+          <a href="/players/shivam-shukla" class="fifa-player-card" data-role="Player" data-name="Shivam Shukla" data-number="18" data-search="shivam shukla 18 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 94 <small>OVR</small>
@@ -264,7 +291,7 @@
             </div>
           </a>
         
-          <a href="/players/anubhav-agarwal" class="fifa-player-card" data-role="Player">
+          <a href="/players/anubhav-agarwal" class="fifa-player-card" data-role="Player" data-name="Anubhav Agarwal" data-number="23" data-search="anubhav agarwal 23 player right-hand bat right-arm fast-medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 89 <small>OVR</small>
@@ -308,7 +335,7 @@
             </div>
           </a>
         
-          <a href="/players/venkatesh-iyer" class="fifa-player-card" data-role="Captain">
+          <a href="/players/venkatesh-iyer" class="fifa-player-card" data-role="Captain" data-name="Venkatesh Iyer" data-number="77" data-search="venkatesh iyer 77 captain left-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 86 <small>OVR</small>
@@ -352,7 +379,7 @@
             </div>
           </a>
         
-          <a href="/players/rahul-batham" class="fifa-player-card" data-role="Captain">
+          <a href="/players/rahul-batham" class="fifa-player-card" data-role="Captain" data-name="Rahul Batham" data-number="14" data-search="rahul batham 14 captain right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 84 <small>OVR</small>
@@ -396,7 +423,7 @@
             </div>
           </a>
         
-          <a href="/players/ajay-rohera" class="fifa-player-card" data-role="Wicketkeeper">
+          <a href="/players/ajay-rohera" class="fifa-player-card" data-role="Wicketkeeper" data-name="Ajay Rohera" data-number="99" data-search="ajay rohera 99 wicketkeeper right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 94 <small>OVR</small>
@@ -440,7 +467,7 @@
             </div>
           </a>
         
-          <a href="/players/rohit-rajawat" class="fifa-player-card" data-role="Player">
+          <a href="/players/rohit-rajawat" class="fifa-player-card" data-role="Player" data-name="Rohit Rajawat" data-number="9" data-search="rohit rajawat 9 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 91 <small>OVR</small>
@@ -484,7 +511,7 @@
             </div>
           </a>
         
-          <a href="/players/shubham-sharma" class="fifa-player-card" data-role="Captain">
+          <a href="/players/shubham-sharma" class="fifa-player-card" data-role="Captain" data-name="Shubham Sharma" data-number="17" data-search="shubham sharma 17 captain right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 87 <small>OVR</small>
@@ -528,7 +555,7 @@
             </div>
           </a>
         
-          <a href="/players/harsh-gawli" class="fifa-player-card" data-role="Player">
+          <a href="/players/harsh-gawli" class="fifa-player-card" data-role="Player" data-name="Harsh Gawli" data-number="10" data-search="harsh gawli 10 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 91 <small>OVR</small>
@@ -572,7 +599,7 @@
             </div>
           </a>
         
-          <a href="/players/kanishk-dubey" class="fifa-player-card" data-role="Player">
+          <a href="/players/kanishk-dubey" class="fifa-player-card" data-role="Player" data-name="Kanishk Dubey" data-number="55" data-search="kanishk dubey 55 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 85 <small>OVR</small>
@@ -616,7 +643,7 @@
             </div>
           </a>
         
-          <a href="/players/atharv-mahajan" class="fifa-player-card" data-role="Player">
+          <a href="/players/atharv-mahajan" class="fifa-player-card" data-role="Player" data-name="Atharv Mahajan" data-number="60" data-search="atharv mahajan 60 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 86 <small>OVR</small>
@@ -660,7 +687,7 @@
             </div>
           </a>
         
-          <a href="/players/chanchal-rathore" class="fifa-player-card" data-role="Player">
+          <a href="/players/chanchal-rathore" class="fifa-player-card" data-role="Player" data-name="Chanchal Rathore" data-number="65" data-search="chanchal rathore 65 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 94 <small>OVR</small>
@@ -704,7 +731,7 @@
             </div>
           </a>
         
-          <a href="/players/ramveer-singh-gurjar" class="fifa-player-card" data-role="Player">
+          <a href="/players/ramveer-singh-gurjar" class="fifa-player-card" data-role="Player" data-name="Ramveer Singh Gurjar" data-number="70" data-search="ramveer singh gurjar 70 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 88 <small>OVR</small>
@@ -748,7 +775,7 @@
             </div>
           </a>
         
-          <a href="/players/ritesh-shakya" class="fifa-player-card" data-role="Player">
+          <a href="/players/ritesh-shakya" class="fifa-player-card" data-role="Player" data-name="Ritesh Shakya" data-number="75" data-search="ritesh shakya 75 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 82 <small>OVR</small>
@@ -792,7 +819,7 @@
             </div>
           </a>
         
-          <a href="/players/rajat-patidar" class="fifa-player-card" data-role="Batsman">
+          <a href="/players/rajat-patidar" class="fifa-player-card" data-role="Batsman" data-name="Rajat Patidar" data-number="80" data-search="rajat patidar 80 batsman right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 80 <small>OVR</small>
@@ -836,7 +863,7 @@
             </div>
           </a>
         
-          <a href="/players/sagar-pratap-singh" class="fifa-player-card" data-role="Player">
+          <a href="/players/sagar-pratap-singh" class="fifa-player-card" data-role="Player" data-name="Sagar Pratap Singh" data-number="22" data-search="sagar pratap singh 22 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 84 <small>OVR</small>
@@ -880,7 +907,7 @@
             </div>
           </a>
         
-          <a href="/players/kumar-kartikeya" class="fifa-player-card" data-role="Player">
+          <a href="/players/kumar-kartikeya" class="fifa-player-card" data-role="Player" data-name="Kumar Kartikeya" data-number="90" data-search="kumar kartikeya 90 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 82 <small>OVR</small>
@@ -924,7 +951,7 @@
             </div>
           </a>
         
-          <a href="/players/anant-verma" class="fifa-player-card" data-role="Wicketkeeper">
+          <a href="/players/anant-verma" class="fifa-player-card" data-role="Wicketkeeper" data-name="Anant Verma" data-number="6" data-search="anant verma 6 wicketkeeper right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 83 <small>OVR</small>
@@ -968,7 +995,7 @@
             </div>
           </a>
         
-          <a href="/players/prabhanshu-shukla" class="fifa-player-card" data-role="Player">
+          <a href="/players/prabhanshu-shukla" class="fifa-player-card" data-role="Player" data-name="Prabhanshu Shukla" data-number="11" data-search="prabhanshu shukla 11 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 80 <small>OVR</small>
@@ -1012,7 +1039,7 @@
             </div>
           </a>
         
-          <a href="/players/subhranshu-senapati" class="fifa-player-card" data-role="Player">
+          <a href="/players/subhranshu-senapati" class="fifa-player-card" data-role="Player" data-name="Subhranshu Senapati" data-number="16" data-search="subhranshu senapati 16 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 89 <small>OVR</small>
@@ -1056,7 +1083,7 @@
             </div>
           </a>
         
-          <a href="/players/mohd-arham-aquil" class="fifa-player-card" data-role="Player">
+          <a href="/players/mohd-arham-aquil" class="fifa-player-card" data-role="Player" data-name="Mohd Arham Aquil" data-number="21" data-search="mohd arham aquil 21 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 80 <small>OVR</small>
@@ -1100,7 +1127,7 @@
             </div>
           </a>
         
-          <a href="/players/avesh-khan" class="fifa-player-card" data-role="Player">
+          <a href="/players/avesh-khan" class="fifa-player-card" data-role="Player" data-name="Avesh Khan" data-number="26" data-search="avesh khan 26 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 83 <small>OVR</small>
@@ -1144,7 +1171,7 @@
             </div>
           </a>
         
-          <a href="/players/radhakrishna-dwivedi" class="fifa-player-card" data-role="Player">
+          <a href="/players/radhakrishna-dwivedi" class="fifa-player-card" data-role="Player" data-name="Radhakrishna Dwivedi" data-number="31" data-search="radhakrishna dwivedi 31 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 79 <small>OVR</small>
@@ -1188,7 +1215,7 @@
             </div>
           </a>
         
-          <a href="/players/mohd-arshad-khan" class="fifa-player-card" data-role="Player">
+          <a href="/players/mohd-arshad-khan" class="fifa-player-card" data-role="Player" data-name="Mohd Arshad Khan" data-number="36" data-search="mohd arshad khan 36 player left-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 82 <small>OVR</small>
@@ -1232,7 +1259,7 @@
             </div>
           </a>
         
-          <a href="/players/jaydev-singh" class="fifa-player-card" data-role="Player">
+          <a href="/players/jaydev-singh" class="fifa-player-card" data-role="Player" data-name="Jaydev Singh" data-number="41" data-search="jaydev singh 41 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 80 <small>OVR</small>
@@ -1276,7 +1303,7 @@
             </div>
           </a>
         
-          <a href="/players/aditya-shrivastava" class="fifa-player-card" data-role="Player">
+          <a href="/players/aditya-shrivastava" class="fifa-player-card" data-role="Player" data-name="Aditya Shrivastava" data-number="46" data-search="aditya shrivastava 46 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 79 <small>OVR</small>
@@ -1320,7 +1347,7 @@
             </div>
           </a>
         
-          <a href="/players/kulwant-khejroliya" class="fifa-player-card" data-role="Player">
+          <a href="/players/kulwant-khejroliya" class="fifa-player-card" data-role="Player" data-name="Kulwant Khejroliya" data-number="31" data-search="kulwant khejroliya 31 player left-hand bat left-arm fast">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 88 <small>OVR</small>
@@ -1364,7 +1391,7 @@
             </div>
           </a>
         
-          <a href="/players/akshat-raghuwanshi" class="fifa-player-card" data-role="Player">
+          <a href="/players/akshat-raghuwanshi" class="fifa-player-card" data-role="Player" data-name="Akshat Raghuwanshi" data-number="56" data-search="akshat raghuwanshi 56 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 81 <small>OVR</small>
@@ -1408,7 +1435,7 @@
             </div>
           </a>
         
-          <a href="/players/saransh-jain" class="fifa-player-card" data-role="Captain">
+          <a href="/players/saransh-jain" class="fifa-player-card" data-role="Captain" data-name="Saransh Jain" data-number="61" data-search="saransh jain 61 captain right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 89 <small>OVR</small>
@@ -1452,7 +1479,7 @@
             </div>
           </a>
         
-          <a href="/players/yash-dubey" class="fifa-player-card" data-role="Wicketkeeper">
+          <a href="/players/yash-dubey" class="fifa-player-card" data-role="Wicketkeeper" data-name="Yash Dubey" data-number="66" data-search="yash dubey 66 wicketkeeper right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 81 <small>OVR</small>
@@ -1496,7 +1523,7 @@
             </div>
           </a>
         
-          <a href="/players/ankit-singh-kushwaha" class="fifa-player-card" data-role="Player">
+          <a href="/players/ankit-singh-kushwaha" class="fifa-player-card" data-role="Player" data-name="Ankit Singh Kushwaha" data-number="71" data-search="ankit singh kushwaha 71 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 79 <small>OVR</small>
@@ -1540,7 +1567,7 @@
             </div>
           </a>
         
-          <a href="/players/himanshu-mantri" class="fifa-player-card" data-role="Wicketkeeper">
+          <a href="/players/himanshu-mantri" class="fifa-player-card" data-role="Wicketkeeper" data-name="Himanshu Mantri" data-number="76" data-search="himanshu mantri 76 wicketkeeper right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 79 <small>OVR</small>
@@ -1584,7 +1611,7 @@
             </div>
           </a>
         
-          <a href="/players/arshad-khan" class="fifa-player-card" data-role="Captain">
+          <a href="/players/arshad-khan" class="fifa-player-card" data-role="Captain" data-name="Arshad Khan" data-number="81" data-search="arshad khan 81 captain right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 89 <small>OVR</small>
@@ -1628,7 +1655,7 @@
             </div>
           </a>
         
-          <a href="/players/naveen-singh-chouhan" class="fifa-player-card" data-role="Player">
+          <a href="/players/naveen-singh-chouhan" class="fifa-player-card" data-role="Player" data-name="Naveen Singh Chouhan" data-number="86" data-search="naveen singh chouhan 86 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 79 <small>OVR</small>
@@ -1672,7 +1699,7 @@
             </div>
           </a>
         
-          <a href="/players/ashwin-das" class="fifa-player-card" data-role="Player">
+          <a href="/players/ashwin-das" class="fifa-player-card" data-role="Player" data-name="Ashwin Das" data-number="2" data-search="ashwin das 2 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -1716,7 +1743,7 @@
             </div>
           </a>
         
-          <a href="/players/amarjeet-kumar-singh" class="fifa-player-card" data-role="Player">
+          <a href="/players/amarjeet-kumar-singh" class="fifa-player-card" data-role="Player" data-name="Amarjeet Kumar Singh" data-number="7" data-search="amarjeet kumar singh 7 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 81 <small>OVR</small>
@@ -1760,7 +1787,7 @@
             </div>
           </a>
         
-          <a href="/players/sagar-solanki" class="fifa-player-card" data-role="Player">
+          <a href="/players/sagar-solanki" class="fifa-player-card" data-role="Player" data-name="Sagar Solanki" data-number="12" data-search="sagar solanki 12 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -1804,7 +1831,7 @@
             </div>
           </a>
         
-          <a href="/players/saransh-surana" class="fifa-player-card" data-role="Player">
+          <a href="/players/saransh-surana" class="fifa-player-card" data-role="Player" data-name="Saransh Surana" data-number="17" data-search="saransh surana 17 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -1848,7 +1875,7 @@
             </div>
           </a>
         
-          <a href="/players/prithviraj-singh-tomar" class="fifa-player-card" data-role="Captain">
+          <a href="/players/prithviraj-singh-tomar" class="fifa-player-card" data-role="Captain" data-name="Prithviraj Singh Tomar" data-number="22" data-search="prithviraj singh tomar 22 captain right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -1892,7 +1919,7 @@
             </div>
           </a>
         
-          <a href="/players/kuldeep-sen" class="fifa-player-card" data-role="Player">
+          <a href="/players/kuldeep-sen" class="fifa-player-card" data-role="Player" data-name="Kuldeep Sen" data-number="27" data-search="kuldeep sen 27 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -1936,7 +1963,7 @@
             </div>
           </a>
         
-          <a href="/players/somil-khan" class="fifa-player-card" data-role="Player">
+          <a href="/players/somil-khan" class="fifa-player-card" data-role="Player" data-name="Somil Khan" data-number="32" data-search="somil khan 32 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -1980,7 +2007,7 @@
             </div>
           </a>
         
-          <a href="/players/sani-patel" class="fifa-player-card" data-role="Player">
+          <a href="/players/sani-patel" class="fifa-player-card" data-role="Player" data-name="Sani Patel" data-number="37" data-search="sani patel 37 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -2024,7 +2051,7 @@
             </div>
           </a>
         
-          <a href="/players/avinash-sen" class="fifa-player-card" data-role="Player">
+          <a href="/players/avinash-sen" class="fifa-player-card" data-role="Player" data-name="Avinash Sen" data-number="42" data-search="avinash sen 42 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -2068,7 +2095,7 @@
             </div>
           </a>
         
-          <a href="/players/rohit-gupta" class="fifa-player-card" data-role="All-rounder">
+          <a href="/players/rohit-gupta" class="fifa-player-card" data-role="All-rounder" data-name="Rohit Gupta" data-number="47" data-search="rohit gupta 47 all-rounder right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -2112,7 +2139,7 @@
             </div>
           </a>
         
-          <a href="/players/atul-tiwari" class="fifa-player-card" data-role="Batter">
+          <a href="/players/atul-tiwari" class="fifa-player-card" data-role="Batter" data-name="Atul Tiwari" data-number="52" data-search="atul tiwari 52 batter right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -2156,7 +2183,7 @@
             </div>
           </a>
         
-          <a href="/players/shivam-bansal" class="fifa-player-card" data-role="Player">
+          <a href="/players/shivam-bansal" class="fifa-player-card" data-role="Player" data-name="Shivam Bansal" data-number="57" data-search="shivam bansal 57 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -2200,7 +2227,7 @@
             </div>
           </a>
         
-          <a href="/players/rishab-verma" class="fifa-player-card" data-role="Player">
+          <a href="/players/rishab-verma" class="fifa-player-card" data-role="Player" data-name="Rishab Verma" data-number="62" data-search="rishab verma 62 player right-hand bat right-arm medium">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 78 <small>OVR</small>
@@ -2309,6 +2336,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Command Palette (⌘K) Modal -->
+    <div id="cmd-palette" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="cmd-palette-modal">
+        <div class="cmd-palette-header">
+          <span class="cmd-palette-icon">⌕</span>
+          <input type="text" id="cmd-palette-input" placeholder="Search players, matches, statistics, news..." autocomplete="off" spellcheck="false">
+          <kbd class="cmd-palette-esc">ESC</kbd>
+        </div>
+        <div id="cmd-palette-results"></div>
+      </div>
+    </div>
   </div>
 
   <script src="/src/js/app.js"></script>

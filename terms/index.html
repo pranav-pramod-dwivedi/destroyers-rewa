@@ -95,6 +95,14 @@
           </a>
         
       </nav>
+
+      <div class="header-actions" style="display:flex; align-items:center; gap:0.75rem;">
+        <button type="button" class="cmd-palette-trigger header-search-btn" aria-label="Open Command Palette Search (Cmd+K)">
+          <span class="search-btn-icon">⌕</span>
+          <span class="search-btn-text">SEARCH</span>
+          <kbd class="search-btn-kbd">⌘K</kbd>
+        </button>
+      </div>
     </div>
   </header>
   
@@ -217,6 +225,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Command Palette (⌘K) Modal -->
+    <div id="cmd-palette" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="cmd-palette-modal">
+        <div class="cmd-palette-header">
+          <span class="cmd-palette-icon">⌕</span>
+          <input type="text" id="cmd-palette-input" placeholder="Search players, matches, statistics, news..." autocomplete="off" spellcheck="false">
+          <kbd class="cmd-palette-esc">ESC</kbd>
+        </div>
+        <div id="cmd-palette-results"></div>
+      </div>
+    </div>
   </div>
 
   <script src="/src/js/app.js"></script>

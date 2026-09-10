@@ -95,6 +95,14 @@
           </a>
         
       </nav>
+
+      <div class="header-actions" style="display:flex; align-items:center; gap:0.75rem;">
+        <button type="button" class="cmd-palette-trigger header-search-btn" aria-label="Open Command Palette Search (Cmd+K)">
+          <span class="search-btn-icon">⌕</span>
+          <span class="search-btn-text">SEARCH</span>
+          <kbd class="search-btn-kbd">⌘K</kbd>
+        </button>
+      </div>
     </div>
   </header>
   
@@ -250,14 +258,17 @@
       </a>
     </div>
 
-    
-    <!-- Interactive Role Filter -->
-    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
-      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    <!-- Interactive Squad Suggestions -->
+    <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; margin-bottom:2rem;" id="squad-filter-controls">
+      <span style="font-family:var(--f-mono); font-size:0.7rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">Quick Filter:</span>
+      <button type="button" class="squad-suggest-chip role-btn active" data-filter="all">All (48)</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Anant Verma">🔥 Anant Verma</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="All-rounder">All-Rounders</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Bowler">Bowlers</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Batter">Batters</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Wicketkeeper">Wicketkeepers</button>
     </div>
 
     <div class="players-cards-grid" id="players-grid">
@@ -729,6 +740,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Command Palette (⌘K) Modal -->
+    <div id="cmd-palette" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="cmd-palette-modal">
+        <div class="cmd-palette-header">
+          <span class="cmd-palette-icon">⌕</span>
+          <input type="text" id="cmd-palette-input" placeholder="Search players, matches, statistics, news..." autocomplete="off" spellcheck="false">
+          <kbd class="cmd-palette-esc">ESC</kbd>
+        </div>
+        <div id="cmd-palette-results"></div>
+      </div>
+    </div>
   </div>
 
   <script src="/src/js/app.js"></script>

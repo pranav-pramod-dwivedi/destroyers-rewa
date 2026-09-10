@@ -162,6 +162,14 @@ function renderHeader(activeNav = '') {
           </a>
         `).join('')}
       </nav>
+
+      <div class="header-actions" style="display:flex; align-items:center; gap:0.75rem;">
+        <button type="button" class="cmd-palette-trigger header-search-btn" aria-label="Open Command Palette Search (Cmd+K)">
+          <span class="search-btn-icon">⌕</span>
+          <span class="search-btn-text">SEARCH</span>
+          <kbd class="search-btn-kbd">⌘K</kbd>
+        </button>
+      </div>
     </div>
   </header>
   `;
@@ -229,6 +237,18 @@ function renderFooter() {
         </div>
       </div>
     </footer>
+
+    <!-- Command Palette (⌘K) Modal -->
+    <div id="cmd-palette" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="cmd-palette-modal">
+        <div class="cmd-palette-header">
+          <span class="cmd-palette-icon">⌕</span>
+          <input type="text" id="cmd-palette-input" placeholder="Search players, matches, statistics, news..." autocomplete="off" spellcheck="false">
+          <kbd class="cmd-palette-esc">ESC</kbd>
+        </div>
+        <div id="cmd-palette-results"></div>
+      </div>
+    </div>
   </div>
 
   <script src="/src/js/app.js"></script>
@@ -434,14 +454,17 @@ ${renderHeader('home')}
       </a>
     </div>
 
-    
-    <!-- Interactive Role Filter -->
-    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
-      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    <!-- Interactive Squad Suggestions -->
+    <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; margin-bottom:2rem;" id="squad-filter-controls">
+      <span style="font-family:var(--f-mono); font-size:0.7rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">Quick Filter:</span>
+      <button type="button" class="squad-suggest-chip role-btn active" data-filter="all">All (48)</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Anant Verma">🔥 Anant Verma</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="All-rounder">All-Rounders</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Bowler">Bowlers</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Batter">Batters</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Wicketkeeper">Wicketkeepers</button>
     </div>
 
     <div class="players-cards-grid" id="players-grid">
@@ -587,13 +610,32 @@ ${renderHeader('squad')}
       </p>
     </div>
 
-    <!-- Interactive Role Filter -->
-    <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;" id="squad-filter-controls">
-      <button type="button" class="btn-athletic btn-athletic-primary role-btn" data-filter="all" style="padding:0.45rem 1rem; font-size:0.75rem;">All (48)</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Batter" style="padding:0.45rem 1rem; font-size:0.75rem;">Batters</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="All-rounder" style="padding:0.45rem 1rem; font-size:0.75rem;">All-Rounders</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Bowler" style="padding:0.45rem 1rem; font-size:0.75rem;">Bowlers</button>
-      <button type="button" class="btn-athletic btn-athletic-outline role-btn" data-filter="Wicketkeeper" style="padding:0.45rem 1rem; font-size:0.75rem;">Wicketkeepers</button>
+    <!-- Interactive Squad Search & Suggestions Toolbar -->
+    <div class="squad-search-toolbar" style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:1.25rem; margin-bottom:2.5rem;">
+      <div style="display:flex; gap:0.75rem; align-items:center; margin-bottom:1rem;">
+        <div style="flex:1; position:relative;">
+          <input type="text" id="squad-search-input" placeholder="Search 48 players by name, jersey number, role, batting, or bowling style..." style="width:100%; background:var(--c-dark-surface); border:1px solid var(--b-subtle); color:var(--c-white); padding:0.65rem 1rem; font-family:var(--f-body); font-size:0.875rem; outline:none; border-radius:2px;" autocomplete="off" />
+        </div>
+        <button type="button" id="squad-search-clear" class="btn-athletic btn-athletic-outline" style="padding:0.6rem 1rem; font-size:0.75rem;">Clear</button>
+      </div>
+      <!-- Search Suggestions Chips -->
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+        <span style="font-family:var(--f-mono); font-size:0.7rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">Search Suggestions:</span>
+        <button type="button" class="squad-suggest-chip" data-search="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
+        <button type="button" class="squad-suggest-chip" data-search="Anant Verma">🔥 Anant Verma</button>
+        <button type="button" class="squad-suggest-chip" data-search="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
+        <button type="button" class="squad-suggest-chip" data-search="Harshit Patel">🏏 Harshit Patel</button>
+        <button type="button" class="squad-suggest-chip" data-search="Somil Khan">💨 Somil Khan</button>
+        <button type="button" class="squad-suggest-chip" data-search="Captain">Captains</button>
+        <button type="button" class="squad-suggest-chip" data-search="All-rounder">All-Rounders</button>
+        <button type="button" class="squad-suggest-chip" data-search="Bowler">Bowlers</button>
+        <button type="button" class="squad-suggest-chip" data-search="Batter">Batters</button>
+        <button type="button" class="squad-suggest-chip" data-search="Wicketkeeper">Wicketkeepers</button>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">
+        <span id="squad-count-display">Showing all <strong>${squad.length}</strong> players</span>
+        <span>Click player card to inspect telemetry</span>
+      </div>
     </div>
 
     <div class="players-cards-grid" id="players-grid">
@@ -602,7 +644,7 @@ ${renderHeader('squad')}
         const formDots = p.formDots || 4;
         const formRating = p.formRating || 'HOT';
         return `
-          <a href="/players/${p.slug}" class="fifa-player-card" data-role="${esc(p.role)}">
+          <a href="/players/${p.slug}" class="fifa-player-card" data-role="${esc(p.role)}" data-name="${esc(p.name)}" data-number="${p.jerseyNumber}" data-search="${esc(`${p.name} ${p.jerseyNumber} ${p.role} ${p.battingStyle || ''} ${p.bowlingStyle || ''}`.toLowerCase())}">
             <div class="fifa-card-header">
               <div class="fifa-ovr-badge">
                 ${ovr} <small>OVR</small>
@@ -2350,6 +2392,262 @@ Sitemap: ${BASE_URL}/sitemap.xml
 }
 
 // ------------------------------------------------------------
+// SEARCH INDEX GENERATOR (search-index.json)
+// Indexes every player, match scorecard, venue, news piece, and page.
+// ------------------------------------------------------------
+function generateSearchIndex() {
+  const index = [];
+
+  // 1. Pages & Hubs
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '⌂',
+    title: 'Destroyers Home Arena & Digital HQ',
+    subtitle: 'Official club headquarters, live telemetry, latest derby climax & trophy cabinet',
+    url: '/',
+    text: 'Destroyers DES home arena Rewa cricket club Pranav Dwivedi Atal Bihari Vajpayee Memorial Tournament RDCA countdown derby highlights champions 2024 2025 2026'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '♟',
+    title: 'Destroyers Squad Directory (48 Players)',
+    subtitle: 'Official 48-man tournament roster for Destroyers Cricket Club',
+    url: '/players/',
+    text: 'Destroyers squad directory roster players 48 players captain Pranav Dwivedi batters bowlers allrounders wicketkeepers profiles statistics FIFA overall'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '📅',
+    title: 'Tournament Fixtures & Rivalry Schedule',
+    subtitle: 'Upcoming clash schedule, 2026 championship derbies, venue directions & match timing',
+    url: '/fixtures/',
+    text: 'Destroyers vs Dread Eleven fixtures schedule match timings APSU Stadium Martand Ground Rewa T20 50-over ODI tickets'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '🏆',
+    title: 'Completed Match Archive (34 Matches)',
+    subtitle: 'Complete scorecard archive of all 34 rivalry clashes between DES and DE (2021-2026)',
+    url: '/results/',
+    text: 'All match results DES vs DE derbies 34 matches scorecards 2021 2022 2023 2024 2025 2026 finals champions 19 wins'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '📊',
+    title: 'Points Table & Standings',
+    subtitle: 'Net run rate, bonus points, season championship telemetry (2021-2026)',
+    url: '/points-table/',
+    text: 'Points table standings NRR net run rate wins losses ties points championship trophies Destroyers Dread Eleven'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '📈',
+    title: 'Statistical Leaderboards & Record Books',
+    subtitle: 'Most runs, most wickets, highest team totals, individual centuries & economy leaders',
+    url: '/stats/',
+    text: 'Statistics records leaderboard most runs most wickets highest score best bowling strike rate average centuries fifties 5-wicket hauls'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '📰',
+    title: 'News & Press Releases',
+    subtitle: 'Exclusive match post-mortems, tactical analysis, player interviews',
+    url: '/news/',
+    text: 'News media press reports post-match tactical analysis Pranav Dwivedi Anant Verma Sagar Pratap Rewa cricket'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '🏛️',
+    title: 'About Destroyers & Championship Dynasty',
+    subtitle: 'Franchise philosophy, stadium details, connection with RDCA and Atal Bihari Vajpayee Tournament',
+    url: '/about/',
+    text: 'About Destroyers DES history heritage constitution RDCA Rewa Cricket Division Atal Bihari Vajpayee Memorial Tournament philosophy three-peat champions'
+  });
+  index.push({
+    type: 'Page',
+    badge: 'page',
+    icon: '✉️',
+    title: 'Contact RDCA & Franchise Headquarters',
+    subtitle: 'Player selection trials, academy enrollment, media inquiries & club office',
+    url: '/contact/',
+    text: 'Contact trials academy enrollment player selection Rewa MP office email phone trials registration'
+  });
+
+  // 2. Venues
+  index.push({
+    type: 'Venue',
+    badge: 'venue',
+    icon: '📍',
+    title: 'APSU Stadium, Rewa (Awadhesh Pratap Singh University)',
+    subtitle: 'Premier cricket venue in Rewa, capacity 15,000, host to championship finals',
+    url: '/fixtures/',
+    text: 'APSU Stadium Rewa Awadhesh Pratap Singh University Stadium pitch pace bounce championship finals floodlights pavilion turf wicket'
+  });
+  index.push({
+    type: 'Venue',
+    badge: 'venue',
+    icon: '🏟️',
+    title: 'Martand School Ground No. 3, Rewa',
+    subtitle: 'Historic spin-friendly turf, spiritual home of the Rewa Derby',
+    url: '/fixtures/',
+    text: 'Martand Ground No 3 Rewa school ground cricket pitch spin turn boundaries historic derby venue inaugural clash'
+  });
+
+  // 3. All Players (48)
+  squad.forEach((p) => {
+    const isCapt = (p.role || '').toLowerCase().includes('captain');
+    const runs = p.batting?.runs || 0;
+    const wkts = p.bowling?.wickets || 0;
+    const avg = p.batting?.average || 0;
+    const sr = p.batting?.strikeRate || 0;
+    const hs = p.batting?.highestScore || '0';
+    const bb = p.bowling?.bestBowling || 'N/A';
+    const econ = p.bowling?.economy || 0;
+    const centuries = p.batting?.hundreds || 0;
+    const fifties = p.batting?.fifties || 0;
+    const ovr = p.fifaRatings?.overall || 88;
+
+    let fullText = `${p.name} #${p.jerseyNumber} ${p.role} ${p.battingStyle || ''} ${p.bowlingStyle || ''} Destroyers DES cricket Rewa. `;
+    fullText += `OVR ${ovr} rating. Matches: ${p.matches || 0}, Runs: ${runs}, Wickets: ${wkts}, Batting Avg: ${avg}, Strike Rate: ${sr}, Highest Score: ${hs}, Best Bowling: ${bb}, Economy: ${econ}, Hundreds: ${centuries}, Fifties: ${fifties}. `;
+    if (p.bio) fullText += `${p.bio} `;
+    if (isCapt) fullText += `Captain skipper leader franchise talisman. `;
+
+    if (Array.isArray(p.matchHistory)) {
+      p.matchHistory.forEach((mh) => {
+        fullText += `${mh.opponent || ''} ${mh.format || ''} ${mh.season || ''} ${mh.runs || 0}r ${mh.wickets || 0}w ${mh.dismissal || ''} `;
+      });
+    }
+
+    index.push({
+      type: 'Player',
+      badge: 'player',
+      icon: isCapt ? '⚡' : '🏏',
+      title: `${p.name} (#${p.jerseyNumber}) — ${p.role}`,
+      subtitle: `OVR ${ovr} • ${p.role} • ${runs} runs (Avg ${avg}) • ${wkts} wkts (BB ${bb})`,
+      url: `/players/${p.slug}`,
+      text: fullText
+    });
+  });
+
+  // 4. All Matches (34)
+  matches.forEach((m) => {
+    const matchDateStr = formatDate(m.matchDate || m.date);
+    const inn1 = m.innings?.[0];
+    const inn2 = m.innings?.[1];
+    const potm = m.playerOfTheMatch ? `${m.playerOfTheMatch.name} (${m.playerOfTheMatch.team})` : 'N/A';
+    const potmReason = m.playerOfTheMatch?.reason || '';
+
+    let matchText = `Match ${m.matchNumber || ''} ${m.slug} ${m.seasonYear || m.season} ${m.stage || ''} ${m.format} ${m.tournamentName || ''} `;
+    matchText += `Date: ${matchDateStr} ${m.matchDate || m.date}. Venue: ${m.venue?.name || m.venue} ${m.venue?.city || 'Rewa'}. `;
+    matchText += `Result: ${m.resultText || m.result}. Winner: ${m.winnerName || m.winner}. `;
+    matchText += `Toss: ${m.toss?.winner || ''} (${m.toss?.decision || ''}). POTM Player of the match: ${potm} ${potmReason}. `;
+
+    if (inn1) {
+      matchText += `${inn1.teamName || inn1.teamShort} ${inn1.runs}/${inn1.wickets} (${inn1.overs} ov). `;
+      if (Array.isArray(inn1.batting)) {
+        inn1.batting.forEach((b) => {
+          matchText += `${b.playerName} ${b.runs}r (${b.balls}b, ${b.fours}x4, ${b.sixes}x6) ${b.dismissal} `;
+        });
+      }
+      if (Array.isArray(inn1.bowling)) {
+        inn1.bowling.forEach((bw) => {
+          matchText += `${bw.bowlerName} ${bw.wickets}/${bw.runs} (${bw.overs} ov) `;
+        });
+      }
+    }
+
+    if (inn2) {
+      matchText += `${inn2.teamName || inn2.teamShort} ${inn2.runs}/${inn2.wickets} (${inn2.overs} ov). `;
+      if (Array.isArray(inn2.batting)) {
+        inn2.batting.forEach((b) => {
+          matchText += `${b.playerName} ${b.runs}r (${b.balls}b, ${b.fours}x4, ${b.sixes}x6) ${b.dismissal} `;
+        });
+      }
+      if (Array.isArray(inn2.bowling)) {
+        inn2.bowling.forEach((bw) => {
+          matchText += `${bw.bowlerName} ${bw.wickets}/${bw.runs} (${bw.overs} ov) `;
+        });
+      }
+    }
+
+    const titleStr = `${m.seasonYear || m.season} ${m.stage || 'Derby'}: ${m.resultText || (m.winnerName + ' won')}`;
+    const subtitleStr = `${matchDateStr} • ${m.venue?.name || m.venue} • POTM: ${potm}`;
+
+    index.push({
+      type: 'Match',
+      badge: 'match',
+      icon: '🏏',
+      title: titleStr,
+      subtitle: subtitleStr,
+      url: `/matches/${m.slug}`,
+      text: matchText
+    });
+  });
+
+  // 5. News Articles
+  news.forEach((n) => {
+    index.push({
+      type: 'News',
+      badge: 'news',
+      icon: '📰',
+      title: n.title,
+      subtitle: `${formatDate(n.date)} • By ${n.author || 'DES Media'} • ${n.category || 'Article'}`,
+      url: `/news/${n.slug}`,
+      text: `${n.title} ${n.excerpt || ''} ${n.content || n.body || ''} ${n.author || ''} ${n.category || ''} ${n.tags ? n.tags.join(' ') : ''}`
+    });
+  });
+
+  // 6. Record highlights
+  index.push({
+    type: 'Record',
+    badge: 'record',
+    icon: '👑',
+    title: 'Destroyers Skipper: Pranav Dwivedi (1,998 runs & 85 wickets)',
+    subtitle: 'All-time leading batsman and premier strike bowler across all 34 rivalry derbies',
+    url: '/players/pranav-dwivedi/',
+    text: 'Pranav Dwivedi 1998 runs 85 wickets record Destroyers captain 102* 8/39 best bowling Rewa'
+  });
+  index.push({
+    type: 'Record',
+    badge: 'record',
+    icon: '🏆',
+    title: 'Championship Dynasty: 2024, 2025, 2026 Champions',
+    subtitle: 'Destroyers have claimed three consecutive tournament titles (4-1, 5-0, 3-2)',
+    url: '/points-table/',
+    text: 'Champions dynasty three-peat 2024 2025 2026 Destroyers titles trophies Rewa'
+  });
+  index.push({
+    type: 'Record',
+    badge: 'record',
+    icon: '💥',
+    title: 'Highest Team Total: Destroyers 242/4 (20 ov)',
+    subtitle: 'Set at APSU Stadium Rewa against Dread Eleven',
+    url: '/stats/',
+    text: 'Highest team total 242/4 Destroyers 20 overs APSU Stadium Rewa record score'
+  });
+  index.push({
+    type: 'Record',
+    badge: 'record',
+    icon: '🎯',
+    title: 'Derby Head-to-Head: Destroyers Lead 19–15',
+    subtitle: '34 contested matches: DES 19 wins, DE 15 wins',
+    url: '/results/',
+    text: 'Derby head-to-head 19-15 Destroyers lead Dread Eleven 34 matches rivalry'
+  });
+
+  fs.writeFileSync(path.join(rootDir, 'search-index.json'), JSON.stringify(index, null, 2));
+  console.log(`Generated search-index.json with ${index.length} comprehensive searchable entries.`);
+}
+
+// ------------------------------------------------------------
 // MAIN BUILD EXECUTION
 // ------------------------------------------------------------
 function main() {
@@ -2365,8 +2663,10 @@ function main() {
   generatePrivacyPage();
   generateTermsPage();
   generate404Page();
+  generateSearchIndex();
   generateSitemapAndRobots();
   console.log('=== BUILD COMPLETE! ALL PAGES GENERATED WITH CORRECT TEAM ASSIGNMENTS ===');
 }
 
 main();
+
