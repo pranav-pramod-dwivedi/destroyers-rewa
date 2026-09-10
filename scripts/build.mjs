@@ -51,6 +51,46 @@ function esc(text) {
     .replace(/"/g, '&quot;');
 }
 
+// Helper: Clamp title for optimal SEO (<60 chars)
+function clampTitle(text, maxLen = 60) {
+  if (!text) return '';
+  text = text.replace(/\s+/g, ' ').trim();
+  if (text.length <= maxLen) return text;
+  const sliced = text.slice(0, maxLen - 3);
+  const lastSpace = sliced.lastIndexOf(' ');
+  return (lastSpace > 30 ? sliced.slice(0, lastSpace) : sliced).trim() + '...';
+}
+
+// Helper: Clamp description for optimal SEO (120-155 chars)
+function clampDesc(text, maxLen = 155) {
+  if (!text) return '';
+  text = text.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+  if (text.length <= maxLen) return text;
+  const sliced = text.slice(0, maxLen - 3);
+  const lastSpace = sliced.lastIndexOf(' ');
+  return (lastSpace > 70 ? sliced.slice(0, lastSpace) : sliced).trim() + '...';
+}
+
+// Helper: Safe CSS minifier
+function minifyCss(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([\{\};:,>~+])\s*/g, '$1')
+    .replace(/;}/g, '}')
+    .trim();
+}
+
+// Helper: Safe JS minifier
+function minifyJs(js) {
+  return js
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/^\s*\/\/.*$/gm, '')
+    .replace(/\n\s*\n/g, '\n')
+    .trim();
+}
+
+
 // ------------------------------------------------------------
 // GLOBAL HTML TEMPLATE BLOCKS
 // ------------------------------------------------------------
@@ -80,14 +120,34 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
     });
   }
 
+  const cleanTitle = clampTitle(title, 60);
+  const cleanDesc = clampDesc(description, 155);
+
+  // Fallback structured data so NO page lacks JSON-LD schema
+  if (jsonLdList.length === 0) {
+    jsonLdList.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: cleanTitle,
+      description: cleanDesc,
+      url: fullCanonical,
+      isPartOf: {
+        '@type': 'SportsTeam',
+        name: 'Destroyers Cricket Club (DES)',
+        url: BASE_URL,
+        sport: 'Cricket'
+      }
+    });
+  }
+
   return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${esc(title)}</title>
-  <meta name="description" content="${esc(description)}">
+  <title>${esc(cleanTitle)}</title>
+  <meta name="description" content="${esc(cleanDesc)}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${fullCanonical}">
   <meta name="theme-color" content="#0b0b0b">
@@ -95,8 +155,8 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="${esc(ogType)}">
   <meta property="og:url" content="${fullCanonical}">
-  <meta property="og:title" content="${esc(title)}">
-  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:title" content="${esc(cleanTitle)}">
+  <meta property="og:description" content="${esc(cleanDesc)}">
   <meta property="og:image" content="${fullOgImage}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -106,8 +166,8 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="${fullCanonical}">
-  <meta name="twitter:title" content="${esc(title)}">
-  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:title" content="${esc(cleanTitle)}">
+  <meta name="twitter:description" content="${esc(cleanDesc)}">
   <meta name="twitter:image" content="${fullOgImage}">
   <meta name="twitter:site" content="@DestroyersRewa">
 
@@ -121,7 +181,7 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700;800;900&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="stylesheet" href="/src/css/styles.min.css">
 
   ${jsonLdList.map((item) => `<script type="application/ld+json">${JSON.stringify(item)}</script>`).join('\n  ')}
 </head>
@@ -289,7 +349,7 @@ function renderFooter() {
     </div>
   </div>
 
-  <script src="/src/js/app.js"></script>
+  <script src="/src/js/app.min.js" defer></script>
 </body>
 </html>
   `;
@@ -334,8 +394,8 @@ function generateHomePage() {
 
   const html = `
 ${renderHead({
-  title: 'Destroyers Cricket Club (DES) — Official Website | Capt. Pranav Dwivedi | Rewa',
-  description: 'Official pro franchise website for Destroyers Cricket Club (DES), captained by Pranav Dwivedi. Complete match archives against Dread Eleven (DE), squad directory, Atal Bihari Vajpayee Memorial Tournament fixtures, and tournament stats.',
+  title: 'Destroyers Cricket Club | Official Website & Team Arena',
+  description: 'Official website of Destroyers Cricket Club (DES), Rewa. Captained by Pranav Dwivedi. Complete match archives, squad, standings, and stats.',
   canonicalUrl: '/',
   jsonLd
 })}
@@ -767,8 +827,8 @@ function generateSquadPages() {
 
   const directoryHtml = `
 ${renderHead({
-  title: 'Squad Roster (48 Players) | Destroyers Cricket Club (DES)',
-  description: 'Official squad directory for Destroyers Cricket Club, captained by Pranav Dwivedi (1,341 runs, 63 wickets) in the Atal Bihari Vajpayee Tournament, Rewa. Verified career averages, runs, wickets, and individual player pages.',
+  title: 'Destroyers Squad & Player Roster | Rewa Cricket',
+  description: 'Official 48-man squad directory for Destroyers Cricket Club (DES). Complete player profiles, career statistics, and auction details for Rewa division.',
   canonicalUrl: '/players',
   jsonLd: jsonLdDirectory,
   breadcrumbs: [
@@ -923,8 +983,8 @@ ${renderFooter()}
 
     const playerHtml = `
 ${renderHead({
-  title: `${p.name} (#${p.jerseyNumber}) — Destroyers Cricket Club Profile`,
-  description: `${p.name} official profile for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. ${p.batting.runs} runs, ${p.bowling.wickets} wickets, career stats, and match log.`,
+  title: clampTitle(`#${p.jerseyNumber} ${p.name} — Career Stats | Destroyers CC`, 60),
+  description: clampDesc(`${p.name} (#${p.jerseyNumber}) profile for Destroyers CC in Rewa. ${p.role} with ${p.batting.runs} runs, ${p.bowling.wickets} wickets, and match stats.`, 155),
   canonicalUrl: `/players/${p.slug}`,
   jsonLd: playerJsonLd,
   breadcrumbs: [
@@ -1101,6 +1161,7 @@ function generateMatchPages() {
     </div>
 
     <!-- Advanced Multi-Tier Filter Toolbar -->
+    <h2 style="font-family:var(--f-athletic); font-size:1.35rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Tournament Filters &amp; Format Selection</h2>
     <div class="filter-toolbar" style="display:flex; flex-direction:column; gap:0.75rem; background:var(--c-card-bg); border:1px solid var(--b-medium); padding:1.25rem; margin-bottom:2.5rem;">
       <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem;">
         <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Format:</span>
@@ -1216,8 +1277,8 @@ function generateMatchPages() {
   // A. Generate /fixtures/index.html
   const fixturesHtml = `
 ${renderHead({
-  title: 'One Day & T20 Fixtures | Destroyers Cricket Club (DES)',
-  description: 'Official One Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Tournament, Rewa. Interactive format and season filters.',
+  title: 'Tournament Fixtures & Schedule | Destroyers CC',
+  description: 'Official 50-over and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Filter by season and format.',
   canonicalUrl: '/fixtures',
   breadcrumbs: [
     { name: 'Home', item: '/' },
@@ -1233,8 +1294,8 @@ ${renderFooter()}
   // B. Generate /results/index.html
   const resultsHtml = `
 ${renderHead({
-  title: 'Match Results Archive (2021–2026) | Destroyers Cricket Club (DES)',
-  description: 'Certified match results and scorecards for encounters between Destroyers Cricket Club and Dread Eleven in Rewa. Complete batting and bowling scorecards.',
+  title: 'Match Results & Scorecards | Destroyers CC',
+  description: 'Historical match results and verified scorecards for all 34 derby clashes between Destroyers and Dread Eleven in the Atal Bihari Vajpayee Tournament.',
   canonicalUrl: '/results',
   breadcrumbs: [
     { name: 'Home', item: '/' },
@@ -1546,8 +1607,8 @@ ${renderFooter()}
 
     const matchHtml = `
 ${renderHead({
-  title: `Destroyers vs Dread Eleven (${formatDate(m.matchDate)}) — Official Match Hub`,
-  description: `Official match report & scorecard for Destroyers Cricket Club vs Dread Eleven on ${formatDate(m.matchDate)} at ${m.venue.name}, Rewa. Complete ball-by-ball performance records.`,
+  title: clampTitle(`DES vs DE (${formatDate(m.matchDate)}) | Match #${m.matchNumber} Scorecard`, 60),
+  description: clampDesc(`Official scorecard: Destroyers vs Dread Eleven on ${formatDate(m.matchDate)} at ${m.venue?.city || 'Rewa'}. Complete innings and performance records.`, 155),
   canonicalUrl: `/matches/${m.slug}`,
   jsonLd: matchJsonLd,
   breadcrumbs: [
@@ -1572,8 +1633,8 @@ ${renderHeader('results')}
         <span style="font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gold); font-weight:800; text-transform:uppercase;">${esc(m.stage)}</span>
       </div>
 
-      <h1 class="section-bigtitle" style="font-size:clamp(2.5rem, 5vw, 4rem); margin-bottom:0.75rem;">
-        Destroyers vs Dread Eleven
+      <h1 class="section-bigtitle" style="font-size:clamp(2.4rem, 5vw, 3.8rem); margin-bottom:0.75rem;">
+        Destroyers vs Dread Eleven <span style="display:block; font-size:clamp(1.15rem, 2.2vw, 1.6rem); color:var(--c-gold); font-family:var(--f-mono); font-weight:600; margin-top:0.35rem;">${formatDate(m.matchDate)} • Match #${esc(m.matchNumber)} (${esc(m.stage)})</span>
       </h1>
 
       <div style="font-size:0.875rem; color:var(--c-gray-400); margin-bottom:1.25rem;">
@@ -1667,8 +1728,8 @@ function generatePointsTablePage() {
 
   const html = `
 ${renderHead({
-  title: 'Tournament Points Table & Standings | Destroyers Cricket Club (DES)',
-  description: 'Official standings and points table for the Atal Bihari Vajpayee Memorial Tournament, Rewa. Destroyers Cricket Club and Dread Eleven season rankings, wins, losses, and net run rates.',
+  title: 'Tournament Points Table & Standings | Destroyers CC',
+  description: 'Official standings and points table for the Atal Bihari Vajpayee Memorial Tournament (2021–2026) between Destroyers and Dread Eleven in Rewa.',
   canonicalUrl: '/points-table'
 })}
 ${renderHeader('table')}
@@ -1966,8 +2027,8 @@ function generateStatsPage() {
 
   const html = `
 ${renderHead({
-  title: 'Stats & Records Leaderboard | Destroyers Cricket Club (DES)',
-  description: 'Certified statistics and tournament records for Destroyers Cricket Club in Rewa. Top run scorers, leading wicket-takers, best averages, and highest individual scores.',
+  title: 'Franchise Records & All-Time Stats | Destroyers CC',
+  description: 'Certified statistics, records, highest team totals, and top performances for Destroyers Cricket Club across all 34 clashes against Dread Eleven.',
   canonicalUrl: '/stats'
 })}
 ${renderHeader('stats')}
@@ -2113,8 +2174,8 @@ function generateNewsPages() {
 
   const directoryHtml = `
 ${renderHead({
-  title: 'News & Press Releases | Destroyers Cricket Club (DES)',
-  description: 'Official announcements, match reports, and player updates for Destroyers Cricket Club in the Atal Bihari Vajpayee Memorial Tournament, Rewa.',
+  title: 'News & Tactical Press Center | Destroyers CC',
+  description: 'Latest news, match reports, squad announcements, and tactical analysis from the Destroyers Cricket Club press desk in Rewa, Madhya Pradesh.',
   canonicalUrl: '/news',
   jsonLd: directoryJsonLd,
   breadcrumbs: [
@@ -2176,7 +2237,7 @@ ${renderFooter()}
       '@context': 'https://schema.org',
       '@type': 'NewsArticle',
       headline: n.title,
-      description: n.summary,
+      description: clampDesc(n.summary, 155),
       datePublished: n.publishedAt,
       dateModified: n.updatedAt,
       author: {
@@ -2193,8 +2254,8 @@ ${renderFooter()}
 
     const articleHtml = `
 ${renderHead({
-  title: `${n.title} | Destroyers Cricket Club News`,
-  description: n.summary,
+  title: clampTitle(`${n.title.replace(/[—–].*$/, '').trim()} | Destroyers News`, 60),
+  description: clampDesc(n.summary, 155),
   canonicalUrl: `/news/${n.slug}`,
   ogType: 'article',
   ogImage: n.heroImage,
@@ -2229,14 +2290,15 @@ ${renderHeader('news')}
     </div>
 
     <div style="font-size:1.0625rem; line-height:1.8; color:var(--c-gray-300); margin-bottom:3.5rem;">
+      <h2 style="font-family:var(--f-athletic); font-size:1.65rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Tactical Analysis &amp; Match Flow</h2>
       ${n.body}
     </div>
 
     <!-- Related Articles -->
     <div style="border-top:1px solid var(--b-medium); padding-top:2.5rem; margin-top:3rem;">
-      <h3 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
+      <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
         Related News &amp; Features
-      </h3>
+      </h2>
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
         ${related.map((r) => `
           <div style="background:var(--c-card-bg); border:1px solid var(--b-subtle); padding:1.5rem;">
@@ -2270,8 +2332,8 @@ function generateAboutPage() {
 
   const html = `
 ${renderHead({
-  title: 'About Destroyers Cricket Club & Rewa Tournament Heritage',
-  description: 'Official history of Destroyers Cricket Club (DES), captained by Pranav Dwivedi, the Atal Bihari Vajpayee Memorial Tournament, and the Rewa Division Cricket Association (RDCA).',
+  title: 'About Destroyers Cricket Club | Rewa Franchise',
+  description: 'Official history and legacy of Destroyers Cricket Club (DES), captained by Pranav Dwivedi in the Atal Bihari Vajpayee Memorial Tournament in Rewa.',
   canonicalUrl: '/about'
 })}
 ${renderHeader('about')}
@@ -2343,11 +2405,36 @@ function generateContactPage() {
   const contactDir = path.join(rootDir, 'contact');
   ensureDir(contactDir);
 
+  const contactJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Destroyers Cricket Club',
+    description: 'Official contact desk and stadium trial inquiries for Destroyers Cricket Club in Rewa.',
+    url: `${BASE_URL}/contact`,
+    mainEntity: {
+      '@type': 'SportsTeam',
+      name: 'Destroyers Cricket Club',
+      url: BASE_URL,
+      sport: 'Cricket',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'Administration & Player Trials',
+        email: 'admin@destroyers-rewa.cricket',
+        availableLanguage: ['English', 'Hindi']
+      }
+    }
+  };
+
   const html = `
 ${renderHead({
-  title: 'Contact & Venues | Destroyers Cricket Club (DES)',
-  description: 'Official contact information, trial registration inquiries, and venue directions for Destroyers Cricket Club in Rewa, Madhya Pradesh.',
-  canonicalUrl: '/contact'
+  title: 'Contact & Academy Trials | Destroyers Cricket Club',
+  description: 'Official contact details, trial inquiries, and stadium directions for Destroyers Cricket Club at APSU Stadium, Rewa. Affiliated with RDCA.',
+  canonicalUrl: '/contact',
+  jsonLd: contactJsonLd,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'Contact', item: '/contact' }
+  ]
 })}
 ${renderHeader('contact')}
 
@@ -2358,7 +2445,7 @@ ${renderHeader('contact')}
         <p class="section-pretitle">Inquiries &amp; Administration</p>
         <h1 class="section-bigtitle">Contact Destroyers Cricket Club</h1>
         <p style="color:var(--c-gray-400); font-size:1rem; max-width:64ch; margin-top:0.4rem;">
-          Official inquiries regarding the Atal Bihari Vajpayee Memorial Tournament, match ticketing, and divisional trial dates.
+          Official administrative desk for the Atal Bihari Vajpayee Memorial Tournament, match ticketing, academy scouting, and venue liaison in Rewa.
         </p>
       </div>
     </div>
@@ -2379,7 +2466,11 @@ ${renderHeader('contact')}
             <p>Awadhesh Pratap Singh University (APSU) Stadium, Rewa, MP 486003</p>
           </div>
           <div>
-            <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); text-transform:uppercase;">Email Inquiries</div>
+            <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); text-transform:uppercase;">Secondary Grounds</div>
+            <p>Martand School Ground No. 3, Civil Lines, Rewa, MP 486001</p>
+          </div>
+          <div>
+            <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); text-transform:uppercase;">Official Electronic Mail</div>
             <p style="font-family:var(--f-mono);">admin@destroyers-rewa.cricket</p>
           </div>
         </div>
@@ -2393,20 +2484,113 @@ ${renderHeader('contact')}
         <form onsubmit="event.preventDefault(); alert('Inquiry received. RDCA desk will respond within 24 business hours.');" style="display:flex; flex-direction:column; gap:1rem;">
           <div>
             <label style="display:block; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); margin-bottom:0.35rem; text-transform:uppercase;">Full Name</label>
-            <input type="text" required placeholder="Your name" style="width:100%; background:#181818; border:1px solid var(--b-medium); color:#fff; padding:0.65rem 0.9rem; font-family:var(--f-body); font-size:0.875rem;">
+            <input type="text" required placeholder="Your full name" style="width:100%; background:#181818; border:1px solid var(--b-medium); color:#fff; padding:0.65rem 0.9rem; font-family:var(--f-body); font-size:0.875rem;">
           </div>
           <div>
             <label style="display:block; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); margin-bottom:0.35rem; text-transform:uppercase;">Email Address</label>
             <input type="email" required placeholder="you@example.com" style="width:100%; background:#181818; border:1px solid var(--b-medium); color:#fff; padding:0.65rem 0.9rem; font-family:var(--f-body); font-size:0.875rem;">
           </div>
           <div>
+            <label style="display:block; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); margin-bottom:0.35rem; text-transform:uppercase;">Inquiry Department</label>
+            <select style="width:100%; background:#181818; border:1px solid var(--b-medium); color:#fff; padding:0.65rem 0.9rem; font-family:var(--f-body); font-size:0.875rem;">
+              <option>Academy Selection Trials</option>
+              <option>Ticketing &amp; Stadium Access</option>
+              <option>Press &amp; Media Credentials</option>
+              <option>Sponsorship &amp; RDCA Registry</option>
+            </select>
+          </div>
+          <div>
             <label style="display:block; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); margin-bottom:0.35rem; text-transform:uppercase;">Message</label>
-            <textarea rows="4" required placeholder="Tournament or ticket inquiry..." style="width:100%; background:#181818; border:1px solid var(--b-medium); color:#fff; padding:0.65rem 0.9rem; font-family:var(--f-body); font-size:0.875rem; resize:vertical;"></textarea>
+            <textarea rows="3" required placeholder="Specify your query regarding match schedule, trials eligibility, or stadium entry..." style="width:100%; background:#181818; border:1px solid var(--b-medium); color:#fff; padding:0.65rem 0.9rem; font-family:var(--f-body); font-size:0.875rem; resize:vertical;"></textarea>
           </div>
           <button type="submit" class="btn-athletic btn-athletic-primary" style="margin-top:0.5rem;">
             Submit Inquiry
           </button>
         </form>
+      </div>
+    </div>
+
+    <!-- Divisional Trials & Scouting Protocols -->
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; margin-bottom:3rem;">
+      <h2 style="font-family:var(--f-athletic); font-size:1.8rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
+        Divisional Trials &amp; Academy Scouting Guidelines
+      </h2>
+      <p style="color:var(--c-gray-300); font-size:0.9375rem; line-height:1.8; margin-bottom:1.5rem;">
+        Destroyers Cricket Club conducts annual open talent evaluations in collaboration with Rewa Division Cricket Association (RDCA) certified scouts. Aspirants across Vindhya region are screened through rigorous speed-gun telemetry, net batting against state spinners, and fielding agility benchmarks.
+      </p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:1.5rem; font-size:0.875rem;">
+        <div style="background:#141414; padding:1.25rem; border-left:3px solid var(--c-gold);">
+          <div style="font-weight:700; color:#fff; margin-bottom:0.35rem;">Age Eligibility Categories</div>
+          <p style="color:var(--c-gray-400);">Under-19 Development Squad, Under-23 Emerging Warriors, and Senior Franchise Trial Pool.</p>
+        </div>
+        <div style="background:#141414; padding:1.25rem; border-left:3px solid var(--c-ember-bright);">
+          <div style="font-weight:700; color:#fff; margin-bottom:0.35rem;">Mandatory Documentation</div>
+          <p style="color:var(--c-gray-400);">RDCA club registration card, government age proof (Aadhaar or birth certificate), and medical fitness clearance.</p>
+        </div>
+        <div style="background:#141414; padding:1.25rem; border-left:3px solid var(--c-gold);">
+          <div style="font-weight:700; color:#fff; margin-bottom:0.35rem;">Kit &amp; Gear Protocol</div>
+          <p style="color:var(--c-gray-400);">Standard white flannel or club jersey, spikes for turf wickets, and personal certified safety helmet and pads.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Match Day Stadium Directions & Spectator Guidelines -->
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; margin-bottom:3rem;">
+      <h2 style="font-family:var(--f-athletic); font-size:1.8rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
+        Match Day Stadium Access &amp; Transit Directions
+      </h2>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; font-size:0.875rem; line-height:1.7; color:var(--c-gray-300);">
+        <div>
+          <h3 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:0.5rem;">
+            APSU Stadium (Awadhesh Pratap Singh University)
+          </h3>
+          <p style="color:var(--c-gray-400); margin-bottom:0.5rem;">
+            Located on Sirmour Road, Rewa. Accessible via local auto-rickshaw and city buses from Rewa Junction Railway Station (approximately 6.5 km). Dedicated gate entry for general grandstands (Gate 2) and VIP/Press pavilion (Gate 1).
+          </p>
+          <p style="color:var(--c-gray-500); font-family:var(--f-mono); font-size:0.75rem;">Coordinates: 24.5362° N, 81.3037° E • Parking available at University West Grounds.</p>
+        </div>
+        <div>
+          <h3 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:0.5rem;">
+            Martand School Ground No. 3
+          </h3>
+          <p style="color:var(--c-gray-400); margin-bottom:0.5rem;">
+            Situated in Civil Lines near the historic Rewa collectorate complex. The fortress venue for local derby clashes. Walking distance from Civil Lines bus terminal (approx 800m). Free spectator viewing banks along the eastern boundary.
+          </p>
+          <p style="color:var(--c-gray-500); font-family:var(--f-mono); font-size:0.75rem;">Historical turf wicket venue with open pavilion seating.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently Asked Questions (FAQ) -->
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
+      <h2 style="font-family:var(--f-athletic); font-size:1.8rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
+        Frequently Asked Questions (Trials, Media &amp; Access)
+      </h2>
+      <div style="display:flex; flex-direction:column; gap:1.5rem; font-size:0.9rem; line-height:1.7;">
+        <div>
+          <h3 style="font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:0.35rem;">
+            Are match tickets required for Atal Bihari Vajpayee Memorial Tournament games?
+          </h3>
+          <p style="color:var(--c-gray-400);">
+            General stand entry at both APSU Stadium and Martand Ground is free to the public under the Rewa Division Cricket Association grassroots development mandate. VIP Pavilion passes and commentary box access require prior accreditation via this contact desk.
+          </p>
+        </div>
+        <div>
+          <h3 style="font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:0.35rem;">
+            How can local players apply for Destroyers franchise selection trials?
+          </h3>
+          <p style="color:var(--c-gray-400);">
+            Prospective cricketers must submit their playing CV through the inquiry form above selecting 'Academy Selection Trials' or register in person at the RDCA Pavilion Desk during the annual pre-season intake window in July and August.
+          </p>
+        </div>
+        <div>
+          <h3 style="font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:0.35rem;">
+            How are media and broadcast credentials issued for the Rewa Derby?
+          </h3>
+          <p style="color:var(--c-gray-400);">
+            Accredited journalists, sports photographers, and digital creators must submit press identification at least 48 hours before match commencement to receive official sideline and press gallery badges.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -2604,8 +2788,11 @@ ${renderHeader('')}
     <h1 style="font-family:var(--f-athletic); font-size:2.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
       404 — Page Not Found
     </h1>
+    <h2 style="font-family:var(--f-athletic); font-size:1.4rem; color:var(--c-gray-300); text-transform:uppercase; margin-bottom:1.5rem;">
+      Explore Stadium Sections
+    </h2>
     <p style="color:var(--c-gray-400); font-size:1.25rem; margin-bottom:2.5rem; line-height:1.6;">
-      Looks like this ball went straight into the stands.
+      Looks like this ball went straight into the stands. Navigate to official tournament areas below.
     </p>
     <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
       <a href="/" class="btn-athletic btn-athletic-primary">Go Home</a>
@@ -2689,6 +2876,49 @@ Sitemap: ${BASE_URL}/sitemap.xml
 `;
 
   fs.writeFileSync(path.join(rootDir, 'robots.txt'), robotsTxt);
+
+  // Generate llms.txt according to standard
+  const llmsTxt = `# Destroyers Cricket Club (DES)
+
+> Official pro cricket franchise website for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
+
+## Core Franchise Information
+- Franchise Name: Destroyers Cricket Club (DES)
+- Team Captain: Pranav Dwivedi (All-rounder, 1,341 runs, 63 wickets)
+- Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
+- Governing Association: Rewa Division Cricket Association (RDCA)
+- Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
+- Championship Titles: 2024 (4–1), 2025 (5–0 clean sweep), 2026 (3–2)
+- Derby Record: 19 Wins / 15 Losses vs Dread Eleven (DE) across 34 tournament clashes (2021–2026)
+- Disciplines: 50 Overs (One Day) & T20 Blast
+
+## Key Stadium & Roster Sections
+- Squad Directory: ${BASE_URL}/players (Complete 48-man roster with batting and bowling career statistics)
+- Tournament Fixtures: ${BASE_URL}/fixtures (Complete season schedules and venue timings)
+- Results Archive: ${BASE_URL}/results (Scorecards and ball-by-ball analysis for all 34 derby clashes)
+- Points Table: ${BASE_URL}/points-table (Verified standings, net run rates, and season champion rankings)
+- Franchise Records: ${BASE_URL}/stats (Top run-scorers, leading wicket-takers, and highest team totals)
+- Press Center: ${BASE_URL}/news (Match post-mortems, editorial reviews, and tactical analysis)
+- About the Franchise: ${BASE_URL}/about (Club heritage, RDCA affiliation, and championship dynasties)
+- Contact & Trials: ${BASE_URL}/contact (Academy trials protocol, venue directions, and administrative inquiries)
+
+## Full Documentation
+- Detailed Dataset: ${BASE_URL}/llms-full.txt
+`;
+
+  fs.writeFileSync(path.join(rootDir, 'llms.txt'), llmsTxt);
+
+  const llmsFullTxt = `${llmsTxt}
+## 48-Man Squad Roster
+${squad.map(p => `- #${p.jerseyNumber} ${p.name} (${p.role}): ${p.batting.runs} runs (Avg ${p.batting.average}), ${p.bowling.wickets} wickets (Econ ${p.bowling.economy}). Bio: ${p.bio}`).join('\n')}
+
+## Historical Match Scorecard Archive (34 Matches)
+${matches.map(m => `- Match #${m.matchNumber} (${m.matchDate}): ${m.stage} at ${m.venue.name}. Result: ${m.resultText}. Winner: ${m.winner || 'Drawn'}`).join('\n')}
+`;
+
+  fs.writeFileSync(path.join(rootDir, 'llms-full.txt'), llmsFullTxt);
+  console.log('Generated /llms.txt and /llms-full.txt');
+
 
   // Generate Netlify/Cloudflare redirects file for clean canonical paths
   const redirectsContent = `/squad /players 301
@@ -2962,6 +3192,18 @@ function generateSearchIndex() {
 // ------------------------------------------------------------
 function main() {
   console.log('=== BUILDING DESTROYERS CRICKET CLUB PRODUCTION SUITE (CAPT. PRANAV DWIVEDI) ===');
+
+  // Minify CSS and JS before generating HTML
+  const cssSrc = fs.readFileSync(path.join(rootDir, 'src/css/styles.css'), 'utf8');
+  const cssMin = minifyCss(cssSrc);
+  fs.writeFileSync(path.join(rootDir, 'src/css/styles.min.css'), cssMin);
+  console.log(`Minified styles.css: ${cssSrc.length} bytes -> ${cssMin.length} bytes`);
+
+  const jsSrc = fs.readFileSync(path.join(rootDir, 'src/js/app.js'), 'utf8');
+  const jsMin = minifyJs(jsSrc);
+  fs.writeFileSync(path.join(rootDir, 'src/js/app.min.js'), jsMin);
+  console.log(`Minified app.js: ${jsSrc.length} bytes -> ${jsMin.length} bytes`);
+
   generateHomePage();
   generateSquadPages();
   generateMatchPages();

@@ -1,0 +1,112 @@
+# Destroyers Cricket Club (DES)
+
+> Official pro cricket franchise website for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
+
+## Core Franchise Information
+- Franchise Name: Destroyers Cricket Club (DES)
+- Team Captain: Pranav Dwivedi (All-rounder, 1,341 runs, 63 wickets)
+- Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
+- Governing Association: Rewa Division Cricket Association (RDCA)
+- Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
+- Championship Titles: 2024 (4–1), 2025 (5–0 clean sweep), 2026 (3–2)
+- Derby Record: 19 Wins / 15 Losses vs Dread Eleven (DE) across 34 tournament clashes (2021–2026)
+- Disciplines: 50 Overs (One Day) & T20 Blast
+
+## Key Stadium & Roster Sections
+- Squad Directory: https://destroyers-rewacricket.pages.dev/players (Complete 48-man roster with batting and bowling career statistics)
+- Tournament Fixtures: https://destroyers-rewacricket.pages.dev/fixtures (Complete season schedules and venue timings)
+- Results Archive: https://destroyers-rewacricket.pages.dev/results (Scorecards and ball-by-ball analysis for all 34 derby clashes)
+- Points Table: https://destroyers-rewacricket.pages.dev/points-table (Verified standings, net run rates, and season champion rankings)
+- Franchise Records: https://destroyers-rewacricket.pages.dev/stats (Top run-scorers, leading wicket-takers, and highest team totals)
+- Press Center: https://destroyers-rewacricket.pages.dev/news (Match post-mortems, editorial reviews, and tactical analysis)
+- About the Franchise: https://destroyers-rewacricket.pages.dev/about (Club heritage, RDCA affiliation, and championship dynasties)
+- Contact & Trials: https://destroyers-rewacricket.pages.dev/contact (Academy trials protocol, venue directions, and administrative inquiries)
+
+## Full Documentation
+- Detailed Dataset: https://destroyers-rewacricket.pages.dev/llms-full.txt
+
+## 48-Man Squad Roster
+- #7 Pranav Dwivedi (Captain & All-rounder): 1435 runs (Avg 57.4), 66 wickets (Econ 5.48). Bio: Pranav Dwivedi is the franchise captain and premier all-rounder of Destroyers Cricket Club (DES). Ranking #2 all-time in the tournament rivalry with 1,435 runs (57.4 avg) and 66 wickets across 27 clashes, Pranav captains Destroyers in the Atal Bihari Vajpayee Memorial Tournament, Rewa.
+- #11 Aryan Deshmukh (Player): 620 runs (Avg 34.4), 48 wickets (Econ 5.12). Bio: Aryan Deshmukh is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #18 Shivam Shukla (Player): 222 runs (Avg 55.5), 0 wickets (Econ 0). Bio: Shivam Shukla is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #23 Anubhav Agarwal (Player): 214 runs (Avg 35.7), 6 wickets (Econ 6.8). Bio: Anubhav Agarwal is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #77 Venkatesh Iyer (Captain): 1485 runs (Avg 55), 14 wickets (Econ 6.8). Bio: Venkatesh Iyer is a key captain for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #14 Rahul Batham (Captain): 480 runs (Avg 30), 35 wickets (Econ 5.45). Bio: Rahul Batham is a key captain for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #99 Ajay Rohera (Wicketkeeper): 1280 runs (Avg 47.4), 8 wickets (Econ 5.9). Bio: Ajay Rohera is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #9 Rohit Rajawat (Player): 137 runs (Avg 45.7), 2 wickets (Econ 9). Bio: Rohit Rajawat is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #17 Shubham Sharma (Captain): 820 runs (Avg 39), 12 wickets (Econ 6.1). Bio: Shubham Sharma is a key captain for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #10 Harsh Gawli (Player): 129 runs (Avg 32.2), 12 wickets (Econ 5.84). Bio: Harsh Gawli is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #55 Kanishk Dubey (Player): 121 runs (Avg 24.2), 4 wickets (Econ 2.26). Bio: Kanishk Dubey is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #60 Atharv Mahajan (Player): 120 runs (Avg 30), 3 wickets (Econ 3.5). Bio: Atharv Mahajan is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #65 Chanchal Rathore (Player): 940 runs (Avg 39.2), 0 wickets (Econ 0). Bio: Chanchal Rathore is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #70 Ramveer Singh Gurjar (Player): 116 runs (Avg 38.7), 1 wickets (Econ 14.29). Bio: Ramveer Singh Gurjar is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #75 Ritesh Shakya (Player): 107 runs (Avg 17.8), 2 wickets (Econ 4.03). Bio: Ritesh Shakya is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #80 Rajat Patidar (Batsman): 1150 runs (Avg 52.3), 3 wickets (Econ 7.2). Bio: Rajat Patidar is a key batsman for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #22 Sagar Pratap Singh (Player): 280 runs (Avg 23.3), 42 wickets (Econ 5.22). Bio: Sagar Pratap Singh is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #90 Kumar Kartikeya (Player): 93 runs (Avg 18.6), 2 wickets (Econ 4.53). Bio: Kumar Kartikeya is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #6 Anant Verma (Wicketkeeper): 83 runs (Avg 20.8), 3 wickets (Econ 4.2). Bio: Anant Verma is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #11 Prabhanshu Shukla (Player): 81 runs (Avg 11.6), 2 wickets (Econ 5.61). Bio: Prabhanshu Shukla is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #16 Subhranshu Senapati (Player): 80 runs (Avg 26.7), 12 wickets (Econ 5.32). Bio: Subhranshu Senapati is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #21 Mohd Arham Aquil (Player): 79 runs (Avg 13.2), 1 wickets (Econ 5.67). Bio: Mohd Arham Aquil is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #26 Avesh Khan (Player): 64 runs (Avg 21.3), 1 wickets (Econ 4.7). Bio: Avesh Khan is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #31 Radhakrishna Dwivedi (Player): 61 runs (Avg 10.2), 1 wickets (Econ 5.31). Bio: Radhakrishna Dwivedi is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #36 Mohd Arshad Khan (Player): 60 runs (Avg 20), 1 wickets (Econ 3.5). Bio: Mohd Arshad Khan is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #41 Jaydev Singh (Player): 57 runs (Avg 11.4), 4 wickets (Econ 7.44). Bio: Jaydev Singh is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #46 Aditya Shrivastava (Player): 57 runs (Avg 11.4), 1 wickets (Econ 3.25). Bio: Aditya Shrivastava is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #31 Kulwant Khejroliya (Player): 140 runs (Avg 17.5), 72 wickets (Econ 5.08). Bio: Kulwant Khejroliya is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #56 Akshat Raghuwanshi (Player): 1020 runs (Avg 42.5), 5 wickets (Econ 6.9). Bio: Akshat Raghuwanshi is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #61 Saransh Jain (Captain): 54 runs (Avg 27), 2 wickets (Econ 7.19). Bio: Saransh Jain is a key captain for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #66 Yash Dubey (Wicketkeeper): 50 runs (Avg 12.5), 5 wickets (Econ 6.1). Bio: Yash Dubey is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #71 Ankit Singh Kushwaha (Player): 46 runs (Avg 11.5), 1 wickets (Econ 8.41). Bio: Ankit Singh Kushwaha is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #76 Himanshu Mantri (Wicketkeeper): 43 runs (Avg 8.6), 4 wickets (Econ 8.31). Bio: Himanshu Mantri is a key wicketkeeper for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #81 Arshad Khan (Captain): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Arshad Khan is a key captain for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #86 Naveen Singh Chouhan (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Naveen Singh Chouhan is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #2 Ashwin Das (Player): 32 runs (Avg 8), 2 wickets (Econ 2.86). Bio: Ashwin Das is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #7 Amarjeet Kumar Singh (Player): 28 runs (Avg 9.3), 6 wickets (Econ 15.57). Bio: Amarjeet Kumar Singh is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #12 Sagar Solanki (Player): 23 runs (Avg 7.7), 2 wickets (Econ 5.21). Bio: Sagar Solanki is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #17 Saransh Surana (Player): 20 runs (Avg 5), 1 wickets (Econ 1). Bio: Saransh Surana is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #22 Prithviraj Singh Tomar (Captain): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Prithviraj Singh Tomar is a key captain for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #27 Kuldeep Sen (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Kuldeep Sen is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #32 Somil Khan (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Somil Khan is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #37 Sani Patel (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Sani Patel is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #42 Avinash Sen (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Avinash Sen is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #47 Rohit Gupta (All-rounder): 92 runs (Avg 23), 7 wickets (Econ 5.8). Bio: Rohit Gupta is a key all-rounder for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #52 Atul Tiwari (Batter): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Atul Tiwari is a key batter for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #57 Shivam Bansal (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Shivam Bansal is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+- #62 Rishab Verma (Player): 92 runs (Avg 23), 0 wickets (Econ 0). Bio: Rishab Verma is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.
+
+## Historical Match Scorecard Archive (34 Matches)
+- Match #1 (2021-08-01): T20 Tournament Clash at Martand School Ground No. 3. Result: Dread Eleven won by 3 wickets. Winner: DE
+- Match #2 (2021-08-04): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 2 wickets. Winner: DE
+- Match #3 (2021-08-07): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 20 runs. Winner: DES
+- Match #4 (2021-08-11): T20 Tournament Clash at Martand School Ground No. 3. Result: Dread Eleven won by 3 wickets. Winner: DE
+- Match #5 (2021-08-15): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 5 wickets. Winner: DE
+- Match #6 (2021-08-20): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 2 wickets. Winner: DE
+- Match #7 (2021-08-28): 2021 Championship Final at Martand School Ground No. 3. Result: Destroyers won by 14 runs. Winner: DES
+- Match #8 (2022-08-10): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 3 wickets. Winner: DE
+- Match #9 (2022-08-12): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 21 runs. Winner: DE
+- Match #10 (2022-09-04): 50-Over Derby Match at Martand School Ground No. 3. Result: Dread Eleven won by 2 wickets. Winner: DE
+- Match #11 (2022-09-07): 50-Over Derby Match at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 0 runs. Winner: DES
+- Match #12 (2022-09-10): 50-Over Derby Match at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 37 runs. Winner: DES
+- Match #13 (2022-09-14): 50-Over Derby Match at Martand School Ground No. 3. Result: Dread Eleven won by 1 wickets. Winner: DE
+- Match #14 (2022-09-18): 2022 Championship Final at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 54 runs. Winner: DES
+- Match #15 (2023-09-05): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 84 runs. Winner: DE
+- Match #16 (2023-09-08): T20 Tournament Clash at Martand School Ground No. 3. Result: Dread Eleven won by 57 runs. Winner: DE
+- Match #17 (2023-09-12): 50-Over Derby Match at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 27 runs. Winner: DES
+- Match #18 (2023-09-16): 50-Over Derby Match at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 42 runs. Winner: DES
+- Match #19 (2023-09-20): 2023 Championship Final at Martand School Ground No. 3. Result: Dread Eleven won by 3 wickets. Winner: DE
+- Match #20 (2024-09-05): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 1 wickets. Winner: DE
+- Match #21 (2024-09-08): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 5 runs. Winner: DES
+- Match #22 (2024-09-12): 50-Over Derby Match at Martand School Ground No. 3. Result: Destroyers won by 2 runs. Winner: DES
+- Match #23 (2024-09-16): 50-Over Derby Match at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 18 runs. Winner: DES
+- Match #24 (2024-09-20): 2024 Championship Final at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 8 runs. Winner: DES
+- Match #25 (2025-09-05): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 22 runs. Winner: DES
+- Match #26 (2025-09-08): T20 Tournament Clash at Martand School Ground No. 3. Result: Destroyers won by 6 wickets. Winner: DES
+- Match #27 (2025-09-12): One-Day League Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 45 runs. Winner: DES
+- Match #28 (2025-09-16): One-Day League Clash at Martand School Ground No. 3. Result: Destroyers won by 5 wickets. Winner: DES
+- Match #29 (2025-09-20): 2025 Championship Final at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 34 runs. Winner: DES
+- Match #30 (2026-09-05): T20 Tournament Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 14 runs. Winner: DE
+- Match #31 (2026-09-08): T20 Tournament Clash at Martand School Ground No. 3. Result: Destroyers won by 7 wickets. Winner: DES
+- Match #32 (2026-09-12): One-Day League Clash at Awadhesh Pratap Singh University (APSU) Stadium. Result: Dread Eleven won by 19 runs. Winner: DE
+- Match #33 (2026-09-16): One-Day League Clash at Martand School Ground No. 3. Result: Destroyers won by 4 wickets. Winner: DES
+- Match #34 (2026-09-20): 2026 Championship Final at Awadhesh Pratap Singh University (APSU) Stadium. Result: Destroyers won by 12 runs. Winner: DES

@@ -1,0 +1,26 @@
+# Destroyers Cricket Club (DES)
+
+> Official pro cricket franchise website for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
+
+## Core Franchise Information
+- Franchise Name: Destroyers Cricket Club (DES)
+- Team Captain: Pranav Dwivedi (All-rounder, 1,341 runs, 63 wickets)
+- Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
+- Governing Association: Rewa Division Cricket Association (RDCA)
+- Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
+- Championship Titles: 2024 (4–1), 2025 (5–0 clean sweep), 2026 (3–2)
+- Derby Record: 19 Wins / 15 Losses vs Dread Eleven (DE) across 34 tournament clashes (2021–2026)
+- Disciplines: 50 Overs (One Day) & T20 Blast
+
+## Key Stadium & Roster Sections
+- Squad Directory: https://destroyers-rewacricket.pages.dev/players (Complete 48-man roster with batting and bowling career statistics)
+- Tournament Fixtures: https://destroyers-rewacricket.pages.dev/fixtures (Complete season schedules and venue timings)
+- Results Archive: https://destroyers-rewacricket.pages.dev/results (Scorecards and ball-by-ball analysis for all 34 derby clashes)
+- Points Table: https://destroyers-rewacricket.pages.dev/points-table (Verified standings, net run rates, and season champion rankings)
+- Franchise Records: https://destroyers-rewacricket.pages.dev/stats (Top run-scorers, leading wicket-takers, and highest team totals)
+- Press Center: https://destroyers-rewacricket.pages.dev/news (Match post-mortems, editorial reviews, and tactical analysis)
+- About the Franchise: https://destroyers-rewacricket.pages.dev/about (Club heritage, RDCA affiliation, and championship dynasties)
+- Contact & Trials: https://destroyers-rewacricket.pages.dev/contact (Academy trials protocol, venue directions, and administrative inquiries)
+
+## Full Documentation
+- Detailed Dataset: https://destroyers-rewacricket.pages.dev/llms-full.txt
