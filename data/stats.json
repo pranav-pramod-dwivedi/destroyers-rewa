@@ -11,11 +11,6 @@
     "desWins": 6,
     "deWins": 11
   },
-  "odi": {
-    "total": 17,
-    "desWins": 13,
-    "deWins": 4
-  },
   "seasons": [
     "2026",
     "2025",
@@ -53,5 +48,10 @@
       "season": "2022",
       "opponent": "Dread Eleven"
     }
+  },
+  "fiftyOvers": {
+    "total": 17,
+    "desWins": 13,
+    "deWins": 4
   }
 }

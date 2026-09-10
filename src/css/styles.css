@@ -1075,7 +1075,9 @@ body {
   border: 1px solid rgba(245, 111, 0, 0.4);
 }
 
-.pro-fmt-tag.odi {
+.pro-fmt-tag.odi,
+.pro-fmt-tag.fifty-overs,
+.pro-fmt-tag[class*="50-over"] {
   background: rgba(33, 150, 243, 0.15);
   color: #64b5f6;
   border: 1px solid rgba(33, 150, 243, 0.35);

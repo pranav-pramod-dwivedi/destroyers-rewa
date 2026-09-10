@@ -539,7 +539,7 @@ ${renderHeader('home')}
             The Undefeated Whitewash
           </h3>
           <p style="font-size:0.875rem; color:var(--c-gray-300); line-height:1.6; margin-bottom:1.25rem;">
-            The greatest single-season run in Rewa division cricket history. Destroyers swept all 5 fixtures in 2025 without a single defeat, outclassing Dread Eleven across ODI and T20 disciplines with clinical precision.
+            The greatest single-season run in Rewa division cricket history. Destroyers swept all 5 fixtures in 2025 without a single defeat, outclassing Dread Eleven across 50-over and T20 disciplines with clinical precision.
           </p>
           <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:0.85rem; border-radius:2px; margin-bottom:1.5rem; font-family:var(--f-mono); font-size:0.75rem;">
             <div style="color:var(--c-gold); font-weight:700; margin-bottom:0.25rem;">CLIMAX HIGHLIGHT (20 SEP 2025)</div>
@@ -1038,7 +1038,7 @@ ${renderHeader('squad')}
             ${playerLogs.length ? playerLogs.map((item) => `
               <tr>
                 <td style="font-weight:700; color:var(--c-white);">${formatDate(item.match.matchDate)}</td>
-                <td><span class="pro-fmt-tag ${item.match.format.toLowerCase()}">${esc(item.match.format)}</span></td>
+                <td><span class="pro-fmt-tag ${item.match.format.toLowerCase().replace(/\s+/g, '-')}">${esc(item.match.format)}</span></td>
                 <td><a href="/matches/${item.match.slug}" style="color:var(--c-ember-bright); font-weight:700;">Scorecard &rarr;</a></td>
                 <td class="num tabular font-bold" style="color:var(--c-white);">${item.batting ? `${item.batting.runs} (${item.batting.balls}b)` : '—'}</td>
                 <td style="font-size:0.75rem; color:var(--c-gray-400);">${item.batting ? esc(item.batting.dismissal) : 'Did Not Bat'}</td>
@@ -1075,7 +1075,7 @@ function generateMatchPages() {
   ensureDir(resultsDir);
 
   const t20Count = matches.filter((m) => m.format === 'T20').length;
-  const odiCount = matches.filter((m) => m.format === 'ODI' || m.format === 'One-Day').length;
+  const fiftyOversCount = matches.filter((m) => m.format.includes('50') || m.format === 'ODI' || m.format === 'One-Day').length;
   const desWinsCount = matches.filter((m) => m.winner === 'DES').length;
   const deWinsCount = matches.filter((m) => m.winner === 'DE').length;
   const upcomingCount = matches.filter((m) => m.status === 'upcoming').length;
@@ -1106,7 +1106,7 @@ function generateMatchPages() {
         <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Format:</span>
         <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (${listMatches.length})</button>
         <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 (${t20Count})</button>
-        <button type="button" class="filter-pill format-filter-btn" data-format="ODI">ODI (${odiCount})</button>
+        <button type="button" class="filter-pill format-filter-btn" data-format="50-overs">50 Overs (${fiftyOversCount})</button>
 
         <span class="filter-group-label" style="margin-left:1rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Result:</span>
         <button type="button" class="filter-pill active result-filter-btn" data-result="all">All</button>
@@ -1146,7 +1146,7 @@ function generateMatchPages() {
         return `
           <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}" data-format="${esc(m.format)}" data-season="${esc(m.seasonYear)}" data-result="${resultAttr}">
             <div class="pro-match-header">
-              <span class="pro-fmt-tag ${m.format.toLowerCase()}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
+              <span class="pro-fmt-tag ${m.format.toLowerCase().replace(/\s+/g, '-')}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
               ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>' : `<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">${isCompleted ? `MATCH #${esc(m.matchNumber)}` : 'SCHEDULED'}</span>`}
             </div>
 
@@ -1568,7 +1568,7 @@ ${renderHeader('results')}
     <!-- Match Header Banner -->
     <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem; margin-bottom:3rem;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:1rem;">
-        <span class="pro-fmt-tag ${m.format.toLowerCase()}">${esc(m.format)} • Season ${esc(m.seasonYear)}</span>
+        <span class="pro-fmt-tag ${m.format.toLowerCase().replace(/\s+/g, '-')}">${esc(m.format)} • Season ${esc(m.seasonYear)}</span>
         <span style="font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gold); font-weight:800; text-transform:uppercase;">${esc(m.stage)}</span>
       </div>
 
@@ -1715,7 +1715,7 @@ ${renderHeader('table')}
           <tbody>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2026 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 ODIs</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC 🏆</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">3–2 (5 matches)</td>
@@ -1723,7 +1723,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2025 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 ODIs</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC 🏆</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">5–0 Clean Sweep</td>
@@ -1731,7 +1731,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2024 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 ODIs</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC 🏆</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">4–1 (5 matches)</td>
@@ -1739,7 +1739,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-white);">2023 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 ODIs</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-ember-bright);">Dread Eleven</td>
               <td style="color:var(--c-white); font-weight:700;">Akhil Mishra <span style="color:var(--c-ember-bright); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-emerald);">3–2 (5 matches)</td>
@@ -1747,7 +1747,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-white);">2022 Edition</td>
-              <td style="color:var(--c-gray-400);">ODI &amp; T20 Format</td>
+              <td style="color:var(--c-gray-400);">50-Over &amp; T20 Format</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-ember-bright);">Dread Eleven</td>
               <td style="color:var(--c-white); font-weight:700;">Akhil Mishra <span style="color:var(--c-ember-bright); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-emerald);">4–3 (7 matches)</td>
@@ -1878,7 +1878,7 @@ ${renderHeader('table')}
 
       <!-- 2023 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2023 (50-Over ODI)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2023 (50 Overs)</h3>
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -1900,7 +1900,7 @@ ${renderHeader('table')}
 
       <!-- 2022 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (T20 &amp; ODI)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (T20 &amp; 50 Overs)</h3>
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -2469,7 +2469,7 @@ ${renderHeader('')}
         <ul style="padding-left:1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
           <li><strong>Tournament Inquiries:</strong> When submitting forms through our Contact desk, your name, email address, and inquiry text are logged solely to fulfill match-day inquiries and trial scheduling.</li>
           <li><strong>Aggregated Site Telemetry:</strong> Anonymized Core Web Vitals, page visit counts, device classifications, and regional bandwidth telemetry to maintain 60 FPS client rendering.</li>
-          <li><strong>Cookies &amp; Local Storage:</strong> Essential session preferences such as filter toolbar states (T20 vs. ODI) and theme caching. No tracking pixels are sold or shared with third-party data brokers.</li>
+          <li><strong>Cookies &amp; Local Storage:</strong> Essential session preferences such as filter toolbar states (T20 vs. 50 Overs) and theme caching. No tracking pixels are sold or shared with third-party data brokers.</li>
         </ul>
       </div>
 
@@ -2734,7 +2734,7 @@ function generateSearchIndex() {
     title: 'Tournament Fixtures & Rivalry Schedule',
     subtitle: 'Upcoming clash schedule, 2026 championship derbies, venue directions & match timing',
     url: '/fixtures/',
-    text: 'Destroyers vs Dread Eleven fixtures schedule match timings APSU Stadium Martand Ground Rewa T20 50-over ODI tickets'
+    text: 'Destroyers vs Dread Eleven fixtures schedule match timings APSU Stadium Martand Ground Rewa T20 50-over tickets'
   });
   index.push({
     type: 'Page',

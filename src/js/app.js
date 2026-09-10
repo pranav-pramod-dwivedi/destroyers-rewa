@@ -1212,7 +1212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const matchFormat = activeFormat === 'all' || 
         (activeFormat === 'T20' && format.includes('T20')) || 
-        (activeFormat === 'ODI' && (format.includes('ODI') || format.includes('ONE-DAY')));
+        ((activeFormat === '50-overs' || activeFormat === 'ODI') && (format.includes('50') || format.includes('ODI') || format.includes('ONE-DAY')));
 
       const matchSeason = activeSeason === 'all' || season === activeSeason;
       const matchResult = activeResult === 'all' || result === activeResult;
