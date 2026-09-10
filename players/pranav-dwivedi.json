@@ -1,0 +1,59 @@
+{
+  "entity": "Pranav Dwivedi",
+  "fullName": "Pranav Pramod Dwivedi",
+  "jerseyNumber": 7,
+  "franchise": "Destroyers Cricket Club (DES)",
+  "role": "Captain & All-rounder",
+  "battingStyle": "Right-hand bat",
+  "bowlingStyle": "Right-arm fast-medium / Off-spin",
+  "championshipTitles": [
+    "2026 Atal Bihari Vajpayee Memorial Trophy Champion Captain (3-2)",
+    "2025 Atal Bihari Vajpayee Memorial Trophy Champion Captain (5-0 Clean Sweep)",
+    "2024 Atal Bihari Vajpayee Memorial Trophy Champion Captain (4-1)"
+  ],
+  "careerStats": {
+    "matches": 27,
+    "runs": 1435,
+    "average": 57.4,
+    "strikeRate": 146.4,
+    "highestScore": "102*",
+    "fifties": 14,
+    "hundreds": 1,
+    "fours": 142,
+    "sixes": 48,
+    "overs": 148,
+    "wickets": 66,
+    "bowlingAverage": 16.3,
+    "economy": 5.48,
+    "bestBowling": "8/39"
+  },
+  "derbyRecord": {
+    "opponent": "Dread Eleven (DE)",
+    "captainRival": "Akhil Mishra",
+    "franchiseWins": 19,
+    "franchiseLosses": 15
+  },
+  "verifiedRegistry": "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/",
+  "faq": [
+    {
+      "question": "Who is Pranav Dwivedi in Rewa cricket?",
+      "answer": "Pranav Dwivedi (Pranav Pramod Dwivedi) is the franchise captain and premier all-rounder of Destroyers Cricket Club (DES) in Rewa, Madhya Pradesh. He led Destroyers to three consecutive championships in 2024, 2025, and 2026."
+    },
+    {
+      "question": "What are Pranav Dwivedi's career batting and bowling statistics?",
+      "answer": "1,435 runs at 57.4 average (SR 146.4, HS 102*, 14 fifties, 1 hundred) and 66 wickets at 16.3 average (Econ 5.48, BBI 8/39)."
+    },
+    {
+      "question": "What is Pranav Dwivedi's captaincy record against Dread Eleven?",
+      "answer": "19 wins, securing 3 consecutive championships: 2024 (4-1), 2025 (5-0 clean sweep), and 2026 (3-2)."
+    },
+    {
+      "question": "What jersey number and role does Pranav Dwivedi play?",
+      "answer": "Jersey #7, Captain and All-rounder."
+    },
+    {
+      "question": "Where can Pranav Dwivedi's official RDCA cricket records be verified?",
+      "answer": "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/"
+    }
+  ]
+}

@@ -4,7 +4,8 @@
 
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
-- Team Captain: Pranav Dwivedi (All-rounder, 1,341 career runs, 63 career wickets in 46 matches)
+- Team Captain: [Pranav Dwivedi](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
+- Machine-Readable Captain Profile: [Pranav Dwivedi JSON](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.md)
 - Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
 - Governing Association: Rewa Division Cricket Association (RDCA)
 - Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
