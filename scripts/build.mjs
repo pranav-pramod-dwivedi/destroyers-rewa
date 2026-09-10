@@ -833,9 +833,9 @@ ${renderHeader('home')}
     <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; margin-bottom:2rem;" id="squad-filter-controls">
       <span style="font-family:var(--f-mono); font-size:0.7rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">Quick Filter:</span>
       <button type="button" class="squad-suggest-chip role-btn active" data-filter="all">All (48)</button>
-      <button type="button" class="squad-suggest-chip role-btn" data-filter="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
-      <button type="button" class="squad-suggest-chip role-btn" data-filter="Anant Verma">🔥 Anant Verma</button>
-      <button type="button" class="squad-suggest-chip role-btn" data-filter="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Pranav Dwivedi">Capt. Pranav Dwivedi</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Anant Verma"> Anant Verma</button>
+      <button type="button" class="squad-suggest-chip role-btn" data-filter="Sagar Pratap Singh"> Sagar Pratap Singh</button>
       <button type="button" class="squad-suggest-chip role-btn" data-filter="All-rounder">All-Rounders</button>
       <button type="button" class="squad-suggest-chip role-btn" data-filter="Bowler">Bowlers</button>
       <button type="button" class="squad-suggest-chip role-btn" data-filter="Batter">Batters</button>
@@ -1004,11 +1004,11 @@ ${renderHeader('squad')}
       <!-- Search Suggestions Chips -->
       <div style="display:flex; flex-wrap:wrap; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
         <span style="font-family:var(--f-mono); font-size:0.7rem; color:var(--c-ember-bright); font-weight:800; text-transform:uppercase;">Search Suggestions:</span>
-        <button type="button" class="squad-suggest-chip" data-search="Pranav Dwivedi">⚡ Capt. Pranav Dwivedi</button>
-        <button type="button" class="squad-suggest-chip" data-search="Anant Verma">🔥 Anant Verma</button>
-        <button type="button" class="squad-suggest-chip" data-search="Sagar Pratap Singh">🎯 Sagar Pratap Singh</button>
-        <button type="button" class="squad-suggest-chip" data-search="Harshit Patel">🏏 Harshit Patel</button>
-        <button type="button" class="squad-suggest-chip" data-search="Somil Khan">💨 Somil Khan</button>
+        <button type="button" class="squad-suggest-chip" data-search="Pranav Dwivedi">Capt. Pranav Dwivedi</button>
+        <button type="button" class="squad-suggest-chip" data-search="Anant Verma"> Anant Verma</button>
+        <button type="button" class="squad-suggest-chip" data-search="Sagar Pratap Singh"> Sagar Pratap Singh</button>
+        <button type="button" class="squad-suggest-chip" data-search="Harshit Patel"> Harshit Patel</button>
+        <button type="button" class="squad-suggest-chip" data-search="Somil Khan"> Somil Khan</button>
         <button type="button" class="squad-suggest-chip" data-search="Captain">Captains</button>
         <button type="button" class="squad-suggest-chip" data-search="All-rounder">All-Rounders</button>
         <button type="button" class="squad-suggest-chip" data-search="Bowler">Bowlers</button>
@@ -2282,7 +2282,7 @@ ${renderHeader('table')}
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2026 Edition</td>
               <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
-              <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC 🏆</td>
+              <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC (Champions)</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">3–2 (5 matches)</td>
               <td style="color:var(--c-gray-300);">Dread Eleven</td>
@@ -2290,7 +2290,7 @@ ${renderHeader('table')}
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2025 Edition</td>
               <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
-              <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC 🏆</td>
+              <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC (Champions)</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">5–0 Clean Sweep</td>
               <td style="color:var(--c-gray-300);">Dread Eleven</td>
@@ -2298,7 +2298,7 @@ ${renderHeader('table')}
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2024 Edition</td>
               <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
-              <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC 🏆</td>
+              <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC (Champions)</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">4–1 (5 matches)</td>
               <td style="color:var(--c-gray-300);">Dread Eleven</td>
@@ -3746,7 +3746,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '⌂',
+    icon: '',
     title: 'Destroyers Home Arena & Digital HQ',
     subtitle: 'Official club headquarters, live telemetry, latest derby climax & trophy cabinet',
     url: '/',
@@ -3755,7 +3755,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '♟',
+    icon: '',
     title: 'Destroyers Squad Directory (48 Players)',
     subtitle: 'Official 48-man tournament roster for Destroyers Cricket Club',
     url: '/players/',
@@ -3764,7 +3764,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '📅',
+    icon: '',
     title: 'Tournament Fixtures & Rivalry Schedule',
     subtitle: 'Upcoming clash schedule, 2026 championship derbies, venue directions & match timing',
     url: '/fixtures/',
@@ -3773,7 +3773,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '🏆',
+    icon: '',
     title: 'Completed Match Archive (34 Matches)',
     subtitle: 'Complete scorecard archive of all 34 rivalry clashes between DES and DE (2021-2026)',
     url: '/results/',
@@ -3782,7 +3782,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '📊',
+    icon: '',
     title: 'Points Table & Standings',
     subtitle: 'Net run rate, bonus points, season championship telemetry (2021-2026)',
     url: '/points-table/',
@@ -3791,7 +3791,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '📈',
+    icon: '',
     title: 'Statistical Leaderboards & Record Books',
     subtitle: 'Most runs, most wickets, highest team totals, individual centuries & economy leaders',
     url: '/stats/',
@@ -3800,7 +3800,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '📰',
+    icon: '',
     title: 'News & Press Releases',
     subtitle: 'Exclusive match post-mortems, tactical analysis, player interviews',
     url: '/news/',
@@ -3809,7 +3809,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '🏛️',
+    icon: '',
     title: 'About Destroyers & Championship Dynasty',
     subtitle: 'Franchise philosophy, stadium details, connection with RDCA and Atal Bihari Vajpayee Tournament',
     url: '/about/',
@@ -3818,7 +3818,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Page',
     badge: 'page',
-    icon: '✉️',
+    icon: '',
     title: 'Contact RDCA & Franchise Headquarters',
     subtitle: 'Player selection trials, academy enrollment, media inquiries & club office',
     url: '/contact/',
@@ -3829,7 +3829,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Venue',
     badge: 'venue',
-    icon: '📍',
+    icon: '',
     title: 'APSU Stadium, Rewa (Awadhesh Pratap Singh University)',
     subtitle: 'Premier cricket venue in Rewa, capacity 15,000, host to championship finals',
     url: '/fixtures/',
@@ -3838,7 +3838,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Venue',
     badge: 'venue',
-    icon: '🏟️',
+    icon: '',
     title: 'Martand School Ground No. 3, Rewa',
     subtitle: 'Historic spin-friendly turf, spiritual home of the Rewa Derby',
     url: '/fixtures/',
@@ -3873,7 +3873,7 @@ function generateSearchIndex() {
     index.push({
       type: 'Player',
       badge: 'player',
-      icon: isCapt ? '⚡' : '🏏',
+      icon: '',
       title: `${p.name} (#${p.jerseyNumber}) — ${p.role}`,
       subtitle: `OVR ${ovr} • ${p.role} • ${runs} runs (Avg ${avg}) • ${wkts} wkts (BB ${bb})`,
       url: `/players/${p.slug}`,
@@ -3928,7 +3928,7 @@ function generateSearchIndex() {
     index.push({
       type: 'Match',
       badge: 'match',
-      icon: '🏏',
+      icon: '',
       title: titleStr,
       subtitle: subtitleStr,
       url: `/matches/${m.slug}`,
@@ -3941,7 +3941,7 @@ function generateSearchIndex() {
     index.push({
       type: 'News',
       badge: 'news',
-      icon: '📰',
+      icon: '',
       title: n.title,
       subtitle: `${formatDate(n.date)} • By ${n.author || 'DES Media'} • ${n.category || 'Article'}`,
       url: `/news/${n.slug}`,
@@ -3953,7 +3953,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Record',
     badge: 'record',
-    icon: '👑',
+    icon: '',
     title: 'Destroyers Skipper: Pranav Dwivedi (1,998 runs & 85 wickets)',
     subtitle: 'All-time leading batsman and premier strike bowler across all 34 rivalry derbies',
     url: '/players/pranav-dwivedi/',
@@ -3962,7 +3962,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Record',
     badge: 'record',
-    icon: '🏆',
+    icon: '',
     title: 'Championship Dynasty: 2024, 2025, 2026 Champions',
     subtitle: 'Destroyers have claimed three consecutive tournament titles (4-1, 5-0, 3-2)',
     url: '/points-table/',
@@ -3971,7 +3971,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Record',
     badge: 'record',
-    icon: '💥',
+    icon: '',
     title: 'Highest Team Total: Destroyers 242/4 (20 ov)',
     subtitle: 'Set at APSU Stadium Rewa against Dread Eleven',
     url: '/stats/',
@@ -3980,7 +3980,7 @@ function generateSearchIndex() {
   index.push({
     type: 'Record',
     badge: 'record',
-    icon: '🎯',
+    icon: '',
     title: 'Derby Head-to-Head: Destroyers Lead 19–15',
     subtitle: '34 contested matches: DES 19 wins, DE 15 wins',
     url: '/results/',

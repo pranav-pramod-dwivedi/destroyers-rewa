@@ -1,0 +1,47 @@
+<svg viewBox="0 0 160 190" width="160" height="190" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="desEmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9800"/>
+      <stop offset="50%" stop-color="#ff7a00"/>
+      <stop offset="100%" stop-color="#e65100"/>
+    </linearGradient>
+    <linearGradient id="desGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe082"/>
+      <stop offset="100%" stop-color="#ffb300"/>
+    </linearGradient>
+    <linearGradient id="desCarbon" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#241a14"/>
+      <stop offset="100%" stop-color="#0e0804"/>
+    </linearGradient>
+    <filter id="desShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Angular Shield Body -->
+  <polygon points="80,6 152,32 152,112 80,182 8,112 8,32" fill="url(#desCarbon)" stroke="url(#desEmber)" stroke-width="5" stroke-linejoin="miter" filter="url(#desShadow)"/>
+  <!-- Inner Metallic Chamfer -->
+  <polygon points="80,16 142,38 142,107 80,168 18,107 18,38" fill="#120c08" stroke="#3d2212" stroke-width="2"/>
+  <!-- Top Geometric Crown -->
+  <polygon points="80,24 130,42 130,48 80,30 30,48 30,42" fill="url(#desEmber)"/>
+
+  <!-- Aggressive Monogram DES -->
+  <g fill="#ffffff">
+    <!-- D -->
+    <path d="M26 62 H44 C52 62 57 67 57 76 C57 85 52 90 44 90 H26 V62 Z M34 69 V83 H43 C46 83 49 81 49 76 C49 71 46 69 43 69 H34 Z" fill="#ffffff"/>
+    <!-- E -->
+    <path d="M62 62 H86 V70 H71 V72 H83 V79 H71 V82 H86 V90 H62 V62 Z" fill="url(#desEmber)"/>
+    <!-- S -->
+    <path d="M96 62 H118 V69 H104 C100 69 98 71 98 74 C98 77 101 79 108 81 C115 83 118 86 118 90 C118 96 113 100 105 100 H88 V92 H104 C107 92 110 90 110 88 C110 85 107 84 100 82 C93 80 90 77 90 72 C90 66 93 62 96 62 Z" fill="url(#desGold)"/>
+  </g>
+
+  <!-- Crossed Cricket Bails / Accent Chevron -->
+  <polygon points="80,114 116,128 110,132 80,121 50,132 44,128" fill="url(#desEmber)"/>
+  <text x="80" y="150" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" text-anchor="middle" letter-spacing="6">REWA</text>
+  <!-- Three Championship Stars (2024, 2025, 2026 Champions) -->
+  <g fill="url(#desGold)">
+    <polygon points="60,162 61.5,166.5 66,166.5 62.5,169.5 64,174 60,171 56,174 57.5,169.5 54,166.5 58.5,166.5"/>
+    <polygon points="80,158 82,164 88,164 83,168 85,174 80,170 75,174 77,168 72,164 78,164"/>
+    <polygon points="100,162 101.5,166.5 106,166.5 102.5,169.5 104,174 100,171 96,174 97.5,169.5 94,166.5 98.5,166.5"/>
+  </g>
+</svg>

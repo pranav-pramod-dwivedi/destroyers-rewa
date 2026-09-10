@@ -7,7 +7,7 @@ This platform provides an exclusive, high-fidelity archive centered strictly on 
 
 ---
 
-## ⚡ Highlights & Features
+##  Highlights & Features
 
 1. **Team-First Identity**:
    - Built exclusively as the digital citadel of **Destroyers (DES)**.
@@ -47,7 +47,7 @@ This platform provides an exclusive, high-fidelity archive centered strictly on 
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Run locally (Zero external dependencies)
 ```bash
@@ -60,7 +60,7 @@ Alternatively, simply open `index.html` directly in any web browser.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 destroyers-rewa/
 ├── index.html              # Master Single Page Application
@@ -84,5 +84,5 @@ destroyers-rewa/
 
 ---
 
-## 🏛️ Context & Tournament Heritage
+## ️ Context & Tournament Heritage
 The **Atal Bihari Vajpayee Memorial Cricket Tournament** is organized under the **Rewa Division Cricket Association (RDCA)** in Rewa, Madhya Pradesh. The **DE vs DES** rivalry serves as the marquee intra-squad series bringing together the finest cricketing talent from Rewa and the Madhya Pradesh state circuit.
