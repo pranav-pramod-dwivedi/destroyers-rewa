@@ -1,0 +1,408 @@
+{
+  "lastUpdated": "2026-09-10T22:38:02.359Z",
+  "site": "Destroyers Cricket Club",
+  "domain": "https://destroyers-rewacricket.pages.dev",
+  "tournament": "Atal Bihari Vajpayee Memorial Tournament",
+  "governingBody": "Rewa Division Cricket Association (RDCA)",
+  "latestMatch": {
+    "id": "m-shared-64",
+    "matchNumber": 34,
+    "slug": "destroyers-vs-dread-eleven-2026-09-20",
+    "seasonYear": "2026",
+    "tournamentName": "Atal Bihari Vajpayee Memorial Tournament",
+    "stage": "2026 Championship Final",
+    "format": "50 Overs",
+    "status": "completed",
+    "matchDate": "2026-09-20",
+    "time": "09:30 IST",
+    "venue": {
+      "id": "v-apsu",
+      "name": "Awadhesh Pratap Singh University (APSU) Stadium",
+      "city": "Rewa"
+    },
+    "toss": {
+      "winner": "Destroyers Cricket Club",
+      "decision": "elected to bat first"
+    },
+    "winner": "DES",
+    "winnerName": "Destroyers Cricket Club",
+    "resultText": "Destroyers won by 12 runs",
+    "playerOfTheMatch": {
+      "name": "Ajay Rohera",
+      "team": "Destroyers",
+      "reason": "94 (98) & 2 catches, 1 stumping"
+    },
+    "innings": [
+      {
+        "inningsId": "m-shared-64-1",
+        "teamName": "Destroyers Cricket Club",
+        "teamShort": "DES",
+        "runs": 284,
+        "wickets": 7,
+        "overs": 50,
+        "runRate": "5.68",
+        "batting": [
+          {
+            "playerId": "p-ajay-rohera",
+            "playerName": "Ajay Rohera",
+            "runs": 94,
+            "balls": 98,
+            "fours": 9,
+            "sixes": 2,
+            "dismissal": "c Yash Dubey b Kuldeep Sen",
+            "strikeRate": 95.9
+          },
+          {
+            "playerId": "p-chanchal-rathore",
+            "playerName": "Chanchal Rathore",
+            "runs": 38,
+            "balls": 44,
+            "fours": 4,
+            "sixes": 1,
+            "dismissal": "b Avesh Khan",
+            "strikeRate": 86.4
+          },
+          {
+            "playerId": "p-venkatesh-iyer",
+            "playerName": "Venkatesh Iyer",
+            "runs": 72,
+            "balls": 65,
+            "fours": 7,
+            "sixes": 2,
+            "dismissal": "c Aditya Shrivastava b Kuldeep Sen",
+            "strikeRate": 110.8
+          },
+          {
+            "playerId": "p-pranav-dwivedi",
+            "playerName": "Pranav Dwivedi",
+            "runs": 31,
+            "balls": 38,
+            "fours": 3,
+            "sixes": 0,
+            "dismissal": "c Akhil Mishra b Saransh Jain",
+            "strikeRate": 81.6
+          },
+          {
+            "playerId": "p-akshat-raghuwanshi",
+            "playerName": "Akshat Raghuwanshi",
+            "runs": 26,
+            "balls": 30,
+            "fours": 2,
+            "sixes": 1,
+            "dismissal": "b Avesh Khan",
+            "strikeRate": 86.7
+          },
+          {
+            "playerId": "p-shubham-sharma",
+            "playerName": "Shubham Sharma",
+            "runs": 12,
+            "balls": 14,
+            "fours": 1,
+            "sixes": 0,
+            "dismissal": "c Subhranshu Senapati b Kumar Kartikeya",
+            "strikeRate": 85.7
+          },
+          {
+            "playerId": "p-rahul-batham",
+            "playerName": "Rahul Batham",
+            "runs": 6,
+            "balls": 8,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "not out",
+            "strikeRate": 75
+          },
+          {
+            "playerId": "p-kulwant-khejroliya",
+            "playerName": "Kulwant Khejroliya",
+            "runs": 3,
+            "balls": 3,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "b Kuldeep Sen",
+            "strikeRate": 100
+          },
+          {
+            "playerId": "p-sagar-pratap-singh",
+            "playerName": "Sagar Pratap Singh",
+            "runs": 2,
+            "balls": 2,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "not out",
+            "strikeRate": 100
+          }
+        ],
+        "dnb": [
+          {
+            "playerId": "p-aryan-deshmukh",
+            "playerName": "Aryan Deshmukh"
+          },
+          {
+            "playerId": "p-somil-khan",
+            "playerName": "Somil Khan"
+          }
+        ],
+        "bowling": [
+          {
+            "playerId": "p-kuldeep-sen",
+            "playerName": "Kuldeep Sen",
+            "overs": 10,
+            "maidens": 0,
+            "runs": 52,
+            "wickets": 3,
+            "economy": 5.2
+          },
+          {
+            "playerId": "p-avesh-khan",
+            "playerName": "Avesh Khan",
+            "overs": 10,
+            "maidens": 1,
+            "runs": 56,
+            "wickets": 2,
+            "economy": 5.6
+          },
+          {
+            "playerId": "p-saransh-jain",
+            "playerName": "Saransh Jain",
+            "overs": 10,
+            "maidens": 0,
+            "runs": 54,
+            "wickets": 1,
+            "economy": 5.4
+          },
+          {
+            "playerId": "p-kumar-kartikeya",
+            "playerName": "Kumar Kartikeya",
+            "overs": 10,
+            "maidens": 0,
+            "runs": 58,
+            "wickets": 1,
+            "economy": 5.8
+          },
+          {
+            "playerId": "p-ashwin-das",
+            "playerName": "Ashwin Das",
+            "overs": 10,
+            "maidens": 0,
+            "runs": 64,
+            "wickets": 0,
+            "economy": 6.4
+          }
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
+      },
+      {
+        "inningsId": "m-shared-64-2",
+        "teamName": "Dread Eleven",
+        "teamShort": "DE",
+        "runs": 272,
+        "wickets": 10,
+        "overs": 49.1,
+        "runRate": "5.53",
+        "batting": [
+          {
+            "playerId": "p-yash-dubey",
+            "playerName": "Yash Dubey",
+            "runs": 95,
+            "balls": 102,
+            "fours": 10,
+            "sixes": 2,
+            "dismissal": "c Ajay Rohera b Kulwant Khejroliya",
+            "strikeRate": 93.1
+          },
+          {
+            "playerId": "p-akhil-mishra",
+            "playerName": "Akhil Mishra",
+            "runs": 42,
+            "balls": 46,
+            "fours": 4,
+            "sixes": 1,
+            "dismissal": "c Chanchal Rathore b Aryan Deshmukh",
+            "strikeRate": 91.3
+          },
+          {
+            "playerId": "p-aditya-shrivastava",
+            "playerName": "Aditya Shrivastava",
+            "runs": 58,
+            "balls": 64,
+            "fours": 5,
+            "sixes": 1,
+            "dismissal": "c Pranav Dwivedi b Kulwant Khejroliya",
+            "strikeRate": 90.6
+          },
+          {
+            "playerId": "p-mohd-arham-aquil",
+            "playerName": "Mohd Arham Aquil",
+            "runs": 30,
+            "balls": 34,
+            "fours": 3,
+            "sixes": 0,
+            "dismissal": "b Pranav Dwivedi",
+            "strikeRate": 88.2
+          },
+          {
+            "playerId": "p-subhranshu-senapati",
+            "playerName": "Subhranshu Senapati",
+            "runs": 22,
+            "balls": 26,
+            "fours": 2,
+            "sixes": 0,
+            "dismissal": "b Aryan Deshmukh",
+            "strikeRate": 84.6
+          },
+          {
+            "playerId": "p-ramveer-singh-gurjar",
+            "playerName": "Ramveer Singh Gurjar",
+            "runs": 12,
+            "balls": 14,
+            "fours": 1,
+            "sixes": 0,
+            "dismissal": "c Rahul Batham b Sagar Pratap Singh",
+            "strikeRate": 85.7
+          },
+          {
+            "playerId": "p-saransh-jain",
+            "playerName": "Saransh Jain",
+            "runs": 6,
+            "balls": 8,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "c Akshat Raghuwanshi b Kulwant Khejroliya",
+            "strikeRate": 75
+          },
+          {
+            "playerId": "p-kuldeep-sen",
+            "playerName": "Kuldeep Sen",
+            "runs": 3,
+            "balls": 4,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "b Kulwant Khejroliya",
+            "strikeRate": 75
+          },
+          {
+            "playerId": "p-ashwin-das",
+            "playerName": "Ashwin Das",
+            "runs": 2,
+            "balls": 3,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "run out (Ajay Rohera)",
+            "strikeRate": 66.7
+          },
+          {
+            "playerId": "p-kumar-kartikeya",
+            "playerName": "Kumar Kartikeya",
+            "runs": 1,
+            "balls": 2,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "not out",
+            "strikeRate": 50
+          },
+          {
+            "playerId": "p-avesh-khan",
+            "playerName": "Avesh Khan",
+            "runs": 1,
+            "balls": 2,
+            "fours": 0,
+            "sixes": 0,
+            "dismissal": "b Sagar Pratap Singh",
+            "strikeRate": 50
+          }
+        ],
+        "bowling": [
+          {
+            "playerId": "p-kulwant-khejroliya",
+            "playerName": "Kulwant Khejroliya",
+            "overs": 10,
+            "maidens": 0,
+            "runs": 50,
+            "wickets": 4,
+            "economy": 5
+          },
+          {
+            "playerId": "p-aryan-deshmukh",
+            "playerName": "Aryan Deshmukh",
+            "overs": 10,
+            "maidens": 1,
+            "runs": 52,
+            "wickets": 2,
+            "economy": 5.2
+          },
+          {
+            "playerId": "p-sagar-pratap-singh",
+            "playerName": "Sagar Pratap Singh",
+            "overs": 9.1,
+            "maidens": 0,
+            "runs": 54,
+            "wickets": 2,
+            "economy": 5.89
+          },
+          {
+            "playerId": "p-pranav-dwivedi",
+            "playerName": "Pranav Dwivedi",
+            "overs": 6,
+            "maidens": 0,
+            "runs": 32,
+            "wickets": 1,
+            "economy": 5.33
+          },
+          {
+            "playerId": "p-rahul-batham",
+            "playerName": "Rahul Batham",
+            "overs": 8,
+            "maidens": 0,
+            "runs": 48,
+            "wickets": 0,
+            "economy": 6
+          },
+          {
+            "playerId": "p-somil-khan",
+            "playerName": "Somil Khan",
+            "overs": 6,
+            "maidens": 0,
+            "runs": 36,
+            "wickets": 0,
+            "economy": 6
+          }
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
+      }
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
+  },
+  "latestNews": {
+    "slug": "destroyers-announce-2025-26-squad-training-camp",
+    "title": "Destroyers Announce 2025–26 Pre-Season Training Camp at APSU Stadium Led by Pranav Dwivedi",
+    "summary": "Skipper Pranav Dwivedi leads a 48-man training squad ahead of the upcoming Atal Bihari Vajpayee Memorial Tournament season.",
+    "publishedAt": "2025-01-15T09:00:00Z",
+    "updatedAt": "2025-01-15T12:30:00Z",
+    "author": {
+      "name": "RDCA Sports Desk",
+      "role": "Chief Correspondent"
+    },
+    "heroImage": "/public/inspo1.jpg",
+    "category": "Team News",
+    "readTime": "4 min read",
+    "body": "\n<p>Rewa, MP — Destroyers Cricket Club (DES) have formally launched their pre-season preparation for the 2025 and 2026 Atal Bihari Vajpayee Memorial Tournament cycles, assembling an expanded 48-player training camp at Awadhesh Pratap Singh University (APSU) Stadium.</p>\n<p>Skipper and all-round talisman <strong>Pranav Dwivedi</strong>, who has amassed 1,341 runs and claimed 63 wickets across 24 fixtures against arch-rivals Dread Eleven (DE), emphasized the team’s momentum following their decisive 4–1 series win in 2024.</p>\n<p>\"Our rivalry with Dread Eleven has set the benchmark for competitive cricket in the Vindhya region,\" Dwivedi stated. \"With Aryan Deshmukh, Shivam Shukla, Anubhav Agarwal, and Venkatesh Iyer providing depth across all departments, our focus is squarely on sustaining championship standards.\"</p>\n<p>The 2025 campaign will kick off with an intense four-match series in September 2025, leading into the Silver Jubilee Tournament edition in 2026 under the auspices of the Rewa Division Cricket Association (RDCA).</p>\n    "
+  },
+  "squadCount": 48,
+  "matchesCount": 34
+}

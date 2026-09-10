@@ -132,7 +132,7 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
       description: cleanDesc,
       url: fullCanonical,
       isPartOf: {
-        '@type': 'SportsTeam',
+        '@type': ['SportsOrganization', 'Organization'],
         name: 'Destroyers Cricket Club (DES)',
         url: BASE_URL,
         sport: 'Cricket'
@@ -151,6 +151,11 @@ function renderHead({ title, description, canonicalUrl, ogType = 'website', ogIm
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${fullCanonical}">
   <meta name="theme-color" content="#0b0b0b">
+
+  <!-- AI Crawler & LLM Discovery Standards (llmstxt.org) -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Context">
+  <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full LLM Context">
+  <link rel="alternate" type="application/rss+xml" title="Destroyers News &amp; Match Feed" href="/feed.xml">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="${esc(ogType)}">
@@ -365,15 +370,58 @@ function generateHomePage() {
   const featuredNews = news.slice(0, 3);
   const featuredSquad = squad.slice(0, 8);
 
-  const jsonLd = {
+  const orgLd = {
+    '@context': 'https://schema.org',
+    '@type': ['SportsOrganization', 'Organization'],
+    name: 'Destroyers Cricket Club (DES)',
+    alternateName: ['Destroyers', 'DES', 'Destroyers Rewa', 'Destroyers CC'],
+    url: BASE_URL,
+    logo: `${BASE_URL}/public/favicon.svg`,
+    image: `${BASE_URL}/public/inspo1.jpg`,
+    description: 'Official pro cricket franchise website for Destroyers Cricket Club (DES), Rewa. Captained by Pranav Dwivedi. Complete match archives, squad, standings, and stats in Rewa, Madhya Pradesh.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Rewa',
+      addressRegion: 'Madhya Pradesh',
+      postalCode: '486003',
+      addressCountry: 'India'
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Franchise Administration & Player Trials',
+      email: 'admin@destroyers-rewa.cricket',
+      availableLanguage: ['English', 'Hindi']
+    },
+    founder: {
+      '@type': 'Person',
+      name: 'Pranav Dwivedi',
+      jobTitle: 'Captain & Franchise Icon',
+      url: `${BASE_URL}/players/pranav-dwivedi`
+    },
+    memberOf: {
+      '@type': 'SportsOrganization',
+      name: 'Rewa Division Cricket Association (RDCA)',
+      url: 'https://rewa-cricket-division.vercel.app'
+    },
+    sameAs: [
+      'https://rewa-cricket-division.vercel.app/teams/destroyers/',
+      'https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/',
+      'https://dread-eleven-rewacricket.pages.dev/'
+    ]
+  };
+
+  const teamLd = {
     '@context': 'https://schema.org',
     '@type': 'SportsTeam',
     name: 'Destroyers Cricket Club',
-    alternateName: 'Destroyers',
+    alternateName: 'Destroyers (DES)',
     sport: 'Cricket',
+    url: BASE_URL,
+    logo: `${BASE_URL}/public/favicon.svg`,
     memberOf: {
       '@type': 'SportsOrganization',
-      name: 'Rewa Division Cricket Association (RDCA)'
+      name: 'Rewa Division Cricket Association (RDCA)',
+      url: 'https://rewa-cricket-division.vercel.app'
     },
     location: {
       '@type': 'Place',
@@ -385,10 +433,33 @@ function generateHomePage() {
         addressCountry: 'India'
       }
     },
+    athlete: squad.slice(0, 15).map((p) => ({
+      '@type': 'Person',
+      name: p.name,
+      roleName: p.role,
+      url: `${BASE_URL}/players/${p.slug}`
+    })),
     coach: {
       '@type': 'Person',
       name: 'Pranav Dwivedi',
-      jobTitle: 'Captain & Franchise Icon'
+      jobTitle: 'Captain & Franchise Icon',
+      url: `${BASE_URL}/players/pranav-dwivedi`
+    }
+  };
+
+  const websiteLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Destroyers Cricket Club',
+    alternateName: 'Destroyers Official Website',
+    url: BASE_URL,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${BASE_URL}/search?q={search_term_string}`
+      },
+      'query-input': 'required name=search_term_string'
     }
   };
 
@@ -397,7 +468,7 @@ ${renderHead({
   title: 'Destroyers Cricket Club | Official Website & Team Arena',
   description: 'Official website of Destroyers Cricket Club (DES), Rewa. Captained by Pranav Dwivedi. Complete match archives, squad, standings, and stats.',
   canonicalUrl: '/',
-  jsonLd
+  jsonLd: [orgLd, teamLd, websiteLd]
 })}
 ${renderHeader('home')}
 
@@ -972,19 +1043,22 @@ ${renderFooter()}
       '@context': 'https://schema.org',
       '@type': 'Person',
       name: p.name,
-      jobTitle: `${p.role} for Destroyers Cricket Club`,
-      worksFor: {
-        '@type': 'SportsTeam',
-        name: 'Destroyers Cricket Club'
-      },
+      jobTitle: p.role,
       description: p.bio,
-      identifier: `DES-${p.jerseyNumber}`
+      url: `${BASE_URL}/players/${p.slug}`,
+      memberOf: {
+        '@type': ['SportsOrganization', 'SportsTeam'],
+        name: 'Destroyers Cricket Club (DES)',
+        url: BASE_URL
+      },
+      identifier: `DES-${p.jerseyNumber}`,
+      ...(p.slug === 'pranav-dwivedi' ? { sameAs: ['https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/'] } : {})
     };
 
     const playerHtml = `
 ${renderHead({
   title: clampTitle(`#${p.jerseyNumber} ${p.name} — Career Stats | Destroyers CC`, 60),
-  description: clampDesc(`${p.name} (#${p.jerseyNumber}) profile for Destroyers CC in Rewa. ${p.role} with ${p.batting.runs} runs, ${p.bowling.wickets} wickets, and match stats.`, 155),
+  description: clampDesc(`${p.name} (#${p.jerseyNumber}) official career profile for Destroyers Cricket Club in Rewa. ${p.role} with ${p.batting.runs} runs, ${p.bowling.wickets} wickets, and match records.`, 155),
   canonicalUrl: `/players/${p.slug}`,
   jsonLd: playerJsonLd,
   breadcrumbs: [
@@ -2238,17 +2312,26 @@ ${renderFooter()}
       '@type': 'NewsArticle',
       headline: n.title,
       description: clampDesc(n.summary, 155),
+      image: n.heroImage ? (n.heroImage.startsWith('http') ? n.heroImage : `${BASE_URL}${n.heroImage}`) : `${BASE_URL}/public/inspo1.jpg`,
       datePublished: n.publishedAt,
-      dateModified: n.updatedAt,
+      dateModified: n.updatedAt || n.publishedAt,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `${BASE_URL}/news/${n.slug}`
+      },
       author: {
         '@type': 'Person',
         name: n.author.name,
         jobTitle: n.author.role
       },
       publisher: {
-        '@type': 'Organization',
+        '@type': ['SportsOrganization', 'Organization'],
         name: 'Destroyers Cricket Club (DES)',
-        url: BASE_URL
+        url: BASE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${BASE_URL}/public/favicon.svg`
+        }
       }
     };
 
@@ -2330,11 +2413,38 @@ function generateAboutPage() {
   const aboutDir = path.join(rootDir, 'about');
   ensureDir(aboutDir);
 
+  const aboutJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About Destroyers Cricket Club',
+    description: 'Official history and legacy of Destroyers Cricket Club (DES), captained by Pranav Dwivedi in the Atal Bihari Vajpayee Memorial Tournament in Rewa.',
+    url: `${BASE_URL}/about`,
+    about: {
+      '@type': ['SportsOrganization', 'Organization'],
+      name: 'Destroyers Cricket Club (DES)',
+      url: BASE_URL,
+      memberOf: {
+        '@type': 'SportsOrganization',
+        name: 'Rewa Division Cricket Association (RDCA)',
+        url: 'https://rewa-cricket-division.vercel.app'
+      },
+      sameAs: [
+        'https://rewa-cricket-division.vercel.app/teams/destroyers/',
+        'https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/'
+      ]
+    }
+  };
+
   const html = `
 ${renderHead({
   title: 'About Destroyers Cricket Club | Rewa Franchise',
   description: 'Official history and legacy of Destroyers Cricket Club (DES), captained by Pranav Dwivedi in the Atal Bihari Vajpayee Memorial Tournament in Rewa.',
-  canonicalUrl: '/about'
+  canonicalUrl: '/about',
+  jsonLd: aboutJsonLd,
+  breadcrumbs: [
+    { name: 'Home', item: '/' },
+    { name: 'About', item: '/about' }
+  ]
 })}
 ${renderHeader('about')}
 
@@ -2412,8 +2522,8 @@ function generateContactPage() {
     description: 'Official contact desk and stadium trial inquiries for Destroyers Cricket Club in Rewa.',
     url: `${BASE_URL}/contact`,
     mainEntity: {
-      '@type': 'SportsTeam',
-      name: 'Destroyers Cricket Club',
+      '@type': ['SportsOrganization', 'SportsTeam'],
+      name: 'Destroyers Cricket Club (DES)',
       url: BASE_URL,
       sport: 'Cricket',
       contactPoint: {
@@ -2425,12 +2535,70 @@ function generateContactPage() {
     }
   };
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Are match tickets required for Atal Bihari Vajpayee Memorial Tournament games?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Spectator access for Destroyers Cricket Club tournament matches is complimentary across all open grandstand zones in Rewa. Complimentary open seating is provided at APSU Stadium (Gate 2) and Martand School Ground No. 3 eastern bank. Dedicated pavilion badges are required for VIP and player areas, administered by RDCA and franchise leadership. Capacity crowds of up to 10,000 spectators are accommodated at APSU Stadium on championship final days.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How can local players apply for Destroyers franchise selection trials?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Destroyers Cricket Club conducts structured recruitment drives under the direct supervision of franchise captain Pranav Dwivedi. Prospective cricketers can submit their athletic bio, primary playing role, and certified scorecards via the online contact form or register at the RDCA Pavilion Desk during the annual pre-season intake window. Candidates undergo radar speed-gun assessments, turf net batting trials, and dynamic fielding drills across Under-19, Under-23, and Senior First XI pools.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How are media and broadcast credentials issued for the Rewa Derby?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Official press accreditation for Destroyers home matches is issued through the Rewa Division Cricket Association communications wing. Press requests must be logged 48 hours before match toss via email or the online desk. The package includes a sideline photographer bib, high-speed press lounge WiFi, and post-match interview pool access. Live video streaming requires formal commercial clearance from RDCA officials.'
+        }
+      }
+    ]
+  };
+
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Register for Destroyers Cricket Selection Trials in Rewa',
+    description: 'Official step-by-step protocol for cricketers to apply and trial for Destroyers Cricket Club in Rewa, Madhya Pradesh.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Check Category Eligibility and Assemble Documents',
+        text: 'Review age bracket eligibility (Under-19 Development, Under-23 Emerging, or Senior Pool) and gather RDCA registration card, Aadhaar or birth certificate, and medical fitness clearance.'
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Submit Online Trial Dossier',
+        text: 'File your playing credentials, batting/bowling disciplines, and past season performance statistics via the official Destroyers contact form.'
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Attend High-Velocity Screening at APSU Stadium',
+        text: 'Report to APSU Stadium in standard cricket attire with turf-spiked footwear and certified protective equipment for telemetry and match simulation.'
+      }
+    ]
+  };
+
   const html = `
 ${renderHead({
   title: 'Contact & Academy Trials | Destroyers Cricket Club',
   description: 'Official contact details, trial inquiries, and stadium directions for Destroyers Cricket Club at APSU Stadium, Rewa. Affiliated with RDCA.',
   canonicalUrl: '/contact',
-  jsonLd: contactJsonLd,
+  jsonLd: [contactJsonLd, faqJsonLd, howToJsonLd],
   breadcrumbs: [
     { name: 'Home', item: '/' },
     { name: 'Contact', item: '/contact' }
@@ -2566,29 +2734,53 @@ ${renderHeader('contact')}
       <h2 style="font-family:var(--f-athletic); font-size:1.8rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
         Frequently Asked Questions (Trials, Media &amp; Access)
       </h2>
-      <div style="display:flex; flex-direction:column; gap:1.5rem; font-size:0.9rem; line-height:1.7;">
+      <div style="display:flex; flex-direction:column; gap:2rem; font-size:0.9rem; line-height:1.7;">
         <div>
-          <h3 style="font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:0.35rem;">
+          <h3 style="font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:0.5rem;">
             Are match tickets required for Atal Bihari Vajpayee Memorial Tournament games?
           </h3>
+          <p style="color:var(--c-gray-300); margin-bottom:0.5rem;">
+            <strong>Spectator access for Destroyers Cricket Club tournament matches is complimentary across all open grandstand zones in Rewa.</strong>
+          </p>
+          <ul style="margin: 0.5rem 0 0.5rem 1.25rem; color:var(--c-gray-400); list-style-type: disc;">
+            <li><strong>General Grandstands:</strong> Complimentary open seating at APSU Stadium (Gate 2) and Martand School Ground No. 3 eastern bank.</li>
+            <li><strong>VIP &amp; Player Pavilion:</strong> Dedicated pavilion badges required, administered by RDCA and franchise leadership.</li>
+            <li><strong>Derby Climax Access:</strong> Capacity crowds of up to 10,000 spectators are accommodated at APSU Stadium on championship final days.</li>
+          </ul>
           <p style="color:var(--c-gray-400);">
-            General stand entry at both APSU Stadium and Martand Ground is free to the public under the Rewa Division Cricket Association grassroots development mandate. VIP Pavilion passes and commentary box access require prior accreditation via this contact desk.
+            Gates open 60 minutes prior to match commencement with free public parking on campus grounds.
           </p>
         </div>
         <div>
-          <h3 style="font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:0.35rem;">
+          <h3 style="font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:0.5rem;">
             How can local players apply for Destroyers franchise selection trials?
           </h3>
+          <p style="color:var(--c-gray-300); margin-bottom:0.5rem;">
+            <strong>Destroyers Cricket Club conducts structured recruitment drives under the direct supervision of franchise captain Pranav Dwivedi.</strong>
+          </p>
+          <ul style="margin: 0.5rem 0 0.5rem 1.25rem; color:var(--c-gray-400); list-style-type: disc;">
+            <li><strong>Online Application:</strong> Submit athletic bio, primary playing role, and certified scorecards via the inquiry form above.</li>
+            <li><strong>Assessment Modules:</strong> Candidates undergo radar speed-gun assessments, turf net batting trials, and dynamic fielding drills.</li>
+            <li><strong>Age Brackets:</strong> Roster opportunities across Under-19 Developmental, Under-23 Emerging Warriors, and Senior First XI pools.</li>
+          </ul>
           <p style="color:var(--c-gray-400);">
-            Prospective cricketers must submit their playing CV through the inquiry form above selecting 'Academy Selection Trials' or register in person at the RDCA Pavilion Desk during the annual pre-season intake window in July and August.
+            Selected trialists are inducted into Destroyers pre-season training camps at APSU Stadium.
           </p>
         </div>
         <div>
-          <h3 style="font-size:1.05rem; font-weight:700; color:#fff; margin-bottom:0.35rem;">
+          <h3 style="font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:0.5rem;">
             How are media and broadcast credentials issued for the Rewa Derby?
           </h3>
+          <p style="color:var(--c-gray-300); margin-bottom:0.5rem;">
+            <strong>Official press accreditation for Destroyers home matches is issued through the Rewa Division Cricket Association communications wing.</strong>
+          </p>
+          <ul style="margin: 0.5rem 0 0.5rem 1.25rem; color:var(--c-gray-400); list-style-type: disc;">
+            <li><strong>Filing Window:</strong> Press requests must be logged 48 hours before match toss via email or the online desk.</li>
+            <li><strong>Accreditation Package:</strong> Sideline photographer bib, high-speed press lounge WiFi, and post-match interview pool access.</li>
+            <li><strong>Broadcast Rights:</strong> Live video recording and streaming requires formal commercial clearance from RDCA officials.</li>
+          </ul>
           <p style="color:var(--c-gray-400);">
-            Accredited journalists, sports photographers, and digital creators must submit press identification at least 48 hours before match commencement to receive official sideline and press gallery badges.
+            Credential badges can be retrieved from the APSU Stadium Gate 1 accreditation counter on game day.
           </p>
         </div>
       </div>
@@ -2783,22 +2975,40 @@ ${renderHead({
 ${renderHeader('')}
 
 <section class="spotlight-banner-section" style="padding:8rem 0; text-align:center; background:#080808;">
-  <div class="container" style="max-width:680px;">
+  <div class="container" style="max-width:760px;">
     <div style="font-family:var(--f-athletic); font-size:8rem; color:var(--c-ember-bright); line-height:0.8; margin-bottom:1rem;">404</div>
     <h1 style="font-family:var(--f-athletic); font-size:2.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
       404 — Page Not Found
     </h1>
     <h2 style="font-family:var(--f-athletic); font-size:1.4rem; color:var(--c-gray-300); text-transform:uppercase; margin-bottom:1.5rem;">
-      Explore Stadium Sections
+      Stadium Directory &amp; Concourses
     </h2>
-    <p style="color:var(--c-gray-400); font-size:1.25rem; margin-bottom:2.5rem; line-height:1.6;">
-      Looks like this ball went straight into the stands. Navigate to official tournament areas below.
+    <p style="color:var(--c-gray-400); font-size:1.15rem; margin-bottom:2rem; line-height:1.7;">
+      Looks like this delivery was launched clear into the grandstand concourse. The URL you requested may have migrated or is unavailable within the official Destroyers Cricket Club match portal.
     </p>
+
+    <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem; text-align:left; margin-bottom:2.5rem;">
+      <h3 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
+        Essential Tournament Gateways
+      </h3>
+      <p style="color:var(--c-gray-300); font-size:0.9rem; line-height:1.7; margin-bottom:1rem;">
+        Navigate directly to official team rosters, tournament schedules, rivalry history, and player selection desks using the authorized paths below:
+      </p>
+      <ul style="color:var(--c-gray-400); font-size:0.875rem; line-height:1.8; list-style-type:disc; margin-left:1.5rem;">
+        <li><strong>Roster Center:</strong> Access player cards, batting strike rates, and bowling averages for all 48 Destroyers players under captain Pranav Dwivedi.</li>
+        <li><strong>Derby Records &amp; Fixtures:</strong> Examine complete scorecards, venue telemetry, and match outcomes for all 34 clashes against Dread Eleven.</li>
+        <li><strong>Championship Standings:</strong> Inspect points table positions, run rate tables, and verified historical silverware records (2024, 2025, 2026).</li>
+        <li><strong>Selection Trials Desk:</strong> Review intake eligibility standards, mandatory documentation, and screening dates at APSU Stadium.</li>
+      </ul>
+    </div>
+
     <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
-      <a href="/" class="btn-athletic btn-athletic-primary">Go Home</a>
+      <a href="/" class="btn-athletic btn-athletic-primary">Return Home</a>
       <a href="/fixtures" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">View Fixtures</a>
-      <a href="/players" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">View Squad</a>
+      <a href="/players" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">Meet Squad</a>
+      <a href="/results" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">Match Archive</a>
       <a href="/news" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">Latest News</a>
+      <a href="/contact" class="btn-athletic" style="background:#1c1c1c; color:#fff; border:1px solid #333; padding:0.8rem 1.4rem; font-family:var(--f-athletic); font-size:1.15rem; text-decoration:none; text-transform:uppercase;">Contact RDCA</a>
     </div>
   </div>
 </section>
@@ -2867,24 +3077,67 @@ ${urls.map((u) => `  <url>
   </url>`).join('\n')}
 </urlset>`;
 
+  const publicDir = path.join(rootDir, 'public');
+  ensureDir(publicDir);
+
   fs.writeFileSync(path.join(rootDir, 'sitemap.xml'), sitemapXml);
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml);
 
   const robotsTxt = `User-agent: *
 Allow: /
 
+# Explicit AI Search Crawlers & LLM Indexing Directives
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: ${BASE_URL}/sitemap.xml
+LLM: ${BASE_URL}/llms.txt
 `;
 
   fs.writeFileSync(path.join(rootDir, 'robots.txt'), robotsTxt);
+  fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt);
 
-  // Generate llms.txt according to standard
+  // Generate llms.txt according to standard (llmstxt.org)
   const llmsTxt = `# Destroyers Cricket Club (DES)
 
-> Official pro cricket franchise website for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
+> Official pro cricket franchise website and portal for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
 
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
-- Team Captain: Pranav Dwivedi (All-rounder, 1,341 runs, 63 wickets)
+- Team Captain: Pranav Dwivedi (All-rounder, 1,341 career runs, 63 career wickets in 46 matches)
 - Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
 - Governing Association: Rewa Division Cricket Association (RDCA)
 - Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
@@ -2893,31 +3146,84 @@ Sitemap: ${BASE_URL}/sitemap.xml
 - Disciplines: 50 Overs (One Day) & T20 Blast
 
 ## Key Stadium & Roster Sections
-- Squad Directory: ${BASE_URL}/players (Complete 48-man roster with batting and bowling career statistics)
-- Tournament Fixtures: ${BASE_URL}/fixtures (Complete season schedules and venue timings)
-- Results Archive: ${BASE_URL}/results (Scorecards and ball-by-ball analysis for all 34 derby clashes)
-- Points Table: ${BASE_URL}/points-table (Verified standings, net run rates, and season champion rankings)
-- Franchise Records: ${BASE_URL}/stats (Top run-scorers, leading wicket-takers, and highest team totals)
-- Press Center: ${BASE_URL}/news (Match post-mortems, editorial reviews, and tactical analysis)
-- About the Franchise: ${BASE_URL}/about (Club heritage, RDCA affiliation, and championship dynasties)
-- Contact & Trials: ${BASE_URL}/contact (Academy trials protocol, venue directions, and administrative inquiries)
+- [Squad Directory](${BASE_URL}/players): Complete 48-man roster with batting and bowling career statistics
+- [Tournament Fixtures](${BASE_URL}/fixtures): Complete season schedules and venue timings
+- [Results Archive](${BASE_URL}/results): Scorecards and ball-by-ball analysis for all 34 derby clashes
+- [Points Table](${BASE_URL}/points-table): Verified standings, net run rates, and season champion rankings
+- [Franchise Records](${BASE_URL}/stats): Top run-scorers, leading wicket-takers, and highest team totals
+- [Press Center](${BASE_URL}/news): Match post-mortems, editorial reviews, and tactical analysis
+- [About the Franchise](${BASE_URL}/about): Club heritage, RDCA affiliation, and championship dynasties
+- [Contact & Trials](${BASE_URL}/contact): Academy trials protocol, venue directions, and administrative inquiries
 
-## Full Documentation
-- Detailed Dataset: ${BASE_URL}/llms-full.txt
+## Developer & AI Crawler Resources
+- [XML Sitemap](${BASE_URL}/sitemap.xml): Machine-readable index of all public URLs (${urls.length} URLs indexed)
+- [Robots Policy](${BASE_URL}/robots.txt): Explicit crawler permissions for AI agents (GPTBot, ClaudeBot, PerplexityBot, etc.)
+- [Freshness Feed](${BASE_URL}/feed.xml): RSS 2.0 feed with latest match reports and editorial dispatches
+- [Live Freshness Telemetry](${BASE_URL}/freshness.json): Real-time JSON state with latest completed matches and active squad count
+- [Full LLM Context](${BASE_URL}/llms-full.txt): Complete un-truncated player career tables and match-by-match scorecards
+
+## Contact & Governance
+- Organization: Destroyers Cricket Club (DES)
+- Governing Body: Rewa Division Cricket Association (RDCA)
+- Website: ${BASE_URL}
+- Portal: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- Email: admin@destroyers-rewa.cricket
+- Home Stadium: Awadhesh Pratap Singh University (APSU) Stadium, Sirmour Road, Rewa, MP 486003
 `;
 
   fs.writeFileSync(path.join(rootDir, 'llms.txt'), llmsTxt);
+  fs.writeFileSync(path.join(publicDir, 'llms.txt'), llmsTxt);
 
   const llmsFullTxt = `${llmsTxt}
 ## 48-Man Squad Roster
-${squad.map(p => `- #${p.jerseyNumber} ${p.name} (${p.role}): ${p.batting.runs} runs (Avg ${p.batting.average}), ${p.bowling.wickets} wickets (Econ ${p.bowling.economy}). Bio: ${p.bio}`).join('\n')}
+${squad.map(p => `- #${p.jerseyNumber} [${p.name}](${BASE_URL}/players/${p.slug}) (${p.role}): ${p.batting.runs} runs (Avg ${p.batting.average}), ${p.bowling.wickets} wickets (Econ ${p.bowling.economy}). Bio: ${p.bio}`).join('\n')}
 
 ## Historical Match Scorecard Archive (34 Matches)
-${matches.map(m => `- Match #${m.matchNumber} (${m.matchDate}): ${m.stage} at ${m.venue.name}. Result: ${m.resultText}. Winner: ${m.winner || 'Drawn'}`).join('\n')}
+${matches.map(m => `- Match #${m.matchNumber} (${m.matchDate}): [${m.stage}](${BASE_URL}/matches/${m.slug}) at ${m.venue.name}. Result: ${m.resultText}. Winner: ${m.winner || 'Drawn'}`).join('\n')}
 `;
 
   fs.writeFileSync(path.join(rootDir, 'llms-full.txt'), llmsFullTxt);
-  console.log('Generated /llms.txt and /llms-full.txt');
+  fs.writeFileSync(path.join(publicDir, 'llms-full.txt'), llmsFullTxt);
+
+  // Generate RSS 2.0 Feed (/feed.xml) for search and AI crawler freshness
+  const feedXml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Destroyers Cricket Club News &amp; Match Reports</title>
+    <link>${BASE_URL}</link>
+    <description>Official tournament dispatches, match reports, and announcements for Destroyers Cricket Club in Rewa, Madhya Pradesh.</description>
+    <language>en-in</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${BASE_URL}/feed.xml" rel="self" type="application/rss+xml" />
+${news.slice(0, 10).map((n) => `    <item>
+      <title>${esc(n.title)}</title>
+      <link>${BASE_URL}/news/${n.slug}</link>
+      <guid>${BASE_URL}/news/${n.slug}</guid>
+      <pubDate>${new Date(n.publishedAt || Date.now()).toUTCString()}</pubDate>
+      <description>${esc(n.summary)}</description>
+    </item>`).join('\n')}
+  </channel>
+</rss>`;
+
+  fs.writeFileSync(path.join(rootDir, 'feed.xml'), feedXml);
+  fs.writeFileSync(path.join(publicDir, 'feed.xml'), feedXml);
+
+  // Generate JSON freshness telemetry (/freshness.json)
+  const completedMatches = matches.filter((m) => m.status === 'completed');
+  const freshnessData = {
+    lastUpdated: new Date().toISOString(),
+    site: 'Destroyers Cricket Club',
+    domain: BASE_URL,
+    tournament: 'Atal Bihari Vajpayee Memorial Tournament',
+    governingBody: 'Rewa Division Cricket Association (RDCA)',
+    latestMatch: completedMatches[completedMatches.length - 1] || null,
+    latestNews: news[0] || null,
+    squadCount: squad.length,
+    matchesCount: matches.length
+  };
+  fs.writeFileSync(path.join(rootDir, 'freshness.json'), JSON.stringify(freshnessData, null, 2));
+  fs.writeFileSync(path.join(publicDir, 'freshness.json'), JSON.stringify(freshnessData, null, 2));
+  console.log('Generated /sitemap.xml, /robots.txt, /llms.txt, /llms-full.txt, /feed.xml, and /freshness.json (both root and public)');
 
 
   // Generate Netlify/Cloudflare redirects file for clean canonical paths
