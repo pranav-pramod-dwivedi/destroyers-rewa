@@ -203,6 +203,16 @@ function renderFooter() {
           </div>
 
           <div>
+            <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Official Network</h4>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
+              <li><a href="https://rewa-cricket-division.vercel.app" target="_blank" rel="noopener" style="color:var(--c-gold); text-decoration:none; font-weight:600;">Rewa Cricket Division (RDCA) ↗</a></li>
+              <li><a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" style="color:var(--c-gold); text-decoration:none;">ABV Memorial Tournament ↗</a></li>
+              <li><a href="https://rewa-cricket-division.vercel.app/teams/destroyers/" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">DES on RDCA Registry ↗</a></li>
+              <li><a href="https://dread-eleven-rewacricket.pages.dev" target="_blank" rel="noopener" style="color:var(--c-ember-bright); text-decoration:none; font-weight:600;">Dread Eleven CC (Arch-Rival) ↗</a></li>
+            </ul>
+          </div>
+
+          <div>
             <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Legal &amp; Policies</h4>
             <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem; font-size:0.875rem; color:var(--c-gray-400);">
               <li><a href="/privacy" style="color:inherit;">Privacy Policy</a></li>
@@ -755,6 +765,23 @@ ${renderHeader('squad')}
           <div class="jersey-stat-val tabular">${esc(p.bowling.bestBowling)}</div>
         </div>
       </div>
+
+      ${p.slug === 'pranav-dwivedi' ? `
+        <div style="margin-top:1.5rem; display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center;">
+          <a href="https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.5rem; padding:0.6rem 1.25rem; background:rgba(217, 119, 6, 0.15); border:1px solid rgba(217, 119, 6, 0.5); border-radius:4px; font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gold); text-decoration:none; font-weight:700;">
+            Verified Official Career Archive on RDCA Central ↗
+          </a>
+          <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.5rem; padding:0.6rem 1.25rem; background:rgba(255, 255, 255, 0.05); border:1px solid var(--b-subtle); border-radius:4px; font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gray-300); text-decoration:none;">
+            RDCA ABV Memorial Tournament ↗
+          </a>
+        </div>
+      ` : `
+        <div style="margin-top:1.5rem;">
+          <a href="https://rewa-cricket-division.vercel.app/players/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.5rem; padding:0.5rem 1rem; background:rgba(255, 255, 255, 0.03); border:1px solid var(--b-subtle); border-radius:4px; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-decoration:none;">
+            Rewa Division Cricket Association (RDCA) Registry ↗
+          </a>
+        </div>
+      `}
     </div>
 
     <!-- Match Appearances Table -->
@@ -1020,6 +1047,17 @@ ${renderFooter()}
       ]
     };
 
+    function getPlayerUrl(name, isDesTeam) {
+      if (!name) return '#';
+      const clean = name.replace(/\s*\(c\)$/i, '').trim();
+      const slug = clean.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      if (isDesTeam) {
+        return `/players/${slug}`;
+      } else {
+        return `https://dread-eleven-rewacricket.pages.dev/players/${slug}`;
+      }
+    }
+
     function renderInningsTable(inn, battingTeam, bowlingTeam) {
       if (!inn || !inn.batting || !inn.batting.length) {
         return '<p style="color:var(--c-gray-400); padding:1rem;">Innings not yet contested.</p>';
@@ -1042,9 +1080,8 @@ ${renderFooter()}
 
       const batRows = inn.batting.map((b) => {
         const isCapt = isMatchCapt(b.playerName, batCaptainName);
-        const nameCell = isCapt
-          ? `${esc(b.playerName.replace(/\s*\(c\)$/i, ''))} <span style="color:var(--c-gold); font-size:0.75rem; font-family:var(--f-mono); font-weight:800;">(c)</span>`
-          : esc(b.playerName);
+        const pUrl = getPlayerUrl(b.playerName, isDes);
+        const nameCell = `<a href="${pUrl}" ${!isDes ? 'target="_blank" rel="noopener"' : ''} style="color:inherit; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.4);" class="scorecard-player-link">${esc(b.playerName.replace(/\s*\(c\)$/i, ''))}</a>${isCapt ? ' <span style="color:var(--c-gold); font-size:0.75rem; font-family:var(--f-mono); font-weight:800;">(c)</span>' : ''}`;
         return `
         <tr>
           <td style="font-weight:800; color:var(--c-white); font-family:var(--f-athletic); font-size:1.15rem;">${nameCell}</td>
@@ -1060,9 +1097,8 @@ ${renderFooter()}
 
       const bowlRows = (inn.bowling || []).map((bo) => {
         const isCapt = isMatchCapt(bo.playerName, bowlCaptainName);
-        const nameCell = isCapt
-          ? `${esc(bo.playerName.replace(/\s*\(c\)$/i, ''))} <span style="color:var(--c-gold); font-size:0.75rem; font-family:var(--f-mono); font-weight:800;">(c)</span>`
-          : esc(bo.playerName);
+        const pUrl = getPlayerUrl(bo.playerName, !isDes);
+        const nameCell = `<a href="${pUrl}" ${isDes ? 'target="_blank" rel="noopener"' : ''} style="color:inherit; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.4);" class="scorecard-player-link">${esc(bo.playerName.replace(/\s*\(c\)$/i, ''))}</a>${isCapt ? ' <span style="color:var(--c-gold); font-size:0.75rem; font-family:var(--f-mono); font-weight:800;">(c)</span>' : ''}`;
         return `
         <tr>
           <td style="font-weight:800; color:var(--c-white); font-family:var(--f-athletic); font-size:1.15rem;">${nameCell}</td>
@@ -1119,7 +1155,8 @@ ${renderFooter()}
                 ${inn.dnb.map(d => {
                   const rawName = typeof d === 'string' ? d : d.playerName;
                   const isCapt = isMatchCapt(rawName, batCaptainName);
-                  return `<span style="display:inline-block; margin-right:0.85rem; font-weight:600;">${esc(rawName.replace(/\s*\(c\)$/i, ''))}${isCapt ? ' <span style="color:var(--c-gold); font-size:0.75rem; font-family:var(--f-mono); font-weight:800;">(c)</span>' : ''}</span>`;
+                  const pUrl = getPlayerUrl(rawName, isDes);
+                  return `<span style="display:inline-block; margin-right:0.85rem; font-weight:600;"><a href="${pUrl}" ${!isDes ? 'target="_blank" rel="noopener"' : ''} style="color:inherit; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.3);">${esc(rawName.replace(/\s*\(c\)$/i, ''))}</a>${isCapt ? ' <span style="color:var(--c-gold); font-size:0.75rem; font-family:var(--f-mono); font-weight:800;">(c)</span>' : ''}</span>`;
                 }).join('')}
               </span>
             </div>
@@ -1130,7 +1167,8 @@ ${renderFooter()}
               <strong style="color:var(--c-gold); font-size:0.75rem; text-transform:uppercase;">Fall of Wickets:</strong>
               <span style="margin-left:0.5rem;">${inn.fallOfWickets.map(f => {
                 const isFowCapt = isMatchCapt(f.playerName, batCaptainName);
-                return `${f.wicket}-${f.score} (${esc(f.playerName.replace(/\s*\(c\)$/i, ''))}${isFowCapt ? ' (c)' : ''}, ${f.over} ov)`;
+                const pUrl = getPlayerUrl(f.playerName, isDes);
+                return `${f.wicket}-${f.score} (<a href="${pUrl}" ${!isDes ? 'target="_blank" rel="noopener"' : ''} style="color:inherit; text-decoration:none; border-bottom:1px dotted rgba(255,255,255,0.3);">${esc(f.playerName.replace(/\s*\(c\)$/i, ''))}</a>${isFowCapt ? ' (c)' : ''}, ${f.over} ov)`;
               }).join(', ')}</span>
             </div>
           ` : ''}
@@ -1210,12 +1248,28 @@ ${renderHeader('results')}
       </div>
 
       ${m.playerOfTheMatch ? `
-        <div style="margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid var(--b-subtle); display:flex; align-items:center; gap:0.75rem;">
+        <div style="margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid var(--b-subtle); display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
           <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); text-transform:uppercase; font-weight:800;">Player of the Match:</span>
           <strong style="color:var(--c-white); font-family:var(--f-athletic); font-size:1.25rem;">${esc(m.playerOfTheMatch.name)}</strong>
           <span style="color:var(--c-gray-400); font-size:0.8125rem;">(${esc(m.playerOfTheMatch.team)} • ${esc(m.playerOfTheMatch.reason)})</span>
         </div>
       ` : ''}
+
+      <!-- Cross-Network Match Hub Backlinks -->
+      <div style="margin-top:1.5rem; padding-top:1.25rem; border-top:1px solid var(--b-subtle); display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between;">
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center;">
+          <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; letter-spacing:0.05em;">League Central:</span>
+          <a href="https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.4rem 0.8rem; background:rgba(217, 119, 6, 0.15); border:1px solid rgba(217, 119, 6, 0.4); border-radius:4px; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); text-decoration:none; font-weight:700;">
+            RDCA ABV Tournament Central ↗
+          </a>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center;">
+          <span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase; letter-spacing:0.05em;">Opponent Hub:</span>
+          <a href="https://dread-eleven-rewacricket.pages.dev/matches/${m.slug}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.4rem 0.8rem; background:rgba(239, 68, 68, 0.15); border:1px solid rgba(239, 68, 68, 0.4); border-radius:4px; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); text-decoration:none; font-weight:700;">
+            Dread Eleven Match Centre ↗
+          </a>
+        </div>
+      </div>
     </div>
 
     ${isCompleted ? `

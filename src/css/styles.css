@@ -1368,8 +1368,8 @@ table.scorecard-data-table th.num, table.scorecard-data-table td.num {
 
 .footer-columns {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 2fr repeat(auto-fit, minmax(170px, 1fr));
+  gap: 3rem;
   margin-bottom: 4rem;
 }
 
