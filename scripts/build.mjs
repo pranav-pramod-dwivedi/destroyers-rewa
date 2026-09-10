@@ -687,7 +687,7 @@ ${renderHeader('home')}
     </div>
 
     <!-- 3 Dynasty Cards Grid -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1.75rem; margin-bottom:3rem;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap:1.75rem; margin-bottom:3rem;">
       <!-- 2024 Breakthrough Champions Card -->
       <div class="dynasty-card" style="background:var(--c-card-bg); border:1px solid rgba(255,59,48,0.3); border-radius:4px; padding:2rem; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
         <div style="position:absolute; top:0; left:0; width:100%; height:4px; background:linear-gradient(90deg, var(--c-ember-bright), var(--c-gold));"></div>
@@ -789,7 +789,7 @@ ${renderHeader('home')}
         <h4 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:1rem;">
           Modern Dynasty Numbers
         </h4>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+        <div class="responsive-duo-grid" style="gap:1rem;">
           <div style="border-bottom:1px solid var(--b-subtle); padding-bottom:0.75rem;">
             <div style="font-family:var(--f-mono); font-size:1.75rem; font-weight:900; color:var(--c-white);">3/3</div>
             <div style="font-size:0.7rem; color:var(--c-gray-400); text-transform:uppercase; font-family:var(--f-mono);">Trophies Won</div>
@@ -908,7 +908,7 @@ ${renderHeader('home')}
       <a href="/news" class="btn-athletic btn-athletic-outline">All News Articles</a>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(340px, 1fr)); gap:2rem;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap:2rem;">
       ${featuredNews.map((n) => `
         <article style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:1.75rem; display:flex; flex-direction:column;">
           <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; margin-bottom:0.6rem;">${esc(n.category)} • ${formatDate(n.publishedAt.slice(0, 10))}</div>
@@ -2375,11 +2375,11 @@ ${renderHeader('table')}
     </div>
 
     <!-- Season by Season Standings Grid -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+    <div class="responsive-duo-grid">
       <!-- 2026 Season (Destroyers Champions 3-2) -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2026 (Destroyers 3–2 Champions)</h3>
-        <table class="scorecard-data-table">
+        <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
           </thead>
@@ -2396,12 +2396,13 @@ ${renderHeader('table')}
             `).join('')}
           </tbody>
         </table>
+        </div></div>
       </div>
 
       <!-- 2025 Season (Destroyers 5-0 Clean Sweep) -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2025 (Destroyers 5–0 Clean Sweep)</h3>
-        <table class="scorecard-data-table">
+        <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
           </thead>
@@ -2418,12 +2419,13 @@ ${renderHeader('table')}
             `).join('')}
           </tbody>
         </table>
+        </div></div>
       </div>
 
       <!-- 2024 Season (Destroyers Champions 4-1) -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2024 (Destroyers 4–1 Series Win)</h3>
-        <table class="scorecard-data-table">
+        <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
           </thead>
@@ -2440,12 +2442,13 @@ ${renderHeader('table')}
             `).join('')}
           </tbody>
         </table>
+        </div></div>
       </div>
 
       <!-- 2023 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2023 (50 Overs)</h3>
-        <table class="scorecard-data-table">
+        <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
           </thead>
@@ -2462,12 +2465,13 @@ ${renderHeader('table')}
             `).join('')}
           </tbody>
         </table>
+        </div></div>
       </div>
 
       <!-- 2022 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (T20 &amp; 50 Overs)</h3>
-        <table class="scorecard-data-table">
+        <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
           </thead>
@@ -2484,12 +2488,13 @@ ${renderHeader('table')}
             `).join('')}
           </tbody>
         </table>
+        </div></div>
       </div>
 
       <!-- 2021 Inaugural Year -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2021 (Inaugural T20)</h3>
-        <table class="scorecard-data-table">
+        <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
           </thead>
@@ -2506,6 +2511,7 @@ ${renderHeader('table')}
             `).join('')}
           </tbody>
         </table>
+        </div></div>
       </div>
     </div>
   </div>
@@ -2575,12 +2581,13 @@ ${renderHeader('stats')}
         Official certified telemetry across both franchises (Destroyers CC &amp; Dread Eleven) over 6 tournament seasons (2021&ndash;2026). Overall series titles stand level at <strong>3&ndash;3</strong> (Dread Eleven: 2021, 2022, 2023 under Akhil Mishra; Destroyers CC: 2024, 2025, 2026 under Pranav Dwivedi).
       </p>
 
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <div class="responsive-duo-grid">
         <!-- Leading Run Scorers -->
         <div>
           <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:1rem;">
             Leading Run Scorers (Both Teams)
           </h3>
+          <div class="scorecard-table-wrap">
           <table class="scorecard-data-table">
             <thead>
               <tr><th>Player</th><th>Team</th><th class="num">Runs</th><th class="num">Avg</th><th class="num">SR</th></tr>
@@ -2594,12 +2601,15 @@ ${renderHeader('stats')}
             </tbody>
           </table>
         </div>
+          </div>
+        </div>
 
         <!-- Leading Wicket Takers -->
         <div>
           <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-emerald); text-transform:uppercase; margin-bottom:1rem;">
             Leading Wicket Takers (Both Teams)
           </h3>
+          <div class="scorecard-table-wrap">
           <table class="scorecard-data-table">
             <thead>
               <tr><th>Player</th><th>Team</th><th class="num">Wkts</th><th class="num">Avg</th><th class="num">Econ</th></tr>
@@ -2613,6 +2623,8 @@ ${renderHeader('stats')}
             </tbody>
           </table>
         </div>
+          </div>
+        </div>
       </div>
       <div style="margin-top:1.5rem; text-align:right;">
         <a href="https://abv-rewacricket.pages.dev/stats/" target="_blank" rel="noopener" style="color:var(--c-gold); font-family:var(--f-mono); font-size:0.85rem; font-weight:700; text-decoration:none;">
@@ -2622,12 +2634,13 @@ ${renderHeader('stats')}
     </div>
 
     <!-- Top Run Scorers & Leading Wicket Takers Grid -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-bottom:3rem;">
+    <div class="responsive-duo-grid" style="margin-bottom:3rem;">
       <!-- Top Run Scorers -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
         <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
           Top Destroyers Run Scorers
         </h2>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Player</th><th class="num">Mat</th><th class="num">Runs</th><th class="num">Avg</th><th class="num">SR</th><th class="num">50s</th></tr>
@@ -2645,6 +2658,7 @@ ${renderHeader('stats')}
             `).join('')}
           </tbody>
         </table>
+        </div>
       </div>
 
       <!-- Leading Wicket Takers -->
@@ -2652,6 +2666,7 @@ ${renderHeader('stats')}
         <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
           Top Destroyers Wicket Takers
         </h2>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Bowler</th><th class="num">Mat</th><th class="num">Wkts</th><th class="num">Overs</th><th class="num">BBI</th><th class="num">Eco</th></tr>
@@ -2669,16 +2684,18 @@ ${renderHeader('stats')}
             `).join('')}
           </tbody>
         </table>
+        </div>
       </div>
     </div>
 
     <!-- Rate Statistics: Highest Averages & Highest Scores -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+    <div class="responsive-duo-grid">
       <!-- Highest Batting Averages -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
           Best Batting Averages (Min. 5 Matches)
         </h3>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Player</th><th class="num">Mat</th><th class="num">Runs</th><th class="num">Average</th><th class="num">SR</th></tr>
@@ -2695,6 +2712,7 @@ ${renderHeader('stats')}
             `).join('')}
           </tbody>
         </table>
+        </div>
       </div>
 
       <!-- Highest Individual Scores -->
@@ -2702,6 +2720,7 @@ ${renderHeader('stats')}
         <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
           Highest Individual Scores
         </h3>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Player</th><th class="num">High Score</th><th class="num">Strike Rate</th><th class="num">Total Runs</th></tr>
@@ -2717,6 +2736,7 @@ ${renderHeader('stats')}
             `).join('')}
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
@@ -2781,7 +2801,7 @@ ${renderHeader('news')}
       </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:2.5rem;">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap:2.5rem;">
       ${news.map((n) => `
         <article style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem; display:flex; flex-direction:column;">
           <div style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; margin-bottom:0.75rem;">
@@ -2906,7 +2926,7 @@ ${renderHeader('news')}
       <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.5rem;">
         Related News &amp; Features
       </h2>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+      <div class="responsive-duo-grid">
         ${related.map((r) => `
           <div style="background:var(--c-card-bg); border:1px solid var(--b-subtle); padding:1.5rem;">
             <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:0.5rem;">${esc(r.category)}</div>
@@ -3158,7 +3178,7 @@ ${renderHeader('contact')}
       </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-bottom:3rem;">
+    <div class="responsive-duo-grid" style="margin-bottom:3rem;">
       <!-- Administrative Headquarters -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
         <h2 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
@@ -3247,7 +3267,7 @@ ${renderHeader('contact')}
       <h2 style="font-family:var(--f-athletic); font-size:1.8rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
         Match Day Stadium Access &amp; Transit Directions
       </h2>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; font-size:0.875rem; line-height:1.7; color:var(--c-gray-300);">
+      <div class="responsive-duo-grid" style="gap:2rem; font-size:0.875rem; line-height:1.7; color:var(--c-gray-300);">
         <div>
           <h3 style="font-family:var(--f-athletic); font-size:1.3rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:0.5rem;">
             APSU Stadium (Awadhesh Pratap Singh University)

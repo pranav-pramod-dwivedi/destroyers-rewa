@@ -2391,3 +2391,119 @@ table.scorecard-data-table th.num, table.scorecard-data-table td.num {
 
 
 
+
+
+/* ==========================================================================
+   MOBILE RESPONSIVENESS & ZERO-OVERFLOW SAFEGUARDS
+   ========================================================================== */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
+.responsive-duo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.scorecard-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  margin-bottom: 1rem;
+}
+.scorecard-table-wrap table {
+  min-width: 480px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .responsive-duo-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .cap-cards-duo {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem !important;
+  }
+  .header-actions {
+    gap: 0.4rem !important;
+  }
+  .console-search-box {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .filter-console {
+    padding: 1.25rem 1rem !important;
+  }
+  .responsive-duo-grid > div,
+  .cap-card,
+  .player-faq-section,
+  .spotlight-card-wrapper {
+    padding: 1.5rem 1rem !important;
+  }
+  .matches-pro-grid,
+  .players-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .fifa-card-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .spotlight-card-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .spotlight-headline {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-search-btn .search-btn-text,
+  .header-search-btn .search-btn-kbd {
+    display: none !important;
+  }
+  .header-search-btn {
+    padding: 0.45rem 0.65rem !important;
+  }
+  .brand-franchise-name {
+    font-size: 1.15rem !important;
+  }
+  .brand-subline {
+    display: none !important;
+  }
+  .brand-crest-symbol {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1.05rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.85rem !important;
+  }
+  .hero-headline-massive {
+    font-size: clamp(2.4rem, 12vw, 3.6rem) !important;
+  }
+  .hud-win-count {
+    font-size: 1.5rem !important;
+  }
+  .hud-score-cell .score-number {
+    font-size: 1.6rem !important;
+  }
+  .hud-duel-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

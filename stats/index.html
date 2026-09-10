@@ -206,12 +206,13 @@
         Official certified telemetry across both franchises (Destroyers CC &amp; Dread Eleven) over 6 tournament seasons (2021&ndash;2026). Overall series titles stand level at <strong>3&ndash;3</strong> (Dread Eleven: 2021, 2022, 2023 under Akhil Mishra; Destroyers CC: 2024, 2025, 2026 under Pranav Dwivedi).
       </p>
 
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+      <div class="responsive-duo-grid">
         <!-- Leading Run Scorers -->
         <div>
           <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:1rem;">
             Leading Run Scorers (Both Teams)
           </h3>
+          <div class="scorecard-table-wrap">
           <table class="scorecard-data-table">
             <thead>
               <tr><th>Player</th><th>Team</th><th class="num">Runs</th><th class="num">Avg</th><th class="num">SR</th></tr>
@@ -225,12 +226,15 @@
             </tbody>
           </table>
         </div>
+          </div>
+        </div>
 
         <!-- Leading Wicket Takers -->
         <div>
           <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-emerald); text-transform:uppercase; margin-bottom:1rem;">
             Leading Wicket Takers (Both Teams)
           </h3>
+          <div class="scorecard-table-wrap">
           <table class="scorecard-data-table">
             <thead>
               <tr><th>Player</th><th>Team</th><th class="num">Wkts</th><th class="num">Avg</th><th class="num">Econ</th></tr>
@@ -244,6 +248,8 @@
             </tbody>
           </table>
         </div>
+          </div>
+        </div>
       </div>
       <div style="margin-top:1.5rem; text-align:right;">
         <a href="https://abv-rewacricket.pages.dev/stats/" target="_blank" rel="noopener" style="color:var(--c-gold); font-family:var(--f-mono); font-size:0.85rem; font-weight:700; text-decoration:none;">
@@ -253,12 +259,13 @@
     </div>
 
     <!-- Top Run Scorers & Leading Wicket Takers Grid -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-bottom:3rem;">
+    <div class="responsive-duo-grid" style="margin-bottom:3rem;">
       <!-- Top Run Scorers -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
         <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
           Top Destroyers Run Scorers
         </h2>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Player</th><th class="num">Mat</th><th class="num">Runs</th><th class="num">Avg</th><th class="num">SR</th><th class="num">50s</th></tr>
@@ -357,6 +364,7 @@
             
           </tbody>
         </table>
+        </div>
       </div>
 
       <!-- Leading Wicket Takers -->
@@ -364,6 +372,7 @@
         <h2 style="font-family:var(--f-athletic); font-size:1.75rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1.25rem;">
           Top Destroyers Wicket Takers
         </h2>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Bowler</th><th class="num">Mat</th><th class="num">Wkts</th><th class="num">Overs</th><th class="num">BBI</th><th class="num">Eco</th></tr>
@@ -462,16 +471,18 @@
             
           </tbody>
         </table>
+        </div>
       </div>
     </div>
 
     <!-- Rate Statistics: Highest Averages & Highest Scores -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+    <div class="responsive-duo-grid">
       <!-- Highest Batting Averages -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2.5rem;">
         <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
           Best Batting Averages (Min. 5 Matches)
         </h3>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Player</th><th class="num">Mat</th><th class="num">Runs</th><th class="num">Average</th><th class="num">SR</th></tr>
@@ -704,6 +715,7 @@
             
           </tbody>
         </table>
+        </div>
       </div>
 
       <!-- Highest Individual Scores -->
@@ -711,6 +723,7 @@
         <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">
           Highest Individual Scores
         </h3>
+        <div class="scorecard-table-wrap">
         <table class="scorecard-data-table">
           <thead>
             <tr><th>Player</th><th class="num">High Score</th><th class="num">Strike Rate</th><th class="num">Total Runs</th></tr>
@@ -775,6 +788,7 @@
             
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
