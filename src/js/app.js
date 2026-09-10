@@ -1158,10 +1158,31 @@
     });
   }
 
+  // --- Mobile Navigation Drawer Toggle ---
+  function initMobileMenu() {
+    const btn = document.getElementById("mobile-menu-btn");
+    const drawer = document.getElementById("mobile-menu-drawer");
+    if (!btn || !drawer) return;
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = drawer.classList.toggle("open");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!btn.contains(e.target) && !drawer.contains(e.target) && drawer.classList.contains("open")) {
+        drawer.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   window.addEventListener("DOMContentLoaded", () => {
     initCountdown();
     initSquadFilter();
     initCommandPalette();
+    initMobileMenu();
   });
 
 /* Format & Season Filters for One Day & T20 Fixtures */
