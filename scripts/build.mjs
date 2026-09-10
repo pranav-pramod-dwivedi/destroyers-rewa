@@ -2557,6 +2557,70 @@ ${renderHeader('stats')}
       </div>
     </div>
 
+    <!-- All-Time Combined Tournament Leaderboard -->
+    <div style="background:var(--c-card-bg); border:1px solid var(--c-gold); padding:2.5rem; margin-bottom:3rem; border-radius:4px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+        <div>
+          <p class="section-pretitle" style="color:var(--c-gold); margin:0 0 0.25rem 0;">Atal Bihari Vajpayee Memorial Tournament &bull; Official Telemetry</p>
+          <h2 style="font-family:var(--f-athletic); font-size:2rem; color:var(--c-white); text-transform:uppercase; margin:0;">
+            Combined All-Time Leaderboards (Both Teams)
+          </h2>
+        </div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <span style="background:rgba(217, 119, 6, 0.2); color:var(--c-gold); border:1px solid var(--c-gold); padding:0.35rem 0.75rem; font-family:var(--f-mono); font-size:0.8rem; font-weight:800; border-radius:4px;">Series Tied 3&ndash;3</span>
+          <span style="background:rgba(16, 185, 129, 0.2); color:var(--c-emerald); border:1px solid var(--c-emerald); padding:0.35rem 0.75rem; font-family:var(--f-mono); font-size:0.8rem; font-weight:800; border-radius:4px;">34 Clashes</span>
+        </div>
+      </div>
+      <p style="color:var(--c-gray-300); font-size:0.95rem; line-height:1.6; max-width:80ch; margin-bottom:2rem;">
+        Official certified telemetry across both franchises (Destroyers CC &amp; Dread Eleven) over 6 tournament seasons (2021&ndash;2026). Overall series titles stand level at <strong>3&ndash;3</strong> (Dread Eleven: 2021, 2022, 2023 under Akhil Mishra; Destroyers CC: 2024, 2025, 2026 under Pranav Dwivedi).
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;">
+        <!-- Leading Run Scorers -->
+        <div>
+          <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:1rem;">
+            Leading Run Scorers (Both Teams)
+          </h3>
+          <table class="scorecard-data-table">
+            <thead>
+              <tr><th>Player</th><th>Team</th><th class="num">Runs</th><th class="num">Avg</th><th class="num">SR</th></tr>
+            </thead>
+            <tbody>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="/players/pranav-dwivedi" style="color:inherit;">Pranav Dwivedi</a></td><td><span style="color:var(--c-gold); font-weight:700;">Destroyers CC</span></td><td class="num tabular font-bold" style="color:var(--c-gold);">1435</td><td class="num tabular">57.4</td><td class="num tabular">146.4</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="color:inherit;">Akhil Mishra</a></td><td><span style="color:var(--c-ruby); font-weight:700;">Dread Eleven</span></td><td class="num tabular font-bold" style="color:var(--c-gold);">1378</td><td class="num tabular">44.5</td><td class="num tabular">130.0</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="/players/anant-verma" style="color:inherit;">Anant Verma</a></td><td><span style="color:var(--c-gold); font-weight:700;">Destroyers CC</span></td><td class="num tabular font-bold" style="color:var(--c-gold);">782</td><td class="num tabular">39.1</td><td class="num tabular">134.2</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="/players/sagar-pratap-singh" style="color:inherit;">Sagar Pratap Singh</a></td><td><span style="color:var(--c-gold); font-weight:700;">Destroyers CC</span></td><td class="num tabular font-bold" style="color:var(--c-gold);">694</td><td class="num tabular">34.7</td><td class="num tabular">128.5</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="https://dread-eleven-rewacricket.pages.dev/players/aditya-shrivastava" target="_blank" rel="noopener" style="color:inherit;">Aditya Shrivastava</a></td><td><span style="color:var(--c-ruby); font-weight:700;">Dread Eleven</span></td><td class="num tabular font-bold" style="color:var(--c-gold);">612</td><td class="num tabular">30.6</td><td class="num tabular">122.4</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Leading Wicket Takers -->
+        <div>
+          <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-emerald); text-transform:uppercase; margin-bottom:1rem;">
+            Leading Wicket Takers (Both Teams)
+          </h3>
+          <table class="scorecard-data-table">
+            <thead>
+              <tr><th>Player</th><th>Team</th><th class="num">Wkts</th><th class="num">Avg</th><th class="num">Econ</th></tr>
+            </thead>
+            <tbody>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="/players/pranav-dwivedi" style="color:inherit;">Pranav Dwivedi</a></td><td><span style="color:var(--c-gold); font-weight:700;">Destroyers CC</span></td><td class="num tabular font-bold" style="color:var(--c-emerald);">66</td><td class="num tabular">16.3</td><td class="num tabular">5.48</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="https://dread-eleven-rewacricket.pages.dev/players/aditya-shrivastava" target="_blank" rel="noopener" style="color:inherit;">Aditya Shrivastava</a></td><td><span style="color:var(--c-ruby); font-weight:700;">Dread Eleven</span></td><td class="num tabular font-bold" style="color:var(--c-emerald);">49</td><td class="num tabular">21.2</td><td class="num tabular">5.76</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="/players/somil-khan" style="color:inherit;">Somil Khan</a></td><td><span style="color:var(--c-gold); font-weight:700;">Destroyers CC</span></td><td class="num tabular font-bold" style="color:var(--c-emerald);">42</td><td class="num tabular">19.8</td><td class="num tabular">5.62</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="https://dread-eleven-rewacricket.pages.dev/players/akhil-mishra" target="_blank" rel="noopener" style="color:inherit;">Akhil Mishra</a></td><td><span style="color:var(--c-ruby); font-weight:700;">Dread Eleven</span></td><td class="num tabular font-bold" style="color:var(--c-emerald);">38</td><td class="num tabular">61.1</td><td class="num tabular">5.92</td></tr>
+              <tr><td style="font-weight:800; color:var(--c-white);"><a href="/players/harshit-patel" style="color:inherit;">Harshit Patel</a></td><td><span style="color:var(--c-gold); font-weight:700;">Destroyers CC</span></td><td class="num tabular font-bold" style="color:var(--c-emerald);">34</td><td class="num tabular">22.1</td><td class="num tabular">6.04</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem; text-align:right;">
+        <a href="https://abv-rewacricket.pages.dev/stats/" target="_blank" rel="noopener" style="color:var(--c-gold); font-family:var(--f-mono); font-size:0.85rem; font-weight:700; text-decoration:none;">
+          View Full Telemetry on ABV Tournament Portal &rarr;
+        </a>
+      </div>
+    </div>
+
     <!-- Top Run Scorers & Leading Wicket Takers Grid -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; margin-bottom:3rem;">
       <!-- Top Run Scorers -->
