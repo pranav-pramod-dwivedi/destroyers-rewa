@@ -163,7 +163,11 @@
             "wickets": 0,
             "economy": 1
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-5-2",
@@ -311,7 +315,11 @@
             "wickets": 1,
             "economy": 8
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -389,7 +397,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-6",
@@ -585,7 +603,11 @@
             "wickets": 5,
             "economy": 0.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-6-2",
@@ -752,7 +774,11 @@
             "wickets": 3,
             "economy": 14.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -830,7 +856,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-7",
@@ -1006,7 +1042,11 @@
             "wickets": 1,
             "economy": 49.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-7-2",
@@ -1173,7 +1213,11 @@
             "wickets": 4,
             "economy": 22.7
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -1251,7 +1295,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-8",
@@ -1447,7 +1501,11 @@
             "wickets": 3,
             "economy": 18.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-8-2",
@@ -1604,7 +1662,11 @@
             "wickets": 4,
             "economy": 3.8
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -1682,7 +1744,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-9",
@@ -1878,7 +1950,11 @@
             "wickets": 3,
             "economy": 18
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-9-2",
@@ -2006,7 +2082,11 @@
             "wickets": 0,
             "economy": 12.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -2084,7 +2164,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-10",
@@ -2280,7 +2370,11 @@
             "wickets": 2,
             "economy": 19.7
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-10-2",
@@ -2447,7 +2541,11 @@
             "wickets": 0,
             "economy": 3.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -2525,7 +2623,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-11",
@@ -2731,7 +2839,11 @@
             "wickets": 6,
             "economy": 23
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-11-2",
@@ -2868,7 +2980,11 @@
             "wickets": 1,
             "economy": 16.7
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -2946,7 +3062,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-15",
@@ -3133,7 +3259,11 @@
             "wickets": 3,
             "economy": 17.8
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-15-2",
@@ -3270,7 +3400,11 @@
             "wickets": 3,
             "economy": 6.8
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aditya-shrivastava",
+          "playerName": "Aditya Shrivastava"
+        }
       }
     ],
     "commentary": [
@@ -3348,7 +3482,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-aditya-shrivastava",
+        "playerName": "Aditya Shrivastava"
+      }
+    }
   },
   {
     "id": "m-shared-16",
@@ -3515,7 +3659,11 @@
             "wickets": 0,
             "economy": 18.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-16-2",
@@ -3682,7 +3830,11 @@
             "wickets": 4,
             "economy": 16.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-yash-dubey",
+          "playerName": "Yash Dubey"
+        }
       }
     ],
     "commentary": [
@@ -3760,7 +3912,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-yash-dubey",
+        "playerName": "Yash Dubey"
+      }
+    }
   },
   {
     "id": "m-shared-17",
@@ -3956,7 +4118,11 @@
             "wickets": 5,
             "economy": 10.6
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-17-2",
@@ -4123,7 +4289,11 @@
             "wickets": 0,
             "economy": 11.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -4201,7 +4371,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-18",
@@ -4377,7 +4557,11 @@
             "wickets": 0,
             "economy": 17.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-18-2",
@@ -4544,7 +4728,11 @@
             "wickets": 1,
             "economy": 14.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -4622,7 +4810,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-19",
@@ -4818,7 +5016,11 @@
             "wickets": 5,
             "economy": 24.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-19-2",
@@ -4975,7 +5177,11 @@
             "wickets": 1,
             "economy": 9.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -5053,7 +5259,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-20",
@@ -5249,7 +5465,11 @@
             "wickets": 7,
             "economy": 9.9
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-20-2",
@@ -5416,7 +5636,11 @@
             "wickets": 0,
             "economy": 18
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -5494,7 +5718,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-21",
@@ -5680,7 +5914,11 @@
             "wickets": 2,
             "economy": 17
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-21-2",
@@ -5837,7 +6075,11 @@
             "wickets": 0,
             "economy": 3.6
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -5915,7 +6157,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-27",
@@ -6121,7 +6373,11 @@
             "wickets": 8,
             "economy": 2.4
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-27-2",
@@ -6298,7 +6554,11 @@
             "wickets": 3,
             "economy": 5.6
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -6376,7 +6636,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-28",
@@ -6572,7 +6842,11 @@
             "wickets": 1,
             "economy": 7.4
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-28-2",
@@ -6749,7 +7023,11 @@
             "wickets": 4,
             "economy": 12.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -6827,7 +7105,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-29",
@@ -7003,7 +7291,11 @@
             "wickets": 4,
             "economy": 17.2
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-29-2",
@@ -7180,7 +7472,11 @@
             "wickets": 5,
             "economy": 7.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -7258,7 +7554,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-30",
@@ -7444,7 +7750,11 @@
             "wickets": 1,
             "economy": 21.4
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-30-2",
@@ -7611,7 +7921,11 @@
             "wickets": 2,
             "economy": 5.3
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -7689,7 +8003,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-31",
@@ -7885,7 +8209,11 @@
             "wickets": 5,
             "economy": 13.1
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-31-2",
@@ -8042,7 +8370,11 @@
             "wickets": 0,
             "economy": 13.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -8120,7 +8452,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-40",
@@ -8316,7 +8658,11 @@
             "wickets": 3,
             "economy": 10.1
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-40-2",
@@ -8483,7 +8829,11 @@
             "wickets": 1,
             "economy": 20.6
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -8561,7 +8911,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-41",
@@ -8737,7 +9097,11 @@
             "wickets": 4,
             "economy": 18.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-41-2",
@@ -8894,7 +9258,11 @@
             "wickets": 0,
             "economy": 10
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
     ],
     "commentary": [
@@ -8972,7 +9340,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-42",
@@ -9169,7 +9547,11 @@
             "wickets": 7,
             "economy": 18.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-42-2",
@@ -9326,7 +9708,11 @@
             "wickets": 1,
             "economy": 19.1
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aditya-shrivastava",
+          "playerName": "Aditya Shrivastava"
+        }
       }
     ],
     "commentary": [
@@ -9404,7 +9790,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-aditya-shrivastava",
+        "playerName": "Aditya Shrivastava"
+      }
+    }
   },
   {
     "id": "m-shared-43",
@@ -9571,7 +9967,11 @@
             "wickets": 2,
             "economy": 20.4
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-43-2",
@@ -9728,7 +10128,11 @@
             "wickets": 1,
             "economy": 14.9
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aditya-shrivastava",
+          "playerName": "Aditya Shrivastava"
+        }
       }
     ],
     "commentary": [
@@ -9806,7 +10210,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-aditya-shrivastava",
+        "playerName": "Aditya Shrivastava"
+      }
+    }
   },
   {
     "id": "m-shared-44",
@@ -9973,7 +10387,11 @@
             "wickets": 2,
             "economy": 10.9
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-44-2",
@@ -10130,7 +10548,11 @@
             "wickets": 5,
             "economy": 8.6
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aditya-shrivastava",
+          "playerName": "Aditya Shrivastava"
+        }
       }
     ],
     "commentary": [
@@ -10208,7 +10630,17 @@
       "4",
       "2",
       "6"
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-aditya-shrivastava",
+        "playerName": "Aditya Shrivastava"
+      }
+    }
   },
   {
     "id": "m-shared-55",
@@ -10383,7 +10815,11 @@
             "wickets": 0,
             "economy": 11.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-55-2",
@@ -10550,9 +10986,23 @@
             "wickets": 0,
             "economy": 13.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-56",
@@ -10745,7 +11195,11 @@
             "wickets": 0,
             "economy": 10.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-yash-dubey",
+          "playerName": "Yash Dubey"
+        }
       },
       {
         "inningsId": "m-shared-56-2",
@@ -10885,9 +11339,23 @@
             "wickets": 0,
             "economy": 10.67
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-yash-dubey",
+        "playerName": "Yash Dubey"
+      }
+    }
   },
   {
     "id": "m-shared-57",
@@ -11074,7 +11542,11 @@
             "wickets": 0,
             "economy": 6.4
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       },
       {
         "inningsId": "m-shared-57-2",
@@ -11251,9 +11723,23 @@
             "wickets": 0,
             "economy": 7.25
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-58",
@@ -11449,7 +11935,11 @@
             "wickets": 0,
             "economy": 6.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-yash-dubey",
+          "playerName": "Yash Dubey"
+        }
       },
       {
         "inningsId": "m-shared-58-2",
@@ -11595,9 +12085,23 @@
             "wickets": 0,
             "economy": 7.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-yash-dubey",
+        "playerName": "Yash Dubey"
+      }
+    }
   },
   {
     "id": "m-shared-59",
@@ -11784,7 +12288,11 @@
             "wickets": 0,
             "economy": 6.8
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-59-2",
@@ -11961,9 +12469,23 @@
             "wickets": 0,
             "economy": 8.8
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-60",
@@ -12138,7 +12660,11 @@
             "wickets": 0,
             "economy": 10.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-yash-dubey",
+          "playerName": "Yash Dubey"
+        }
       },
       {
         "inningsId": "m-shared-60-2",
@@ -12290,9 +12816,23 @@
             "wickets": 0,
             "economy": 9.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-yash-dubey",
+        "playerName": "Yash Dubey"
+      }
+    }
   },
   {
     "id": "m-shared-61",
@@ -12479,7 +13019,11 @@
             "wickets": 0,
             "economy": 8.5
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-yash-dubey",
+          "playerName": "Yash Dubey"
+        }
       },
       {
         "inningsId": "m-shared-61-2",
@@ -12613,9 +13157,23 @@
             "wickets": 0,
             "economy": 11.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-yash-dubey",
+        "playerName": "Yash Dubey"
+      }
+    }
   },
   {
     "id": "m-shared-62",
@@ -12796,7 +13354,11 @@
             "wickets": 0,
             "economy": 6.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       },
       {
         "inningsId": "m-shared-62-2",
@@ -12964,9 +13526,23 @@
             "wickets": 0,
             "economy": 6.11
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   },
   {
     "id": "m-shared-63",
@@ -13153,7 +13729,11 @@
             "wickets": 0,
             "economy": 5.6
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-yash-dubey",
+          "playerName": "Yash Dubey"
+        }
       },
       {
         "inningsId": "m-shared-63-2",
@@ -13305,9 +13885,23 @@
             "wickets": 0,
             "economy": 6.84
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
+      },
+      "DE": {
+        "playerId": "p-yash-dubey",
+        "playerName": "Yash Dubey"
+      }
+    }
   },
   {
     "id": "m-shared-64",
@@ -13494,7 +14088,11 @@
             "wickets": 0,
             "economy": 6.4
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
+        }
       },
       {
         "inningsId": "m-shared-64-2",
@@ -13671,8 +14269,22 @@
             "wickets": 0,
             "economy": 6.0
           }
-        ]
+        ],
+        "captain": {
+          "playerId": "p-akhil-mishra",
+          "playerName": "Akhil Mishra"
+        }
       }
-    ]
+    ],
+    "captains": {
+      "DES": {
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
+      },
+      "DE": {
+        "playerId": "p-akhil-mishra",
+        "playerName": "Akhil Mishra"
+      }
+    }
   }
 ]

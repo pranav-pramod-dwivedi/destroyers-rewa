@@ -30,5 +30,53 @@
       "capacity": 5000,
       "pitchType": "Dry Turf / Turning"
     }
-  ]
+  ],
+  "championsByEdition": {
+    "2021": {
+      "champion": "Dread Eleven",
+      "score": "5\u20132",
+      "winnerCaptain": "Akhil Mishra",
+      "runnerUpCaptain": "Pranav Dwivedi"
+    },
+    "2022": {
+      "champion": "Dread Eleven",
+      "score": "4\u20133",
+      "winnerCaptain": "Akhil Mishra",
+      "runnerUpCaptain": "Pranav Dwivedi"
+    },
+    "2023": {
+      "champion": "Dread Eleven",
+      "score": "3\u20132",
+      "winnerCaptain": "Akhil Mishra",
+      "runnerUpCaptain": "Pranav Dwivedi"
+    },
+    "2024": {
+      "champion": "Destroyers Cricket Club",
+      "score": "4\u20131",
+      "winnerCaptain": "Pranav Dwivedi",
+      "runnerUpCaptain": "Akhil Mishra"
+    },
+    "2025": {
+      "champion": "Destroyers Cricket Club",
+      "score": "5\u20130",
+      "winnerCaptain": "Pranav Dwivedi",
+      "runnerUpCaptain": "Akhil Mishra"
+    },
+    "2026": {
+      "champion": "Destroyers Cricket Club",
+      "score": "3\u20132",
+      "winnerCaptain": "Pranav Dwivedi",
+      "runnerUpCaptain": "Akhil Mishra"
+    }
+  },
+  "titleCount": {
+    "Destroyers Cricket Club": 3,
+    "Dread Eleven": 3
+  },
+  "currentChampion": {
+    "team": "Destroyers Cricket Club",
+    "season": "2026",
+    "score": "3\u20132",
+    "captain": "Pranav Dwivedi"
+  }
 }
