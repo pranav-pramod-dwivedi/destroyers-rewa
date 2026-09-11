@@ -99,7 +99,7 @@ function renderHead({
   description,
   canonicalUrl,
   ogType = 'website',
-  ogImage = '/public/inspo1.jpg',
+  ogImage = '/public/og-image.png',
   jsonLd = null,
   breadcrumbs = null,
   keywords = null,
@@ -222,8 +222,10 @@ function renderHead({
   <meta name="twitter:data2" content="${esc(twitterData.data2)}">` : ''}
 
   <!-- Icons & PWA -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
-  <link rel="apple-touch-icon" href="/public/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
 
   <!-- Google Fonts Preconnect -->
@@ -423,7 +425,7 @@ function generateHomePage() {
     name: 'Destroyers Cricket Club (DES)',
     alternateName: ['Destroyers', 'DES', 'Destroyers Rewa', 'Destroyers CC'],
     url: BASE_URL,
-    logo: `${BASE_URL}/public/favicon.svg`,
+    logo: `${BASE_URL}/public/logo.png`,
     image: `${BASE_URL}/public/inspo1.jpg`,
     description: 'Official pro cricket franchise website for Destroyers Cricket Club (DES), Rewa. Captained by Pranav Dwivedi. Complete match archives, squad, standings, and stats in Rewa, Madhya Pradesh.',
     address: {
@@ -466,7 +468,7 @@ function generateHomePage() {
     alternateName: 'Destroyers (DES)',
     sport: 'Cricket',
     url: BASE_URL,
-    logo: `${BASE_URL}/public/favicon.svg`,
+    logo: `${BASE_URL}/public/logo.png`,
     memberOf: {
       '@type': 'SportsOrganization',
       name: 'Rewa Division Cricket Association (RDCA)',
