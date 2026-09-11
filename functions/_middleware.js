@@ -32,7 +32,7 @@ function wantsMarkdown(request) {
     const type = typePart.trim().toLowerCase();
     let q = 1;
     for (const p of params) {
-      const m = p.trim().match(/^q\\s*=\\s*([0-9.]+)$/i);
+      const m = p.trim().match(/^q\s*=\s*([0-9.]+)$/i);
       if (m) {
         const n = parseFloat(m[1]);
         if (!isNaN(n)) q = n;
@@ -70,7 +70,10 @@ export async function onRequest(context) {
 
   // Markdown negotiation
   if (wantsMarkdown(request)) {
-    let mdPath = url.pathname === "/" ? "/index.md" : url.pathname.replace(/\\/+$/, "") + ".md";
+    let mdPath = url.pathname;
+    if (!mdPath.endsWith(".md")) {
+      mdPath = mdPath === "/" ? "/index.md" : mdPath.replace(/\/+$/, "") + ".md";
+    }
     const assetFetcher = env?.ASSETS || { fetch: (...args) => fetch(...args) };
     const mdRes = await assetFetcher.fetch(new URL(mdPath, url.origin), { method: request.method });
     if (mdRes.ok) {
