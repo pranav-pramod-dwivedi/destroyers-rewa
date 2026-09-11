@@ -449,7 +449,17 @@ function generateHomePage() {
       '@type': 'Person',
       name: 'Pranav Dwivedi',
       jobTitle: 'Captain & Franchise Icon',
-      url: `${BASE_URL}/players/pranav-dwivedi`
+      url: 'https://pranav-dwivedi.pages.dev/',
+      sameAs: [
+        'https://pranav-dwivedi.pages.dev/',
+        'https://pranav-pramod-dwivedi.github.io/',
+        'https://github.com/pranav-pramod-dwivedi',
+        'https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi',
+        'https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/',
+        'https://abv-rewacricket.pages.dev/',
+        'https://cricheroes.com/association/79/rewa-divisional-cricket-association/home',
+        'https://www.instagram.com/destroyers_rewa'
+      ]
     },
     memberOf: {
       '@type': 'SportsOrganization',
@@ -460,8 +470,7 @@ function generateHomePage() {
       'https://rewa-cricket-division.vercel.app/teams/destroyers/',
       'https://abv-rewacricket.pages.dev/',
       'https://rewa-cricket-division.vercel.app/tournaments/atal-bihari-vajpayee-memorial-tournament/',
-      'https://dread-eleven-rewacricket.pages.dev/',
-      'https://abv-rewacricket.pages.dev/'
+      'https://dread-eleven-rewacricket.pages.dev/'
     ]
   };
 
@@ -494,11 +503,26 @@ function generateHomePage() {
       roleName: p.role,
       url: `${BASE_URL}/players/${p.slug}`
     })),
+    sameAs: [
+      'https://rewa-cricket-division.vercel.app/teams/destroyers/',
+      'https://abv-rewacricket.pages.dev/',
+      'https://dread-eleven-rewacricket.pages.dev/'
+    ],
     coach: {
       '@type': 'Person',
       name: 'Pranav Dwivedi',
       jobTitle: 'Captain & Franchise Icon',
-      url: `${BASE_URL}/players/pranav-dwivedi`
+      url: 'https://pranav-dwivedi.pages.dev/',
+      sameAs: [
+        'https://pranav-dwivedi.pages.dev/',
+        'https://pranav-pramod-dwivedi.github.io/',
+        'https://github.com/pranav-pramod-dwivedi',
+        'https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi',
+        'https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/',
+        'https://abv-rewacricket.pages.dev/',
+        'https://cricheroes.com/association/79/rewa-divisional-cricket-association/home',
+        'https://www.instagram.com/destroyers_rewa'
+      ]
     }
   };
 
@@ -1154,6 +1178,8 @@ ${renderFooter()}
           ],
           sameAs: [
             'https://pranav-dwivedi.pages.dev/',
+            'https://pranav-pramod-dwivedi.github.io/',
+            'https://github.com/pranav-pramod-dwivedi',
             'https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi',
             'https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/',
             'https://abv-rewacricket.pages.dev/',
@@ -3944,7 +3970,7 @@ LLM: ${BASE_URL}/llms.txt
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
 - Team Captain: [Pranav Dwivedi](${BASE_URL}/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
-- Machine-Readable Captain Profile: [Pranav Dwivedi JSON](${BASE_URL}/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](${BASE_URL}/players/pranav-dwivedi.md)
+- Machine-Readable Captain Profile: [Pranav Dwivedi JSON](${BASE_URL}/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](${BASE_URL}/players/pranav-dwivedi.md) | [Independent Portfolio](https://pranav-dwivedi.pages.dev/) | [GitHub Pages Portfolio](https://pranav-pramod-dwivedi.github.io/)
 - Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
 - Governing Association: Rewa Division Cricket Association (RDCA)
 - Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
@@ -3974,6 +4000,7 @@ LLM: ${BASE_URL}/llms.txt
 - Governing Body: Rewa Division Cricket Association (RDCA)
 - Website: ${BASE_URL}
 - Portal: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- Captain Independent Portfolio: https://pranav-dwivedi.pages.dev/ (Mirror: https://pranav-pramod-dwivedi.github.io/)
 - Tournament Official Portal: https://abv-rewacricket.pages.dev/
 - Arch-Rival Digital Stadium: https://dread-eleven-rewacricket.pages.dev/
 - Email: admin@destroyers-rewa.cricket

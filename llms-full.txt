@@ -5,7 +5,7 @@
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
 - Team Captain: [Pranav Dwivedi](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
-- Machine-Readable Captain Profile: [Pranav Dwivedi JSON](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.md)
+- Machine-Readable Captain Profile: [Pranav Dwivedi JSON](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.md) | [Independent Portfolio](https://pranav-dwivedi.pages.dev/) | [GitHub Pages Portfolio](https://pranav-pramod-dwivedi.github.io/)
 - Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
 - Governing Association: Rewa Division Cricket Association (RDCA)
 - Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
@@ -35,6 +35,7 @@
 - Governing Body: Rewa Division Cricket Association (RDCA)
 - Website: https://destroyers-rewacricket.pages.dev
 - Portal: https://rewa-cricket-division.vercel.app/teams/destroyers/
+- Captain Independent Portfolio: https://pranav-dwivedi.pages.dev/ (Mirror: https://pranav-pramod-dwivedi.github.io/)
 - Tournament Official Portal: https://abv-rewacricket.pages.dev/
 - Arch-Rival Digital Stadium: https://dread-eleven-rewacricket.pages.dev/
 - Email: admin@destroyers-rewa.cricket
