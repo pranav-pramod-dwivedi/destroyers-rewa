@@ -1,0 +1,38 @@
+{
+  "name": "Pranav Dwivedi",
+  "alternateName": [
+    "Pranav Pramod Dwivedi",
+    "Capt. Pranav Dwivedi",
+    "P. Dwivedi"
+  ],
+  "jersey": 7,
+  "role": "Captain & Premier All-Rounder",
+  "team": "Destroyers Cricket Club",
+  "association": "Rewa Division Cricket Association (RDCA)",
+  "origin": "Rewa, Madhya Pradesh, India",
+  "career": {
+    "matches": 34,
+    "runs": 1435,
+    "battingAverage": 57.4,
+    "strikeRate": 146.4,
+    "highestScore": "102*",
+    "fifties": 14,
+    "hundreds": 1,
+    "wickets": 66,
+    "bowlingAverage": 16.3,
+    "economy": 5.48,
+    "bestBowling": "8/39",
+    "titles": [
+      "2024 Champion Captain",
+      "2025 Champion Captain",
+      "2026 Champion Captain"
+    ]
+  },
+  "sameAs": [
+    "https://destroyers-rewacricket.pages.dev/portfolio/",
+    "https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi",
+    "https://rewa-cricket-division.vercel.app/players/pranav-dwivedi/",
+    "https://abv-rewacricket.pages.dev/",
+    "https://cricheroes.com/association/79/rewa-divisional-cricket-association/home"
+  ]
+}

@@ -24,7 +24,7 @@
 - [Contact & Trials](https://destroyers-rewacricket.pages.dev/contact): Academy trials protocol, venue directions, and administrative inquiries
 
 ## Developer & AI Crawler Resources
-- [XML Sitemap](https://destroyers-rewacricket.pages.dev/sitemap.xml): Machine-readable index of all public URLs (97 URLs indexed)
+- [XML Sitemap](https://destroyers-rewacricket.pages.dev/sitemap.xml): Machine-readable index of all public URLs (98 URLs indexed)
 - [Robots Policy](https://destroyers-rewacricket.pages.dev/robots.txt): Explicit crawler permissions for AI agents (GPTBot, ClaudeBot, PerplexityBot, etc.)
 - [Freshness Feed](https://destroyers-rewacricket.pages.dev/feed.xml): RSS 2.0 feed with latest match reports and editorial dispatches
 - [Live Freshness Telemetry](https://destroyers-rewacricket.pages.dev/freshness.json): Real-time JSON state with latest completed matches and active squad count
