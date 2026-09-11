@@ -169,6 +169,7 @@ function renderHead({
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="${fullCanonical}">
+  <meta name="google-site-verification" content="google23e3ba68f31a1fe8">
   <meta name="theme-color" content="#0b0b0b">
   <meta name="application-name" content="Destroyers Cricket Club">
   <meta name="apple-mobile-web-app-title" content="Destroyers CC">
@@ -4025,6 +4026,11 @@ ${news.slice(0, 10).map((n) => `    <item>
 /standings /points-table 301
 `;
   fs.writeFileSync(path.join(rootDir, '_redirects'), redirectsContent);
+
+  const googleVerifyFile = 'google23e3ba68f31a1fe8.html';
+  const googleVerifyContent = 'google-site-verification: google23e3ba68f31a1fe8.html\n';
+  fs.writeFileSync(path.join(rootDir, googleVerifyFile), googleVerifyContent);
+  fs.writeFileSync(path.join(publicDir, googleVerifyFile), googleVerifyContent);
 
   console.log(`Generated sitemap.xml with ${urls.length} indexable canonical URLs (with lastmod), robots.txt, and _redirects.`);
 }
