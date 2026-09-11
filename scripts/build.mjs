@@ -3950,22 +3950,22 @@ function generateSitemapAndRobots() {
 
   const urls = [
     { loc: '/', changefreq: 'daily', priority: '1.0' },
-    { loc: '/players', changefreq: 'daily', priority: '0.9' },
-    { loc: '/fixtures', changefreq: 'daily', priority: '0.9' },
-    { loc: '/results', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/points-table', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/stats', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/news', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/about', changefreq: 'monthly', priority: '0.7' },
-    { loc: '/contact', changefreq: 'monthly', priority: '0.6' },
-    { loc: '/privacy', changefreq: 'yearly', priority: '0.5' },
-    { loc: '/terms', changefreq: 'yearly', priority: '0.5' }
+    { loc: '/players/', changefreq: 'daily', priority: '0.9' },
+    { loc: '/fixtures/', changefreq: 'daily', priority: '0.9' },
+    { loc: '/results/', changefreq: 'weekly', priority: '0.8' },
+    { loc: '/points-table/', changefreq: 'weekly', priority: '0.8' },
+    { loc: '/stats/', changefreq: 'weekly', priority: '0.8' },
+    { loc: '/news/', changefreq: 'weekly', priority: '0.8' },
+    { loc: '/about/', changefreq: 'monthly', priority: '0.7' },
+    { loc: '/contact/', changefreq: 'monthly', priority: '0.6' },
+    { loc: '/privacy/', changefreq: 'yearly', priority: '0.5' },
+    { loc: '/terms/', changefreq: 'yearly', priority: '0.5' }
   ];
 
   // Add all player pages (48 players)
   squad.forEach((p) => {
     urls.push({
-      loc: `/players/${p.slug}`,
+      loc: `/players/${p.slug}/`,
       changefreq: 'weekly',
       priority: '0.8'
     });
@@ -3974,7 +3974,7 @@ function generateSitemapAndRobots() {
   // Add all match pages (34 matches)
   matches.forEach((m) => {
     urls.push({
-      loc: `/matches/${m.slug}`,
+      loc: `/matches/${m.slug}/`,
       changefreq: 'weekly',
       priority: '0.8'
     });
@@ -3983,7 +3983,7 @@ function generateSitemapAndRobots() {
   // Add all news articles
   news.forEach((n) => {
     urls.push({
-      loc: `/news/${n.slug}`,
+      loc: `/news/${n.slug}/`,
       changefreq: 'monthly',
       priority: '0.7'
     });
