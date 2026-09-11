@@ -175,6 +175,23 @@ body {
   text-decoration: none !important;
 }
 
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  display: block;
+  flex-shrink: 0;
+  border: 2px solid var(--c-ember-bright);
+  box-shadow: 0 0 16px rgba(255, 122, 0, 0.35);
+  transition: transform 0.2s var(--ease-snappy);
+}
+
+.brand-block:hover .brand-logo {
+  transform: scale(1.05);
+}
+
 .brand-crest-symbol {
   width: 44px;
   height: 44px;
@@ -2487,6 +2504,10 @@ html, body {
     width: 38px !important;
     height: 38px !important;
     font-size: 1.05rem !important;
+  }
+  .brand-logo {
+    width: 38px !important;
+    height: 38px !important;
   }
 }
 

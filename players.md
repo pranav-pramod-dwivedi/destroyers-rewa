@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/players/
 
 Destroyers Squad &amp; Player Roster | Rewa Cricket
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

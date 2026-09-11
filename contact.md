@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/contact/
 
 Contact &amp; Academy Trials | Destroyers Cricket Club
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

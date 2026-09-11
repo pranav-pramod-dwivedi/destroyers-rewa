@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/news/
 
 News &amp; Tactical Press Center | Destroyers CC
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

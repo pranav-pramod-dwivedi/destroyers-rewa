@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/results/
 
 Match Results &amp; Scorecards | Destroyers CC
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/about/
 
 About Destroyers Cricket Club | Rewa Franchise
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

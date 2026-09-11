@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/stats/
 
 Franchise Records &amp; All-Time Stats | Destroyers CC
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

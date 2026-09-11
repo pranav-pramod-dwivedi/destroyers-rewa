@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/
 
 Destroyers Cricket Club | Official Website &amp; Team Arena
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/fixtures/
 
 Tournament Fixtures &amp; Schedule | Destroyers CC
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

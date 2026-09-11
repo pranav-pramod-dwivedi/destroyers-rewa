@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/points-table/
 
 Tournament Points Table &amp; Standings | Destroyers CC
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 

@@ -4,7 +4,7 @@ Source: https://destroyers-rewacricket.pages.dev/privacy/
 
 Privacy Policy | Destroyers Cricket Club (DES)
 
- [DES DESTROYERS CC Rewa Division Cricket Association](/)
+ [DESTROYERS CC Rewa Division Cricket Association](/)
 
  [Home](/)
 
