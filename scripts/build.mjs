@@ -99,7 +99,7 @@ function renderHead({
   description,
   canonicalUrl,
   ogType = 'website',
-  ogImage = '/public/og-image.png',
+  ogImage = '/og-image.png',
   jsonLd = null,
   breadcrumbs = null,
   keywords = null,
@@ -222,7 +222,10 @@ function renderHead({
   <meta name="twitter:label2" content="${esc(twitterData.label2)}">
   <meta name="twitter:data2" content="${esc(twitterData.data2)}">` : ''}
 
-  <!-- Icons & PWA -->
+  <!-- Icons & PWA (Google Search Console & SEO Compliant) -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo-192.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
@@ -426,8 +429,8 @@ function generateHomePage() {
     name: 'Destroyers Cricket Club (DES)',
     alternateName: ['Destroyers', 'DES', 'Destroyers Rewa', 'Destroyers CC'],
     url: BASE_URL,
-    logo: `${BASE_URL}/public/logo.png`,
-    image: `${BASE_URL}/public/inspo1.jpg`,
+    logo: `${BASE_URL}/logo.png`,
+    image: `${BASE_URL}/logo.png`,
     description: 'Official pro cricket franchise website for Destroyers Cricket Club (DES), Rewa. Captained by Pranav Dwivedi. Complete match archives, squad, standings, and stats in Rewa, Madhya Pradesh.',
     address: {
       '@type': 'PostalAddress',
@@ -469,7 +472,7 @@ function generateHomePage() {
     alternateName: 'Destroyers (DES)',
     sport: 'Cricket',
     url: BASE_URL,
-    logo: `${BASE_URL}/public/logo.png`,
+    logo: `${BASE_URL}/logo.png`,
     memberOf: {
       '@type': 'SportsOrganization',
       name: 'Rewa Division Cricket Association (RDCA)',
@@ -505,6 +508,7 @@ function generateHomePage() {
     name: 'Destroyers Cricket Club',
     alternateName: 'Destroyers Official Website',
     url: BASE_URL,
+    image: `${BASE_URL}/logo.png`,
     potentialAction: {
       '@type': 'SearchAction',
       target: {
