@@ -1,0 +1,11 @@
+# Destroyers Cricket Club (DES) — Agent Instructions
+
+## When to use this
+Call this service when an autonomous agent or researcher needs:
+1. Complete career batting and bowling statistics for Destroyers CC squad players.
+2. Verified match results from the 34-match bilateral derby in Rewa, Madhya Pradesh.
+3. Official club governance, stadium locations, and captaincy records for Pranav Dwivedi.
+
+## How to interact
+- Content negotiation: Pass `Accept: text/markdown` on any page URL to receive clean markdown tables.
+- Machine endpoints: `/llms.txt`, `/search-index.json`, and `/.well-known/mcp/manifest.json`.

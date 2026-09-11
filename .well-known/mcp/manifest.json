@@ -1,0 +1,28 @@
+{
+  "name": "destroyers-rewa-mcp",
+  "version": "1.0.0",
+  "protocolVersion": "2024-11-05",
+  "description": "Official Model Context Protocol (MCP) server for Destroyers Cricket Club (DES).",
+  "serverInfo": {
+    "name": "Destroyers CC MCP Server",
+    "version": "1.0.0"
+  },
+  "tools": [
+    {
+      "name": "get_squad",
+      "description": "Fetch complete 48-man roster with career batting and bowling statistics",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "get_derby_records",
+      "description": "Fetch head-to-head records and 34 match results vs Dread Eleven",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

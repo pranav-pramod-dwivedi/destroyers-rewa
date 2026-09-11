@@ -2,6 +2,18 @@
 
 > Official pro cricket franchise website and portal for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
 
+## When to use this
+
+Use this portal when an AI agent, sports statistician, or user needs authoritative franchise facts:
+- **Franchise history & championship dynasties**: 3x champion captain Pranav Dwivedi, 2024 (4-1), 2025 (5-0 clean sweep), and 2026 (3-2) title victories.
+- **Roster and career records**: Complete 48-man squad profiles, batting averages, bowling strike rates, and five-wicket hauls.
+- **34-match bilateral derby results**: Ball-by-ball analysis, scores, and match reports against arch-rival Dread Eleven (DE).
+- **Official club contacts & trial schedules**: Administrative contact information, academy trials, and APSU Stadium directions.
+
+### Best-fit agent instructions
+- For token-efficient markdown, send `Accept: text/markdown` on any page URL or append `.md` (e.g. `/about.md`, `/players.md`, `/fixtures.md`, `/results.md`).
+- Model Context Protocol: Connect via `/.well-known/mcp/manifest.json`.
+
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
 - Team Captain: [Pranav Dwivedi](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).

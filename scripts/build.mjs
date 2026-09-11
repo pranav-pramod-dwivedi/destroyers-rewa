@@ -72,6 +72,91 @@ function clampDesc(text, maxLen = 155) {
 }
 
 // Helper: Safe CSS minifier
+
+// HTML to Markdown converter for agentic content negotiation
+function htmlToMarkdown(html, { title = '', url = '' } = {}) {
+  let text = String(html || '');
+  const mainMatch = text.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
+  if (mainMatch) text = mainMatch[1];
+
+  // Convert tables
+  text = text.replace(/<table\b[^>]*>([\s\S]*?)<\/table>/gi, (m, inner) => {
+    const rows = [...inner.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].map(r =>
+      [...r[1].matchAll(/<t[hd]\b[^>]*>([\s\S]*?)<\/t[hd]>/gi)].map(c =>
+        c[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().replace(/\|/g, '\\|')
+      )
+    );
+    if (!rows.length) return '';
+    const width = Math.max(...rows.map(r => r.length));
+    const norm = rows.map(r => { const c = r.slice(); while (c.length < width) c.push(''); return c; });
+    const out = [];
+    out.push('| ' + norm[0].join(' | ') + ' |');
+    out.push('| ' + Array(width).fill('---').join(' | ') + ' |');
+    for (let i = 1; i < norm.length; i++) out.push('| ' + norm[i].join(' | ') + ' |');
+    return '\n' + out.join('\n') + '\n';
+  });
+
+  // Convert lists
+  text = text.replace(/<ol\b[^>]*>([\s\S]*?)<\/ol>/gi, (m, inner) =>
+    inner.replace(/<li\b[^>]*>([\s\S]*?)<\/li>/gi, (mm, li) => `\n1. ${li.replace(/<[^>]+>/g, '').trim()}\n`)
+  );
+  text = text.replace(/<ul\b[^>]*>([\s\S]*?)<\/ul>/gi, (m, inner) =>
+    inner.replace(/<li\b[^>]*>([\s\S]*?)<\/li>/gi, (mm, li) => `\n- ${li.replace(/<[^>]+>/g, '').trim()}\n`)
+  );
+
+  // Convert headings
+  text = text.replace(/<h([1-6])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (m, lvl, inner) =>
+    '\n\n' + '#'.repeat(Number(lvl)) + ' ' + inner.replace(/<[^>]+>/g, '').trim() + '\n'
+  );
+
+  // Remove scripts, styles, SVGs
+  text = text.replace(/<(script|style|svg|template)\b[\s\S]*?<\/\1>/gi, '');
+  text = text.replace(/<!--[\s\S]*?-->/g, '');
+
+  // Convert links
+  text = text.replace(/<a\b[^>]*href="([^"#]*)"[^>]*>\s*([\s\S]*?)<\/a>/gi, (m, href, inner) => {
+    const linkText = inner.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    if (!linkText) return '';
+    return `[${linkText}](${href})`;
+  });
+
+  // Basic formatting
+  text = text.replace(/<(strong|b)\b[^>]*>([\s\S]*?)<\/\1>/gi, '**$2**');
+  text = text.replace(/<(em|i)\b[^>]*>([\s\S]*?)<\/\1>/gi, '_$2_');
+  text = text.replace(/<code\b[^>]*>([\s\S]*?)<\/code>/gi, '`$2`');
+  text = text.replace(/<br\s*\/?>/gi, '\n');
+  text = text.replace(/<p\b[^>]*>([\s\S]*?)<\/p>/gi, '\n$1\n');
+  text = text.replace(/<[^>]+>/g, '');
+
+  let clean = text
+    .split('\n')
+    .map(line => line.replace(/[ \t]+/g, ' ').trimEnd())
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  const header = [];
+  if (title) header.push('# ' + title, '');
+  if (url) header.push('Source: ' + url, '');
+  return (header.length ? header.join('\n') + '\n' : '') + clean + '\n';
+}
+
+function writePageWithMd(relHtmlPath, html, title, canonicalUrl) {
+  const fullHtmlPath = path.join(rootDir, relHtmlPath);
+  ensureDir(path.dirname(fullHtmlPath));
+  fs.writeFileSync(fullHtmlPath, html, 'utf-8');
+
+  // Generate .md sibling
+  let mdPath;
+  if (relHtmlPath === 'index.html') mdPath = 'index.md';
+  else if (relHtmlPath === '404.html') mdPath = '404.md';
+  else mdPath = relHtmlPath.replace(/\/index\.html$/, '.md');
+
+  const fullMdPath = path.join(rootDir, mdPath);
+  ensureDir(path.dirname(fullMdPath));
+  fs.writeFileSync(fullMdPath, htmlToMarkdown(html, { title, url: canonicalUrl }), 'utf-8');
+}
+
 function minifyCss(css) {
   return css
     .replace(/\/\*[\s\S]*?\*\//g, '')
@@ -434,15 +519,17 @@ function generateHomePage() {
     description: 'Official pro cricket franchise website for Destroyers Cricket Club (DES), Rewa. Captained by Pranav Dwivedi. Complete match archives, squad, standings, and stats in Rewa, Madhya Pradesh.',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'APSU Stadium Road, Near University Ground',
       addressLocality: 'Rewa',
       addressRegion: 'Madhya Pradesh',
       postalCode: '486003',
-      addressCountry: 'India'
+      addressCountry: 'IN'
     },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Franchise Administration & Player Trials',
       email: 'admin@destroyers-rewa.cricket',
+      telephone: '+91 7662 250001',
       availableLanguage: ['English', 'Hindi']
     },
     founder: {
@@ -961,7 +1048,7 @@ ${renderHeader('home')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(rootDir, 'index.html'), html);
+  writePageWithMd('index.html', html, 'Destroyers Cricket Club (DES) — Official Website | RDCA Rewa Cricket', `${BASE_URL}/`);
   console.log('Generated index.html (Home)');
 }
 
@@ -1112,7 +1199,7 @@ ${renderHeader('squad')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(playersDir, 'index.html'), directoryHtml);
+  writePageWithMd('players/index.html', directoryHtml, 'Squad & Roster | Destroyers Cricket Club (DES)', `${BASE_URL}/players/`);
 
   // Generate each player's dedicated profile
   squad.forEach((p) => {
@@ -1812,7 +1899,7 @@ ${renderHeader('fixtures')}
 ${renderMatchListSection(false)}
 ${renderFooter()}
   `;
-  fs.writeFileSync(path.join(fixturesDir, 'index.html'), fixturesHtml);
+  writePageWithMd('fixtures/index.html', fixturesHtml, 'Tournament Fixtures | Destroyers Cricket Club (DES)', `${BASE_URL}/fixtures/`);
 
   // B. Generate /results/index.html
   const resultsHtml = `
@@ -1836,7 +1923,7 @@ ${renderHeader('results')}
 ${renderMatchListSection(true)}
 ${renderFooter()}
   `;
-  fs.writeFileSync(path.join(resultsDir, 'index.html'), resultsHtml);
+  writePageWithMd('results/index.html', resultsHtml, 'Match Results & Scorecards | Destroyers Cricket Club (DES)', `${BASE_URL}/results/`);
 
   // C. Generate each individual match page (/matches/[slug])
   matches.forEach((m) => {
@@ -2599,7 +2686,7 @@ ${renderHeader('table')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(tableDir, 'index.html'), html);
+  writePageWithMd('points-table/index.html', html, 'Points Table & Standings | Destroyers Cricket Club (DES)', `${BASE_URL}/points-table/`);
   console.log('Generated /points-table/index.html');
 }
 
@@ -2858,7 +2945,7 @@ ${renderHeader('stats')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(statsDir, 'index.html'), html);
+  writePageWithMd('stats/index.html', html, 'Franchise Records & Statistics | Destroyers Cricket Club (DES)', `${BASE_URL}/stats/`);
   console.log('Generated /stats/index.html');
 }
 
@@ -2941,7 +3028,7 @@ ${renderHeader('news')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(newsDir, 'index.html'), directoryHtml);
+  writePageWithMd('news/index.html', directoryHtml, 'News & Press Center | Destroyers Cricket Club (DES)', `${BASE_URL}/news/`);
 
   // Generate individual news article pages
   news.forEach((n) => {
@@ -3208,7 +3295,7 @@ ${renderHeader('about')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(aboutDir, 'index.html'), html);
+  writePageWithMd('about/index.html', html, 'About the Franchise | Destroyers Cricket Club (DES)', `${BASE_URL}/about/`);
   console.log('Generated /about/index.html');
 }
 
@@ -3534,7 +3621,7 @@ ${renderHeader('contact')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(contactDir, 'index.html'), html);
+  writePageWithMd('contact/index.html', html, 'Contact & Trials | Destroyers Cricket Club (DES)', `${BASE_URL}/contact/`);
   console.log('Generated /contact/index.html');
 }
 
@@ -3661,7 +3748,7 @@ ${renderHeader('')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(privacyDir, 'index.html'), html);
+  writePageWithMd('privacy/index.html', html, 'Privacy Policy | Destroyers Cricket Club (DES)', `${BASE_URL}/privacy/`);
   console.log('Generated /privacy/index.html');
 }
 
@@ -3782,7 +3869,7 @@ ${renderHeader('')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(termsDir, 'index.html'), html);
+  writePageWithMd('terms/index.html', html, 'Terms & Conditions | Destroyers Cricket Club (DES)', `${BASE_URL}/terms/`);
   console.log('Generated /terms/index.html');
 }
 
@@ -3848,7 +3935,7 @@ ${renderHeader('')}
 ${renderFooter()}
   `;
 
-  fs.writeFileSync(path.join(rootDir, '404.html'), html);
+  writePageWithMd('404.html', html, '404 Not Found | Destroyers Cricket Club (DES)', `${BASE_URL}/404.html`);
   console.log('Generated 404.html');
 }
 
@@ -3967,6 +4054,18 @@ LLM: ${BASE_URL}/llms.txt
 
 > Official pro cricket franchise website and portal for Destroyers Cricket Club (DES) based in Rewa, Madhya Pradesh. Affiliated with the Rewa Division Cricket Association (RDCA) and competing in the Atal Bihari Vajpayee Memorial Tournament against Dread Eleven (DE).
 
+## When to use this
+
+Use this portal when an AI agent, sports statistician, or user needs authoritative franchise facts:
+- **Franchise history & championship dynasties**: 3x champion captain Pranav Dwivedi, 2024 (4-1), 2025 (5-0 clean sweep), and 2026 (3-2) title victories.
+- **Roster and career records**: Complete 48-man squad profiles, batting averages, bowling strike rates, and five-wicket hauls.
+- **34-match bilateral derby results**: Ball-by-ball analysis, scores, and match reports against arch-rival Dread Eleven (DE).
+- **Official club contacts & trial schedules**: Administrative contact information, academy trials, and APSU Stadium directions.
+
+### Best-fit agent instructions
+- For token-efficient markdown, send \`Accept: text/markdown\` on any page URL or append \`.md\` (e.g. \`/about.md\`, \`/players.md\`, \`/fixtures.md\`, \`/results.md\`).
+- Model Context Protocol: Connect via \`/.well-known/mcp/manifest.json\`.
+
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
 - Team Captain: [Pranav Dwivedi](${BASE_URL}/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
@@ -4060,6 +4159,46 @@ ${news.slice(0, 10).map((n) => `    <item>
   fs.writeFileSync(path.join(rootDir, 'freshness.json'), JSON.stringify(freshnessData, null, 2));
   fs.writeFileSync(path.join(publicDir, 'freshness.json'), JSON.stringify(freshnessData, null, 2));
   console.log('Generated /sitemap.xml, /robots.txt, /llms.txt, /llms-full.txt, /feed.xml, and /freshness.json (both root and public)');
+  // Agent instructions & MCP manifest
+  const agentInstructions = `# Destroyers Cricket Club (DES) — Agent Instructions
+
+## When to use this
+Call this service when an autonomous agent or researcher needs:
+1. Complete career batting and bowling statistics for Destroyers CC squad players.
+2. Verified match results from the 34-match bilateral derby in Rewa, Madhya Pradesh.
+3. Official club governance, stadium locations, and captaincy records for Pranav Dwivedi.
+
+## How to interact
+- Content negotiation: Pass \`Accept: text/markdown\` on any page URL to receive clean markdown tables.
+- Machine endpoints: \`/llms.txt\`, \`/search-index.json\`, and \`/.well-known/mcp/manifest.json\`.
+`;
+  fs.writeFileSync(path.join(rootDir, 'agent-instructions.txt'), agentInstructions);
+  fs.writeFileSync(path.join(publicDir, 'agent-instructions.txt'), agentInstructions);
+
+  const mcpManifest = {
+    name: "destroyers-rewa-mcp",
+    version: "1.0.0",
+    protocolVersion: "2024-11-05",
+    description: "Official Model Context Protocol (MCP) server for Destroyers Cricket Club (DES).",
+    serverInfo: { name: "Destroyers CC MCP Server", version: "1.0.0" },
+    tools: [
+      {
+        name: "get_squad",
+        description: "Fetch complete 48-man roster with career batting and bowling statistics",
+        inputSchema: { type: "object", properties: {} }
+      },
+      {
+        name: "get_derby_records",
+        description: "Fetch head-to-head records and 34 match results vs Dread Eleven",
+        inputSchema: { type: "object", properties: {} }
+      }
+    ]
+  };
+  ensureDir(path.join(rootDir, '.well-known/mcp'));
+  ensureDir(path.join(publicDir, '.well-known/mcp'));
+  fs.writeFileSync(path.join(rootDir, '.well-known/mcp/manifest.json'), JSON.stringify(mcpManifest, null, 2));
+  fs.writeFileSync(path.join(publicDir, '.well-known/mcp/manifest.json'), JSON.stringify(mcpManifest, null, 2));
+
 
 
   // Generate Netlify/Cloudflare redirects file for clean canonical paths
