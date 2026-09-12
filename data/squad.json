@@ -4,10 +4,10 @@
     "name": "Pranav Dwivedi",
     "slug": "pranav-dwivedi",
     "jerseyNumber": 7,
-    "role": "Captain & All-rounder",
+    "role": "Captain & Franchise Icon",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast-medium / Off-spin",
-    "matches": 27,
+    "matches": 30,
     "batting": {
       "runs": 1435,
       "balls": 980,
@@ -27,7 +27,7 @@
       "economy": 5.48,
       "bestBowling": "8/39"
     },
-    "bio": "Pranav Dwivedi is the franchise captain and premier all-rounder of Destroyers Cricket Club (DES). Ranking #2 all-time in the tournament rivalry with 1,435 runs (57.4 avg) and 66 wickets across 27 clashes, Pranav captains Destroyers in the Atal Bihari Vajpayee Memorial Tournament, Rewa.",
+    "bio": "Franchise Icon and premier all-rounder of Destroyers Cricket Club. Two-time Atal Bihari Vajpayee Memorial Trophy championship-winning captain (2024, 2025). Captained Destroyers in the 2026 Series Opener.",
     "photo": "/public/players/pranav-dwivedi.svg",
     "matchHistory": [
       {
@@ -500,79 +500,15 @@
         "opponent": "Dread Eleven",
         "format": "T20",
         "season": "2026",
-        "runs": 54,
-        "balls": 35,
-        "fours": 6,
-        "sixes": 2,
-        "sr": "154.3",
-        "dismissal": "c Subhranshu Senapati b Akhil Mishra",
+        "runs": 4,
+        "balls": 3,
+        "fours": 0,
+        "sixes": 0,
+        "sr": "133.3",
+        "dismissal": "run out (Akhil Mishra)",
         "overs": 4,
         "wickets": 1,
-        "runsConceded": 32
-      },
-      {
-        "date": "2026-06-08",
-        "matchSlug": "destroyers-vs-dread-eleven-2026-06-08",
-        "opponent": "Dread Eleven",
-        "format": "T20",
-        "season": "2026",
-        "runs": 42,
-        "balls": 31,
-        "fours": 4,
-        "sixes": 1,
-        "sr": "135.5",
-        "dismissal": "c Akhil Mishra b Avesh Khan",
-        "overs": 4,
-        "wickets": 1,
-        "runsConceded": 28
-      },
-      {
-        "date": "2026-06-12",
-        "matchSlug": "destroyers-vs-dread-eleven-2026-06-12",
-        "opponent": "Dread Eleven",
-        "format": "50 Overs",
-        "season": "2026",
-        "runs": 66,
-        "balls": 72,
-        "fours": 7,
-        "sixes": 1,
-        "sr": "91.7",
-        "dismissal": "c Akhil Mishra b Kuldeep Sen",
-        "overs": 10,
-        "wickets": 2,
-        "runsConceded": 48
-      },
-      {
-        "date": "2026-06-16",
-        "matchSlug": "destroyers-vs-dread-eleven-2026-06-16",
-        "opponent": "Dread Eleven",
-        "format": "50 Overs",
-        "season": "2026",
-        "runs": 71,
-        "balls": 75,
-        "fours": 7,
-        "sixes": 2,
-        "sr": "94.7",
-        "dismissal": "not out",
-        "overs": 10,
-        "wickets": 4,
-        "runsConceded": 48
-      },
-      {
-        "date": "2026-06-20",
-        "matchSlug": "destroyers-vs-dread-eleven-2026-06-20",
-        "opponent": "Dread Eleven",
-        "format": "50 Overs",
-        "season": "2026",
-        "runs": 85,
-        "balls": 88,
-        "fours": 9,
-        "sixes": 2,
-        "sr": "96.6",
-        "dismissal": "c Akhil Mishra b Kuldeep Sen",
-        "overs": 10,
-        "wickets": 3,
-        "runsConceded": 41
+        "runsConceded": 36
       }
     ],
     "last5Matches": [
@@ -645,10 +581,10 @@
     "name": "Aryan Deshmukh",
     "slug": "aryan-deshmukh",
     "jerseyNumber": 11,
-    "role": "Player",
+    "role": "2026 Championship-Winning Captain",
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
-    "matches": 25,
+    "matches": 18,
     "batting": {
       "runs": 620,
       "balls": 480,
@@ -668,7 +604,7 @@
       "economy": 5.12,
       "bestBowling": "4/21"
     },
-    "bio": "Aryan Deshmukh is a key player for Destroyers Cricket Club (DES) in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Contributing with both bat and ball against arch-rivals Dread Eleven at APSU Stadium and Martand Ground under RDCA.",
+    "bio": "Dynamic all-rounder and 2026 Championship-Winning Captain of Destroyers Cricket Club. Stepped up to lead Destroyers through the 2026 season and hoisted the Atal Bihari Vajpayee Memorial Trophy after a thrilling 12-run Final triumph.",
     "photo": "/public/players/aryan-deshmukh.svg",
     "matchHistory": [
       {
@@ -896,22 +832,6 @@
         "runsConceded": 55
       },
       {
-        "date": "2026-06-05",
-        "matchSlug": "destroyers-vs-dread-eleven-2026-06-05",
-        "opponent": "Dread Eleven",
-        "format": "T20",
-        "season": "2026",
-        "runs": 0,
-        "balls": 0,
-        "fours": 0,
-        "sixes": 0,
-        "sr": "0.0",
-        "dismissal": "dnb",
-        "overs": 4,
-        "wickets": 1,
-        "runsConceded": 38
-      },
-      {
         "date": "2026-06-08",
         "matchSlug": "destroyers-vs-dread-eleven-2026-06-08",
         "opponent": "Dread Eleven",
@@ -924,8 +844,8 @@
         "sr": "0.0",
         "dismissal": "dnb",
         "overs": 4,
-        "wickets": 1,
-        "runsConceded": 34
+        "wickets": 2,
+        "runsConceded": 28
       },
       {
         "date": "2026-06-12",
@@ -933,15 +853,15 @@
         "opponent": "Dread Eleven",
         "format": "50 Overs",
         "season": "2026",
-        "runs": 0,
-        "balls": 0,
+        "runs": 2,
+        "balls": 6,
         "fours": 0,
         "sixes": 0,
-        "sr": "0.0",
-        "dismissal": "dnb",
+        "sr": "33.3",
+        "dismissal": "c Akhil Mishra b Avesh Khan",
         "overs": 10,
-        "wickets": 1,
-        "runsConceded": 56
+        "wickets": 2,
+        "runsConceded": 48
       },
       {
         "date": "2026-06-16",
@@ -949,15 +869,15 @@
         "opponent": "Dread Eleven",
         "format": "50 Overs",
         "season": "2026",
-        "runs": 0,
-        "balls": 0,
+        "runs": 2,
+        "balls": 6,
         "fours": 0,
         "sixes": 0,
-        "sr": "0.0",
-        "dismissal": "dnb",
+        "sr": "33.3",
+        "dismissal": "not out",
         "overs": 10,
-        "wickets": 0,
-        "runsConceded": 53
+        "wickets": 1,
+        "runsConceded": 52
       },
       {
         "date": "2026-06-20",
@@ -965,15 +885,15 @@
         "opponent": "Dread Eleven",
         "format": "50 Overs",
         "season": "2026",
-        "runs": 0,
-        "balls": 0,
-        "fours": 0,
+        "runs": 31,
+        "balls": 38,
+        "fours": 3,
         "sixes": 0,
-        "sr": "0.0",
-        "dismissal": "dnb",
+        "sr": "81.6",
+        "dismissal": "c Akhil Mishra b Saransh Jain",
         "overs": 10,
-        "wickets": 1,
-        "runsConceded": 58
+        "wickets": 2,
+        "runsConceded": 52
       }
     ],
     "last5Matches": [

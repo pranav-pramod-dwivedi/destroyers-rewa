@@ -73,9 +73,9 @@ Franchise Roster
  Showing all **48** players
  Click player card to inspect telemetry
 
- [97 OVR HOT ## #7 Pranav Dwivedi Captain &amp; All-rounder BAT PWR 96 TIMING 95 STAMINA 94 CLUTCH 99 ●●●●● View Profile &rarr;](/players/pranav-dwivedi)
+ [97 OVR HOT ## #7 Pranav Dwivedi Captain &amp; Franchise Icon BAT PWR 96 TIMING 95 STAMINA 94 CLUTCH 99 ●●●●● View Profile &rarr;](/players/pranav-dwivedi)
 
- [92 OVR HOT ## #11 Aryan Deshmukh Player BAT PWR 95 TIMING 95 STAMINA 88 CLUTCH 86 ●●●●● View Profile &rarr;](/players/aryan-deshmukh)
+ [92 OVR HOT ## #11 Aryan Deshmukh 2026 Championship-Winning Captain BAT PWR 95 TIMING 95 STAMINA 88 CLUTCH 86 ●●●●● View Profile &rarr;](/players/aryan-deshmukh)
 
  [94 OVR HOT ## #18 Shivam Shukla Player BAT PWR 95 TIMING 95 STAMINA 88 CLUTCH 86 ●●●●● View Profile &rarr;](/players/shivam-shukla)
 

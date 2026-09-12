@@ -763,7 +763,7 @@ ${renderHeader('home')}
         <div class="spotlight-tagline">2026 Championship Triumph • Series Winners</div>
         <h2 class="spotlight-headline">DESTROYERS DEFEND TITLE IN 2026 GRAND FINALE (3–2)</h2>
         <p class="spotlight-prose">
-          In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve behind captain Pranav Dwivedi's match-winning 85 runs &amp; 3/41.
+          In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve under 2026 Championship-winning Captain Aryan Deshmukh, anchored by Ajay Rohera's 94 (98) and a disciplined bowling defense.
         </p>
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
           <a href="/matches/destroyers-vs-dread-eleven-2026-06-20/" class="btn-athletic btn-athletic-primary">
@@ -803,7 +803,7 @@ ${renderHeader('home')}
           WE ARE THE CHAMPIONS: <span style="color:var(--c-ember-bright);">THE MODERN ERA DYNASTY</span>
         </h2>
         <p style="color:var(--c-gray-300); font-size:1.05rem; max-width:68ch; margin-top:0.75rem; line-height:1.6;">
-          Three consecutive Atal Bihari Vajpayee Memorial Trophy titles (2024, 2025, 2026) captained by Pranav Dwivedi. A ferocious modern dynasty highlighted by a 5–0 historic clean sweep and unrivaled derby dominance.
+          Three consecutive Atal Bihari Vajpayee Memorial Trophy titles (2024, 2025, 2026). Led by Pranav Dwivedi in 2024 and 2025, and captained to the 2026 championship crown by winning skipper Aryan Deshmukh. A ferocious modern dynasty highlighted by a 5–0 historic clean sweep and unrivaled derby dominance.
         </p>
       </div>
       <div style="display:flex; align-items:center; gap:1rem;">
@@ -844,22 +844,22 @@ ${renderHeader('home')}
         <div>
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
             <span style="font-family:var(--f-athletic); font-size:2.25rem; font-weight:900; color:var(--c-gold); line-height:1;">2025</span>
-            <span style="background:rgba(255,215,0,0.15); color:var(--c-gold); font-family:var(--f-mono); font-size:0.7rem; font-weight:800; padding:0.25rem 0.6rem; border-radius:2px; border:1px solid rgba(255,215,0,0.3);">PERFECT 5–0 CLEAN SWEEP</span>
+            <span style="background:rgba(255,215,0,0.15); color:var(--c-gold); font-family:var(--f-mono); font-size:0.7rem; font-weight:800; padding:0.25rem 0.6rem; border-radius:2px; border:1px solid rgba(255,215,0,0.35);">THE 5–0 CLEAN SWEEP</span>
           </div>
           <h3 style="font-family:var(--f-athletic); font-size:1.6rem; color:var(--c-white); text-transform:uppercase; margin-bottom:0.75rem; line-height:1.15;">
-            The Undefeated Whitewash
+            2025 Invincible Clean Sweep
           </h3>
           <p style="font-size:0.875rem; color:var(--c-gray-300); line-height:1.6; margin-bottom:1.25rem;">
-            The greatest single-season run in Rewa division cricket history. Destroyers swept all 5 fixtures in 2025 without a single defeat, outclassing Dread Eleven across 50-over and T20 disciplines with clinical precision.
+            The greatest single season in tournament history. Destroyers achieved perfection by sweeping all five matches 5–0 under skipper Pranav Dwivedi.
           </p>
           <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:0.85rem; border-radius:2px; margin-bottom:1.5rem; font-family:var(--f-mono); font-size:0.75rem;">
             <div style="color:var(--c-gold); font-weight:700; margin-bottom:0.25rem;">CLIMAX HIGHLIGHT (20 SEP 2025)</div>
-            <div style="color:var(--c-white);">DES 268/6 def. DE 253 by 15 runs</div>
-            <div style="color:var(--c-gray-400); margin-top:0.2rem;">POTM: Venkatesh Iyer (74 off 65)</div>
+            <div style="color:var(--c-white);">DES 286/7 def. DE 252 by 34 runs</div>
+            <div style="color:var(--c-gray-400); margin-top:0.2rem;">POTM: Venkatesh Iyer (106 off 92 &amp; 2/36)</div>
           </div>
         </div>
         <a href="/matches/destroyers-vs-dread-eleven-2025-09-20" class="btn-athletic btn-athletic-primary btn-sm" style="width:100%; justify-content:center; text-decoration:none;">
-          <span>Inspect 2025 Clean Sweep Scorecard &rarr;</span>
+          <span>Inspect 2025 Finale Scorecard &rarr;</span>
         </a>
       </div>
 
@@ -875,10 +875,10 @@ ${renderHeader('home')}
             2026 Grand Finale Defense
           </h3>
           <p style="font-size:0.875rem; color:var(--c-gray-300); line-height:1.6; margin-bottom:1.25rem;">
-            In a heart-stopping 2026 Grand Finale at APSU Stadium, Destroyers defended 284 with ice-cool nerve, holding off Dread Eleven's late surge by 12 runs to capture their third consecutive championship.
+            In a heart-stopping 2026 Grand Finale at APSU Stadium, Destroyers defended 284 with ice-cool nerve under 2026 Championship-winning Captain Aryan Deshmukh, holding off Dread Eleven by 12 runs to capture their third consecutive championship.
           </p>
           <div style="background:var(--c-dark-surface); border:1px solid var(--b-subtle); padding:0.85rem; border-radius:2px; margin-bottom:1.5rem; font-family:var(--f-mono); font-size:0.75rem;">
-            <div style="color:var(--c-gold); font-weight:700; margin-bottom:0.25rem;">CLIMAX HIGHLIGHT (20 SEP 2026)</div>
+            <div style="color:var(--c-gold); font-weight:700; margin-bottom:0.25rem;">CLIMAX HIGHLIGHT (20 JUN 2026)</div>
             <div style="color:var(--c-white);">DES 284/7 def. DE 272 by 12 runs</div>
             <div style="color:var(--c-gray-400); margin-top:0.2rem;">POTM: Ajay Rohera (94 off 98)</div>
           </div>
@@ -899,7 +899,7 @@ ${renderHeader('home')}
           The Red Wave: How Destroyers Conquered Rewa Cricket
         </h3>
         <p style="font-size:0.95rem; color:var(--c-gray-300); line-height:1.7; margin-bottom:1rem;">
-          From 2024 through 2026, Destroyers executed one of the most dominant dynasties in regional Indian cricket. Amassing 12 victories across 15 clashes (80.0% win rate) and clinching three consecutive titles, skipper Pranav Dwivedi built an aggressive, fearless squad capable of defending totals under high pressure.
+          From 2024 through 2026, Destroyers executed one of the most dominant dynasties in regional Indian cricket. Amassing 12 victories across 15 clashes (80.0% win rate) and clinching three consecutive titles, Destroyers cemented their modern era dynasty under captains Pranav Dwivedi (2024, 2025; 2026 opener) and Aryan Deshmukh (2026 winning captain).
         </p>
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
           <a href="/results" class="btn-athletic btn-athletic-outline">
@@ -1354,7 +1354,7 @@ ${renderHead({
     ? 'Capt. Pranav Dwivedi (#7) — Career Stats | Destroyers CC'
     : clampTitle(`#${p.jerseyNumber} ${p.name} — Career Stats | Destroyers CC`, 60),
   description: isPranav
-    ? 'Official career profile for Pranav Dwivedi (#7), 3x champion captain of Destroyers Cricket Club in Rewa. 1,435 runs (57.4 avg), 66 wickets, and RDCA records.'
+    ? 'Official career profile for Pranav Dwivedi (#7), 2x champion captain & franchise icon of Destroyers Cricket Club in Rewa. 1,435 runs (57.4 avg), 66 wickets, and RDCA records.'
     : clampDesc(`${p.name} (#${p.jerseyNumber}) official career profile for Destroyers Cricket Club in Rewa. ${p.role} with ${p.batting.runs} runs, ${p.bowling.wickets} wickets, and match records.`, 155),
   canonicalUrl: `/players/${p.slug}`,
   ogType: 'profile',
@@ -4062,7 +4062,7 @@ LLM: ${BASE_URL}/llms.txt
 ## When to use this
 
 Use this portal when an AI agent, sports statistician, or user needs authoritative franchise facts:
-- **Franchise history & championship dynasties**: 3x champion captain Pranav Dwivedi, 2024 (4-1), 2025 (5-0 clean sweep), and 2026 (3-2) title victories.
+- **Franchise history & championship dynasties**: 3x consecutive championship titles — 2024 (4-1) & 2025 (5-0 clean sweep) under captain Pranav Dwivedi, and 2026 (3-2) under winning captain Aryan Deshmukh.
 - **Roster and career records**: Complete 48-man squad profiles, batting averages, bowling strike rates, and five-wicket hauls.
 - **34-match bilateral derby results**: Ball-by-ball analysis, scores, and match reports against arch-rival Dread Eleven (DE).
 - **Official club contacts & trial schedules**: Administrative contact information, academy trials, and APSU Stadium directions.
@@ -4073,7 +4073,8 @@ Use this portal when an AI agent, sports statistician, or user needs authoritati
 
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
-- Team Captain: [Pranav Dwivedi](${BASE_URL}/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
+- Club Captain & Franchise Icon: [Pranav Dwivedi](${BASE_URL}/players/pranav-dwivedi): Captain & All-rounder (#7). 2x title-winning captain (2024, 2025; 2026 opener captain). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
+- 2026 Championship-Winning Captain: [Aryan Deshmukh](${BASE_URL}/players/aryan-deshmukh): All-rounder (#11). 2026 winning skipper who hoisted the trophy after a 12-run Final victory.
 - Machine-Readable Captain Profile: [Pranav Dwivedi JSON](${BASE_URL}/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](${BASE_URL}/players/pranav-dwivedi.md) | [Independent Portfolio](https://pranav-dwivedi.pages.dev/) | [GitHub Pages Portfolio](https://pranav-pramod-dwivedi.github.io/)
 - Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
 - Governing Association: Rewa Division Cricket Association (RDCA)

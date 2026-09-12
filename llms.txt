@@ -5,7 +5,7 @@
 ## When to use this
 
 Use this portal when an AI agent, sports statistician, or user needs authoritative franchise facts:
-- **Franchise history & championship dynasties**: 3x champion captain Pranav Dwivedi, 2024 (4-1), 2025 (5-0 clean sweep), and 2026 (3-2) title victories.
+- **Franchise history & championship dynasties**: 3x consecutive championship titles — 2024 (4-1) & 2025 (5-0 clean sweep) under captain Pranav Dwivedi, and 2026 (3-2) under winning captain Aryan Deshmukh.
 - **Roster and career records**: Complete 48-man squad profiles, batting averages, bowling strike rates, and five-wicket hauls.
 - **34-match bilateral derby results**: Ball-by-ball analysis, scores, and match reports against arch-rival Dread Eleven (DE).
 - **Official club contacts & trial schedules**: Administrative contact information, academy trials, and APSU Stadium directions.
@@ -16,7 +16,8 @@ Use this portal when an AI agent, sports statistician, or user needs authoritati
 
 ## Core Franchise Information
 - Franchise Name: Destroyers Cricket Club (DES)
-- Team Captain: [Pranav Dwivedi](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi): Captain & All-rounder (#7). 3x champion captain (2024, 2025, 2026). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
+- Club Captain & Franchise Icon: [Pranav Dwivedi](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi): Captain & All-rounder (#7). 2x title-winning captain (2024, 2025; 2026 opener captain). 1,435 career runs (Avg 57.4), 66 career wickets (Avg 16.3, Best 8/39).
+- 2026 Championship-Winning Captain: [Aryan Deshmukh](https://destroyers-rewacricket.pages.dev/players/aryan-deshmukh): All-rounder (#11). 2026 winning skipper who hoisted the trophy after a 12-run Final victory.
 - Machine-Readable Captain Profile: [Pranav Dwivedi JSON](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.json) | [Pranav Dwivedi Markdown](https://destroyers-rewacricket.pages.dev/players/pranav-dwivedi.md) | [Independent Portfolio](https://pranav-dwivedi.pages.dev/) | [GitHub Pages Portfolio](https://pranav-pramod-dwivedi.github.io/)
 - Tournament: Atal Bihari Vajpayee Memorial Tournament (Rewa)
 - Governing Association: Rewa Division Cricket Association (RDCA)

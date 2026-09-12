@@ -97,7 +97,7 @@ Destroyers Cricket Club | Official Website &amp; Team Arena
 
 ## DESTROYERS DEFEND TITLE IN 2026 GRAND FINALE (3–2)
 
- In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve behind captain Pranav Dwivedi's match-winning 85 runs &amp; 3/41.
+ In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve under 2026 Championship-winning Captain Aryan Deshmukh, anchored by Ajay Rohera's 94 (98) and a disciplined bowling defense.
 
  [2026 Finale Scorecard](/matches/destroyers-vs-dread-eleven-2026-06-20/)
  [Read Franchise History](/about)
@@ -114,7 +114,7 @@ Destroyers Cricket Club | Official Website &amp; Team Arena
 
 ## WE ARE THE CHAMPIONS: THE MODERN ERA DYNASTY
 
- Three consecutive Atal Bihari Vajpayee Memorial Trophy titles (2024, 2025, 2026) captained by Pranav Dwivedi. A ferocious modern dynasty highlighted by a 5–0 historic clean sweep and unrivaled derby dominance.
+ Three consecutive Atal Bihari Vajpayee Memorial Trophy titles (2024, 2025, 2026). Led by Pranav Dwivedi in 2024 and 2025, and captained to the 2026 championship crown by winning skipper Aryan Deshmukh. A ferocious modern dynasty highlighted by a 5–0 historic clean sweep and unrivaled derby dominance.
 
  REIGNING THREE-PEAT KINGS
 
@@ -132,26 +132,26 @@ Destroyers Cricket Club | Official Website &amp; Team Arena
  [Inspect 2024 Title Decider Scorecard &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-20)
 
  2025
- PERFECT 5–0 CLEAN SWEEP
+ THE 5–0 CLEAN SWEEP
 
-### The Undefeated Whitewash
+### 2025 Invincible Clean Sweep
 
- The greatest single-season run in Rewa division cricket history. Destroyers swept all 5 fixtures in 2025 without a single defeat, outclassing Dread Eleven across 50-over and T20 disciplines with clinical precision.
+ The greatest single season in tournament history. Destroyers achieved perfection by sweeping all five matches 5–0 under skipper Pranav Dwivedi.
 
  CLIMAX HIGHLIGHT (20 SEP 2025)
- DES 268/6 def. DE 253 by 15 runs
- POTM: Venkatesh Iyer (74 off 65)
+ DES 286/7 def. DE 252 by 34 runs
+ POTM: Venkatesh Iyer (106 off 92 &amp; 2/36)
 
- [Inspect 2025 Clean Sweep Scorecard &rarr;](/matches/destroyers-vs-dread-eleven-2025-09-20)
+ [Inspect 2025 Finale Scorecard &rarr;](/matches/destroyers-vs-dread-eleven-2025-09-20)
 
  2026
  THE THREE-PEAT DEFENSE • 3–2
 
 ### 2026 Grand Finale Defense
 
- In a heart-stopping 2026 Grand Finale at APSU Stadium, Destroyers defended 284 with ice-cool nerve, holding off Dread Eleven's late surge by 12 runs to capture their third consecutive championship.
+ In a heart-stopping 2026 Grand Finale at APSU Stadium, Destroyers defended 284 with ice-cool nerve under 2026 Championship-winning Captain Aryan Deshmukh, holding off Dread Eleven by 12 runs to capture their third consecutive championship.
 
- CLIMAX HIGHLIGHT (20 SEP 2026)
+ CLIMAX HIGHLIGHT (20 JUN 2026)
  DES 284/7 def. DE 272 by 12 runs
  POTM: Ajay Rohera (94 off 98)
 
@@ -161,7 +161,7 @@ Destroyers Cricket Club | Official Website &amp; Team Arena
 
 ### The Red Wave: How Destroyers Conquered Rewa Cricket
 
- From 2024 through 2026, Destroyers executed one of the most dominant dynasties in regional Indian cricket. Amassing 12 victories across 15 clashes (80.0% win rate) and clinching three consecutive titles, skipper Pranav Dwivedi built an aggressive, fearless squad capable of defending totals under high pressure.
+ From 2024 through 2026, Destroyers executed one of the most dominant dynasties in regional Indian cricket. Amassing 12 victories across 15 clashes (80.0% win rate) and clinching three consecutive titles, Destroyers cemented their modern era dynasty under captains Pranav Dwivedi (2024, 2025; 2026 opener) and Aryan Deshmukh (2026 winning captain).
 
  [Browse All 19 DES Derby Wins &rarr;](/results)
  [Read Franchise Legacy &rarr;](/about)
@@ -198,9 +198,9 @@ The Leaders
  Batters
  Wicketkeepers
 
- [97 OVR HOT ### #7 Pranav Dwivedi Captain &amp; All-rounder BAT PWR 96 TIMING 95 STAMINA 94 CLUTCH 99 ●●●●● View Profile &rarr;](/players/pranav-dwivedi)
+ [97 OVR HOT ### #7 Pranav Dwivedi Captain &amp; Franchise Icon BAT PWR 96 TIMING 95 STAMINA 94 CLUTCH 99 ●●●●● View Profile &rarr;](/players/pranav-dwivedi)
 
- [92 OVR HOT ### #11 Aryan Deshmukh Player BAT PWR 95 TIMING 95 STAMINA 88 CLUTCH 86 ●●●●● View Profile &rarr;](/players/aryan-deshmukh)
+ [92 OVR HOT ### #11 Aryan Deshmukh 2026 Championship-Winning Captain BAT PWR 95 TIMING 95 STAMINA 88 CLUTCH 86 ●●●●● View Profile &rarr;](/players/aryan-deshmukh)
 
  [94 OVR HOT ### #18 Shivam Shukla Player BAT PWR 95 TIMING 95 STAMINA 88 CLUTCH 86 ●●●●● View Profile &rarr;](/players/shivam-shukla)
 

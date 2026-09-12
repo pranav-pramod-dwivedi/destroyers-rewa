@@ -12625,8 +12625,8 @@
             "economy": 7.5
           },
           {
-            "playerId": "p-aryan-deshmukh",
-            "playerName": "Aryan Deshmukh",
+            "playerId": "p-pranav-dwivedi",
+            "playerName": "Pranav Dwivedi",
             "overs": 4,
             "maidens": 0,
             "runs": 36,
@@ -12736,8 +12736,8 @@
             "strikeRate": 100.0
           },
           {
-            "playerId": "p-aryan-deshmukh",
-            "playerName": "Aryan Deshmukh",
+            "playerId": "p-pranav-dwivedi",
+            "playerName": "Pranav Dwivedi",
             "runs": 4,
             "balls": 3,
             "fours": 0,
@@ -12818,15 +12818,15 @@
           }
         ],
         "captain": {
-          "playerId": "p-aryan-deshmukh",
-          "playerName": "Aryan Deshmukh"
+          "playerId": "p-pranav-dwivedi",
+          "playerName": "Pranav Dwivedi"
         }
       }
     ],
     "captains": {
       "DES": {
-        "playerId": "p-aryan-deshmukh",
-        "playerName": "Aryan Deshmukh"
+        "playerId": "p-pranav-dwivedi",
+        "playerName": "Pranav Dwivedi"
       },
       "DE": {
         "playerId": "p-yash-dubey",
@@ -13972,8 +13972,8 @@
             "strikeRate": 110.8
           },
           {
-            "playerId": "p-pranav-dwivedi",
-            "playerName": "Pranav Dwivedi",
+            "playerId": "p-aryan-deshmukh",
+            "playerName": "Aryan Deshmukh",
             "runs": 31,
             "balls": 38,
             "fours": 3,
@@ -14090,8 +14090,8 @@
           }
         ],
         "captain": {
-          "playerId": "p-pranav-dwivedi",
-          "playerName": "Pranav Dwivedi"
+          "playerId": "p-aryan-deshmukh",
+          "playerName": "Aryan Deshmukh"
         }
       },
       {
@@ -14130,7 +14130,7 @@
             "balls": 64,
             "fours": 5,
             "sixes": 1,
-            "dismissal": "c Pranav Dwivedi b Kulwant Khejroliya",
+            "dismissal": "c Aryan Deshmukh b Kulwant Khejroliya",
             "strikeRate": 90.6
           },
           {
@@ -14140,7 +14140,7 @@
             "balls": 34,
             "fours": 3,
             "sixes": 0,
-            "dismissal": "b Pranav Dwivedi",
+            "dismissal": "b Sani Patel",
             "strikeRate": 88.2
           },
           {
@@ -14243,8 +14243,8 @@
             "economy": 5.89
           },
           {
-            "playerId": "p-pranav-dwivedi",
-            "playerName": "Pranav Dwivedi",
+            "playerId": "p-sani-patel",
+            "playerName": "Sani Patel",
             "overs": 6,
             "maidens": 0,
             "runs": 32,
@@ -14278,8 +14278,8 @@
     ],
     "captains": {
       "DES": {
-        "playerId": "p-pranav-dwivedi",
-        "playerName": "Pranav Dwivedi"
+        "playerId": "p-aryan-deshmukh",
+        "playerName": "Aryan Deshmukh"
       },
       "DE": {
         "playerId": "p-akhil-mishra",

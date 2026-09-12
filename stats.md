@@ -88,13 +88,13 @@ Atal Bihari Vajpayee Memorial Tournament &bull; Official Telemetry
 | Player | Mat | Runs | Avg | SR | 50s |
 | --- | --- | --- | --- | --- | --- |
 | Venkatesh Iyer | 26 | 1485 | 55 | 138.5 | 11 |
-| Pranav Dwivedi | 27 | 1435 | 57.4 | 146.4 | 14 |
+| Pranav Dwivedi | 30 | 1435 | 57.4 | 146.4 | 14 |
 | Ajay Rohera | 24 | 1280 | 47.4 | 114.3 | 9 |
 | Rajat Patidar | 20 | 1150 | 52.3 | 136.9 | 8 |
 | Akshat Raghuwanshi | 22 | 1020 | 42.5 | 115.9 | 7 |
 | Chanchal Rathore | 20 | 940 | 39.2 | 127 | 8 |
 | Shubham Sharma | 22 | 820 | 39 | 109.3 | 6 |
-| Aryan Deshmukh | 25 | 620 | 34.4 | 129.2 | 3 |
+| Aryan Deshmukh | 18 | 620 | 34.4 | 129.2 | 3 |
 | Rahul Batham | 22 | 480 | 30 | 117.1 | 2 |
 | Sagar Pratap Singh | 22 | 280 | 23.3 | 107.7 | 0 |
 
@@ -103,8 +103,8 @@ Atal Bihari Vajpayee Memorial Tournament &bull; Official Telemetry
 | Bowler | Mat | Wkts | Overs | BBI | Eco |
 | --- | --- | --- | --- | --- | --- |
 | Kulwant Khejroliya | 28 | 72 | 172 | 5/24 | 5.08 |
-| Pranav Dwivedi | 27 | 66 | 148 | 8/39 | 5.48 |
-| Aryan Deshmukh | 25 | 48 | 134 | 4/21 | 5.12 |
+| Pranav Dwivedi | 30 | 66 | 148 | 8/39 | 5.48 |
+| Aryan Deshmukh | 18 | 48 | 134 | 4/21 | 5.12 |
 | Sagar Pratap Singh | 22 | 42 | 128 | 5/60 | 5.22 |
 | Rahul Batham | 22 | 35 | 112 | 3/28 | 5.45 |
 | Venkatesh Iyer | 26 | 14 | 42 | 3/20 | 6.8 |
@@ -117,7 +117,7 @@ Atal Bihari Vajpayee Memorial Tournament &bull; Official Telemetry
 
 | Player | Mat | Runs | Average | SR |
 | --- | --- | --- | --- | --- |
-| Pranav Dwivedi | 27 | 1435 | 57.4 | 146.4 |
+| Pranav Dwivedi | 30 | 1435 | 57.4 | 146.4 |
 | Shivam Shukla | 6 | 222 | 55.5 | 87.1 |
 | Venkatesh Iyer | 26 | 1485 | 55 | 138.5 |
 | Rajat Patidar | 20 | 1150 | 52.3 | 136.9 |
@@ -126,7 +126,7 @@ Atal Bihari Vajpayee Memorial Tournament &bull; Official Telemetry
 | Chanchal Rathore | 20 | 940 | 39.2 | 127 |
 | Shubham Sharma | 22 | 820 | 39 | 109.3 |
 | Anubhav Agarwal | 7 | 214 | 35.7 | 91.1 |
-| Aryan Deshmukh | 25 | 620 | 34.4 | 129.2 |
+| Aryan Deshmukh | 18 | 620 | 34.4 | 129.2 |
 | Harsh Gawli | 7 | 129 | 32.2 | 97.7 |
 | Rahul Batham | 22 | 480 | 30 | 117.1 |
 | Atharv Mahajan | 7 | 120 | 30 | 100.8 |
