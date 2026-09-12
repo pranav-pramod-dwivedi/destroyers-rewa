@@ -223,7 +223,7 @@
         <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}">
           <div class="pro-match-header">
             <span class="pro-fmt-tag ${m.format.toLowerCase()}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
-            ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold); letter-spacing:0.04em;">2022 CHAMPIONSHIP FINAL</span>' : '<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); font-weight:700;">MATCH #' + esc(m.matchNumber) + '</span>'}
+            ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold); letter-spacing:0.04em;">' + esc(m.seasonYear || m.season || '2026') + ' CHAMPIONSHIP FINAL</span>' : '<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); font-weight:700;">MATCH #' + esc(m.matchNumber) + '</span>'}
           </div>
 
           <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem; display:flex; align-items:center; gap:0.4rem;">
@@ -878,7 +878,7 @@
       { type: 'Player', badge: 'player', icon: '⚡', title: 'Pranav Dwivedi (#7) — Captain & Premier All-Rounder', subtitle: 'Captain • 1,998 runs (Avg 58.8) • 85 wickets (BB 8/39)', url: '/players/pranav-dwivedi', text: 'Pranav Dwivedi Captain skipper all rounder 1998 runs 85 wickets 102* Destroyers Rewa' },
       { type: 'Player', badge: 'player', icon: '🔥', title: 'Anant Verma (#18) — Explosive Top-Order Batter', subtitle: 'Batter • 1,120 runs • 8 fifties', url: '/players/anant-verma', text: 'Anant Verma top order batter 1120 runs Destroyers Rewa' },
       { type: 'Player', badge: 'player', icon: '🎯', title: 'Sagar Pratap Singh (#24) — Clutch Strike Bowler', subtitle: 'Pace Bowler • 62 wickets • BB 5/26', url: '/players/sagar-pratap-singh', text: 'Sagar Pratap Singh pace bowler 62 wickets Destroyers' },
-      { type: 'Match', badge: 'match', icon: '🏆', title: '2026 Finale: Destroyers def. Dread Eleven by 12 runs', subtitle: '20 Sep 2026 • APSU Stadium, Rewa • POTM: Pranav Dwivedi', url: '/matches/destroyers-vs-dread-eleven-2026-09-20', text: '2026 Championship Final APSU Stadium Destroyers Dread Eleven 12 runs Pranav Dwivedi' },
+      { type: 'Match', badge: 'match', icon: '🏆', title: '2026 Finale: Destroyers def. Dread Eleven by 12 runs', subtitle: '20 Jun 2026 • APSU Stadium, Rewa • POTM: Ajay Rohera', url: '/matches/destroyers-vs-dread-eleven-2026-06-20/', text: '2026 Championship Final APSU Stadium Destroyers Dread Eleven 12 runs Ajay Rohera' },
       { type: 'Match', badge: 'match', icon: '🏏', title: '2025 Final: Destroyers def. Dread Eleven by 48 runs', subtitle: '18 Sep 2025 • APSU Stadium, Rewa • 5-0 Clean Sweep', url: '/matches/destroyers-vs-dread-eleven-2025-09-18', text: '2025 Final clean sweep 5-0 Destroyers Dread Eleven' },
       { type: 'Venue', badge: 'venue', icon: '📍', title: 'APSU Stadium, Rewa (Awadhesh Pratap Singh University)', subtitle: 'Premier 15,000 capacity turf stadium in Rewa', url: '/fixtures', text: 'APSU Stadium Rewa Awadhesh Pratap Singh University finals turf wicket' },
       { type: 'Venue', badge: 'venue', icon: '🏟️', title: 'Martand School Ground No. 3, Rewa', subtitle: 'Historic turf, spiritual home of the Rewa Derby', url: '/fixtures', text: 'Martand Ground No 3 Rewa spin derby' },

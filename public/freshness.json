@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T22:16:24.274Z",
+  "lastUpdated": "2026-09-12T11:12:29.810Z",
   "site": "Destroyers Cricket Club",
   "domain": "https://destroyers-rewacricket.pages.dev",
   "tournament": "Atal Bihari Vajpayee Memorial Tournament",
@@ -7,13 +7,13 @@
   "latestMatch": {
     "id": "m-shared-64",
     "matchNumber": 34,
-    "slug": "destroyers-vs-dread-eleven-2026-09-20",
+    "slug": "destroyers-vs-dread-eleven-2026-06-20",
     "seasonYear": "2026",
     "tournamentName": "Atal Bihari Vajpayee Memorial Tournament",
     "stage": "2026 Championship Final",
     "format": "50 Overs",
     "status": "completed",
-    "matchDate": "2026-09-20",
+    "matchDate": "2026-06-20",
     "time": "09:30 IST",
     "venue": {
       "id": "v-apsu",

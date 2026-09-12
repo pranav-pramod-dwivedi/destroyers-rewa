@@ -204,7 +204,7 @@ HISTORICAL ARCHIVE
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2021-08-20)
 
  T20 • SEASON 2021
- 2022 CHAMPIONSHIP FINAL
+ 2021 CHAMPIONSHIP FINAL
 
  28 Aug 2021 • Martand School Ground No. 3
 
@@ -456,7 +456,7 @@ HISTORICAL ARCHIVE
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-16)
 
  50 Overs • SEASON 2023
- 2022 CHAMPIONSHIP FINAL
+ 2023 CHAMPIONSHIP FINAL
 
  20 Sep 2023 • Martand School Ground No. 3
 
@@ -561,7 +561,7 @@ HISTORICAL ARCHIVE
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-16)
 
  50 Overs • SEASON 2024
- 2022 CHAMPIONSHIP FINAL
+ 2024 CHAMPIONSHIP FINAL
 
  20 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium
 
@@ -666,7 +666,7 @@ HISTORICAL ARCHIVE
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2025-09-16)
 
  50 Overs • SEASON 2025
- 2022 CHAMPIONSHIP FINAL
+ 2025 CHAMPIONSHIP FINAL
 
  20 Sep 2025 • Awadhesh Pratap Singh University (APSU) Stadium
 
@@ -689,7 +689,7 @@ HISTORICAL ARCHIVE
  T20 • SEASON 2026
  MATCH #30
 
- 05 Sep 2026 • Awadhesh Pratap Singh University (APSU) Stadium
+ 05 Jun 2026 • Awadhesh Pratap Singh University (APSU) Stadium
 
  DES
  Destroyers
@@ -705,12 +705,12 @@ HISTORICAL ARCHIVE
 
  Player of Match: **Yash Dubey** (92 (54 balls))
 
- [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-09-05)
+ [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-05)
 
  T20 • SEASON 2026
  MATCH #31
 
- 08 Sep 2026 • Martand School Ground No. 3
+ 08 Jun 2026 • Martand School Ground No. 3
 
  DES
  Destroyers
@@ -726,12 +726,12 @@ HISTORICAL ARCHIVE
 
  Player of Match: **Venkatesh Iyer** (82* (48 balls))
 
- [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-09-08)
+ [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-08)
 
  50 Overs • SEASON 2026
  MATCH #32
 
- 12 Sep 2026 • Awadhesh Pratap Singh University (APSU) Stadium
+ 12 Jun 2026 • Awadhesh Pratap Singh University (APSU) Stadium
 
  DES
  Destroyers
@@ -747,12 +747,12 @@ HISTORICAL ARCHIVE
 
  Player of Match: **Yash Dubey** (114 (108 balls))
 
- [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-09-12)
+ [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-12)
 
  50 Overs • SEASON 2026
  MATCH #33
 
- 16 Sep 2026 • Martand School Ground No. 3
+ 16 Jun 2026 • Martand School Ground No. 3
 
  DES
  Destroyers
@@ -768,12 +768,12 @@ HISTORICAL ARCHIVE
 
  Player of Match: **Venkatesh Iyer** (115 (102 balls))
 
- [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-09-16)
+ [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-16)
 
  50 Overs • SEASON 2026
- 2022 CHAMPIONSHIP FINAL
+ 2026 CHAMPIONSHIP FINAL
 
- 20 Sep 2026 • Awadhesh Pratap Singh University (APSU) Stadium
+ 20 Jun 2026 • Awadhesh Pratap Singh University (APSU) Stadium
 
  DES
  Destroyers
@@ -789,7 +789,7 @@ HISTORICAL ARCHIVE
 
  Player of Match: **Ajay Rohera** (94 (98) &amp; 2 catches, 1 stumping)
 
- [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-09-20)
+ [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-20)
 
  DESTROYERS CRICKET CLUB
 

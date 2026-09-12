@@ -99,7 +99,7 @@ Destroyers Cricket Club | Official Website &amp; Team Arena
 
  In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve behind captain Pranav Dwivedi's match-winning 85 runs &amp; 3/41.
 
- [2026 Finale Scorecard](/matches/destroyers-vs-dread-eleven-2026-09-20)
+ [2026 Finale Scorecard](/matches/destroyers-vs-dread-eleven-2026-06-20/)
  [Read Franchise History](/about)
 
  2026 FINALE RESULT
@@ -155,7 +155,7 @@ Destroyers Cricket Club | Official Website &amp; Team Arena
  DES 284/7 def. DE 272 by 12 runs
  POTM: Ajay Rohera (94 off 98)
 
- [Inspect 2026 Finale Scorecard &rarr;](/matches/destroyers-vs-dread-eleven-2026-09-20)
+ [Inspect 2026 Finale Scorecard &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-20/)
 
  CHAMPIONSHIP FEATURE &amp; EDITORIAL ARCHIVE
 

@@ -764,7 +764,7 @@ ${renderHeader('home')}
           In a breathtaking series decider at APSU Stadium, Destroyers captured the 2026 title over arch-rivals Dread Eleven, defending 284 with ice-cool nerve behind captain Pranav Dwivedi's match-winning 85 runs &amp; 3/41.
         </p>
         <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-          <a href="/matches/destroyers-vs-dread-eleven-2026-09-20" class="btn-athletic btn-athletic-primary">
+          <a href="/matches/destroyers-vs-dread-eleven-2026-06-20/" class="btn-athletic btn-athletic-primary">
             <span>2026 Finale Scorecard</span>
           </a>
           <a href="/about" class="btn-athletic btn-athletic-outline">
@@ -881,7 +881,7 @@ ${renderHeader('home')}
             <div style="color:var(--c-gray-400); margin-top:0.2rem;">POTM: Ajay Rohera (94 off 98)</div>
           </div>
         </div>
-        <a href="/matches/destroyers-vs-dread-eleven-2026-09-20" class="btn-athletic btn-athletic-primary btn-sm" style="width:100%; justify-content:center; text-decoration:none;">
+        <a href="/matches/destroyers-vs-dread-eleven-2026-06-20/" class="btn-athletic btn-athletic-primary btn-sm" style="width:100%; justify-content:center; text-decoration:none;">
           <span>Inspect 2026 Finale Scorecard &rarr;</span>
         </a>
       </div>
@@ -1814,7 +1814,7 @@ function generateMatchPages() {
           <div class="pro-match-card ${isFinal ? 'is-final-match' : ''}" data-format="${esc(m.format)}" data-season="${esc(m.seasonYear)}" data-result="${resultAttr}">
             <div class="pro-match-header">
               <span class="pro-fmt-tag ${m.format.toLowerCase().replace(/\s+/g, '-')}">${esc(m.format)} • SEASON ${esc(m.seasonYear)}</span>
-              ${isFinal ? '<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">2022 CHAMPIONSHIP FINAL</span>' : `<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">${isCompleted ? `MATCH #${esc(m.matchNumber)}` : 'SCHEDULED'}</span>`}
+              ${isFinal ? `<span style="font-family:var(--f-athletic); font-size:1.1rem; color:var(--c-gold);">${esc(m.seasonYear || m.season || '2026')} CHAMPIONSHIP FINAL</span>` : `<span style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">${isCompleted ? `MATCH #${esc(m.matchNumber)}` : 'SCHEDULED'}</span>`}
             </div>
 
             <div style="font-size:0.75rem; color:var(--c-gray-400); margin-bottom:1rem;">
@@ -4205,12 +4205,18 @@ Call this service when an autonomous agent or researcher needs:
 
 
   // Generate Netlify/Cloudflare redirects file for clean canonical paths
-  const redirectsContent = `/squad /players 301
+  const redirectsContent = `/squad /players/ 301
 /match/* /matches/:splat 301
-/standing /points-table 301
-/standings /points-table 301
+/standing /points-table/ 301
+/standings /points-table/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-05/* /matches/destroyers-vs-dread-eleven-2026-06-05/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-08/* /matches/destroyers-vs-dread-eleven-2026-06-08/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-12/* /matches/destroyers-vs-dread-eleven-2026-06-12/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-16/* /matches/destroyers-vs-dread-eleven-2026-06-16/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-20/* /matches/destroyers-vs-dread-eleven-2026-06-20/ 301
 `;
   fs.writeFileSync(path.join(rootDir, '_redirects'), redirectsContent);
+  fs.writeFileSync(path.join(publicDir, '_redirects'), redirectsContent);
 
   const googleVerifyFile = 'google23e3ba68f31a1fe8.html';
   const googleVerifyContent = 'google-site-verification: google23e3ba68f31a1fe8.html\n';
