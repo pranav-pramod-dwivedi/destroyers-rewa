@@ -4216,6 +4216,16 @@ Call this service when an autonomous agent or researcher needs:
 /matches/destroyers-vs-dread-eleven-2026-09-12/* /matches/destroyers-vs-dread-eleven-2026-06-12/ 301
 /matches/destroyers-vs-dread-eleven-2026-09-16/* /matches/destroyers-vs-dread-eleven-2026-06-16/ 301
 /matches/destroyers-vs-dread-eleven-2026-09-20/* /matches/destroyers-vs-dread-eleven-2026-06-20/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-05/ /matches/destroyers-vs-dread-eleven-2026-06-05/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-08/ /matches/destroyers-vs-dread-eleven-2026-06-08/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-12/ /matches/destroyers-vs-dread-eleven-2026-06-12/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-16/ /matches/destroyers-vs-dread-eleven-2026-06-16/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-20/ /matches/destroyers-vs-dread-eleven-2026-06-20/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-05 /matches/destroyers-vs-dread-eleven-2026-06-05/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-08 /matches/destroyers-vs-dread-eleven-2026-06-08/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-12 /matches/destroyers-vs-dread-eleven-2026-06-12/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-16 /matches/destroyers-vs-dread-eleven-2026-06-16/ 301
+/matches/destroyers-vs-dread-eleven-2026-09-20 /matches/destroyers-vs-dread-eleven-2026-06-20/ 301
 `;
   fs.writeFileSync(path.join(rootDir, '_redirects'), redirectsContent);
   fs.writeFileSync(path.join(publicDir, '_redirects'), redirectsContent);
