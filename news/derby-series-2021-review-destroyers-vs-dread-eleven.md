@@ -66,17 +66,17 @@ Serial protagonists: Amarjeet Kumar Singh (2), Venkatesh Iyer (1), Rohit Rajawat
 
 ## Related News &amp; Features
 
- Player Spotlight
-
-#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
-
- [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
-
  Season Review
 
 #### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
 
  [Read &rarr;](/news/derby-series-2026-review-destroyers-vs-dread-eleven/)
+
+ Match Report
+
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+
+ [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 
  DESTROYERS CRICKET CLUB
 

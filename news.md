@@ -52,15 +52,6 @@ Official Bulletins
 
  Official updates on squad preparations, match analyses, and tournament developments in Rewa.
 
- Player Spotlight • 06 Oct 2026
-
-## 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
-
- From 83 to 216*: Pranav Dwivedi fires RCB B to record 452/1 in 254-run rout.
-
- 5 min read
- [Read Full Story &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record)
-
  Season Review • 22 Jun 2026
 
 ## 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat

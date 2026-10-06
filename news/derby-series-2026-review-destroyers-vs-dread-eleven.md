@@ -66,17 +66,17 @@ Serial protagonists: Yash Dubey (2), Venkatesh Iyer (2), Ajay Rohera (1). The se
 
 ## Related News &amp; Features
 
- Player Spotlight
-
-#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
-
- [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
-
  Match Report
 
 #### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
+
+ Match Report
+
+#### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+
+ [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-16-report/)
 
  DESTROYERS CRICKET CLUB
 

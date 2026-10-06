@@ -68,17 +68,17 @@ The result seals the 2026 series 3–2 for Destroyers. Played as the 2026 Champi
 
 ## Related News &amp; Features
 
- Player Spotlight
-
-#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
-
- [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
-
  Season Review
 
 #### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
 
  [Read &rarr;](/news/derby-series-2026-review-destroyers-vs-dread-eleven/)
+
+ Match Report
+
+#### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+
+ [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-16-report/)
 
  DESTROYERS CRICKET CLUB
 

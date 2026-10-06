@@ -220,14 +220,6 @@ Tournament Press
 
  [All News Articles](/news)
 
- Player Spotlight • 06 Oct 2026
-
-### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
-
-From 83 to 216*: Pranav Dwivedi fires RCB B to record 452/1 in 254-run rout.
-
- [Read Full Article &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record)
-
  Season Review • 22 Jun 2026
 
 ### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
@@ -243,6 +235,14 @@ Destroyers defended their crown 3–2 in June 2026, sealing a third straight cha
 Destroyers won by 12 runs at APSU Stadium, Rewa — POTM Ajay Rohera (Destroyers): 94 (98) &amp; 2 catches, 1 stumping.
 
  [Read Full Article &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report)
+
+ Match Report • 16 Jun 2026
+
+### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+
+Destroyers won by 4 wickets at Martand School Ground No. 3, Rewa — POTM Venkatesh Iyer (Destroyers): 115 (102 balls).
+
+ [Read Full Article &rarr;](/news/destroyers-vs-dread-eleven-2026-06-16-report)
 
  DESTROYERS CRICKET CLUB
 
