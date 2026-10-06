@@ -220,6 +220,14 @@ Tournament Press
 
  [All News Articles](/news)
 
+ Player Spotlight • 06 Oct 2026
+
+### From 83 to 223*: Pranav Dwivedi Skips the Hundred and Goes Straight to a Double
+
+Playing for RCB B in the RCB A vs RCB B local derby, Destroyers Maniac Pranav Dwivedi detonated an unbeaten 223 off just 63 balls — now the 3rd-highest individual score by any player worldwide in a single T20 match — to launch RCB B to 452/1, the highest team total ever recorded in T20 history, in a mind-numbing 254-run annihilation of RCB A.
+
+ [Read Full Article &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record)
+
  Team News • 15 Jan 2025
 
 ### Destroyers Announce 2025–26 Pre-Season Training Camp at APSU Stadium Led by Pranav Dwivedi
@@ -235,14 +243,6 @@ Skipper Pranav Dwivedi leads a 48-man training squad ahead of the upcoming Atal 
 A tactical review of the 2024 50-over series where Destroyers captured four consecutive victories with clutch bowling and fearless batting.
 
  [Read Full Article &rarr;](/news/dominant-2024-season-inside-destroyers-series-rout)
-
- Tournament Infrastructure • 20 Nov 2024
-
-### RDCA Unveils Upgraded Turf Pitches at APSU Stadium for 2025–2026 Cycle
-
-The Rewa Division Cricket Association completes major renovations to pitch blocks and pavilion facilities ahead of upcoming fixtures.
-
- [Read Full Article &rarr;](/news/rdca-unveils-upgraded-turf-wickets-ahead-of-2025-cycle)
 
  DESTROYERS CRICKET CLUB
 

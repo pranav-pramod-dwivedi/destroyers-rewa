@@ -52,6 +52,15 @@ Official Bulletins
 
  Official updates on squad preparations, match analyses, and tournament developments in Rewa.
 
+ Player Spotlight • 06 Oct 2026
+
+## From 83 to 223*: Pranav Dwivedi Skips the Hundred and Goes Straight to a Double
+
+ Playing for RCB B in the RCB A vs RCB B local derby, Destroyers Maniac Pranav Dwivedi detonated an unbeaten 223 off just 63 balls — now the 3rd-highest individual score by any player worldwide in a single T20 match — to launch RCB B to 452/1, the highest team total ever recorded in T20 history, in a mind-numbing 254-run annihilation of RCB A.
+
+ 5 min read
+ [Read Full Story &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record)
+
  Team News • 15 Jan 2025
 
 ## Destroyers Announce 2025–26 Pre-Season Training Camp at APSU Stadium Led by Pranav Dwivedi
