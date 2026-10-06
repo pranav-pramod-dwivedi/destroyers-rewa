@@ -238,7 +238,7 @@ Official Bulletins
 
  Destroyers won by 5 runs at APSU Stadium, Rewa — POTM Pranav Dwivedi (Destroyers): 3/66 in 10 ov.
 
- 3 min read
+ 4 min read
  [Read Full Story &rarr;](/news/destroyers-vs-dread-eleven-2024-09-08-report)
 
  Derby Thriller • 05 Sep 2024
@@ -247,7 +247,7 @@ Official Bulletins
 
  Dread Eleven won by 1 wickets at APSU Stadium, Rewa — POTM Rahul Batham (Dread Eleven): 3/91 in 9 ov.
 
- 3 min read
+ 4 min read
  [Read Full Story &rarr;](/news/destroyers-vs-dread-eleven-2024-09-05-report)
 
  Season Review • 22 Sep 2023
@@ -288,20 +288,20 @@ Official Bulletins
 
  Match Report • 08 Sep 2023
 
-## Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in T20 derby
+## Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in 50 Overs derby
 
  Dread Eleven won by 57 runs at Martand School Ground No. 3, Rewa — POTM Akhil Mishra (Dread Eleven): 61 runs off 68 balls.
 
- 3 min read
+ 4 min read
  [Read Full Story &rarr;](/news/destroyers-vs-dread-eleven-2023-09-08-report)
 
  Match Report • 05 Sep 2023
 
-## Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in T20 derby
+## Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in 50 Overs derby
 
  Dread Eleven won by 84 runs at APSU Stadium, Rewa — POTM Prabhanshu Shukla (Dread Eleven): 8/22 in 9 ov.
 
- 3 min read
+ 4 min read
  [Read Full Story &rarr;](/news/destroyers-vs-dread-eleven-2023-09-05-report)
 
  Club Culture • 20 Aug 2023

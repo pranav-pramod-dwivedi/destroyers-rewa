@@ -1,4 +1,4 @@
-# Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in T20 derby | Destroyers CC
+# Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in 50 Overs derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2023-09-05-report/
 
@@ -48,9 +48,9 @@ Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to...
 
  [Home](/) / [News](/news/) / Match Report
 
- Match Report • Published 05 Sep 2023 • 3 min read
+ Match Report • Published 05 Sep 2023 • 4 min read
 
-# Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in T20 derby
+# Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in 50 Overs derby
 
  By **Rewa Cricket Weekly**
  •
@@ -58,7 +58,7 @@ Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 84 runs in a T20 derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 5 Sep 2023. Destroyers won the toss and elected to bat first.
+Rewa, MP — Dread Eleven won by 84 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 5 Sep 2023. Destroyers won the toss and elected to bat first.
 
 **Prabhanshu Shukla** (Dread Eleven) took player-of-the-match honours for **8/22 in 9 ov**. Prithviraj Singh Tomar (74 off 85) provided the key support for Dread Eleven. With the ball, Arshad Khan (1/40 in 9 ov) kept the pressure on.
 

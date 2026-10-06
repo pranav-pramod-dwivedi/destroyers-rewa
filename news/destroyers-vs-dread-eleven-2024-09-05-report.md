@@ -48,7 +48,7 @@ Derby thriller: Rahul Batham's 3/91 in 9 ov seals it for...
 
  [Home](/) / [News](/news/) / Derby Thriller
 
- Derby Thriller • Published 05 Sep 2024 • 3 min read
+ Derby Thriller • Published 05 Sep 2024 • 4 min read
 
 # Derby thriller: Rahul Batham's 3/91 in 9 ov seals it for Dread Eleven
 
@@ -58,7 +58,7 @@ Derby thriller: Rahul Batham's 3/91 in 9 ov seals it for...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 1 wickets in a T20 derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 5 Sep 2024. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Dread Eleven won by 1 wickets in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 5 Sep 2024. Dread Eleven won the toss and elected to bat first.
 
 **Rahul Batham** (Dread Eleven) took player-of-the-match honours for **3/91 in 9 ov**. Akhil Mishra (69 off 75) provided the key support for Dread Eleven. With the ball, Kuldeep Sen (2/15 in 9 ov) kept the pressure on.
 

@@ -48,7 +48,7 @@ Derby thriller: Pranav Dwivedi's 3/66 in 10 ov seals it for...
 
  [Home](/) / [News](/news/) / Derby Thriller
 
- Derby Thriller • Published 08 Sep 2024 • 3 min read
+ Derby Thriller • Published 08 Sep 2024 • 4 min read
 
 # Derby thriller: Pranav Dwivedi's 3/66 in 10 ov seals it for Destroyers
 
@@ -58,7 +58,7 @@ Derby thriller: Pranav Dwivedi's 3/66 in 10 ov seals it for...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 5 runs in a T20 derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 8 Sep 2024. Destroyers won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 5 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 8 Sep 2024. Destroyers won the toss and elected to bat first.
 
 **Pranav Dwivedi** (Destroyers) took player-of-the-match honours for **3/66 in 10 ov**. Shivam Shukla (89 off 102) provided the key support for Destroyers. With the ball, Ritesh Shakya (2/23 in 8 ov) kept the pressure on.
 

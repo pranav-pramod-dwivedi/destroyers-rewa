@@ -58,8 +58,8 @@ TOURNAMENT SCHEDULE
 
  Format:
  All (34)
- T20 (17)
- 50 Overs (17)
+ T20 (13)
+ 50 Overs (21)
 
  Result:
  All
@@ -371,7 +371,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-09-18)
 
- T20 • SEASON 2023
+ 50 Overs • SEASON 2023
  MATCH #15
 
  05 Sep 2023 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -392,7 +392,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-05)
 
- T20 • SEASON 2023
+ 50 Overs • SEASON 2023
  MATCH #16
 
  08 Sep 2023 • Martand School Ground No. 3
@@ -476,7 +476,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-20)
 
- T20 • SEASON 2024
+ 50 Overs • SEASON 2024
  MATCH #20
 
  05 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -497,7 +497,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-05)
 
- T20 • SEASON 2024
+ 50 Overs • SEASON 2024
  MATCH #21
 
  08 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium

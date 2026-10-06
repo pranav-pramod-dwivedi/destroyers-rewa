@@ -1,4 +1,4 @@
-# Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in T20 derby | Destroyers CC
+# Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in 50 Overs derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2023-09-08-report/
 
@@ -48,9 +48,9 @@ Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to...
 
  [Home](/) / [News](/news/) / Match Report
 
- Match Report • Published 08 Sep 2023 • 3 min read
+ Match Report • Published 08 Sep 2023 • 4 min read
 
-# Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in T20 derby
+# Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in 50 Overs derby
 
  By **RDCA Sports Desk**
  •
@@ -58,7 +58,7 @@ Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 57 runs in a T20 derby at Martand School Ground No. 3, Rewa on 8 Sep 2023. Dread Eleven won the toss and elected to bowl first.
+Rewa, MP — Dread Eleven won by 57 runs in a 50 Overs derby at Martand School Ground No. 3, Rewa on 8 Sep 2023. Dread Eleven won the toss and elected to bowl first.
 
 **Akhil Mishra** (Dread Eleven) took player-of-the-match honours for **61 runs off 68 balls**. Anubhav Agarwal (46 off 53) provided the key support for Dread Eleven. With the ball, Kuldeep Sen (2/19 in 10 ov) kept the pressure on.
 
