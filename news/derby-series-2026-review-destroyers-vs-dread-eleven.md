@@ -68,7 +68,7 @@ Serial protagonists: Yash Dubey (2), Venkatesh Iyer (2), Ajay Rohera (1). The se
 
  Player Spotlight
 
-#### 223* Off 63: Pranav Dwivedi Goes Absolute Maniac
+#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
 
  [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
 

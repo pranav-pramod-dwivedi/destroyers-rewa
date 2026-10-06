@@ -68,7 +68,7 @@ Chief Curator Rajesh Patel confirmed that local red soil combined with clay blen
 
  Player Spotlight
 
-#### 223* Off 63: Pranav Dwivedi Goes Absolute Maniac
+#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
 
  [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
 

@@ -1,8 +1,8 @@
-# 223* Off 63: Pranav Dwivedi Goes Absolute Maniac | Destroyers CC
+# 216* Off 56: Pranav Dwivedi Goes Absolute Maniac | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/
 
-223* Off 63: Pranav Dwivedi Goes Absolute Maniac | Destroyers CC
+216* Off 56: Pranav Dwivedi Goes Absolute Maniac | Destroyers CC
 
  [DESTROYERS CC Rewa Division Cricket Association](/)
 
@@ -50,7 +50,7 @@ Source: https://destroyers-rewacricket.pages.dev/news/pranav-dwivedi-223-not-out
 
  Player Spotlight • Published 06 Oct 2026 • 5 min read
 
-# 223* Off 63: Pranav Dwivedi Goes Absolute Maniac
+# 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
 
  By **RDCA Sports Desk**
  •
@@ -58,17 +58,17 @@ Source: https://destroyers-rewacricket.pages.dev/news/pranav-dwivedi-223-not-out
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Forget milestones. **Pranav Dwivedi** does massacres. Turning out for **RCB B** in the **RCB A vs RCB B** KSCA Hinterland bloodbath, the Destroyers skipper did not just score his first T20 hundred — he skipped it entirely and parachuted straight into history with an unthinkable **223 not out off just 63 balls at 353.97**, now officially the **3rd-highest individual score by any batter worldwide in a single T20 match**, and the engine behind RCB B's savage **452 for 1 — the highest team total ever recorded in T20 history**.
+Rewa, MP — Forget milestones. **Pranav Dwivedi** does massacres. Turning out for **RCB B** in the **RCB A vs RCB B** KSCA Hinterland bloodbath, the Destroyers skipper did not just score his first T20 hundred — he skipped it entirely and parachuted straight into history with an unthinkable **216 not out off just 56 balls at 385.71 — 22 fours and 17 sixes**, the engine behind RCB B's savage **452 for 1 — the highest team total ever recorded in T20 history**.
 
-Let that sink in. Before this slaughter, Dwivedi's T20 ceiling was **83**. A career of **26 innings, 1,359 runs, 16 fifties, zero hundreds** — solid, respected, human. He then improved his career-best by a grotesque **140 runs in ONE innings**, turning his first-ever T20 hundred into his biggest score in any format, towering over his **Test 122* and ODI 102***. He did not break his record. He vaporised it.
+Let that sink in. Before this slaughter, Dwivedi's T20 ceiling was **83**. A career of **26 innings, 1,359 runs, 16 fifties, zero hundreds** — solid, respected, human. He then improved his career-best by a grotesque **133 runs in ONE innings**, turning his first-ever T20 hundred into his biggest score in any format, towering over his **Test 122* and ODI 102***. He did not break his record. He vaporised it.
 
-The team meeting said it all: **500 or bust**. No anchors, no respect for conditions, attack from ball one with the top seven given a kill order. Opening with **Purvansh Shah**, Dwivedi went feral instantly — eight sixes in the first two overs alone — before Shah himself turned into a monster with a demonic **100 off 27 balls at 370.37**, including a freak sequence of **72 runs with no four, single or two — just sixes**. At **25–26 an over**, the scoreboard operator was begging for mercy and 500 looked alive.
+The team meeting said it all: **500 or bust**. No anchors, no respect for conditions, attack from ball one with the top seven given a kill order. Opening with **Purvansh Shah**, Dwivedi went feral instantly — twin 24-run overs to open the innings — before Shah himself turned into a monster with a demonic **100 off 27 balls at 370.37 with 9 fours and 7 sixes**, the pair racing to a **213-run opening stand in just 55 balls**. At **25–26 an over**, the scoreboard operator was begging for mercy and 500 looked alive.
 
-Then spin arrived and briefly reminded everyone this was still cricket. The rate choked, the 500-dream bled — **16 runs behind, then 30, then 50**. Ordinary mortals would have collapsed. Dwivedi instead mutated — the destroyer became the so-called anchor, if you can call **16 runs an over against spin at 353.97 overall** anchoring. While others suffocated, he strangled the spinners back into submission and refused to let the innings die, carrying the entire apocalypse on his back for 63 balls.
+Then spin arrived and briefly reminded everyone this was still cricket. The rate choked, the 500-dream bled — overs 11 to 16 crawling at 15 to 17 an over. Ordinary mortals would have collapsed. Dwivedi instead mutated — the destroyer became the so-called anchor, if you can call **16 runs an over against spin at 385.71 overall** anchoring. While others suffocated, he strangled the spinners back into submission and refused to let the innings die, carrying the entire apocalypse on his back for 56 balls.
 
-And just when RCB A thought the torture was ending, **BS Shiva** walked in fresh and finished the burial. Deceptively quiet at **50 off 24**, Shiva then unleashed pure hell — **79 runs off his next 20 balls at 395.00** — to close unbeaten on **129* off 44 at 293.18**. Three assassins, three different murders: Shah's powerplay decapitation, Dwivedi's 63-ball world-top-3 epic, Shiva's late-overs execution. Result: **452/1**.
+And just when RCB A thought the torture was ending, **BS Shiva** walked in fresh and finished the burial — an unbeaten **122 off 37 balls at 329.73 with 14 fours and 9 sixes**, adding an unbroken **239 off 65 balls** with Dwivedi as the last four overs detonated for 112. Three assassins, three different murders: Shah's powerplay decapitation, Dwivedi's 56-ball double-ton, Shiva's late-overs execution. Result: **452/1**.
 
-RCB A never stood a chance in reply. Chasing an impossible mountain, they were ripped apart for **198**, handing RCB B a colossal **254-run victory — one of the most one-sided annihilations the game has ever seen**. "We had decided 500 was the target, so there was no point surviving," Dwivedi shrugged afterwards, as if 223* at nearly 3.6 runs a ball was normal. The RDCA database still reads **1,359 runs | HS 83 | 0 hundreds** — it has not caught up yet. But the world already knows: from **83 straight to 223***, from zero hundreds to the **3rd-highest T20 score on the planet**. He did not learn how to score a T20 hundred. He skipped the hundred and went straight to immortality.
+RCB A never stood a chance in reply. Chasing an impossible mountain, they were ripped apart for **198 in 18.4 overs**, handing RCB B a colossal **254-run victory — one of the most one-sided annihilations the game has ever seen**. "We had decided 500 was the target, so there was no point surviving," Dwivedi shrugged afterwards, as if 216* at nearly 3.9 runs a ball was normal. The RDCA database still reads **1,359 runs | HS 83 | 0 hundreds** — it has not caught up yet. But the world already knows: from **83 straight to 216***. He did not learn how to score a T20 hundred. He skipped the hundred and went straight to a double.
 
 ## Related News &amp; Features
 

@@ -68,7 +68,7 @@ Serial protagonists: Venkatesh Iyer (3), Aryan Deshmukh (1), Rajat Patidar (1). 
 
  Player Spotlight
 
-#### 223* Off 63: Pranav Dwivedi Goes Absolute Maniac
+#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
 
  [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
 

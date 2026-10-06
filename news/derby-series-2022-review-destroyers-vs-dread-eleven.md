@@ -68,7 +68,7 @@ Serial protagonists: Pranav Dwivedi (2), Amarjeet Kumar Singh (1), Kuldeep Sen (
 
  Player Spotlight
 
-#### 223* Off 63: Pranav Dwivedi Goes Absolute Maniac
+#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
 
  [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
 

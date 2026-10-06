@@ -70,7 +70,7 @@ The result seals the 2026 series 3–2 for Destroyers. Played as the 2026 Champi
 
  Player Spotlight
 
-#### 223* Off 63: Pranav Dwivedi Goes Absolute Maniac
+#### 216* Off 56: Pranav Dwivedi Goes Absolute Maniac
 
  [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
 
