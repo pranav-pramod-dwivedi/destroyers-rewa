@@ -89,7 +89,7 @@ The result seals the 2022 series 3–4 for Dread Eleven. Played as the 2022 Cham
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

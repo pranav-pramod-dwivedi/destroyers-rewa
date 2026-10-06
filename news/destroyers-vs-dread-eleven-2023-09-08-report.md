@@ -89,7 +89,7 @@ The result moves the 2023 series to Destroyers 0–2 Dread Eleven, with the side
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

@@ -87,7 +87,7 @@ Averaging 55.9 per innings with 13 half-centuries and a hundred to his name, Dwi
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

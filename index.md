@@ -253,7 +253,7 @@ Destroyers won by 4 wickets at Martand School Ground No. 3, Rewa — POTM Venkat
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

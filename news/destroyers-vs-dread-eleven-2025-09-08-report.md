@@ -89,7 +89,7 @@ The result moves the 2025 series to Destroyers 2–0 Dread Eleven, with the side
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

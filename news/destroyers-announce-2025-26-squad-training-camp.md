@@ -89,7 +89,7 @@ The 2025 campaign will kick off with an intense four-match series in September 2
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

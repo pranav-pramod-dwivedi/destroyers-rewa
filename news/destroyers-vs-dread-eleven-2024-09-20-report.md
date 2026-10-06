@@ -89,7 +89,7 @@ The result seals the 2024 series 4–1 for Destroyers. Played as the 2024 Champi
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 

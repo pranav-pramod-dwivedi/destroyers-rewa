@@ -89,7 +89,7 @@ The result seals the 2026 series 3–2 for Destroyers. Played as the 2026 Champi
 
 - Tournament Fixtures &amp; Schedule
 
-- Completed Match Archive (2021–24)
+- Completed Match Archive (2021–26)
 
 - Tournament Points Table
 
