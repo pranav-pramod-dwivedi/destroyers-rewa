@@ -62,7 +62,7 @@ Rewa, MP — The 2025 derby series between Destroyers and Dread Eleven finished 
 
 Game by game: 5 Sep 2025: Destroyers won by 22 runs (POTM Venkatesh Iyer); 8 Sep 2025: Destroyers won by 6 wickets (POTM Aryan Deshmukh); 12 Sep 2025: Destroyers won by 45 runs (POTM Venkatesh Iyer); 16 Sep 2025: Destroyers won by 5 wickets (POTM Rajat Patidar); 20 Sep 2025: Destroyers won by 34 runs (POTM Venkatesh Iyer).
 
-Serial protagonists: Venkatesh Iyer (3), Aryan Deshmukh (1), Rajat Patidar (1). The series story in one line — Destroyers produced the first clean sweep in derby history in 2025, winning all five games across T20 and 50-over formats under skipper Pranav Dwivedi.
+Serial protagonists: Venkatesh Iyer (3), Aryan Deshmukh (1), Rajat Patidar (1). The series story in one line — Destroyers produced the first clean sweep in derby history in 2025, winning all five games across T20 and one-day formats under skipper Pranav Dwivedi.
 
 ## Related News &amp; Features
 
@@ -74,7 +74,7 @@ Serial protagonists: Venkatesh Iyer (3), Aryan Deshmukh (1), Rajat Patidar (1). 
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

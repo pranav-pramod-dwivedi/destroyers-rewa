@@ -58,7 +58,7 @@ Derby thriller: Mohd Arham Aquil's 5/95 in 9 ov seals it for...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 2 wickets in a 50 Overs derby at Martand School Ground No. 3, Rewa on 4 Sep 2022. Dread Eleven won the toss and elected to bowl first.
+Rewa, MP — Dread Eleven won by 2 wickets in a One Day derby at Martand School Ground No. 3, Rewa on 4 Sep 2022. Dread Eleven won the toss and elected to bowl first.
 
 **Mohd Arham Aquil** (Dread Eleven) took player-of-the-match honours for **5/95 in 9 ov**. Akhil Mishra (58 off 60) provided the key support for Dread Eleven. With the ball, Avesh Khan (2/21 in 9 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2022 series to Destroyers 0–3 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

@@ -58,7 +58,7 @@ Derby thriller: Rahul Batham's 3/91 in 9 ov seals it for...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 1 wickets in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 5 Sep 2024. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Dread Eleven won by 1 wickets in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 5 Sep 2024. Dread Eleven won the toss and elected to bat first.
 
 **Rahul Batham** (Dread Eleven) took player-of-the-match honours for **3/91 in 9 ov**. Akhil Mishra (69 off 75) provided the key support for Dread Eleven. With the ball, Kuldeep Sen (2/15 in 9 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2024 series to Destroyers 0–1 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

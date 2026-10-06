@@ -58,7 +58,7 @@ Derby thriller: Subhranshu Senapati's 7/69 in 7 ov seals it...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 1 wickets in a 50 Overs derby at Martand School Ground No. 3, Rewa on 14 Sep 2022. Destroyers won the toss and elected to bowl first.
+Rewa, MP — Dread Eleven won by 1 wickets in a One Day derby at Martand School Ground No. 3, Rewa on 14 Sep 2022. Destroyers won the toss and elected to bowl first.
 
 **Subhranshu Senapati** (Dread Eleven) took player-of-the-match honours for **7/69 in 7 ov**. Rohit Rajawat (83 off 95) provided the key support for Dread Eleven. With the ball, Mohd Arham Aquil (1/11 in 8 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2022 series to Destroyers 2–4 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

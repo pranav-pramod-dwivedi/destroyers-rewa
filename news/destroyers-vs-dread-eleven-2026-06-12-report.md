@@ -1,4 +1,4 @@
-# Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win in 50 Overs derby | Destroyers CC
+# Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2026-06-12-report/
 
@@ -50,7 +50,7 @@ Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win...
 
  Match Report • Published 12 Jun 2026 • 4 min read
 
-# Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win in 50 Overs derby
+# Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win in One Day derby
 
  By **Vindhya Cricket Archive**
  •
@@ -58,7 +58,7 @@ Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 19 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 12 Jun 2026. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Dread Eleven won by 19 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 12 Jun 2026. Dread Eleven won the toss and elected to bat first.
 
 **Yash Dubey** (Dread Eleven) took player-of-the-match honours for **114 (108 balls)**. Aditya Shrivastava (54 off 62) provided the key support for Dread Eleven. With the ball, Kuldeep Sen (4/48 in 10 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2026 series to Destroyers 1–2 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

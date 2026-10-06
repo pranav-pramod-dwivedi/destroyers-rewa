@@ -68,13 +68,13 @@ Serial protagonists: Yash Dubey (2), Venkatesh Iyer (2), Ajay Rohera (1). The se
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 
  Match Report
 
-#### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+#### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-16-report/)
 

@@ -1,4 +1,4 @@
-# Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket win in 50 Overs derby | Destroyers CC
+# Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2025-09-16-report/
 
@@ -50,7 +50,7 @@ Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket...
 
  Match Report • Published 16 Sep 2025 • 4 min read
 
-# Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket win in 50 Overs derby
+# Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket win in One Day derby
 
  By **RDCA Media Cell**
  •
@@ -58,7 +58,7 @@ Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 5 wickets in a 50 Overs derby at Martand School Ground No. 3, Rewa on 16 Sep 2025. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 5 wickets in a One Day derby at Martand School Ground No. 3, Rewa on 16 Sep 2025. Dread Eleven won the toss and elected to bat first.
 
 **Rajat Patidar** (Destroyers) took player-of-the-match honours for **108* (94 balls)**. Akshat Raghuwanshi (48 off 56) provided the key support for Destroyers. With the ball, Kulwant Khejroliya (3/46 in 10 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2025 series to Destroyers 4–0 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

@@ -58,7 +58,7 @@ Derby thriller: Anubhav Agarwal's 47 runs off 54 balls seals...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 2 runs in a 50 Overs derby at Martand School Ground No. 3, Rewa on 12 Sep 2024. Dread Eleven won the toss and elected to bowl first.
+Rewa, MP — Destroyers won by 2 runs in a One Day derby at Martand School Ground No. 3, Rewa on 12 Sep 2024. Dread Eleven won the toss and elected to bowl first.
 
 **Anubhav Agarwal** (Destroyers) took player-of-the-match honours for **47 runs off 54 balls**. Prabhanshu Shukla (38 off 44) provided the key support for Destroyers. With the ball, Anant Verma (2/10 in 7 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2024 series to Destroyers 2–1 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

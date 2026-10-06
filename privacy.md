@@ -64,7 +64,7 @@ Governance &amp; Data Trust
 
 - Aggregated Site Telemetry: Anonymized Core Web Vitals, page visit counts, device classifications, and regional bandwidth telemetry to maintain 60 FPS client rendering.
 
-- Cookies &amp; Local Storage: Essential session preferences such as filter toolbar states (T20 vs. 50 Overs) and theme caching. No tracking pixels are sold or shared with third-party data brokers.
+- Cookies &amp; Local Storage: Essential session preferences such as filter toolbar states (T20 vs. One Day) and theme caching. No tracking pixels are sold or shared with third-party data brokers.
 
 ## 3. Player Data &amp; Official Scorecards
 

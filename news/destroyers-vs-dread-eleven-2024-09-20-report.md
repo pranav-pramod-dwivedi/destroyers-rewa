@@ -58,7 +58,7 @@ Derby thriller: Sagar Pratap Singh's 5/60 in 7 ov seals it...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 8 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 20 Sep 2024. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 8 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 20 Sep 2024. Dread Eleven won the toss and elected to bat first.
 
 **Sagar Pratap Singh** (Destroyers) took player-of-the-match honours for **5/60 in 7 ov**. Pranav Dwivedi (62 off 67) provided the key support for Destroyers. With the ball, Ajay Rohera (2/14 in 7 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result seals the 2024 series 4–1 for Destroyers. Played as the 2024 Champi
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

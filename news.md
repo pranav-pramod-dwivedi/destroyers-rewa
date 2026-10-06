@@ -63,7 +63,7 @@ Official Bulletins
 
  Match Report • 20 Jun 2026
 
-## Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+## Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  Destroyers won by 12 runs at APSU Stadium, Rewa — POTM Ajay Rohera (Destroyers): 94 (98) &amp; 2 catches, 1 stumping.
 
@@ -72,7 +72,7 @@ Official Bulletins
 
  Match Report • 16 Jun 2026
 
-## Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+## Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in One Day derby
 
  Destroyers won by 4 wickets at Martand School Ground No. 3, Rewa — POTM Venkatesh Iyer (Destroyers): 115 (102 balls).
 
@@ -81,7 +81,7 @@ Official Bulletins
 
  Match Report • 12 Jun 2026
 
-## Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win in 50 Overs derby
+## Yash Dubey's 114 (108 balls) lifts Dread Eleven to 19-run win in One Day derby
 
  Dread Eleven won by 19 runs at APSU Stadium, Rewa — POTM Yash Dubey (Dread Eleven): 114 (108 balls).
 
@@ -110,14 +110,14 @@ Official Bulletins
 
 ## 2025 Invincible Sweep: Destroyers Whitewash Dread Eleven 5–0 in Perfect Season
 
- Destroyers produced the first clean sweep in derby history in 2025, winning all five games across T20 and 50-over formats under skipper Pranav Dwivedi.
+ Destroyers produced the first clean sweep in derby history in 2025, winning all five games across T20 and one-day formats under skipper Pranav Dwivedi.
 
  6 min read
  [Read Full Story &rarr;](/news/derby-series-2025-review-destroyers-vs-dread-eleven)
 
  Match Report • 20 Sep 2025
 
-## Venkatesh Iyer's 106 (92) &amp; 2/36 (8 ov) powers Destroyers to 34-run win in 50 Overs derby
+## Venkatesh Iyer's 106 (92) &amp; 2/36 (8 ov) powers Destroyers to 34-run win in One Day derby
 
  Destroyers won by 34 runs at APSU Stadium, Rewa — POTM Venkatesh Iyer (Destroyers): 106 (92) &amp; 2/36 (8 ov).
 
@@ -126,7 +126,7 @@ Official Bulletins
 
  Match Report • 16 Sep 2025
 
-## Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket win in 50 Overs derby
+## Rajat Patidar's 108* (94 balls) drags Destroyers to 5-wicket win in One Day derby
 
  Destroyers won by 5 wickets at Martand School Ground No. 3, Rewa — POTM Rajat Patidar (Destroyers): 108* (94 balls).
 
@@ -135,7 +135,7 @@ Official Bulletins
 
  Match Report • 12 Sep 2025
 
-## Venkatesh Iyer's 124 (104) &amp; 1/32 (8 ov) steers Destroyers to 45-run win in 50 Overs derby
+## Venkatesh Iyer's 124 (104) &amp; 1/32 (8 ov) steers Destroyers to 45-run win in One Day derby
 
  Destroyers won by 45 runs at APSU Stadium, Rewa — POTM Venkatesh Iyer (Destroyers): 124 (104) &amp; 1/32 (8 ov).
 
@@ -189,9 +189,9 @@ Official Bulletins
 
  Season Review • 22 Sep 2024
 
-## Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in 50-Over Series
+## Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in One-Day Series
 
- A tactical review of the 2024 50-over series where Destroyers captured four consecutive victories with clutch bowling and fearless batting.
+ A tactical review of the 2024 one-day series where Destroyers captured four consecutive victories with clutch bowling and fearless batting.
 
  5 min read
  [Read Full Story &rarr;](/news/dominant-2024-season-inside-destroyers-series-rout)
@@ -216,7 +216,7 @@ Official Bulletins
 
  Match Report • 16 Sep 2024
 
-## Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run win in 50 Overs derby
+## Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run win in One Day derby
 
  Destroyers won by 18 runs at APSU Stadium, Rewa — POTM Pranav Dwivedi (Destroyers): 3/72 in 10 ov.
 
@@ -252,9 +252,9 @@ Official Bulletins
 
  Season Review • 22 Sep 2023
 
-## 2023 Heavyweight Exchange: Dread Eleven Claim Series 3–2 as Destroyers Strike Back in 50-Over Leg
+## 2023 Heavyweight Exchange: Dread Eleven Claim Series 3–2 as Destroyers Strike Back in One-Day Leg
 
- Dread Eleven took the 2023 series 3–2, but Destroyers' back-to-back 50-over wins in September signalled the power shift to come.
+ Dread Eleven took the 2023 series 3–2, but Destroyers' back-to-back one-day wins in September signalled the power shift to come.
 
  6 min read
  [Read Full Story &rarr;](/news/derby-series-2023-review-destroyers-vs-dread-eleven)
@@ -270,7 +270,7 @@ Official Bulletins
 
  Match Report • 16 Sep 2023
 
-## Pranav Dwivedi's 3/60 in 10 ov carries Destroyers to 42-run win in 50 Overs derby
+## Pranav Dwivedi's 3/60 in 10 ov carries Destroyers to 42-run win in One Day derby
 
  Destroyers won by 42 runs at APSU Stadium, Rewa — POTM Pranav Dwivedi (Destroyers): 3/60 in 10 ov.
 
@@ -279,7 +279,7 @@ Official Bulletins
 
  Match Report • 12 Sep 2023
 
-## Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to 27-run win in 50 Overs derby
+## Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to 27-run win in One Day derby
 
  Destroyers won by 27 runs at APSU Stadium, Rewa — POTM Subhranshu Senapati (Destroyers): 5/51 in 7 ov.
 
@@ -288,7 +288,7 @@ Official Bulletins
 
  Match Report • 08 Sep 2023
 
-## Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in 50 Overs derby
+## Akhil Mishra's 61 runs off 68 balls drags Dread Eleven to 57-run win in One Day derby
 
  Dread Eleven won by 57 runs at Martand School Ground No. 3, Rewa — POTM Akhil Mishra (Dread Eleven): 61 runs off 68 balls.
 
@@ -297,7 +297,7 @@ Official Bulletins
 
  Match Report • 05 Sep 2023
 
-## Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in 50 Overs derby
+## Prabhanshu Shukla's 8/22 in 9 ov steers Dread Eleven to 84-run win in One Day derby
 
  Dread Eleven won by 84 runs at APSU Stadium, Rewa — POTM Prabhanshu Shukla (Dread Eleven): 8/22 in 9 ov.
 
@@ -315,16 +315,16 @@ Official Bulletins
 
  Season Review • 20 Sep 2022
 
-## 2022 Split Format Saga: Dread Eleven Take Derby Series 4–3 Across T20 and 50-Over Clashes
+## 2022 Split Format Saga: Dread Eleven Take Derby Series 4–3 Across T20 and One-Day Clashes
 
- A seven-game split-format series in 2022 saw Dread Eleven edge Destroyers 4–3, including a tied-run thriller and Destroyers' first 50-over derby wins.
+ A seven-game split-format series in 2022 saw Dread Eleven edge Destroyers 4–3, including a tied-run thriller and Destroyers' first one-day derby wins.
 
  6 min read
  [Read Full Story &rarr;](/news/derby-series-2022-review-destroyers-vs-dread-eleven)
 
  Match Report • 18 Sep 2022
 
-## Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win in 50 Overs derby
+## Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win in One Day derby
 
  Destroyers won by 54 runs at APSU Stadium, Rewa — POTM Pranav Dwivedi (Destroyers): 3/62 in 10 ov.
 
@@ -342,7 +342,7 @@ Official Bulletins
 
  Match Report • 10 Sep 2022
 
-## Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to 37-run win in 50 Overs derby
+## Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to 37-run win in One Day derby
 
  Destroyers won by 37 runs at APSU Stadium, Rewa — POTM Venkatesh Iyer (Destroyers): 57 runs off 66 balls.
 

@@ -1,4 +1,4 @@
-# 2022 Split Format Saga: Dread Eleven Take Derby Series 4–3 Across T20 and 50-Over Clashes | Destroyers CC
+# 2022 Split Format Saga: Dread Eleven Take Derby Series 4–3 Across T20 and One-Day Clashes | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/derby-series-2022-review-destroyers-vs-dread-eleven/
 
@@ -50,7 +50,7 @@ Source: https://destroyers-rewacricket.pages.dev/news/derby-series-2022-review-d
 
  Season Review • Published 20 Sep 2022 • 6 min read
 
-# 2022 Split Format Saga: Dread Eleven Take Derby Series 4–3 Across T20 and 50-Over Clashes
+# 2022 Split Format Saga: Dread Eleven Take Derby Series 4–3 Across T20 and One-Day Clashes
 
  By **Vindhya Cricket Archive**
  •
@@ -62,7 +62,7 @@ Rewa, MP — The 2022 derby series between Destroyers and Dread Eleven finished 
 
 Game by game: 10 Aug 2022: Dread Eleven won by 3 wickets (POTM Amarjeet Kumar Singh); 12 Aug 2022: Dread Eleven won by 21 runs (POTM Kuldeep Sen); 4 Sep 2022: Dread Eleven won by 2 wickets (POTM Mohd Arham Aquil); 7 Sep 2022: Destroyers won by 0 runs (POTM Pranav Dwivedi); 10 Sep 2022: Destroyers won by 37 runs (POTM Venkatesh Iyer); 14 Sep 2022: Dread Eleven won by 1 wickets (POTM Subhranshu Senapati); 18 Sep 2022: Destroyers won by 54 runs (POTM Pranav Dwivedi).
 
-Serial protagonists: Pranav Dwivedi (2), Amarjeet Kumar Singh (1), Kuldeep Sen (1). The series story in one line — A seven-game split-format series in 2022 saw Dread Eleven edge Destroyers 4–3, including a tied-run thriller and Destroyers' first 50-over derby wins.
+Serial protagonists: Pranav Dwivedi (2), Amarjeet Kumar Singh (1), Kuldeep Sen (1). The series story in one line — A seven-game split-format series in 2022 saw Dread Eleven edge Destroyers 4–3, including a tied-run thriller and Destroyers' first one-day derby wins.
 
 ## Related News &amp; Features
 
@@ -74,7 +74,7 @@ Serial protagonists: Pranav Dwivedi (2), Amarjeet Kumar Singh (1), Kuldeep Sen (
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

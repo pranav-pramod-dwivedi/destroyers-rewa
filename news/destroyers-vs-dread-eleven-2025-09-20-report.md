@@ -1,4 +1,4 @@
-# Venkatesh Iyer's 106 (92) & 2/36 (8 ov) powers Destroyers to 34-run win in 50 Overs derby | Destroyers CC
+# Venkatesh Iyer's 106 (92) & 2/36 (8 ov) powers Destroyers to 34-run win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2025-09-20-report/
 
@@ -50,7 +50,7 @@ Venkatesh Iyer's 106 (92) &amp; 2/36 (8 ov) powers Destroyers to...
 
  Match Report • Published 20 Sep 2025 • 4 min read
 
-# Venkatesh Iyer's 106 (92) &amp; 2/36 (8 ov) powers Destroyers to 34-run win in 50 Overs derby
+# Venkatesh Iyer's 106 (92) &amp; 2/36 (8 ov) powers Destroyers to 34-run win in One Day derby
 
  By **Derby Correspondent**
  •
@@ -58,7 +58,7 @@ Venkatesh Iyer's 106 (92) &amp; 2/36 (8 ov) powers Destroyers to...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 34 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 20 Sep 2025. Destroyers won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 34 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 20 Sep 2025. Destroyers won the toss and elected to bat first.
 
 **Venkatesh Iyer** (Destroyers) took player-of-the-match honours for **106 (92) & 2/36 (8 ov)**. Ajay Rohera (58 off 64) provided the key support for Destroyers. With the ball, Kulwant Khejroliya (4/44 in 9.2 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result seals the 2025 series 5–0 for Destroyers. Played as the 2025 Champi
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

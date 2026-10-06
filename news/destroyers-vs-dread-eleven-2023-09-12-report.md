@@ -1,4 +1,4 @@
-# Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to 27-run win in 50 Overs derby | Destroyers CC
+# Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to 27-run win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2023-09-12-report/
 
@@ -50,7 +50,7 @@ Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to...
 
  Match Report • Published 12 Sep 2023 • 4 min read
 
-# Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to 27-run win in 50 Overs derby
+# Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to 27-run win in One Day derby
 
  By **Vindhya Cricket Archive**
  •
@@ -58,7 +58,7 @@ Subhranshu Senapati's 5/51 in 7 ov powers Destroyers to...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 27 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 12 Sep 2023. Destroyers won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 27 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 12 Sep 2023. Destroyers won the toss and elected to bat first.
 
 **Subhranshu Senapati** (Destroyers) took player-of-the-match honours for **5/51 in 7 ov**. Shivam Shukla (88 off 101) provided the key support for Destroyers. With the ball, Rahul Batham (2/27 in 8 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2023 series to Destroyers 1–2 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

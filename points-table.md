@@ -61,11 +61,11 @@ Tournament Standings
 
 | Edition / Year | Format | Champion Franchise | Winning Captain | Series Margin | Runner-Up |
 | --- | --- | --- | --- | --- | --- |
-| 2026 Edition | 2 T20s + 3 50-Over Matches | Destroyers CC (Champions) | Pranav Dwivedi (c) | 3–2 (5 matches) | Dread Eleven |
-| 2025 Edition | 2 T20s + 3 50-Over Matches | Destroyers CC (Champions) | Pranav Dwivedi (c) | 5–0 Clean Sweep | Dread Eleven |
-| 2024 Edition | 2 T20s + 3 50-Over Matches | Destroyers CC (Champions) | Pranav Dwivedi (c) | 4–1 (5 matches) | Dread Eleven |
-| 2023 Edition | 2 T20s + 3 50-Over Matches | Dread Eleven | Akhil Mishra (c) | 3–2 (5 matches) | Destroyers CC |
-| 2022 Edition | 50-Over &amp; T20 Format | Dread Eleven | Akhil Mishra (c) | 4–3 (7 matches) | Destroyers CC |
+| 2026 Edition | 2 T20s + 3 One-Day Matches | Destroyers CC (Champions) | Pranav Dwivedi (c) | 3–2 (5 matches) | Dread Eleven |
+| 2025 Edition | 2 T20s + 3 One-Day Matches | Destroyers CC (Champions) | Pranav Dwivedi (c) | 5–0 Clean Sweep | Dread Eleven |
+| 2024 Edition | 2 T20s + 3 One-Day Matches | Destroyers CC (Champions) | Pranav Dwivedi (c) | 4–1 (5 matches) | Dread Eleven |
+| 2023 Edition | 2 T20s + 3 One-Day Matches | Dread Eleven | Akhil Mishra (c) | 3–2 (5 matches) | Destroyers CC |
+| 2022 Edition | One-Day &amp; T20 Format | Dread Eleven | Akhil Mishra (c) | 4–3 (7 matches) | Destroyers CC |
 | 2021 Inaugural | T20 Format | Dread Eleven | Akhil Mishra (c) | 5–2 (7 matches) | Destroyers CC |
 
 ## All-Time Derby Table (2021–2026 • 34 Encounters)
@@ -96,14 +96,14 @@ Tournament Standings
 | Destroyers Cricket Club (Champions) | 5 | 4 | 1 | +0.485 | 8 |
 | Dread Eleven | 5 | 1 | 4 | -0.485 | 2 |
 
-### Season 2023 (50 Overs)
+### Season 2023 (One Day)
 
 | Team | P | W | L | NRR | Pts |
 | --- | --- | --- | --- | --- | --- |
 | Dread Eleven (Champions) | 5 | 3 | 2 | +0.240 | 6 |
 | Destroyers Cricket Club | 5 | 2 | 3 | -0.240 | 4 |
 
-### Season 2022 (T20 &amp; 50 Overs)
+### Season 2022 (T20 &amp; One Day)
 
 | Team | P | W | L | NRR | Pts |
 | --- | --- | --- | --- | --- | --- |

@@ -1,4 +1,4 @@
-# Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to 37-run win in 50 Overs derby | Destroyers CC
+# Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to 37-run win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2022-09-10-report/
 
@@ -50,7 +50,7 @@ Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to...
 
  Match Report • Published 10 Sep 2022 • 4 min read
 
-# Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to 37-run win in 50 Overs derby
+# Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to 37-run win in One Day derby
 
  By **Vindhya Cricket Archive**
  •
@@ -58,7 +58,7 @@ Venkatesh Iyer's 57 runs off 66 balls carries Destroyers to...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 37 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 10 Sep 2022. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 37 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 10 Sep 2022. Dread Eleven won the toss and elected to bat first.
 
 **Venkatesh Iyer** (Destroyers) took player-of-the-match honours for **57 runs off 66 balls**. Ramveer Singh Gurjar (49 off 56) provided the key support for Destroyers. With the ball, Subhranshu Senapati (2/12 in 8 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2022 series to Destroyers 2–3 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

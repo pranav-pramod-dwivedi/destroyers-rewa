@@ -230,7 +230,7 @@ Destroyers defended their crown 3–2 in June 2026, sealing a third straight cha
 
  Match Report • 20 Jun 2026
 
-### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
 Destroyers won by 12 runs at APSU Stadium, Rewa — POTM Ajay Rohera (Destroyers): 94 (98) &amp; 2 catches, 1 stumping.
 
@@ -238,7 +238,7 @@ Destroyers won by 12 runs at APSU Stadium, Rewa — POTM Ajay Rohera (Destroyers
 
  Match Report • 16 Jun 2026
 
-### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+### Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in One Day derby
 
 Destroyers won by 4 wickets at Martand School Ground No. 3, Rewa — POTM Venkatesh Iyer (Destroyers): 115 (102 balls).
 

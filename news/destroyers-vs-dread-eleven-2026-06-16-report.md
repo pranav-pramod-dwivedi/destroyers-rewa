@@ -1,4 +1,4 @@
-# Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby | Destroyers CC
+# Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2026-06-16-report/
 
@@ -50,7 +50,7 @@ Venkatesh Iyer's 115 (102 balls) steers Destroyers to...
 
  Match Report • Published 16 Jun 2026 • 4 min read
 
-# Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in 50 Overs derby
+# Venkatesh Iyer's 115 (102 balls) steers Destroyers to 4-wicket win in One Day derby
 
  By **RDCA Media Cell**
  •
@@ -58,7 +58,7 @@ Venkatesh Iyer's 115 (102 balls) steers Destroyers to...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 4 wickets in a 50 Overs derby at Martand School Ground No. 3, Rewa on 16 Jun 2026. Destroyers won the toss and elected to bowl first.
+Rewa, MP — Destroyers won by 4 wickets in a One Day derby at Martand School Ground No. 3, Rewa on 16 Jun 2026. Destroyers won the toss and elected to bowl first.
 
 **Venkatesh Iyer** (Destroyers) took player-of-the-match honours for **115 (102 balls)**. Ajay Rohera (54 off 58) provided the key support for Destroyers. With the ball, Kulwant Khejroliya (3/48 in 10 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2026 series to Destroyers 2–2 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

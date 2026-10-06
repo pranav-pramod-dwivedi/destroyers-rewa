@@ -1,4 +1,4 @@
-# Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win in 50 Overs derby | Destroyers CC
+# Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2022-09-18-report/
 
@@ -50,7 +50,7 @@ Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win...
 
  Match Report • Published 18 Sep 2022 • 4 min read
 
-# Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win in 50 Overs derby
+# Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win in One Day derby
 
  By **Derby Correspondent**
  •
@@ -58,7 +58,7 @@ Pranav Dwivedi's 3/62 in 10 ov lifts Destroyers to 54-run win...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 54 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 18 Sep 2022. Dread Eleven won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 54 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 18 Sep 2022. Dread Eleven won the toss and elected to bat first.
 
 **Pranav Dwivedi** (Destroyers) took player-of-the-match honours for **3/62 in 10 ov**. Chanchal Rathore (95 off 109) provided the key support for Destroyers. With the ball, Harsh Gawli (2/26 in 7 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result seals the 2022 series 3–4 for Dread Eleven. Played as the 2022 Cham
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

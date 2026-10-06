@@ -59,7 +59,7 @@ TOURNAMENT SCHEDULE
  Format:
  All (34)
  T20 (13)
- 50 Overs (21)
+ One Day (21)
 
  Result:
  All
@@ -266,7 +266,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-08-12)
 
- 50 Overs • SEASON 2022
+ One Day • SEASON 2022
  MATCH #10
 
  04 Sep 2022 • Martand School Ground No. 3
@@ -287,7 +287,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-09-04)
 
- 50 Overs • SEASON 2022
+ One Day • SEASON 2022
  MATCH #11
 
  07 Sep 2022 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -308,7 +308,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-09-07)
 
- 50 Overs • SEASON 2022
+ One Day • SEASON 2022
  MATCH #12
 
  10 Sep 2022 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -329,7 +329,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-09-10)
 
- 50 Overs • SEASON 2022
+ One Day • SEASON 2022
  MATCH #13
 
  14 Sep 2022 • Martand School Ground No. 3
@@ -350,7 +350,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-09-14)
 
- 50 Overs • SEASON 2022
+ One Day • SEASON 2022
  2022 CHAMPIONSHIP FINAL
 
  18 Sep 2022 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -371,7 +371,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2022-09-18)
 
- 50 Overs • SEASON 2023
+ One Day • SEASON 2023
  MATCH #15
 
  05 Sep 2023 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -392,7 +392,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-05)
 
- 50 Overs • SEASON 2023
+ One Day • SEASON 2023
  MATCH #16
 
  08 Sep 2023 • Martand School Ground No. 3
@@ -413,7 +413,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-08)
 
- 50 Overs • SEASON 2023
+ One Day • SEASON 2023
  MATCH #17
 
  12 Sep 2023 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -434,7 +434,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-12)
 
- 50 Overs • SEASON 2023
+ One Day • SEASON 2023
  MATCH #18
 
  16 Sep 2023 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -455,7 +455,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-16)
 
- 50 Overs • SEASON 2023
+ One Day • SEASON 2023
  2023 CHAMPIONSHIP FINAL
 
  20 Sep 2023 • Martand School Ground No. 3
@@ -476,7 +476,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2023-09-20)
 
- 50 Overs • SEASON 2024
+ One Day • SEASON 2024
  MATCH #20
 
  05 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -497,7 +497,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-05)
 
- 50 Overs • SEASON 2024
+ One Day • SEASON 2024
  MATCH #21
 
  08 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -518,7 +518,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-08)
 
- 50 Overs • SEASON 2024
+ One Day • SEASON 2024
  MATCH #22
 
  12 Sep 2024 • Martand School Ground No. 3
@@ -539,7 +539,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-12)
 
- 50 Overs • SEASON 2024
+ One Day • SEASON 2024
  MATCH #23
 
  16 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -560,7 +560,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2024-09-16)
 
- 50 Overs • SEASON 2024
+ One Day • SEASON 2024
  2024 CHAMPIONSHIP FINAL
 
  20 Sep 2024 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -623,7 +623,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2025-09-08)
 
- 50 Overs • SEASON 2025
+ One Day • SEASON 2025
  MATCH #27
 
  12 Sep 2025 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -644,7 +644,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2025-09-12)
 
- 50 Overs • SEASON 2025
+ One Day • SEASON 2025
  MATCH #28
 
  16 Sep 2025 • Martand School Ground No. 3
@@ -665,7 +665,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2025-09-16)
 
- 50 Overs • SEASON 2025
+ One Day • SEASON 2025
  2025 CHAMPIONSHIP FINAL
 
  20 Sep 2025 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -728,7 +728,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-08)
 
- 50 Overs • SEASON 2026
+ One Day • SEASON 2026
  MATCH #32
 
  12 Jun 2026 • Awadhesh Pratap Singh University (APSU) Stadium
@@ -749,7 +749,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-12)
 
- 50 Overs • SEASON 2026
+ One Day • SEASON 2026
  MATCH #33
 
  16 Jun 2026 • Martand School Ground No. 3
@@ -770,7 +770,7 @@ TOURNAMENT SCHEDULE
 
  [Inspect Full Match Hub &rarr;](/matches/destroyers-vs-dread-eleven-2026-06-16)
 
- 50 Overs • SEASON 2026
+ One Day • SEASON 2026
  2026 CHAMPIONSHIP FINAL
 
  20 Jun 2026 • Awadhesh Pratap Singh University (APSU) Stadium

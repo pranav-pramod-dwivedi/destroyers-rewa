@@ -1752,7 +1752,7 @@ function generateMatchPages() {
   ensureDir(resultsDir);
 
   const t20Count = matches.filter((m) => m.format === 'T20').length;
-  const fiftyOversCount = matches.filter((m) => m.format.includes('50') || m.format === 'ODI' || m.format === 'One-Day').length;
+  const fiftyOversCount = matches.filter((m) => ['One Day', 'One-Day', 'ODI'].includes(m.format) || m.format.includes('50')).length;
   const desWinsCount = matches.filter((m) => m.winner === 'DES').length;
   const deWinsCount = matches.filter((m) => m.winner === 'DE').length;
   const upcomingCount = matches.filter((m) => m.status === 'upcoming').length;
@@ -1784,7 +1784,7 @@ function generateMatchPages() {
         <span class="filter-group-label" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Format:</span>
         <button type="button" class="filter-pill active format-filter-btn" data-format="all">All (${listMatches.length})</button>
         <button type="button" class="filter-pill format-filter-btn" data-format="T20">T20 (${t20Count})</button>
-        <button type="button" class="filter-pill format-filter-btn" data-format="50-overs">50 Overs (${fiftyOversCount})</button>
+        <button type="button" class="filter-pill format-filter-btn" data-format="one-day">One Day (${fiftyOversCount})</button>
 
         <span class="filter-group-label" style="margin-left:1rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400); text-transform:uppercase;">Result:</span>
         <button type="button" class="filter-pill active result-filter-btn" data-result="all">All</button>
@@ -1895,14 +1895,14 @@ function generateMatchPages() {
   const fixturesHtml = `
 ${renderHead({
   title: 'Tournament Fixtures & Schedule | Destroyers CC',
-  description: 'Official 50-over and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Filter by season and format.',
+  description: 'Official One-Day and T20 match schedule for Destroyers Cricket Club in the Atal Bihari Vajpayee Memorial Tournament, Rewa. Filter by season and format.',
   canonicalUrl: '/fixtures',
   keywords: 'Destroyers Fixtures, Rewa Cricket Schedule, Dread Eleven vs Destroyers, Atal Bihari Vajpayee Memorial Tournament fixtures, APSU Stadium',
   twitterData: {
     label1: 'Tournament',
     data1: 'Atal Bihari Vajpayee Memorial',
     label2: 'Format',
-    data2: '50 Overs & T20'
+    data2: 'One Day & T20'
   },
   breadcrumbs: [
     { name: 'Home', item: '/' },
@@ -2427,7 +2427,7 @@ ${renderHeader('table')}
           <tbody>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2026 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 One-Day Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC (Champions)</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">3–2 (5 matches)</td>
@@ -2435,7 +2435,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2025 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 One-Day Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC (Champions)</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">5–0 Clean Sweep</td>
@@ -2443,7 +2443,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-gold);">2024 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 One-Day Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-gold);">Destroyers CC (Champions)</td>
               <td style="color:var(--c-white); font-weight:700;">Pranav Dwivedi <span style="color:var(--c-gold); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-gold);">4–1 (5 matches)</td>
@@ -2451,7 +2451,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-white);">2023 Edition</td>
-              <td style="color:var(--c-gray-400);">2 T20s + 3 50-Over Matches</td>
+              <td style="color:var(--c-gray-400);">2 T20s + 3 One-Day Matches</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-ember-bright);">Dread Eleven</td>
               <td style="color:var(--c-white); font-weight:700;">Akhil Mishra <span style="color:var(--c-ember-bright); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-emerald);">3–2 (5 matches)</td>
@@ -2459,7 +2459,7 @@ ${renderHeader('table')}
             </tr>
             <tr>
               <td style="font-weight:800; font-family:var(--f-mono); color:var(--c-white);">2022 Edition</td>
-              <td style="color:var(--c-gray-400);">50-Over &amp; T20 Format</td>
+              <td style="color:var(--c-gray-400);">One-Day &amp; T20 Format</td>
               <td style="font-weight:800; font-family:var(--f-athletic); font-size:1.25rem; color:var(--c-ember-bright);">Dread Eleven</td>
               <td style="color:var(--c-white); font-weight:700;">Akhil Mishra <span style="color:var(--c-ember-bright); font-size:0.75rem;">(c)</span></td>
               <td class="num tabular font-bold" style="color:var(--c-emerald);">4–3 (7 matches)</td>
@@ -2593,7 +2593,7 @@ ${renderHeader('table')}
 
       <!-- 2023 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2023 (50 Overs)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2023 (One Day)</h3>
         <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -2616,7 +2616,7 @@ ${renderHeader('table')}
 
       <!-- 2022 Season -->
       <div style="background:var(--c-card-bg); border:1px solid var(--b-medium); padding:2rem;">
-        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (T20 &amp; 50 Overs)</h3>
+        <h3 style="font-family:var(--f-athletic); font-size:1.5rem; color:var(--c-white); text-transform:uppercase; margin-bottom:1rem;">Season 2022 (T20 &amp; One Day)</h3>
         <div class="scorecard-table-wrap"><table class="scorecard-data-table">
           <thead>
             <tr><th>Team</th><th class="num">P</th><th class="num">W</th><th class="num">L</th><th class="num">NRR</th><th class="num">Pts</th></tr>
@@ -3699,7 +3699,7 @@ ${renderHeader('')}
         <ul style="padding-left:1.5rem; display:flex; flex-direction:column; gap:0.5rem;">
           <li><strong>Tournament Inquiries:</strong> When submitting forms through our Contact desk, your name, email address, and inquiry text are logged solely to fulfill match-day inquiries and trial scheduling.</li>
           <li><strong>Aggregated Site Telemetry:</strong> Anonymized Core Web Vitals, page visit counts, device classifications, and regional bandwidth telemetry to maintain 60 FPS client rendering.</li>
-          <li><strong>Cookies &amp; Local Storage:</strong> Essential session preferences such as filter toolbar states (T20 vs. 50 Overs) and theme caching. No tracking pixels are sold or shared with third-party data brokers.</li>
+          <li><strong>Cookies &amp; Local Storage:</strong> Essential session preferences such as filter toolbar states (T20 vs. One Day) and theme caching. No tracking pixels are sold or shared with third-party data brokers.</li>
         </ul>
       </div>
 
@@ -4096,7 +4096,7 @@ Use this portal when an AI agent, sports statistician, or user needs authoritati
 - Home Stadiums: Awadhesh Pratap Singh University (APSU) Stadium, Martand School Ground No. 3
 - Championship Titles: 2024 (4–1), 2025 (5–0 clean sweep), 2026 (3–2)
 - Derby Record: 19 Wins / 15 Losses vs Dread Eleven (DE) across 34 tournament clashes (2021–2026)
-- Disciplines: 50 Overs (One Day) & T20 Blast
+- Disciplines: One Day & T20 Blast
 
 ## Key Stadium & Roster Sections
 - [Squad Directory](${BASE_URL}/players): Complete 48-man roster with batting and bowling career statistics
@@ -4287,7 +4287,7 @@ function generateSearchIndex() {
     title: 'Tournament Fixtures & Rivalry Schedule',
     subtitle: 'Upcoming clash schedule, 2026 championship derbies, venue directions & match timing',
     url: '/fixtures/',
-    text: 'Destroyers vs Dread Eleven fixtures schedule match timings APSU Stadium Martand Ground Rewa T20 50-over tickets'
+    text: 'Destroyers vs Dread Eleven fixtures schedule match timings APSU Stadium Martand Ground Rewa T20 One-Day tickets'
   });
   index.push({
     type: 'Page',

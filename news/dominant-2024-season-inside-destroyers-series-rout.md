@@ -1,4 +1,4 @@
-# Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in 50-Over Series | Destroyers CC
+# Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in One-Day Series | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/dominant-2024-season-inside-destroyers-series-rout/
 
@@ -50,7 +50,7 @@ Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven...
 
  Season Review • Published 22 Sep 2024 • 5 min read
 
-# Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in 50-Over Series
+# Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in One-Day Series
 
  By **Vindhya Cricket Archive**
  •
@@ -74,7 +74,7 @@ Captain **Pranav Dwivedi** stood tall throughout the campaign, delivering key mi
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

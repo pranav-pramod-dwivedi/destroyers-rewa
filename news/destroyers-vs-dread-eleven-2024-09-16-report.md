@@ -1,4 +1,4 @@
-# Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run win in 50 Overs derby | Destroyers CC
+# Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run win in One Day derby | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/destroyers-vs-dread-eleven-2024-09-16-report/
 
@@ -50,7 +50,7 @@ Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run...
 
  Match Report • Published 16 Sep 2024 • 4 min read
 
-# Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run win in 50 Overs derby
+# Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run win in One Day derby
 
  By **RDCA Media Cell**
  •
@@ -58,7 +58,7 @@ Pranav Dwivedi's 3/72 in 10 ov powers Destroyers to 18-run...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Destroyers won by 18 runs in a 50 Overs derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 16 Sep 2024. Destroyers won the toss and elected to bat first.
+Rewa, MP — Destroyers won by 18 runs in a One Day derby at Awadhesh Pratap Singh University (APSU) Stadium, Rewa on 16 Sep 2024. Destroyers won the toss and elected to bat first.
 
 **Pranav Dwivedi** (Destroyers) took player-of-the-match honours for **3/72 in 10 ov**. Aryan Deshmukh (67 off 77) provided the key support for Destroyers. With the ball, Saransh Jain (2/16 in 9 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result moves the 2024 series to Destroyers 3–1 Dread Eleven, with the side
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

@@ -58,7 +58,7 @@ Derby thriller: Kumar Kartikeya's 5/131 in 10 ov seals it for...
 
 ## Tactical Analysis &amp; Match Flow
 
-Rewa, MP — Dread Eleven won by 3 wickets in a 50 Overs derby at Martand School Ground No. 3, Rewa on 20 Sep 2023. Destroyers won the toss and elected to bowl first.
+Rewa, MP — Dread Eleven won by 3 wickets in a One Day derby at Martand School Ground No. 3, Rewa on 20 Sep 2023. Destroyers won the toss and elected to bowl first.
 
 **Kumar Kartikeya** (Dread Eleven) took player-of-the-match honours for **5/131 in 10 ov**. Kuldeep Sen (89 off 102) provided the key support for Dread Eleven. With the ball, Venkatesh Iyer (2/23 in 8 ov) kept the pressure on.
 
@@ -76,7 +76,7 @@ The result seals the 2023 series 2–3 for Dread Eleven. Played as the 2023 Cham
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 

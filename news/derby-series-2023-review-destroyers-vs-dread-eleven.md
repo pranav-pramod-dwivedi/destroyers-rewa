@@ -1,4 +1,4 @@
-# 2023 Heavyweight Exchange: Dread Eleven Claim Series 3–2 as Destroyers Strike Back in 50-Over Leg | Destroyers CC
+# 2023 Heavyweight Exchange: Dread Eleven Claim Series 3–2 as Destroyers Strike Back in One-Day Leg | Destroyers CC
 
 Source: https://destroyers-rewacricket.pages.dev/news/derby-series-2023-review-destroyers-vs-dread-eleven/
 
@@ -50,7 +50,7 @@ Source: https://destroyers-rewacricket.pages.dev/news/derby-series-2023-review-d
 
  Season Review • Published 22 Sep 2023 • 6 min read
 
-# 2023 Heavyweight Exchange: Dread Eleven Claim Series 3–2 as Destroyers Strike Back in 50-Over Leg
+# 2023 Heavyweight Exchange: Dread Eleven Claim Series 3–2 as Destroyers Strike Back in One-Day Leg
 
  By **Vindhya Cricket Archive**
  •
@@ -62,7 +62,7 @@ Rewa, MP — The 2023 derby series between Destroyers and Dread Eleven finished 
 
 Game by game: 5 Sep 2023: Dread Eleven won by 84 runs (POTM Prabhanshu Shukla); 8 Sep 2023: Dread Eleven won by 57 runs (POTM Akhil Mishra); 12 Sep 2023: Destroyers won by 27 runs (POTM Subhranshu Senapati); 16 Sep 2023: Destroyers won by 42 runs (POTM Pranav Dwivedi); 20 Sep 2023: Dread Eleven won by 3 wickets (POTM Kumar Kartikeya).
 
-Serial protagonists: Prabhanshu Shukla (1), Akhil Mishra (1), Subhranshu Senapati (1). The series story in one line — Dread Eleven took the 2023 series 3–2, but Destroyers' back-to-back 50-over wins in September signalled the power shift to come.
+Serial protagonists: Prabhanshu Shukla (1), Akhil Mishra (1), Subhranshu Senapati (1). The series story in one line — Dread Eleven took the 2023 series 3–2, but Destroyers' back-to-back one-day wins in September signalled the power shift to come.
 
 ## Related News &amp; Features
 
@@ -74,7 +74,7 @@ Serial protagonists: Prabhanshu Shukla (1), Akhil Mishra (1), Subhranshu Senapat
 
  Match Report
 
-#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in One Day derby
 
  [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 
