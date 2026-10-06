@@ -72,17 +72,17 @@ RCB A never stood a chance in reply. Chasing an impossible mountain, they were r
 
 ## Related News &amp; Features
 
- Team News
-
-#### Destroyers Announce 2025–26 Pre-Season Training Camp at APSU Stadium Led by Pranav Dwivedi
-
- [Read &rarr;](/news/destroyers-announce-2025-26-squad-training-camp/)
-
  Season Review
 
-#### Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in 50-Over Series
+#### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
 
- [Read &rarr;](/news/dominant-2024-season-inside-destroyers-series-rout/)
+ [Read &rarr;](/news/derby-series-2026-review-destroyers-vs-dread-eleven/)
+
+ Match Report
+
+#### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
+
+ [Read &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report/)
 
  DESTROYERS CRICKET CLUB
 

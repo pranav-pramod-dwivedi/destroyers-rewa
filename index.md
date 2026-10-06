@@ -228,21 +228,21 @@ From 83 to 223*: Pranav Dwivedi fires RCB B to record 452/1 in 254-run rout.
 
  [Read Full Article &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record)
 
- Team News • 15 Jan 2025
+ Season Review • 22 Jun 2026
 
-### Destroyers Announce 2025–26 Pre-Season Training Camp at APSU Stadium Led by Pranav Dwivedi
+### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
 
-Skipper Pranav Dwivedi leads a 48-man training squad ahead of the upcoming Atal Bihari Vajpayee Memorial Tournament season.
+Destroyers defended their crown 3–2 in June 2026, sealing a third straight championship with a 12-run finale win at APSU Stadium.
 
- [Read Full Article &rarr;](/news/destroyers-announce-2025-26-squad-training-camp)
+ [Read Full Article &rarr;](/news/derby-series-2026-review-destroyers-vs-dread-eleven)
 
- Season Review • 22 Sep 2024
+ Match Report • 20 Jun 2026
 
-### Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in 50-Over Series
+### Ajay Rohera's 94 (98) &amp; 2 catches, 1 stumping drags Destroyers to 12-run win in 50 Overs derby
 
-A tactical review of the 2024 50-over series where Destroyers captured four consecutive victories with clutch bowling and fearless batting.
+Destroyers won by 12 runs at APSU Stadium, Rewa — POTM Ajay Rohera (Destroyers): 94 (98) &amp; 2 catches, 1 stumping.
 
- [Read Full Article &rarr;](/news/dominant-2024-season-inside-destroyers-series-rout)
+ [Read Full Article &rarr;](/news/destroyers-vs-dread-eleven-2026-06-20-report)
 
  DESTROYERS CRICKET CLUB
 

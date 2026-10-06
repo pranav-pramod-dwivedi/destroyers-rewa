@@ -72,11 +72,11 @@ Captain **Pranav Dwivedi** stood tall throughout the campaign, delivering key mi
 
  [Read &rarr;](/news/pranav-dwivedi-223-not-out-63-balls-rcb-b-452-record/)
 
- Team News
+ Season Review
 
-#### Destroyers Announce 2025–26 Pre-Season Training Camp at APSU Stadium Led by Pranav Dwivedi
+#### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
 
- [Read &rarr;](/news/destroyers-announce-2025-26-squad-training-camp/)
+ [Read &rarr;](/news/derby-series-2026-review-destroyers-vs-dread-eleven/)
 
  DESTROYERS CRICKET CLUB
 

@@ -76,9 +76,9 @@ The 2025 campaign will kick off with an intense four-match series in September 2
 
  Season Review
 
-#### Dominant 2024 Campaign: How Destroyers Outplayed Dread Eleven 4–1 in 50-Over Series
+#### 2026 Title Defence: Destroyers Hold Nerve 3–2 to Complete Championship Three-Peat
 
- [Read &rarr;](/news/dominant-2024-season-inside-destroyers-series-rout/)
+ [Read &rarr;](/news/derby-series-2026-review-destroyers-vs-dread-eleven/)
 
  DESTROYERS CRICKET CLUB
 
