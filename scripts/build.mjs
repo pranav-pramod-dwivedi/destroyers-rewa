@@ -33,7 +33,8 @@ function ensureDir(dirPath) {
 
 function formatDate(str) {
   if (!str) return '';
-  const parts = str.split('-');
+  const dateStr = String(str).slice(0, 10);
+  const parts = dateStr.split('-');
   if (parts.length !== 3) return str;
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   const day = parts[2];
@@ -51,14 +52,16 @@ function esc(text) {
     .replace(/"/g, '&quot;');
 }
 
-// Helper: Clamp title for optimal SEO (<60 chars)
-function clampTitle(text, maxLen = 60) {
+// Helper: Clamp title for optimal SEO (<65 chars, no dangling separators)
+function clampTitle(text, maxLen = 65) {
   if (!text) return '';
   text = text.replace(/\s+/g, ' ').trim();
   if (text.length <= maxLen) return text;
   const sliced = text.slice(0, maxLen - 3);
   const lastSpace = sliced.lastIndexOf(' ');
-  return (lastSpace > 30 ? sliced.slice(0, lastSpace) : sliced).trim() + '...';
+  let res = (lastSpace > 25 ? sliced.slice(0, lastSpace) : sliced).trim();
+  res = res.replace(/[\s|—–·-]+$/, '').trim();
+  return res ? res + '...' : text.slice(0, maxLen);
 }
 
 // Helper: Clamp description for optimal SEO (120-155 chars)
@@ -195,7 +198,8 @@ function renderHead({
   alternateJson = null,
   alternateMd = null
 }) {
-  const fullCanonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : BASE_URL;
+  let fullCanonical = canonicalUrl ? `${BASE_URL}${canonicalUrl}` : BASE_URL;
+  if (!fullCanonical.endsWith('/') && !fullCanonical.includes('.')) fullCanonical += '/';
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`;
 
   const jsonLdList = [];
@@ -211,17 +215,22 @@ function renderHead({
     jsonLdList.push({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
-      itemListElement: breadcrumbs.map((b, idx) => ({
-        '@type': 'ListItem',
-        position: idx + 1,
-        name: b.name,
-        item: b.item.startsWith('http') ? b.item : `${BASE_URL}${b.item}`
-      }))
+      itemListElement: breadcrumbs.map((b, idx) => {
+        let itemUrl = b.item.startsWith('http') ? b.item : `${BASE_URL}${b.item}`;
+        if (!itemUrl.endsWith('/') && !itemUrl.includes('.')) itemUrl += '/';
+        return {
+          '@type': 'ListItem',
+          position: idx + 1,
+          name: b.name,
+          item: itemUrl
+        };
+      })
     });
   }
 
-  const cleanTitle = clampTitle(title, 60);
+  const cleanTitle = clampTitle(title, 65);
   const cleanDesc = clampDesc(description, 155);
+  const authorStr = typeof author === 'object' && author ? (author.name || 'Destroyers Cricket Club Media Team') : (author || 'Destroyers Cricket Club Media Team');
 
   // Fallback structured data so NO page lacks JSON-LD schema
   if (jsonLdList.length === 0) {
@@ -249,7 +258,7 @@ function renderHead({
   <title>${esc(cleanTitle)}</title>
   <meta name="description" content="${esc(cleanDesc)}">
   ${keywords ? `<meta name="keywords" content="${esc(keywords)}">` : ''}
-  <meta name="author" content="${esc(author)}">
+  <meta name="author" content="${esc(authorStr)}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -3052,12 +3061,12 @@ ${renderFooter()}
       dateModified: n.updatedAt || n.publishedAt,
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `${BASE_URL}/news/${n.slug}`
+        '@id': `${BASE_URL}/news/${n.slug}/`
       },
       author: {
         '@type': 'Person',
-        name: n.author.name,
-        jobTitle: n.author.role
+        name: typeof n.author === 'object' ? n.author.name : n.author,
+        jobTitle: typeof n.author === 'object' ? n.author.role : undefined
       },
       publisher: {
         '@type': ['SportsOrganization', 'Organization'],
@@ -3070,21 +3079,24 @@ ${renderFooter()}
       }
     };
 
+    const authorDisplayName = typeof n.author === 'object' ? n.author.name : (n.author || 'Destroyers Media');
+    const authorRole = typeof n.author === 'object' ? n.author.role : 'Sports Correspondent';
+
     const articleHtml = `
 ${renderHead({
-  title: clampTitle(`${n.title.replace(/[—–].*$/, '').trim()} | Destroyers News`, 60),
+  title: `${n.title} | Destroyers CC`,
   description: clampDesc(n.summary, 155),
-  canonicalUrl: `/news/${n.slug}`,
+  canonicalUrl: `/news/${n.slug}/`,
   ogType: 'article',
   ogImage: n.heroImage,
   article: {
     publishedTime: n.publishedAt,
-    author: n.author || 'Destroyers Media',
+    author: authorDisplayName,
     section: n.category || 'News',
     tags: n.tags || ['Rewa Cricket', 'Destroyers CC']
   },
   keywords: `${n.title}, Destroyers news, Rewa cricket editorial, ${n.category || 'Press Release'}`,
-  author: n.author || 'Destroyers Cricket Club Media Team',
+  author: authorDisplayName,
   twitterData: {
     label1: 'Category',
     data1: n.category || 'Editorial',
@@ -3094,8 +3106,8 @@ ${renderHead({
   jsonLd: articleJsonLd,
   breadcrumbs: [
     { name: 'Home', item: '/' },
-    { name: 'News', item: '/news' },
-    { name: n.title, item: `/news/${n.slug}` }
+    { name: 'News', item: '/news/' },
+    { name: n.title, item: `/news/${n.slug}/` }
   ]
 })}
 ${renderHeader('news')}
@@ -3104,11 +3116,11 @@ ${renderHeader('news')}
   <div class="container" style="max-width:880px;">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" style="margin-bottom:1.5rem; font-family:var(--f-mono); font-size:0.75rem; color:var(--c-gray-400);">
-      <a href="/" style="color:inherit;">Home</a> / <a href="/news" style="color:inherit;">News</a> / <span style="color:var(--c-gold);">${esc(n.category)}</span>
+      <a href="/" style="color:inherit;">Home</a> / <a href="/news/" style="color:inherit;">News</a> / <span style="color:var(--c-gold);">${esc(n.category)}</span>
     </nav>
 
     <div style="font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gold); text-transform:uppercase; font-weight:800; margin-bottom:0.75rem;">
-      ${esc(n.category)} • Published ${formatDate(n.publishedAt.slice(0, 10))} • ${esc(n.readTime)}
+      ${esc(n.category)} • Published ${formatDate(n.publishedAt)} • ${esc(n.readTime)}
     </div>
 
     <h1 class="section-bigtitle" style="font-size:clamp(2.4rem, 5vw, 3.8rem); line-height:1; margin-bottom:1.5rem;">
@@ -3116,9 +3128,9 @@ ${renderHeader('news')}
     </h1>
 
     <div style="display:flex; align-items:center; gap:0.85rem; border-top:1px solid var(--b-subtle); border-bottom:1px solid var(--b-subtle); padding:1rem 0; margin-bottom:2.5rem; font-family:var(--f-mono); font-size:0.8125rem; color:var(--c-gray-400);">
-      <span>By <strong style="color:var(--c-white);">${esc(n.author.name)}</strong></span>
+      <span>By <strong style="color:var(--c-white);">${esc(authorDisplayName)}</strong></span>
       <span>•</span>
-      <span>${esc(n.author.role)}</span>
+      <span>${esc(authorRole)}</span>
     </div>
 
     <div style="font-size:1.0625rem; line-height:1.8; color:var(--c-gray-300); margin-bottom:3.5rem;">
@@ -3136,9 +3148,9 @@ ${renderHeader('news')}
           <div style="background:var(--c-card-bg); border:1px solid var(--b-subtle); padding:1.5rem;">
             <div style="font-family:var(--f-mono); font-size:0.6875rem; color:var(--c-gold); text-transform:uppercase; margin-bottom:0.5rem;">${esc(r.category)}</div>
             <h4 style="font-family:var(--f-athletic); font-size:1.35rem; text-transform:uppercase; line-height:1.1; margin-bottom:0.5rem;">
-              <a href="/news/${r.slug}" style="color:var(--c-white); text-decoration:none;">${esc(r.title)}</a>
+              <a href="/news/${r.slug}/" style="color:var(--c-white); text-decoration:none;">${esc(r.title)}</a>
             </h4>
-            <a href="/news/${r.slug}" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800;">Read &rarr;</a>
+            <a href="/news/${r.slug}/" style="font-family:var(--f-mono); font-size:0.75rem; color:var(--c-ember-bright); font-weight:800;">Read &rarr;</a>
           </div>
         `).join('')}
       </div>
@@ -3149,7 +3161,7 @@ ${renderHeader('news')}
 ${renderFooter()}
     `;
 
-    fs.writeFileSync(path.join(articleDir, 'index.html'), articleHtml);
+    writePageWithMd(`news/${n.slug}/index.html`, articleHtml, `${n.title} | Destroyers CC`, `${BASE_URL}/news/${n.slug}/`);
   });
 
   console.log(`Generated /news and ${news.length} individual news articles.`);
@@ -3948,20 +3960,20 @@ ${renderFooter()}
 // 8. SITEMAP.XML & ROBOTS.TXT
 // ------------------------------------------------------------
 function generateSitemapAndRobots() {
-  const lastmod = '2026-09-09T21:45:00+05:30';
+  const today = '2026-10-06T19:06:00+05:30';
 
   const urls = [
-    { loc: '/', changefreq: 'daily', priority: '1.0' },
-    { loc: '/players/', changefreq: 'daily', priority: '0.9' },
-    { loc: '/fixtures/', changefreq: 'daily', priority: '0.9' },
-    { loc: '/results/', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/points-table/', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/stats/', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/news/', changefreq: 'weekly', priority: '0.8' },
-    { loc: '/about/', changefreq: 'monthly', priority: '0.7' },
-    { loc: '/contact/', changefreq: 'monthly', priority: '0.6' },
-    { loc: '/privacy/', changefreq: 'yearly', priority: '0.5' },
-    { loc: '/terms/', changefreq: 'yearly', priority: '0.5' }
+    { loc: '/', changefreq: 'daily', priority: '1.0', lastmod: today },
+    { loc: '/players/', changefreq: 'daily', priority: '0.9', lastmod: today },
+    { loc: '/fixtures/', changefreq: 'daily', priority: '0.9', lastmod: today },
+    { loc: '/results/', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/points-table/', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/stats/', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/news/', changefreq: 'weekly', priority: '0.8', lastmod: today },
+    { loc: '/about/', changefreq: 'monthly', priority: '0.7', lastmod: '2026-09-09T21:45:00+05:30' },
+    { loc: '/contact/', changefreq: 'monthly', priority: '0.6', lastmod: '2026-09-09T21:45:00+05:30' },
+    { loc: '/privacy/', changefreq: 'yearly', priority: '0.5', lastmod: '2026-09-09T21:45:00+05:30' },
+    { loc: '/terms/', changefreq: 'yearly', priority: '0.5', lastmod: '2026-09-09T21:45:00+05:30' }
   ];
 
   // Add all player pages (48 players)
@@ -3969,7 +3981,8 @@ function generateSitemapAndRobots() {
     urls.push({
       loc: `/players/${p.slug}/`,
       changefreq: 'weekly',
-      priority: '0.8'
+      priority: '0.8',
+      lastmod: p.slug === 'pranav-dwivedi' ? today : '2026-09-09T21:45:00+05:30'
     });
   });
 
@@ -3978,7 +3991,8 @@ function generateSitemapAndRobots() {
     urls.push({
       loc: `/matches/${m.slug}/`,
       changefreq: 'weekly',
-      priority: '0.8'
+      priority: '0.8',
+      lastmod: '2026-09-09T21:45:00+05:30'
     });
   });
 
@@ -3987,7 +4001,8 @@ function generateSitemapAndRobots() {
     urls.push({
       loc: `/news/${n.slug}/`,
       changefreq: 'monthly',
-      priority: '0.7'
+      priority: '0.7',
+      lastmod: n.updatedAt || n.publishedAt || today
     });
   });
 
@@ -3995,7 +4010,7 @@ function generateSitemapAndRobots() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url>
     <loc>${BASE_URL}${u.loc}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${u.lastmod || today}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
   </url>`).join('\n')}
